@@ -10,17 +10,15 @@
 
 ## Installation du projet :
 
-Création du projet symfony dans le /working/login
-``symfony --version6.3 --webapp new sae3-01``
+Récupérer le projet à partir du dépôt git :
 
-Lier au dépôt git existant
+`` cd /working/login``
 
-``git init``
+``git clone https://iut-info.univ-reims.fr/gitlab/dura0074/sae3-01.git``
 
-``git remote add origin https://iut-info.univ-reims.fr/gitlab/dura0074/sae3-01.git``
+Ajout de Composer :
 
-Mise à jour de Composer 
-``composer self-update``
+``composer install``
 
 Vérification fonctionnement de l'application : 
 
@@ -28,7 +26,13 @@ Vérification fonctionnement de l'application :
 
 ``symfony serve``
 
-Entrer l'url suivante dans la barre d'adresse d'un navigateur web : http://127.0.0.1:8000
+Entrer l'url suivante dans la barre d'adresse d'un navigateur web : 
+
+http://127.0.0.1:8000
+
+Pour terminer l'exécution de l'outil dans le terminal :
+
+``CTRL+C``
 
 
 
