@@ -64,3 +64,146 @@ body {
     font-weight: 700;
 
 }
+
+form {
+    margin-top: 25px;
+    margin-bottom: 25px;
+    min-height: 733px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+form > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 458px;
+    margin-top: 15px;
+    margin-bottom: 30px;
+
+}
+
+input:focus-visible {
+    outline: none;
+}
+
+
+input[type=text] {
+    border: none;
+    width: 384.13px;
+    height: 41.08px;
+
+    background: rgba(255, 127, 80, 0.8);
+    box-shadow: 0px 2px 4px 1px #D9D9D9;
+    border-radius: 900px;
+    padding-left: 10px;
+    color: white;
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 15px;
+    padding-left: 15px;
+}
+
+input[type=password]::placeholder {
+    color: white;
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 15px;
+    
+}
+
+
+input[type=password] {
+    border: none;
+    width: 384.13px;
+    height: 41.08px;
+
+    background: rgba(255, 127, 80, 0.8);
+    box-shadow: 0px 2px 4px 1px #D9D9D9;
+    border-radius: 900px;
+    padding-left: 10px;
+    color: white;
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 15px;
+    padding-left: 15px;
+}
+
+input[type=text]::placeholder {
+    color: white;
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 15px;
+    
+}
+
+input[type=submit] {
+    margin-top: 20px;
+    margin-bottom: 0;
+    background-color: #4CB9A5;
+    color: white;
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    width: 168px;
+    height: 57px;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 22px;
+    border-color: transparent;
+    box-shadow: 0px 2px 4px 1px #7DC2B5;
+    transition: background-color 300ms;
+}
+
+input[type=submit]:hover {
+    background-color: #47ad9a;
+}
+
+
+
+#fileInput {
+    min-height: 275px;
+    width: 275px;
+    border-radius: 22px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background:linear-gradient(
+        rgba(255, 255, 255, 50%),
+        rgba(255, 255, 255, 50%)) 0 0/cover,
+    url("img/profilePicture.jpg") center/cover no-repeat;
+    
+}
+
+.fakeButton {
+    background-color: #4CB9A5;
+    color: white;
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    width: 168px;
+    height: 57px;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 22px;
+    box-shadow: 0px 2px 4px 1px #7DC2B5;
+    transition: background-color 300ms;
+}
+
+.fakeButton:hover {
+    background-color: #47ad9a;
+}
+
+.fakeButton:active {
+    background-color: #4CB9A5;
+}
+
+input[type=file] {
+    display: none;
+}
