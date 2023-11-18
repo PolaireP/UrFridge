@@ -207,3 +207,72 @@ input[type=submit]:hover {
 input[type=file] {
     display: none;
 }
+
+
+@media screen and (min-width: 600px) {
+
+    .bannerImg {
+        height: 291px;
+        padding-left: 30px;
+        padding-right: 30px;
+        align-items: flex-start;
+    }
+
+    .userBannerInfos {
+        height: 180px;
+        min-width: 540px;
+        font-size: 28px;
+        max-width: calc(100% - 60px);
+    }
+
+    .userBannerInfos > div {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .userBannerInfos > div > h2 {
+        margin: 0px;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+        max-width: 500px;
+    }
+
+    .userBannerInfos > img {
+        margin-left: 20px;
+        width: 150px;
+        height: auto;
+    }
+
+    form {
+        justify-content: space-between;
+        width: 400px;
+    }    
+
+    input[type=text] {
+        width: 444px;
+        height: 47px;
+    }
+    
+    input[type=password] {
+        width: 444px;
+        height: 47px;
+    }
+
+    input[type=submit] {
+        width: 230px;
+        height: 74px;
+        font-size: 24px;
+    }
+
+    #fileInput {
+        width: 300px;
+        height: 300px;
+    }
+
+    .fakeButton {
+        width: 230px;
+        height: 74px;
+        font-size: 24px;
+    }
+}
