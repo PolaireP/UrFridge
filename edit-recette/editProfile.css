@@ -276,3 +276,73 @@ input[type=file] {
         font-size: 24px;
     }
 }
+
+
+@media screen and (min-width: 992px) {
+
+    .bannerImg {
+        height: 291px;
+        padding-left: 30px;
+        padding-right: 30px;
+        align-items: flex-start;
+    }
+
+    .userBannerInfos {
+        height: 228px;
+        min-width: 597px;
+        font-size: 30px;
+        max-width: calc(100% - 60px);
+    }
+
+    .userBannerInfos > div {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .userBannerInfos > div > h2 {
+        margin: 0px;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+        max-width: 500px;
+    }
+
+    .userBannerInfos > img {
+        margin-left: 20px;
+        width: 200px;
+        height: 200px;
+    }
+
+    form {
+        flex-direction: row;
+        justify-content: space-between;
+        width: 950px;
+    }    
+
+    input[type=text] {
+        width: 444px;
+        height: 47px;
+    }
+    
+    input[type=password] {
+        width: 444px;
+        height: 47px;
+    }
+
+    input[type=submit] {
+        width: 230px;
+        height: 74px;
+        font-size: 24px;
+    }
+
+    #fileInput {
+        width: 400px;
+        height: 400px;
+    }
+
+    .fakeButton {
+        width: 230px;
+        height: 74px;
+        font-size: 24px;
+    }
+}
