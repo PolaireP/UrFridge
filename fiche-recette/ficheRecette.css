@@ -1,0 +1,6 @@
+#recipeImage {
+    background-image: url("img/recipeImage.png");
+    background-repeat: no-repeat;
+    min-height: 188px;
+    width: 95%;
+}
