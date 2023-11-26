@@ -14,7 +14,7 @@ main {
     padding: 0 10px;
 }
 
-.recipe-content {
+.recipe-informations {
     width: 100%;
 }
 
@@ -93,8 +93,12 @@ h1 {
     font-size: 17px;
 }
 
-.recipe-content > * {
+.recipe-informations > * {
     margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.recipe-informations > div > *:first-child {
     margin-bottom: 20px;
 }
 
