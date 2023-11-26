@@ -14,7 +14,7 @@ main {
     padding: 0 10px;
 }
 
-.recipe-informations {
+#recipe-informations {
     width: 100%;
 }
 
@@ -93,12 +93,12 @@ h1 {
     font-size: 17px;
 }
 
-.recipe-informations > * {
+#recipe-informations > * {
     margin-top: 20px;
     margin-bottom: 20px;
 }
 
-.recipe-informations > div > *:first-child {
+#recipe-informations > div > *:first-child {
     margin-bottom: 20px;
 }
 
@@ -174,7 +174,7 @@ h1 {
     border-color: #FF7F50;
 }
 
-.people-numbers {
+#people-numbers {
     width: 100%;
     min-height: 124px;
     border-radius: 15px;
@@ -184,7 +184,7 @@ h1 {
     box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.25);
 }
 
-.people-numbers > h3 {
+#people-numbers > h3 {
     margin-top: 10px;
     margin-bottom: 0;
     margin-left: 10px;
@@ -199,7 +199,7 @@ h1 {
     width: fit-content;
 }
 
-.people-numbers > div {
+#people-numbers > div {
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -207,7 +207,7 @@ h1 {
     font-weight: 900;
 }
 
-.people-numbers > div > button {
+#people-numbers > div > button {
     width: 43px;
     height: 43px;
     background-color: black;
@@ -304,13 +304,44 @@ h1 {
     height: 3.5em;
 }
 
-.ustensils > div {
+#ustensils > div {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
 }
 
-.ustensils > div > * {
+#ustensils > div > * {
     margin-bottom: 15px;
+}
+
+.step {
+    width: 100%;
+    box-sizing: border-box;
+    background: linear-gradient(white, white) padding-box,
+              linear-gradient(45deg, rgba(255, 127, 80, 0.74), rgba(66, 186, 64, 0.65), rgba(76, 185, 165, 0.58)) border-box;
+    border-radius: 16px;
+    border: 4px solid transparent;
+    margin-bottom: 10px;
+    padding: 10px 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    min-height: 135px;
+
+}
+
+.step > * {
+    margin: 0;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.step > *:first-child {
+    margin-bottom: 20px;
+}
+
+.step > p {
+    width: 95%;
+    word-wrap: break-word;
 }
