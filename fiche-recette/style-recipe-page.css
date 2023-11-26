@@ -218,3 +218,70 @@ h1 {
     align-items: center;
 
 }
+
+.ingredients > div {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.ingredient {
+    height: 100px;
+    display: flex;
+    box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.25);
+    border-radius: 9px;
+    width: 100%;
+
+}
+
+.ingredient > img {
+    width: 100px;
+    height: 100px;
+    background-color: rgb(214, 214, 214);
+    margin-right: 10px;
+    border-radius: 9px;
+}
+
+.ingredient-infos > h4 {
+    font-size: 18px;
+    max-width: 200px ;
+    height: min-content;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.ingredient-infos {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    box-sizing: border-box;
+}
+
+.ingredient-infos > * {
+    margin: 0;
+}
+
+.ingredient-infos > div {
+    display: flex;
+    margin: 0;
+}
+
+.ingredient-infos > div > * {
+    margin: 0;
+}
+
+.ingredient-infos > div > *:first-child {
+    margin-right: 10px;
+}
+
+.quantity {
+    background-color: #FF7F50;
+    box-sizing: border-box;
+    width: 70px;
+    height: 30px;
+    text-align: center;
+    border-radius: 9px;
+    line-height: 30px;
+    font-size: 18px;
+    color: white;
+}
