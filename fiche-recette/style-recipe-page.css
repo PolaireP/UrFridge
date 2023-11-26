@@ -4,6 +4,18 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin: 0;
+    font-family: 'Roboto';
+}
+
+main {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0 10px;
+}
+
+.recipe-content {
+    width: 100%;
 }
 
 h1 {
@@ -13,26 +25,27 @@ h1 {
     margin-bottom: 0;
 }
 
-.recipeTitle {
+.recipe-title {
     font-family: 'Roboto';
     font-weight: 400;
     font-size: 13px;
-    width: 394px;
+    width: 100%;
 }
 
-.recipeTitle > p {
+.recipe-title > p {
     margin-top: 0;
 }
 
-.onImage {
+.on-image {
     display: none;
 }
 
-#recipeImage {
+#recipe-image {
     box-sizing: border-box;
     background: url("img/recipeImage.png") center/cover no-repeat;
     height: 188px;
-    width: 394px;
+    width: 100%;
+    border-radius: 15px;
 
     display: flex;
     flex-direction: column;
@@ -40,13 +53,13 @@ h1 {
     flex-wrap: wrap;
 }
 
-.imageRow {
+.image-row {
     display: flex;
     flex-direction: row-reverse;
     padding: 10px;
 }
 
-#likeButton {
+#like-button {
     height: 56px;
     width: 56px;
     background-color: rgba(0, 0, 0, 0.8);
@@ -62,7 +75,7 @@ h1 {
     display: none;
 }
 
-#stepsNumber {
+#steps-number {
     margin: 10px;
     height: 35px;
     width: -moz-fit-content;
@@ -79,14 +92,14 @@ h1 {
     font-size: 17px;
 }
 
-main > * {
+.recipe-content > * {
     margin-top: 20px;
     margin-bottom: 20px;
 }
 
 
-.recipeType {
-    width: 394px;
+.recipe-type {
+    width: 100%;
     min-height: 124px;
     border-radius: 15px;
     display: flex;
@@ -94,7 +107,7 @@ main > * {
     justify-content: flex-start;
 }
 
-.recipeType > h3 {
+.recipe-type > h3 {
     margin-top: 10px;
     margin-left: 10px;
     margin-bottom: 0;
@@ -109,16 +122,17 @@ main > * {
     font-weight: 900;
 }
 
-.recipeType > ul {
+.recipe-type > ul {
     display: flex;
     flex-wrap: wrap;
-    max-width: 300px;
+    max-width: 270px;
     max-height: 80px;
     overflow-y: auto;
     overflow-x: hidden;
+    padding-left: 20px;
 }
 
-.recipeType > ul > li {
+.recipe-type > ul > li {
     padding: 5px;
     border-radius: 10px;
     list-style: none;
