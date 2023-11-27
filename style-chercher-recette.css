@@ -1,0 +1,39 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.titre{
+    display: flex;
+    flex-direction: row;
+    color: #4CB9A5;
+    justify-content: space-around;
+}
+
+.question{
+    margin: 35px;
+}
+
+.frigo{
+    margin: 35px;
+}
+
+.rechercher{
+    width: 75%;
+    text-align: center;
+}
+
+.rechercher input[type=text]{
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.filtres{
+    display: flex;
+    flex-direction: row;
+}
