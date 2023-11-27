@@ -8,6 +8,12 @@ body {
     font-family: 'Roboto';
 }
 
+h3 {
+    font-family: 'XXII Aven';
+    font-weight: 800;
+    font-size: 22px;
+}
+
 main {
     width: 100%;
     box-sizing: border-box;
@@ -20,7 +26,7 @@ main {
 
 h1 {
     font-size: 28px;
-    font-family: 'Roboto';
+    font-family: 'XXII AVEN';
     font-weight: 900;
     margin-bottom: 0;
 }
@@ -331,6 +337,11 @@ h1 {
 
 }
 
+.step > h4 {
+    font-weight: 900;
+    font-size: 21px;
+}
+
 .step > * {
     margin: 0;
     font-size: 20px;
@@ -344,5 +355,46 @@ h1 {
 .step > p {
     width: 95%;
     word-wrap: break-word;
+}
+
+hr {
+    height: 4px;
+    width: 100%;
+    background: linear-gradient(45deg, rgba(255, 127, 80, 0.74), rgba(66, 186, 64, 0.65), rgba(76, 185, 165, 0.58));
+    outline: none;
+    border: none;
+    margin-top: 20px;
+    margin-bottom: 0;
+}
+
+#comments {
+    box-sizing: border-box;
+    width: 100%;
+    margin: 0;
+    padding: 0 10px;
+    margin-bottom: 10px;
+}
+
+.comment {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.comment > img {
+    min-height: 39px;
+    min-width: 39px;
+    max-width: 39px;
+    max-height:39px ;
+    background-color: rgb(214, 214, 214);
+    border-radius: 39px;
+}
+
+.comment > div {
+    margin-left: 10px;
+    margin-top: 0;
+}
+
+.comment > div > * {
+    margin: 0;
 }
 
