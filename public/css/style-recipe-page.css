@@ -18,7 +18,11 @@ main {
     width: 100%;
     box-sizing: border-box;
     padding: 0 10px;
+    display: flex;
+    flex-direction: column;
 }
+
+/* Style de l'image et titre de la recette */
 
 #recipe-informations {
     width: 100%;
@@ -29,6 +33,7 @@ h1 {
     font-family: 'XXII AVEN';
     font-weight: 900;
     margin-bottom: 0;
+    margin-top: 0;
 }
 
 .recipe-title {
@@ -99,6 +104,8 @@ h1 {
     font-size: 17px;
 }
 
+/* Style des informations de la recette */
+
 #recipe-informations > * {
     margin-top: 20px;
     margin-bottom: 20px;
@@ -107,6 +114,8 @@ h1 {
 #recipe-informations > div > *:first-child {
     margin-bottom: 20px;
 }
+
+/* Style de la classe générique aux catégories et allergènes */
 
 
 .recipe-type {
@@ -156,6 +165,8 @@ h1 {
     margin-bottom: 5px;
 }
 
+/* Style des allergènes */
+
 .allergenes {
     box-shadow: 0px 0px 7px #4CB9A5;
 }
@@ -168,6 +179,8 @@ h1 {
     border-color: #4CB9A5;
 }
 
+/* Style des catégories */
+
 .category {
     box-shadow: 0px 0px 7px #FF7F50;
 }
@@ -179,6 +192,8 @@ h1 {
 .category > ul > li {
     border-color: #FF7F50;
 }
+
+/* Style du nombre de personne */
 
 #people-numbers {
     width: 100%;
@@ -225,7 +240,9 @@ h1 {
 
 }
 
-.ingredient {
+/* Style de la classe générique (ingrédients + ustensiles) */
+
+.recipe-component {
     height: 100px;
     display: flex;
     box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.25);
@@ -235,13 +252,15 @@ h1 {
 
 }
 
-.ingredient > img {
+.recipe-component > img {
     min-width: 100px;
     height: 100px;
     background-color: rgb(214, 214, 214);
     margin-right: 10px;
     border-radius: 9px;
 }
+
+/* Style des ingrédients */
 
 .ingredient-infos > h4 {
     font-size: 18px;
@@ -289,26 +308,13 @@ h1 {
     color: white;
 }
 
+/* Style des ustensiles */
+
 .ustensil {
-    width: 100% ;
-    height: 80px;
     display: flex;
     align-items: flex-start;
 }
 
-.ustensil > img {
-    min-width: 80px;
-    height: 80px;
-}
-
-.ustensil > h4 {
-    margin-top: 12px;
-    max-width: 100% ;
-    height: min-content;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    height: 3.5em;
-}
 
 #ustensils > div {
     display: flex;
@@ -320,6 +326,8 @@ h1 {
 #ustensils > div > * {
     margin-bottom: 15px;
 }
+
+/* Style des étapes */
 
 .step {
     width: 100%;
@@ -357,6 +365,8 @@ h1 {
     word-wrap: break-word;
 }
 
+/* Ligne séparation Etapes / commentaires */
+
 hr {
     height: 4px;
     width: 100%;
@@ -367,13 +377,57 @@ hr {
     margin-bottom: 0;
 }
 
+/* Style des commentaires */
+
 #comments {
     box-sizing: border-box;
     width: 100%;
     margin: 0;
     padding: 0 10px;
     margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
+
+#comments > h3 {
+    margin-top: 20px;
+    margin-bottom: 0;
+}
+
+#comment-form {
+    margin-bottom: 20px;
+    margin-top: 20px;
+    width: 100%;
+    background-color: rgb(214, 214, 214);
+    border-radius: 11px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#comment-form > input {
+    background-color: rgb(214, 214, 214);
+    border: none;
+    height: 63px;
+    border-radius: 11px;
+    padding-left: 10px;
+    width: 100%;
+    font-family: 'Roboto';
+    color: black;
+    font-size: 17px;
+    font-weight: 700;
+}
+
+#comment-form > button {
+    background-color: #4CB9A5;
+    border: none;
+    border-radius: 11px;
+    color: white;
+    font-family: 'Roboto';
+    width: 100px;
+    font-size: 22px;
+}
+
 
 .comment {
     display: flex;
@@ -381,10 +435,8 @@ hr {
 }
 
 .comment > img {
-    min-height: 39px;
-    min-width: 39px;
-    max-width: 39px;
-    max-height:39px ;
+    height: 39px;
+    width: 39px;
     background-color: rgb(214, 214, 214);
     border-radius: 39px;
 }
@@ -398,3 +450,108 @@ hr {
     margin: 0;
 }
 
+.comment > div > p {
+    width: 290px;
+    overflow: hidden;
+    word-wrap: break-word;
+    text-overflow: clip;
+}
+
+
+/* Format tablette / téléphone large  */
+@media screen and (min-width : 600px) {
+    
+    h1 {
+        font-size: 38px;
+    }
+
+    .mobile > p {
+        font-size: 16px;
+    }
+
+    #recipe-image {
+        width: 100%;
+    }
+
+    h3 {
+        font-size: 30px;
+    }
+
+    .recipe-type {
+        width: 100%;
+        margin-right: 5px;
+    }
+
+
+
+    #recipe-informations {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    #recipe-informations > div {
+        width: 48%;
+    }
+
+    #people-numbers {
+        width: 48%;
+    }
+
+    .recipe-component > h4 {
+        font-size: 22px;
+    }
+
+    .ingredient-infos > h4 {
+        font-size: 22px;
+    }
+
+    .comment {
+        align-items: center;
+    }
+
+    .comment > img {
+        height: 50px;
+        width: 50px;
+    }
+
+    .comment > div > h4 {
+        font-size: 15px;
+    }
+
+    .comment > div > p {
+        width: 530px;
+        overflow: hidden;
+        word-wrap: break-word;
+        text-overflow: clip;
+    }
+}
+
+/* Format tablette */
+@media screen and (min-width : 768px) {
+    #recipe-image {
+        height: 300px;
+    }
+}
+
+/* Format petis ordinateurs */
+@media screen and (min-width : 992px) {
+
+    .comment {
+        align-items: center;
+    }
+
+    .comment > img {
+        height: 65px;
+        width: 65px;
+    }
+
+    .comment > div > h4 {
+        font-size: 18px;
+    }
+
+    .comment > div > p {
+        width: 800px;
+    }
+    
+}
