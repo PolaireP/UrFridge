@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Proposer une recette</title>
+    <link rel="preload" href="js/main.js" as="script">
+    <link rel="stylesheet" href="css/style-suggest-recipe.css">
+    <link rel="icon" href="img/logo/icon.png" type="image/x-icon">
+</head>
+<body>
+<main class="content">
+    <div class="banner">
+        <h1 class="banner-title">Proposer une recette</h1>
+    </div>
+    <div class="suggest-area">
+        <div class="ingredients-area">
+            <h2 class="ingredients-title">I) Ajouter les ingrédients</h2>
+            <form method="post" class="search-area">
+                <div class="search-bar">
+                    <input type="text" name="search-ingredients"
+                           id="search-ingredients" placeholder="Poire, Oignons, Lait ...">
+                    <img src="img/loop.png" alt="loupe">
+                </div>
+            </form>
+            <div class="ingredients-result">
+                <p class="ingredients-noresult">Les ingrédients de votre recette apparaitront ici</p>
+            </div>
+        </div>
+        <div class="steps-area">
+            <div class="steps-input-area">
+                <h2 class="steps-input-title">
+                    II) Ajouter les différentes étapes de préparation de votre recette
+                </h2>
+                <form method="post" class="step-append">
+                        <textarea name="step-desc"
+                                  id="step-desc" autocomplete="off" placeholder="Descriptif de l’étape" required></textarea>
+                    <button type="submit" id="step-submit">Ajouter l’étape</button>
+                </form>
+            </div>
+            <div class="steps-list-area">
+                <h2 class="steps-list-title">
+                    Etapes de votre recette
+                </h2>
+                <div class="steps-list">
+                    <p class="steps-list-nostep">Les étapes de votre recette <br> apparaissent ici</p>
+                </div>
+            </div>
+        </div>
+        <div class="tools-area">
+            <h2 class="tools-title">III) Ajouter du matériel</h2>
+            <form method="post" class="search-area">
+                <div class="search-bar">
+                    <input type="text" name="search-tools"
+                           id="search-tools" placeholder="Spatule, Casserole ...">
+                    <img src="img/loop.png" alt="loupe">
+                </div>
+            </form>
+            <div class="tools-result">
+                <p class="tools-noresult">Les ustensiles de votre recette apparaitront ici</p>
+            </div>
+        </div>
+        <div class="informations-area">
+            <h2 class="informations-title">IV) Derniers détails</h2>
+            <form method="post" class="informations-form">
+                <div class="informations-input-area">
+                    <div class="informations-writing-area">
+                        <input type="text" name="recipe-name" id="recipe-name" placeholder="Nom de la recette" required>
+                        <textarea name="recipe-description" id="recipe-description"
+                                  cols="30" rows="10" placeholder="Descriptif de la recette" required></textarea>
+                    </div>
+                    <div class="informations-append-picture">
+                        <div class="picture-preview">
+                            <button onclick="document.getElementById('recipe-picture').click()">
+                                Ajouter une photo <br> de la recette
+                            </button>
+                            <input type="file" name="recipe-picture"
+                                   id="recipe-picture" required>
+                        </div>
+                    </div>
+                </div>
+                <button type="submit" id="recipe-submit">Ajouter la recette</button>
+            </form>
+        </div>
+    </div>
+    <div class="fill"></div>
+</main>
+</body>
+</html>

@@ -1,0 +1,376 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+body {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    flex-direction: column;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to left, rgba(255, 127, 80, 40%), rgba(76, 185, 165, 40%)) 0 0/cover,
+        url("../img/food-bowl.jpg") center/cover no-repeat;
+    padding: 2% 0;
+    align-self: normal;
+}
+
+.banner-title {
+    font-size: 50px;
+    font-weight: 900;
+    font-family: "Roboto", sans-serif;
+    color: white;
+    text-align: center;
+}
+
+.suggest-area {
+    display: flex;
+    flex-direction: column;
+    padding: 1%;
+}
+
+.ingredients-area, .tools-area {
+    display: flex;
+    flex-direction: column;
+}
+
+.ingredients-title, .tools-title, .steps-input-title, .steps-list-title, .informations-title {
+    font-size: 20px;
+    font-weight: 700;
+    font-family: "Roboto", sans-serif;
+    color: #4CB9A5;
+}
+
+.search-area {
+    display: flex;
+    justify-content: center;
+}
+
+.search-bar {
+    display: flex;
+    max-width: 1000px;
+    border: 2px solid #00000000;
+    border-radius: 38px;
+    box-sizing: border-box;
+    padding: 2px 10px;
+    align-self: center;
+    flex: 1;
+    background: linear-gradient(#fff,#fff) padding-box,
+    linear-gradient(to left, rgba(76, 185, 165, 58%), rgba(66, 186, 64, 66%), rgba(255, 127, 80, 74%)) border-box;
+}
+
+.search-bar #search-ingredients, .search-bar #search-tools {
+    display: flex;
+    font-size: 18px;
+    font-weight: 500;
+    font-family: "Roboto", sans-serif;
+    color: black;
+    border: none;
+    flex: 1;
+    border-radius: 38px;
+}
+
+#search-ingredients:focus, #search-tools:focus {
+    outline: none;
+}
+
+.search-bar #search-ingredients::placeholder, .search-bar #search-tools::placeholder {
+    color: #B9B9B9;
+}
+
+.search-bar>img {
+    width: 30px;
+    height: 30px;
+}
+
+.fill {
+    display: flex;
+    flex: 1;
+}
+
+.ingredients-result, .tools-result {
+    display: flex;
+    justify-content: center;
+    padding: 2% 0;
+}
+
+.ingredients-noresult, .tools-noresult, .steps-list-nostep {
+    display: flex;
+    align-self: center;
+    font-size: 14px;
+    font-weight: 700;
+    font-family: "Roboto", sans-serif;
+    color: #4CB9A5;
+    text-align: center;
+}
+
+.steps-area {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.steps-input-area, .steps-list-area {
+    display: flex;
+    flex-direction: column;
+}
+
+.steps-input-area {
+    flex: 1;
+    border: none;
+    box-sizing: border-box;
+}
+
+.steps-list-area {
+    padding: 0 1%;
+}
+
+.step-append {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+#step-desc {
+    display: flex;
+    border: none;
+    background-color: rgba(255, 127, 80, 80%);
+    flex: 1;
+    margin: 2% 3%;
+    min-height: 300px;
+    padding: 10px;
+    border-radius: 22px;
+}
+
+#step-desc, #step-desc::placeholder {
+    color: white;
+    font-size: 18px;
+    font-weight: 700;
+    font-family: "Roboto", sans-serif;
+
+}
+
+#step-desc:focus {
+    outline: none;
+}
+
+#step-submit, #recipe-submit  {
+    display: flex;
+    width: fit-content;
+    padding: 10px;
+    color: white;
+    font-size: 18px;
+    font-weight: 700;
+    font-family: "Roboto", sans-serif;
+    background-color: #4CB9A5;
+    border: none;
+    border-radius: 22px;
+    align-self: center;
+    cursor: pointer;
+    margin: 5px;
+}
+
+#step-submit:hover, .picture-preview>button:hover, #recipe-submit:hover {
+    background-color: #218A77;
+    transition: 0.2s;
+}
+
+.steps-list {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    justify-content: center;
+}
+
+.informations-area {
+    display: flex;
+    flex-direction: column;
+}
+
+.informations-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.informations-input-area {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.informations-writing-area, .informations-append-picture {
+    display: flex;
+    flex-direction: column;
+    padding: 1%;
+}
+
+.informations-writing-area {
+    flex: 3;
+}
+
+.informations-append-picture {
+    flex: 2;
+    justify-content: center;
+}
+
+#recipe-name, #recipe-description {
+    display: flex;
+    border: none;
+    background-color: rgba(255, 127, 80, 80%);
+    margin: 10px 2%;
+    padding: 10px;
+    color: white;
+    font-size: 18px;
+    font-weight: 700;
+    font-family: "Roboto", sans-serif;
+    border-radius: 22px;
+}
+
+#recipe-name::placeholder, #recipe-description::placeholder {
+    color: white;
+}
+
+#recipe-name:focus, #recipe-description:focus {
+    outline: none;
+}
+
+.picture-preview {
+    display: flex;
+    flex-direction: column;
+    height: 200px;
+    width: 200px;
+    align-self: center;
+    background-image: linear-gradient(120deg, rgba(255, 127, 80, 80%) 30%, rgba(76, 185, 165, 80%));
+    justify-content: center;
+    border-radius: 22px;
+    margin: 5px 0;
+}
+
+.picture-preview>button {
+    display: flex;
+    align-self: center;
+    width: fit-content;
+    padding: 10px;
+    color: white;
+    font-size: 18px;
+    font-weight: 700;
+    font-family: "Roboto", sans-serif;
+    background-color: #4CB9A5;
+    border: none;
+    border-radius: 22px;
+    cursor: pointer;
+}
+
+#recipe-picture {
+    display: none;
+}
+
+@media only screen and (min-width: 300px) {
+    /* modification css ici */
+}
+
+@media only screen and (min-width: 400px) {
+    /* modification css ici */
+}
+
+@media only screen and (min-width: 600px) {
+    /* modification css ici */
+    .banner-title {
+        font-size: 75px;
+    }
+
+    .ingredients-title, .tools-title, .steps-input-title, .steps-list-title, .informations-title {
+        font-size: 32px;
+    }
+
+    .ingredients-noresult, .tools-noresult, .steps-list-nostep {
+        font-size: 22px;
+    }
+
+    .picture-preview {
+        width: 300px;
+        height: 300px;
+    }
+
+    .search-bar {
+        border: 3px solid #00000000
+    }
+
+    .search-bar #search-ingredients, .search-bar #search-tools, #step-submit, #recipe-submit, #step-desc,
+    #step-desc::placeholder, #recipe-name, #recipe-description {
+        font-size: 22px;
+    }
+
+    .search-bar>img {
+        width: 38px;
+        height: 38px;
+    }
+
+    #step-submit, #recipe-submit, #step-desc, #recipe-name, #recipe-description {
+        padding: 2%;
+    }
+}
+
+@media only screen and (min-width: 800px) {
+    /* modification css ici */
+    .informations-input-area, .steps-area {
+        flex-direction: row;
+    }
+
+    .suggest-area {
+        padding: 2%;
+    }
+}
+
+@media only screen and (min-width: 1000px) {
+    /* modification css ici */
+    .banner-title {
+        font-size: 100px;
+    }
+
+    .ingredients-title, .tools-title, .steps-input-title, .steps-list-title, .informations-title {
+        font-size: 44px;
+    }
+
+    .ingredients-noresult, .tools-noresult, .steps-list-nostep {
+        font-size: 30px;
+    }
+
+    .search-bar #search-ingredients, .search-bar #search-tools, #step-submit, #recipe-submit, #step-desc,
+    #step-desc::placeholder, #recipe-name, #recipe-description {
+        font-size: 30px;
+    }
+
+    .picture-preview {
+        width: 400px;
+        height: 400px;
+    }
+
+    .suggest-area {
+        max-width: 1200px;
+        align-self: center;
+    }
+
+    .search-bar>img {
+        width: 56px;
+        height: 56px;
+    }
+
+    .search-bar {
+        border: 4px solid #00000000
+    }
+
+    .picture-preview>button {
+        font-size: 24px;
+        padding: 2%;
+    }
+}
+
