@@ -1,0 +1,3 @@
+suggest-recipe.html :
+- photo de la bannière -> Cats Coming: https://www.pexels.com/fr-fr/photo/bol-de-salade-de-legumes-406152/
+- photo de la loupe -> Ayub Irayan https://www.flaticon.com/fr/icone-gratuite/loupe_2311526?term=loupe&page=1&position=2&origin=search&related_id=2311526
