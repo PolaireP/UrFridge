@@ -53,7 +53,10 @@ h1 {
 
 #recipe-image {
     box-sizing: border-box;
-    background: url("img/recipeImage.png") center/cover no-repeat;
+    background-image: url("../img/recipeImage.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
     background-color: rgb(214, 214, 214);
     height: 188px;
     width: 100%;
@@ -262,6 +265,18 @@ h1 {
 
 /* Style des ingrédients */
 
+#ingredients {
+    display: flex;
+    flex-direction: column;
+}
+
+#ingredients > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
 .ingredient-infos > h4 {
     font-size: 18px;
     max-width: 200px ;
@@ -310,9 +325,9 @@ h1 {
 
 /* Style des ustensiles */
 
-.ustensil {
+#ustensils {
     display: flex;
-    align-items: flex-start;
+    flex-direction: column;
 }
 
 
@@ -325,6 +340,16 @@ h1 {
 
 #ustensils > div > * {
     margin-bottom: 15px;
+}
+
+.ustensil > h4 {
+    margin-top: 10px;
+    font-size: 18px;
+    max-width: 200px ;
+    height: 3.5em;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
 }
 
 /* Style des étapes */
@@ -418,6 +443,10 @@ hr {
     font-weight: 700;
 }
 
+#comment-form > input:focus-visible {
+    outline: none;
+}
+
 #comment-form > button {
     background-color: #4CB9A5;
     border: none;
@@ -482,6 +511,10 @@ hr {
         margin-right: 5px;
     }
 
+    .ustensil > h4 {
+        max-width: 500px;
+    }
+
 
 
     #recipe-informations {
@@ -532,10 +565,102 @@ hr {
     #recipe-image {
         height: 300px;
     }
+
+    .ingredient-infos > div > *:first-child {
+        font-size: 20px;
+    }
 }
 
 /* Format petis ordinateurs */
 @media screen and (min-width : 992px) {
+
+    main {
+        margin-top: 20px;
+    }
+
+    #recipe-image {
+        height: 451px;
+    }
+
+    #like-button {
+        width: 64px;
+        height: 64px;
+    }
+
+    .mobile {
+        display: none;
+    }
+
+    .image-row {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .on-image {
+        display: block;
+        background-color: rgba(0, 0, 0, 0.8);
+        min-width: 360px;
+        max-width: -moz-fit-content;
+        max-width: fit-content;
+        box-sizing: border-box;
+        padding: 10px;
+        color: white;
+        border-radius: 13px;
+        height: 80px;
+
+        
+    }
+
+    .on-image > * {
+        margin:  0;
+    }
+
+    .on-image > h1 {
+        font-family: 'Roboto';
+        max-width: 800px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+
+    #steps-number {
+        height: 60px;
+        width: 200px;
+        align-self: flex-end;
+    }
+
+    #steps-number > p {
+        font-weight: 900;
+        font-size: 30px;
+    }
+
+    #ingredients > div {
+        align-self: center;
+        flex-direction: row;
+        justify-content: space-between;
+        column-gap: 15px;
+        flex-wrap: wrap;
+        width: 930px;
+        
+    }
+
+    #ustensils > div {
+        align-self: center;
+        flex-direction: row;
+        justify-content: flex-start;
+        column-gap: 15px;
+        flex-wrap: wrap;
+        width: 930px;
+        
+    }
+
+    .ustensil > h4 {
+        max-width: 200px;
+    }
+
+    .recipe-component {
+        width: 300px;
+    }
 
     .comment {
         align-items: center;
@@ -552,6 +677,43 @@ hr {
 
     .comment > div > p {
         width: 800px;
+    }
+    
+}
+
+/* Format grand écran */
+@media screen and (min-width : 1200px) {
+    main, hr, #comments {
+        width: 1200px;
+    }
+
+    #people-numbers {
+        width: 366px;
+    }
+
+
+    #ingredients > div {
+        align-self: center;
+        flex-direction: row;
+        justify-content: flex-start;
+        column-gap: 50px;
+        flex-wrap: wrap;
+        width: 1000px;
+        
+    }
+
+    #ustensils > div {
+        align-self: center;
+        flex-direction: row;
+        justify-content: flex-start;
+        column-gap: 50px;
+        flex-wrap: wrap;
+        width: 1000px;
+        
+    }
+
+    .comment > div > p {
+        width: 1050px;
     }
     
 }
