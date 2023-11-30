@@ -1,0 +1,266 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,400;8..144,1000&display=swap');
+body {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+}
+
+.content{
+    display:flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    flex: 1;
+}
+
+.banner{
+    display: flex;
+    padding: 2%;
+    box-sizing: border-box;
+    background:linear-gradient(to left,rgba(76, 185, 165, 50%),rgba(183, 150, 114, 50%), rgba(255, 127, 80, 50%)) 0 0/cover,
+    url("../img/recette.jpg") center/cover no-repeat;
+}
+
+.profile-area{
+    display: flex;
+    padding: 1%;
+    background-color: rgba(255, 255, 255, 74%);
+    border-radius: 10px;
+}
+
+.profile-picture{
+    display: flex;
+    width: 200px;
+    height: 200px;
+    align-self: center;
+    margin-right: 25px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 75%;
+    background: linear-gradient(to left,rgba(76, 185, 165, 1),rgba(183, 150, 114, 1), rgba(255, 127, 80, 1));
+    padding: 5px;
+}
+
+.profile-picture>img{
+    border-radius: 75%;
+    height: 200px;
+    width: 200px;
+    box-sizing: border-box;
+}
+
+.profile-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 25px;
+}
+
+.profile-info>p{
+    font-family: 'Roboto Flex', sans-serif;
+    font-size: 48px;
+    font-weight: 1000;
+    color:#4CB9A5;
+    margin: 0;
+    padding: 0;
+}
+
+.interact-area{
+    display: flex;
+    font-family: 'Roboto Flex', sans-serif;
+    color:#4CB9A5;
+}
+
+.statistics-area{
+    display: flex;
+    flex-direction: column;
+    width: 950px;
+    height: 315px;
+    align-items: start;
+    justify-content: space-around;
+    border-bottom: 2px solid #4CB9A5;
+}
+
+.statistics-area>h2{
+    margin-left: 30px;
+}
+
+.statistics-area>p{
+    margin-bottom: 20px;
+    display: flex;
+    color: black;
+    justify-content: center;
+    align-items: center;
+}
+
+.edit-area{
+    display: flex;
+    align-items: center;
+    width: 950px;
+    height: 314px;
+}
+
+.bouton1,
+.bouton2 {
+    display: flex;
+    justify-content: center;
+    width: 367px;
+    height: 105px;
+    background-color: #4CB9A5;
+    border: none;
+    border-radius: 15px;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.bouton1:hover,
+.bouton2:hover {
+    background-color: rgb(255, 127, 80);
+}
+
+.bouton1 {
+    margin-right: 85px;
+    margin-left: 58px;
+}
+
+.right-area{
+    width: 450px;
+    height: 630px;
+    display: flex;
+    flex:1;
+    border-left: 2px solid #4CB9A5;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.right-area>h2{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+@media only screen and (max-width: 428px){
+
+    body {
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+        margin: 0;
+    }
+
+    .content{
+        display:flex;
+        flex-direction: column;
+        box-sizing: border-box;
+        flex-wrap: nowrap;
+    }
+    .banner{
+        display: flex;
+        padding: 2%;
+        box-sizing: border-box;
+        background:linear-gradient(to left,rgba(76, 185, 165, 50%),rgba(183, 150, 114, 50%), rgba(255, 127, 80, 50%)) 0 0/cover,
+        url("../img/recette.jpg") center/cover no-repeat;
+    }
+
+    .profile-area{
+        display: flex;
+        padding: 1%;
+        background-color: rgba(255, 255, 255, 74%);
+        border-radius: 10px;
+        align-items: center;
+    }
+
+    .profile-info>p{
+        font-family: 'Roboto Flex', sans-serif;
+        font-size: 30px;
+        font-weight: 1000;
+        color:#4CB9A5;
+        margin: 0;
+        padding: 0;
+    }
+
+    .profile-picture{
+        display: flex;
+        width: 125px;
+        height: 125px;
+        align-self: center;
+        margin-right: 25px;
+        margin-left: 25px;
+        justify-content: center;
+        align-items: center;
+        border-radius: 90%;
+        background: linear-gradient(to left,rgba(76, 185, 165, 1),rgba(183, 150, 114, 1), rgba(255, 127, 80, 1));
+        padding: 5px;
+    }
+
+    .profile-picture>img{
+        border-radius: 75%;
+        height: 125px;
+        width: 125px;
+        box-sizing: border-box;
+    }
+
+    .statistics-area{
+        display: flex;
+        flex-direction: column;
+        width: 428px;
+        height: 224px;
+        align-items: center;
+        border-bottom: 2px solid #4CB9A5;
+    }
+
+    .statistics-area>p{
+        margin-bottom: 20px;
+        display: flex;
+        color: black;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .right-area{
+        width: 428px;
+        height: 392px;
+        display: flex;
+        border-left: none;
+        border-top: 2px solid #4CB9A5;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .interact-area{
+        flex-wrap: wrap;
+        display: flex;
+        font-family: 'Roboto Flex', sans-serif;
+        color:#4CB9A5;
+    }
+
+    .bouton1,
+    .bouton2 {
+        display: flex;
+        justify-content: center;
+        width: 364px;
+        height: 88px;
+        background-color: #4CB9A5;
+        border: none;
+        border-radius: 15px;
+        color: white;
+        font-size: 20px;
+        font-weight: bold;
+        cursor: pointer;
+    }
+    .edit-area{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 428px;
+        height: 282px;
+    }
+    .bouton1 {
+        margin-right: 0px;
+        margin-left: 0px;
+    }
+}
