@@ -9,7 +9,7 @@ body {
 
 .heading {
     display: flex;
-    background-image: linear-gradient(270deg, rgba(255, 127, 80, 0.40) 0%, rgba(183, 150, 114, 0.40) 47.92%, rgba(76, 185, 165, 0.40) 101.08%), url(image/fav-recipe-background.png);
+    background-image: linear-gradient(270deg, rgba(255, 127, 80, 0.40) 0%, rgba(183, 150, 114, 0.40) 47.92%, rgba(76, 185, 165, 0.40) 101.08%), url(../img/fav-recipe-background.png);
     background-size: cover;
     width: 100%;
     height: 364px;
