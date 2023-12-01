@@ -6,7 +6,7 @@ body {
     font-family: Arial, sans-serif;
     display: flex;
     align-items: center;
-    background-image: url(fond.png);
+    background-image: url(../img/register-background.png);
     background-repeat: no-repeat;
     background-position:center;
     height: 100vh; /* Make sure the body covers the full height of the viewport */
@@ -122,7 +122,7 @@ a {
     
     body {
         justify-content: center;
-        background-image: url("b0c902b74581d85e5274459d49a2acc8.jpg");
+        background-image: url("../img/register-background-phone.jpg");
     }
 }
 
