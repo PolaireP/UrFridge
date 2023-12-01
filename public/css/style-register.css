@@ -1,0 +1,137 @@
+
+/* import Police Inter*/
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    align-items: center;
+    background-image: url(fond.png);
+    background-repeat: no-repeat;
+    background-position:center;
+    height: 100vh; /* Make sure the body covers the full height of the viewport */
+    margin: 0; /* Remove default margin */
+}
+
+form {
+    display: flex;
+    box-sizing: border-box;
+    max-width: 100%;
+    height: 582px;
+    margin: 50px auto;
+    padding: 20px;
+    border-radius: 31px;
+    border:solid #4cb9a500;
+    border-width: 4px; 
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background: linear-gradient(#fff,#fff) padding-box,
+    linear-gradient(0deg, #FF7F50CC 0%, #4CB9A5 100%) border-box;
+    font-family: 'Inter', sans-serif;
+    justify-content: space-between;
+}
+
+h2 {
+    color: #4CB9A5;
+    font-size: 23px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal; 
+    text-align: center;
+}
+
+input {
+    width: 100%;
+    height: 47px;
+    padding: 8px;
+    margin-bottom: 15px;
+    border-radius: 22px;
+    box-sizing: border-box;
+    color: white;
+    background: rgba(255, 127, 80, 0.80);
+    box-shadow: 0px 2px 4px 1px #D9D9D9; 
+    border-style: hidden;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 700;
+
+    display: flex;
+    justify-content: space-around; 
+}
+
+input::placeholder {
+    color: white; /* Couleur du texte du placeholder */
+  }
+
+button[type=submit] {
+    height: 74px;
+    width: 230px;
+    background-color: #4CB9A5;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    box-shadow: 0px 2px 4px 1px #7DC2B5; 
+}
+
+button:hover {
+    background-color: rgb(46, 167, 145)
+}
+
+.registerName {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+a {
+    padding-bottom: 15px;
+    color: #FF7F50CC;
+}
+
+.separation {
+    display: flex;
+    width: 5px;
+}
+
+.divFormulaire {
+    display: flex;
+    align-items: center;
+    width: 60%;
+    height: 100%;
+}
+
+.divImage {
+    display: flex;
+    flex: 1;
+    background-position: center;
+    background-size: contain;
+}
+
+
+@media only screen and (max-width: 768px) {
+    
+    body {
+        justify-content: center;
+        background-image: url("b0c902b74581d85e5274459d49a2acc8.jpg");
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    button[type=submit] {
+        width: 100%;
+    }
+
+    .registerName {
+        flex-direction: column;
+    }
+}
