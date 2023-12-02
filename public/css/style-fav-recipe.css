@@ -1,0 +1,353 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    padding: 0px;
+    margin: 0px;
+    justify-content: center;
+}
+
+.heading {
+    display: flex;
+    background-image: linear-gradient(270deg, rgba(255, 127, 80, 0.40) 0%, rgba(183, 150, 114, 0.40) 47.92%, rgba(76, 185, 165, 0.40) 101.08%), url(../img/fav-recipe-background.png);
+    background-size: cover;
+    width: 100%;
+    height: 364px;
+    align-items: center;
+    justify-content: center;
+    color: #FFF;
+    text-align: center;
+    font-size: 70px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal; 
+    
+}
+
+.search-box {
+    display: flex;
+    margin-top: 50px;
+    border:solid #4cb9a500;
+    background: linear-gradient(#fff,#fff) padding-box,
+        linear-gradient(90deg,#4CB9A594, #42BA40A7, #FF7F50BD) border-box;
+    border-radius: 45px;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    transition: 0.8s;
+    width: 60%;
+    align-self: center;
+    max-width: 100%;
+  }
+
+.search-box .input {
+    display: flex;
+    flex: 1;
+    border: solid;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-weight: 500;
+    font-size: 25px;
+    transition: 0.8s;
+    align-items: flex-end;
+    max-width: 100%;
+  }
+
+.search-button {
+    display: flex;
+    background: transparent;
+    border: transparent;
+    align-items:flex-end;
+    cursor: pointer;
+    border-radius: 50px;
+    max-width: 100%;
+}
+
+.search-button:hover {
+    background-color: #f7f7f7;
+}
+
+.recipes-list {
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: space-around;
+    padding: 5%;
+    gap: 50px;
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+.recipes-img img {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    display: block;
+}
+
+.recipes-desc {
+    background-color: #FFF;
+    border-radius: 15px;
+    margin-top: 2%;
+}
+
+.recipes-details {
+    display: flex;
+    justify-content: space-between;
+    padding: 2%;
+    
+}
+
+.recipes-time {
+    display: flex;
+    color: #848484; 
+}
+
+.recipes-step {
+    display: flex;
+    color: #848484; 
+}
+
+.button {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    padding-bottom: 5px;
+}
+
+.add-to-fridge-button:hover {
+    background-color: rgb(46, 167, 145)
+}
+
+.recipes-1 {
+    padding: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    border-radius: 15px;
+    padding-bottom: 5px;
+    background-color: rgb(241, 241, 241);
+    box-shadow: 0px 1px 4px 2px #FF7F50; 
+    flex-wrap: nowrap;
+    box-sizing: border-box;
+}
+
+.recipes-title-1 {
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 550;
+    line-height: normal; 
+    color: #FF7F50;
+}
+
+.recipes-author-1 {
+    height: 70px;
+    color: #B94014;
+}
+
+.add-to-fridge-button-1 {
+    background: #FF7F50; 
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 22px;
+    cursor: pointer;
+    box-shadow: 0px 2px 4px 1px #7DC2B5; 
+    width: 70%;
+    height: 45px; 
+
+}
+
+.add-to-fridge-button-1:hover {
+    background: #e27047; 
+}
+
+
+.recipes-2 {
+    padding: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    border-radius: 15px;
+    padding-bottom: 5px;
+    background-color: rgb(241, 241, 241);
+    box-shadow: 0px 1px 4px 2px #42BA40;
+    flex-wrap: nowrap;
+    box-sizing: border-box;
+}
+
+.recipes-title-2 {
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 550;
+    line-height: normal; 
+    color: #42BA40;;
+}
+
+.recipes-author-2 {
+    height: 70px;
+    color: #B94014;
+}
+
+.add-to-fridge-button-2 {
+    background: #42BA40; 
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 22px;
+    cursor: pointer;
+    box-shadow: 0px 2px 4px 1px #7DC2B5; 
+    width: 70%;
+    height: 45px; 
+
+}
+
+.add-to-fridge-button-2:hover {
+    background: #39a138;  
+}
+
+
+.recipes-3 {
+    padding: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    border-radius: 15px;
+    padding-bottom: 5px;
+    background-color: rgb(241, 241, 241);
+    box-shadow: 0px 1px 4px 2px #93DFD1; 
+    flex-wrap: nowrap;
+    box-sizing: border-box;
+}
+
+.recipes-title-3 {
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 550;
+    line-height: normal; 
+    color: #3C9A89; 
+}
+
+.recipes-author-3 {
+    height: 70px;
+    color: #2A6F62; 
+}
+
+.add-to-fridge-button-3 {
+    background: #68DCC7; 
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 22px;
+    cursor: pointer;
+    box-shadow: 0px 2px 4px 1px #7DC2B5; 
+    width: 70%;
+    height: 45px; 
+}
+
+.add-to-fridge-button-3:hover {
+    background: #5fc9b5; 
+}
+
+@media only screen and (max-width: 768px) {
+    .heading {
+        font-size: 50px;
+    }
+
+    .search-box {
+        width: 80%;
+    }
+
+    .recipes-list {
+        padding: 2%;
+        gap: 20px;
+    }
+
+    .recipes-img img {
+        margin-bottom: 5px;
+    }
+
+    .recipes-title-1,
+    .recipes-title-2,
+    .recipes-title-3 {
+        font-size: 20px;
+    }
+
+    .recipes-author-1,
+    .recipes-author-2,
+    .recipes-author-3 {
+        height: 50px;
+    }
+
+    .add-to-fridge-button {
+        width: 80%;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .heading {
+        font-size: 40px;
+    }
+
+    .search-box {
+        width: 80%;
+        margin-bottom: 10px;
+    }
+
+    .recipes-list {
+        display: flex;
+        justify-content: space-around;
+        padding: 5%;
+        align-self: center;
+        width: 100%;
+        margin-bottom: 10px;
+        min-height: 100%;
+    }
+
+    .recipes-title-1,
+    .recipes-title-2,
+    .recipes-title-3 {
+        font-size: 18px;
+    }
+
+    .recipes-author-1,
+    .recipes-author-2,
+    .recipes-author-3 {
+        height: 40px;
+    }
+
+    .add-to-fridge-button {
+        width: 90%;
+    }
+
+    
+    .recipes-img img {
+        max-width: 100%;
+        height: auto;
+        display: block;
+    }
+    .recipes-img {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .recipes-1,
+    .recipes-2,
+    .recipes-3 {
+        width: 100%;
+        max-width: 100vw; /* Utilisation de la largeur de la fenêtre visible */
+        box-sizing: border-box;
+        margin-bottom: 10px;
+        overflow-x: auto; /* Ajout du débordement horizontal automatique */
+    }
+
+    .search-box .input {
+        width: 95%;
+    }
+}
+
+
+
+
