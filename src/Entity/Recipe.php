@@ -182,16 +182,9 @@ class Recipe
         return $this;
     }
 
-    public function getInventories(): ?inventory
+    public function getInventories(): ArrayCollection|Collection
     {
         return $this->inventories;
-    }
-
-    public function setInventories(?inventory $inventories): static
-    {
-        $this->inventories = $inventories;
-
-        return $this;
     }
 
     /**
