@@ -24,13 +24,13 @@ class User
     private ?string $firstname = null;
 
     #[ORM\Column(type: Types::BLOB, nullable: true)]
-    private $password = null;
+    private $password;
 
     #[ORM\Column(length: 50, nullable: true)]
     private ?string $email = null;
 
     #[ORM\Column(type: Types::BLOB, nullable: true)]
-    private $avatar = null;
+    private $avatar;
 
     #[ORM\OneToOne(inversedBy: 'owner', cascade: ['persist', 'remove'])]
     #[ORM\JoinColumn(nullable: false)]
