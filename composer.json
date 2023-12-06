@@ -78,7 +78,27 @@
         ],
         "post-update-cmd": [
             "@auto-scripts"
+        ],
+        "start": [
+            "Composer\\Config::disableProcessTimeout",
+            "symfony serve"
+        ],
+        "fix:cs": [
+            "php-cs-fixer fix"
+        ],
+        "test:cs" : [
+            "php-cs-fixer fix --dry-run"
+        ],
+        "test": [
+            "@test:cs",
+            "@test:codeception"
         ]
+    },
+    "scripts-descriptions": {
+        "start": "lancement du serveur web local",
+        "fix:cs": "correction du code",
+        "test:cs": "vérification du code",
+        "test" : "lancement de tout les tests"
     },
     "conflict": {
         "symfony/symfony": "*"
