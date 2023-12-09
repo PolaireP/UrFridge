@@ -17,6 +17,5 @@ class CategoryFixtures extends Fixture
             CategoryFactory::createOne($category);
         }
 
-        $manager->flush();
     }
 }
