@@ -1,0 +1,152 @@
+[
+  {
+    "id": "1",
+    "equipmentName": "cuillère à café",
+    "equipmentLink": "https://www.amazon.fr/Amefa-Baltics-12-cuill%C3%A8res-caf%C3%A9/dp/B09SZJVJ8D/ref=sr_1_6?c=ts&keywords=Cuill%C3%A8res%2B%C3%A0%2Bcaf%C3%A9&qid=1702135818&s=kitchen&sr=1-6&ts_id=3137971031&th=1"
+  },
+  {
+    "id": "2",
+    "equipmentName": "cuillière à soupe",
+    "equipmentLink": "https://www.amazon.fr/AmazonBasics-Service-Cuill%C3%A8res-Inoxydable-Arrondi/dp/B0736THH7G/ref=sr_1_4?__mk_fr_FR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=JTBELRFVULMB&keywords=Cuill%C3%A8re+%C3%A0+soupe&qid=1702135999&s=kitchen&sprefix=cuill%C3%A8re+%C3%A0+soupe%2Ckitchen%2C68&sr=1-4",
+  },
+  {
+    "id": "3",
+    "equipmentName": "couteau",
+    "equipmentLink": "https://www.amazon.fr/Denkich-Couteaux-Inoxydable-Ensemble-Professionnels/dp/B07XBQCZC6/ref=sr_1_7?crid=3KGSKLN75ODJ9&keywords=couteau+cuisine&qid=1702136037&s=kitchen&sprefix=couteau+%2Ckitchen%2C225&sr=1-7"
+  },
+  {
+    "id": "4",
+    "equipmentName": "fourchette",
+    "equipmentLink": "https://www.amazon.fr/AmazonBasics-Service-fourchettes-inoxydable-arrondi/dp/B0736W5XNB/ref=sr_1_4?__mk_fr_FR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=C28AEB08EY1O&keywords=fourchette&qid=1702136083&s=kitchen&sprefix=fourchette%2Ckitchen%2C90&sr=1-4"
+  },
+  {
+    "id": "5",
+    "equipmentName": "louche",
+    "equipmentLink": "https://www.amazon.fr/Stanley-Rogers-inoxydable-Accessoires-lave-vaisselle/dp/B075ZXKCSQ/ref=sr_1_1_sspa?__mk_fr_FR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=1JQWWOQDEEK8W&keywords=louche&qid=1702141032&s=kitchen&sprefix=louche%2Ckitchen%2C117&sr=1-1-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&th=1"
+  },
+  {
+    "id": "6",
+    "equipmentName": "spatule",
+    "equipmentLink": "https://www.amazon.fr/Spatule-silicone-r%C3%A9sistante-Ustensiles-antiadh%C3%A9sifs/dp/B0C27VDMPY/ref=sr_1_8?__mk_fr_FR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=1B27ZCWQK7N1X&keywords=spatule%2Bcuisine&qid=1702141056&s=kitchen&sprefix=spatule%2Bcuis%2Ckitchen%2C240&sr=1-8&th=1"
+  },
+  {
+    "id": "7",
+    "equipmentName": "casserole",
+    "equipmentLink": "https://www.amazon.fr/Tefal-confort-maximum-casseroles-inox/dp/B00UOIZ8VY/ref=sr_1_2_sspa?__mk_fr_FR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=MQP0A6RGMSEX&keywords=casserole&qid=1702141080&s=kitchen&sprefix=casserole%2Ckitchen%2C100&sr=1-2-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&th=1"
+  },
+  {
+    "id": "8",
+    "equipmentName": "poêle",
+    "equipmentLink": "https://www.amazon.fr/Antiadh%C3%A9sive-Casseroles-Rev%C3%AAtement-Omelette-Casseroles/dp/B087JDZ6DS/ref=sr_1_7?__mk_fr_FR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=1ZZJU696V9HTH&keywords=po%C3%ABle&qid=1702141103&s=kitchen&sprefix=po%C3%ABle%2Ckitchen%2C79&sr=1-7&th=1"
+  },
+  {
+    "id": "9",
+    "equipmentName": "économe",
+    "equipmentLink": "https://www.amazon.fr/Redamancy-%C3%89plucheur-Universel-Professionnel-Ergonomique/dp/B0C539YL5M/ref=sr_1_1_sspa?__mk_fr_FR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=2U2Q40GW0NP8K&keywords=%C3%A9conome&qid=1702141152&s=kitchen&sprefix=%C3%A9conome%2Ckitchen%2C78&sr=1-1-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&psc=1"
+  },
+  {
+    "id": "10",
+    "equipmentName": "planche à découper",
+    "equipmentLink": "https://www.amazon.fr/BOIS-PLANCHE-DECOUPER-BAMBOU-FILMEE/dp/B0CF5PZ5VX/ref=sr_1_7?__mk_fr_FR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=1JS3SP7AHD1KO&keywords=planche%2B%C3%A0%2Bd%C3%A9couper&qid=1702141176&s=kitchen&sprefix=planche%2B%C3%A0%2Bd%C3%A9couper%2Ckitchen%2C82&sr=1-7&th=1"
+  },
+  {
+    "id": "11",
+    "equipmentName": "ciseaux",
+    "equipmentLink": "https://www.amazon.fr/KitchenCraft-KCSCISSORMP-Ciseaux-Multi-Usage-Inoxydable/dp/B0001IWX7E/ref=sr_1_4?crid=1R0Z4DHR6A6AN&keywords=ciseaux+cuisine&qid=1702141206&s=kitchen&sprefix=cisea%2Ckitchen%2C88&sr=1-4"
+  },
+  {
+    "id": "12",
+    "equipmentName": "râpe",
+    "equipmentLink": "https://www.amazon.fr/Lantana-trancheuse-essentielles-%C3%89mulsionner-Drap-housse/dp/B07JNDCG3K/ref=sr_1_1_sspa?__mk_fr_FR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=14W2DFQXXREX2&keywords=r%C3%A2pe&qid=1702141232&s=kitchen&sprefix=r%C3%A2%2Ckitchen%2C224&sr=1-1-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&psc=1",
+  },
+  {
+    "id": "13",
+    "equipmentName": "fouet",
+    "equipmentLink": "https://www.amazon.fr/Tefal-K1181714-Ingenio-Fouet-Inoxydable/dp/B06XDN3KPG/ref=sr_1_4?__mk_fr_FR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=1DO5WB2XZ22NA&keywords=fouet&qid=1702141257&s=kitchen&sprefix=fouet%2Ckitchen%2C86&sr=1-4"
+  },
+  {
+    "id": "14",
+    "equipmentName": "mixeur",
+    "equipmentLink": "https://www.amazon.fr/Moulinex-bouteilles-emporter-amovibles-LM15FD10/dp/B09RQS5BND/ref=sr_1_14?__mk_fr_FR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=E82CX3XGOLOB&keywords=mixeur&qid=1702141275&s=kitchen&sprefix=mixeur%2Ckitchen%2C87&sr=1-14"
+  },
+  {
+    "id": "15",
+    "equipmentName": "four",
+    "equipmentLink": "https://www.amazon.fr/KLARSTEIN-VaporChef-encastrable-r%C3%A9servoir-commande/dp/B09928DQ3G/ref=sr_1_1_sspa?__mk_fr_FR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=3ES1S9WJY3L0E&keywords=four&qid=1702141327&s=kitchen&sprefix=four%2Ckitchen%2C95&sr=1-1-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&th=1"
+  },
+  {
+    "id": "16",
+    "equipmentName": "pelle à tarte",
+    "equipmentLink": "https://www.amazon.fr/Gr%C3%A4we-Pelle-tarte-K%C3%B6nigstein-inoxydable/dp/B00CZA5BX4/ref=sr_1_5?__mk_fr_FR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=1H8CY5MAYXDEQ&keywords=pelle+%C3%A0+tarte&qid=1702141466&s=kitchen&sprefix=pelle+%C3%A0+tarte%2Ckitchen%2C127&sr=1-5"
+  },
+  {
+    "id": "17",
+    "equipmentName": "passoire",
+    "equipmentLink": "https://www.amazon.fr/Tefal-K2070614-Plastique-ustensile-bisph%C3%A9nol/dp/B00WULCPAK/ref=sr_1_18?__mk_fr_FR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=180K3HTKHTBIL&keywords=passoire%2Bplastique&qid=1702141512&s=kitchen&sprefix=passoire%2Bplastique%2Ckitchen%2C751&sr=1-18&th=1"
+  },
+  {
+    "id": "18",
+    "equipmentName": "saladier",
+    "equipmentLink": "https://www.amazon.fr/Omada-Sanaliving-Microban-Antibact%C3%A9rien-Capacit%C3%A9/dp/B00JWQYURW/ref=sr_1_27_sspa?__mk_fr_FR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=1M4TUJ2GKQJTI&keywords=saladier&qid=1702141553&s=kitchen&sprefix=saladie%2Ckitchen%2C84&sr=1-27-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9tdGY&th=1"
+  },
+  {
+    "id": "19",
+    "equipmentName": "verre doseur",
+    "equipmentLink": "https://www.amazon.fr/Verre-Doseur-Double-Plastique-Transparent/dp/B08RXLF3V3/ref=sr_1_2_sspa?__mk_fr_FR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=9MGFC41ZQJ3Y&keywords=verre+doseur&qid=1702141591&s=kitchen&sprefix=verre+doseur%2Ckitchen%2C86&sr=1-2-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&psc=1"
+  },
+  {
+    "id": "20",
+    "equipmentName": "balance",
+    "equipmentLink": "https://www.amazon.fr/num%C3%A9rique-%C3%A9lectronique-inoxydable-ultra-mince-%C3%A9l%C3%A9gante/dp/B08G1845CK/ref=sr_1_3?crid=2PBO4EDRASLW6&keywords=balance+de+cuisine&qid=1702141618&s=kitchen&sprefix=balance%2Ckitchen%2C149&sr=1-3"
+  },
+  {
+    "id": "21",
+    "equipmentName": "rouleau à pâtisserie",
+    "equipmentLink": "https://www.amazon.fr/Chinchilla%C2%AE-Rouleau-p%C3%A2tisserie-fabriqu%C3%A9-Allemagne/dp/B0BPM4J225/ref=sr_1_4?crid=1IEIIMVM0AQVG&keywords=rouleau+%C3%A0+patisserie&qid=1702141645&s=kitchen&sprefix=rouleau+%C3%A0+pati%2Ckitchen%2C84&sr=1-4"
+  },
+  {
+    "id": "22",
+    "equipmentName": "moule à tarte",
+    "equipmentLink": "https://www.amazon.fr/FORMEGOLOSE-double-couche-danti-adh%C3%A9rent-couleur/dp/B07W83TLFJ/ref=sr_1_5?__mk_fr_FR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=GC26E33VHBG&keywords=moule%2B%C3%A0%2Btarte&qid=1702141664&s=kitchen&sprefix=moule%2B%C3%A0%2Btarte%2Ckitchen%2C102&sr=1-5&th=1"
+  },
+  {
+    "id": "23",
+    "equipmentName": "gaufrier",
+    "equipmentLink": "https://www.amazon.fr/Russell-Hobbs-Multifonction-antiadh%C3%A9sives-26810-56/dp/B0CBV9TF83/ref=sr_1_2_sspa?__mk_fr_FR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=38NGVXL1ZP9X2&keywords=gaufrier&qid=1702141694&s=kitchen&sprefix=gaufrier%2Ckitchen%2C85&sr=1-2-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&psc=1"
+  },
+  {
+    "id": "24",
+    "equipmentName": "emporte-pièce",
+    "equipmentLink": "https://www.amazon.fr/Amazon-Basics-emporte-pi%C3%A8ces-biscuits-argent%C3%A9/dp/B07GJVWHD4/ref=sr_1_1_ffob_sspa?crid=H0PUQNEAZ5UC&keywords=emporte+piece&qid=1702141729&s=kitchen&sprefix=empor%2Ckitchen%2C82&sr=1-1-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&psc=1"
+  },
+  {
+    "id": "25",
+    "equipmentName": "presse-agrume",
+    "equipmentLink": "https://www.amazon.fr/Braun-CJ3000-Presse-Agrumes-liters/dp/B00IYIETIE/ref=sr_1_3?crid=22LZSTOR57JRP&keywords=presse+agrumes&qid=1702141775&s=kitchen&sprefix=presse%2Ckitchen%2C82&sr=1-3"
+  },
+  {
+    "id": "26",
+    "equipmentName": "casse-noix",
+    "equipmentLink": "https://www.amazon.fr/Atuoxing-Noisettes-Noisette-Alliage-Casse-Noix/dp/B0CJJ86PPG/ref=sr_1_2_sspa?__mk_fr_FR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=2PS131F51I6GI&keywords=casse+noix&qid=1702142078&s=kitchen&sprefix=casse+noix%2Ckitchen%2C80&sr=1-2-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&psc=1"
+  },
+  {
+    "id": "27",
+    "equipmentName": "décapsuleur",
+    "equipmentLink": "https://www.amazon.fr/D%C3%A9capsuleur-bi%C3%A8re-ouvre-bouteille-couteau-hippocampe/dp/B0B3WVYMH7/ref=sr_1_6?__mk_fr_FR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=3DHPXQFIFTEB6&keywords=d%C3%A9capsuleur&qid=1702142099&s=kitchen&sprefix=d%C3%A9capsuleur%2Ckitchen%2C74&sr=1-6"
+  },
+  {
+    "id": "28",
+    "equipmentName": "tourtière",
+    "equipmentLink": "https://www.amazon.fr/Excelsa-Natural-Baking-Moule-transparent/dp/B07KQSV4QD/ref=sr_1_2?__mk_fr_FR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=38AIDWS190F15&keywords=tourti%C3%A8re+en+verre&qid=1702143110&s=kitchen&sprefix=tourti%C3%A8re+en+verr%2Ckitchen%2C277&sr=1-2"
+  },
+  {
+    "id": "29",
+    "equipmentName": "essoreuse à salade",
+    "equipmentLink": "https://www.amazon.fr/Essoreuse-Salade-L%C3%A9gumes-Grande-Capacit%C3%A9/dp/B01IDMDS8C/ref=sr_1_1_sspa?__mk_fr_FR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&keywords=essoreuse+a+salade&qid=1702143131&s=kitchen&sr=1-1-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&psc=1"
+  },
+  {
+    "id": "30",
+    "equipmentName": "poche à douille",
+    "equipmentLink": "https://www.amazon.fr/Homtrix-Set-poches-douille-r%C3%A9utilisables/dp/B08JKWL4GM/ref=sr_1_1_sspa?__mk_fr_FR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=6W4LRQY58GPP&keywords=poche+%C3%A0+douille&qid=1702143144&s=kitchen&sprefix=poche+%C3%A0+douille%2Ckitchen%2C81&sr=1-1-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&psc=1"
+  }
+]
