@@ -1,0 +1,72 @@
+[
+  {
+    "id" : "1",
+    "allergenName" : "Gluten",
+    "allergenDescription" : "Céréales contenant du gluten et tous les produits à base de ces céréales (avoine, blé, épeautre, orge...)"
+  },
+  {
+    "id" : "2",
+    "allergenName" : "Crustacés",
+    "allergenDescription" : "Crustacés et tous les produits contenant des crustacés"
+  },
+  {
+    "id" : "3",
+    "allergenName" : "Oeufs",
+    "allergenDescription" : "Oeufs et tous les produits contenant des oeufs"
+  },
+  {
+    "id" : "4",
+    "allergenName" : "Poissons",
+    "allergenDescription" : "Poissons et tous les produits contenant du poisson"
+  },
+  {
+    "id" : "5",
+    "allergenName" : "Arachides",
+    "allergenDescription" : "Arachides et tous les produits contenant des arachides"
+  },
+  {
+    "id" : "6",
+    "allergenName" : "Soja",
+    "allergenDescription" : "Soja et tous les produits contenant du soja"
+  },
+  {
+    "id" : "7",
+    "allergenName" : "Fruits à coque",
+    "allergenDescription" : "Fruits à coque et tous les produits contenant ces fruits"
+  },
+  {
+    "id" : "8",
+    "allergenName" : "Lait",
+    "allergenDescription" : "Lait et tous les produits contenant du lait"
+  },
+  {
+    "id" : "9",
+    "allergenName" : "Céléri",
+    "allergenDescription" : "Céléri et tous les produits à base de céléri"
+  },
+  {
+    "id" : "10",
+    "allergenName" : "Moutard",
+    "allergenDescription" : "Moutarde et tous les produits contenant de la moutarde"
+  },
+  {
+    "id" : "11",
+    "allergenName" : "Graines de sésame",
+    "allergenDescription" : "Graines de sésame et produits à base de graines de sésame"
+  },
+  {
+    "id" : "12",
+    "allergenName" : "Anhydride sulfureux et sulfites",
+    "allergenDescription" : "Tous les produits contenant des traces de ces composants"
+  },
+  {
+    "id" : "13",
+    "allergenName" : "Lupin",
+    "allergenDescription" : "Lupin et tous les produits à base de lupin"
+  },
+  {
+    "id" : "14",
+    "allergenName" : "Mollusques",
+    "allergenDescription" : "Mollusques et produits à base de mollusques"
+  }
+]
