@@ -46,8 +46,27 @@ final class IngredientTypeFactory extends ModelFactory
      */
     protected function getDefaults(): array
     {
+
+        $ingredientTypeNames = [
+            'Fruits et légumes',
+            'Produits céréaliers',
+            'Viandes et substituts',
+            'Produits laitiers',
+            'Œufs et substituts',
+            'Produits de la mer',
+            'Herbes et épices',
+            'Huiles et matières grasses',
+            'Condiments et sauces',
+            'Sucres et édulcorants',
+            'Fruits à coque et graines',
+            'Liquides',
+            'Produits de boulangerie',
+            'Produits en conserve',
+            'Produits fermentés',
+        ];
+
         return [
-            'ingredientTpName' => self::faker()->text(50),
+            'ingredientTpName' => self::faker()->randomElement($ingredientTypeNames),
         ];
     }
 
