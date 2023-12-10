@@ -92,13 +92,17 @@
         "test": [
             "@test:cs",
             "@test:codeception"
+        ],
+        "db": [
+            "php bin/console doctrine:migrations:migrate --no-interaction"
         ]
     },
     "scripts-descriptions": {
         "start": "lancement du serveur web local",
         "fix:cs": "correction du code",
         "test:cs": "vérification du code",
-        "test" : "lancement de tout les tests"
+        "test" : "lancement de tout les tests",
+        "db": "permet de mettre à jour la base de données"
     },
     "conflict": {
         "symfony/symfony": "*"
@@ -119,6 +123,7 @@
         "symfony/maker-bundle": "^1.52",
         "symfony/phpunit-bridge": "^6.3",
         "symfony/stopwatch": "6.3.*",
-        "symfony/web-profiler-bundle": "6.3.*"
+        "symfony/web-profiler-bundle": "6.3.*",
+        "zenstruck/foundry": "^1.36"
     }
 }
