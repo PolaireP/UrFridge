@@ -1,38 +1,38 @@
 [
   {
-    "name": "Légumes"
+    "ingredientTpName": "Légumes"
   },
   {
-    "name": "Fruits"
+    "ingredientTpName": "Fruits"
   },
   {
-    "name": "Viandes"
+    "ingredientTpName": "Viandes"
   },
   {
-    "name": "Poissons et fruits de mer"
+    "ingredientTpName": "Poissons et fruits de mer"
   },
   {
-    "name": "Produits laitiers"
+    "ingredientTpName": "Produits laitiers"
   },
   {
-    "name": "Céréales et grains"
+    "ingredientTpName": "Céréales et grains"
   },
   {
-    "name": "Légumineuses"
+    "ingredientTpName": "Légumineuses"
   },
   {
-    "name": "Épices et assaisonnements"
+    "ingredientTpName": "Épices et assaisonnements"
   },
   {
-    "name": "Huiles et vinaigres"
+    "ingredientTpName": "Huiles et vinaigres"
   },
   {
-    "name": "Produits de boulangerie"
+    "ingredientTpName": "Produits de boulangerie"
   },
   {
-    "name": "Condiments"
+    "ingredientTpName": "Condiments"
   },
   {
-    "name": "Produits sucrés"
+    "ingredientTpName": "Produits sucrés"
   }
 ]
