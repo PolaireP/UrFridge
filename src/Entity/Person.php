@@ -9,7 +9,7 @@ use Doctrine\DBAL\Types\Types;
 use Doctrine\ORM\Mapping as ORM;
 
 #[ORM\Entity(repositoryClass: PersonRepository::class)]
-#[ORM\Table(name: '`user`')]
+#[ORM\Table(name: '`person`')]
 class Person
 {
     #[ORM\Id]
@@ -23,8 +23,8 @@ class Person
     #[ORM\Column(length: 50, nullable: true)]
     private ?string $firstname = null;
 
-    #[ORM\Column(type: Types::BLOB, nullable: true)]
-    private $password;
+    #[ORM\Column(length: 128, nullable: true)]
+    private ?string $password;
 
     #[ORM\Column(length: 50, nullable: true)]
     private ?string $email = null;

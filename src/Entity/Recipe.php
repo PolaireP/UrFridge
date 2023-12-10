@@ -31,7 +31,7 @@ class Recipe
     #[ORM\OneToMany(mappedBy: 'recipe', targetEntity: Comment::class, orphanRemoval: true)]
     private Collection $comments;
 
-    #[ORM\ManyToMany(targetEntity: person::class, inversedBy: 'favorites')]
+    #[ORM\ManyToMany(targetEntity: Person::class, inversedBy: 'favorites')]
     private Collection $follower;
 
     #[ORM\ManyToMany(targetEntity: Equipment::class, mappedBy: 'recipes')]
