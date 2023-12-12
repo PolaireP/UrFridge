@@ -19,7 +19,7 @@ class Comment
 
     #[ORM\ManyToOne(inversedBy: 'comments')]
     #[ORM\JoinColumn(nullable: false)]
-    private ?user $writer = null;
+    private ?person $writer = null;
 
     #[ORM\ManyToOne(inversedBy: 'comments')]
     #[ORM\JoinColumn(nullable: false)]
@@ -42,12 +42,12 @@ class Comment
         return $this;
     }
 
-    public function getWriter(): ?user
+    public function getWriter(): ?person
     {
         return $this->writer;
     }
 
-    public function setWriter(?user $writer): static
+    public function setWriter(?person $writer): static
     {
         $this->writer = $writer;
 
