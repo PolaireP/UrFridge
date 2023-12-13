@@ -47,25 +47,8 @@ final class IngredientFactory extends ModelFactory
     protected function getDefaults(): array
     {
         return [
-            'avgUnitWeight' => self::faker()->randomFloat(),
-            'countable' => self::faker()->boolean(),
-            'ingredientName' => self::faker()->text(50),
             'kgPrice' => self::faker()->randomFloat(),
         ];
-
-        /*
-        $isLiquid = self::faker()->boolean(); // Randomly determine if it's a liquid
-
-        $defaults = [
-            'avgUnitWeight' => $isLiquid ? null : self::faker()->randomFloat(),
-            'avgUnitVolume' => $isLiquid ? self::faker()->randomFloat() : null,
-            'countable' => self::faker()->boolean(),
-            'ingredientName' => self::faker()->text(50),
-            'kgPrice' => self::faker()->randomFloat(),
-        ];
-
-        return $defaults;
-        */
     }
 
     /**
