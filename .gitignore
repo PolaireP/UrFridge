@@ -6,7 +6,6 @@
 # Datasource local storage ignored files
 /dataSources/
 /dataSources.local.xml
-/.idea
 /var/
 /public/bundles/
 /config/secrets/prod/prod.decrypt.private.php
@@ -21,3 +20,8 @@
 /.env.local
 /.env.local.php
 /.env.*.local
+
+###> friendsofphp/php-cs-fixer ###
+/.php-cs-fixer.php
+/.php-cs-fixer.cache
+###< friendsofphp/php-cs-fixer ###

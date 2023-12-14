@@ -31,7 +31,7 @@ class Recipe
     #[ORM\OneToMany(mappedBy: 'recipe', targetEntity: Comment::class, orphanRemoval: true)]
     private Collection $comments;
 
-    #[ORM\ManyToMany(targetEntity: user::class, inversedBy: 'favorites')]
+    #[ORM\ManyToMany(targetEntity: Person::class, inversedBy: 'favorites')]
     private Collection $follower;
 
     #[ORM\ManyToMany(targetEntity: Equipment::class, mappedBy: 'recipes')]
@@ -159,14 +159,14 @@ class Recipe
     }
 
     /**
-     * @return Collection<int, user>
+     * @return Collection<int, person>
      */
     public function getFollower(): Collection
     {
         return $this->follower;
     }
 
-    public function addFollower(user $follower): static
+    public function addFollower(person $follower): static
     {
         if (!$this->follower->contains($follower)) {
             $this->follower->add($follower);
@@ -175,7 +175,7 @@ class Recipe
         return $this;
     }
 
-    public function removeFollower(user $follower): static
+    public function removeFollower(person $follower): static
     {
         $this->follower->removeElement($follower);
 

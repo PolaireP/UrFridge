@@ -16,7 +16,7 @@ class Inventory
     private ?int $id = null;
 
     #[ORM\OneToOne(mappedBy: 'inventory', cascade: ['persist', 'remove'])]
-    private ?user $owner = null;
+    private ?person $owner = null;
 
     #[ORM\OneToMany(mappedBy: 'inventory', targetEntity: Quantity::class, orphanRemoval: true)]
     private Collection $quantities;
@@ -47,12 +47,12 @@ class Inventory
         return $this;
     }
 
-    public function getOwner(): ?user
+    public function getOwner(): ?person
     {
         return $this->owner;
     }
 
-    public function setOwner(user $owner): static
+    public function setOwner(person $owner): static
     {
         $this->owner = $owner;
 
