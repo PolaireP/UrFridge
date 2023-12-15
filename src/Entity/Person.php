@@ -2,15 +2,15 @@
 
 namespace App\Entity;
 
-use App\Repository\UserRepository;
+use App\Repository\PersonRepository;
 use Doctrine\Common\Collections\ArrayCollection;
 use Doctrine\Common\Collections\Collection;
 use Doctrine\DBAL\Types\Types;
 use Doctrine\ORM\Mapping as ORM;
 
-#[ORM\Entity(repositoryClass: UserRepository::class)]
-#[ORM\Table(name: '`user`')]
-class User
+#[ORM\Entity(repositoryClass: PersonRepository::class)]
+#[ORM\Table(name: '`person`')]
+class Person
 {
     #[ORM\Id]
     #[ORM\GeneratedValue]
@@ -23,14 +23,14 @@ class User
     #[ORM\Column(length: 50, nullable: true)]
     private ?string $firstname = null;
 
-    #[ORM\Column(type: Types::BLOB, nullable: true)]
-    private $password = null;
+    #[ORM\Column(length: 128, nullable: true)]
+    private ?string $password;
 
     #[ORM\Column(length: 50, nullable: true)]
     private ?string $email = null;
 
     #[ORM\Column(type: Types::BLOB, nullable: true)]
-    private $avatar = null;
+    private $avatar;
 
     #[ORM\OneToOne(inversedBy: 'owner', cascade: ['persist', 'remove'])]
     #[ORM\JoinColumn(nullable: false)]
