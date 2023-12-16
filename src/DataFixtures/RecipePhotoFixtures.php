@@ -20,7 +20,5 @@ class RecipePhotoFixtures extends Fixture
         }
 
         $factory = RecipePhotoFactory::createSequence($sequence);
-
-        $manager->flush();
     }
 }
