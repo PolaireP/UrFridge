@@ -37,11 +37,12 @@ body {
 
 .header-nav-hamburger {
     display: flex;
-    max-height: 0;
+    height: 0;
     background-color: #4CB9A5;
     flex-direction: column;
     overflow: hidden;
     transition: 0.2s;
+    padding: 0 15px;
 }
 
 .header-navlink-hamburger {
@@ -56,6 +57,16 @@ body {
     padding: 5px 10px;
     margin: 4px 0;
     align-self: center;
+    width: 100%;
+}
+
+.header-navlink-hamburger:hover {
+    color: #FF6026;
+    transition: 0.2s;
+}
+
+.header-navlink-hamburger:last-child {
+    margin-bottom: 8px;
 }
 
 .header-navlink, .header-navlink-icon {
@@ -189,6 +200,11 @@ body {
         width: fit-content;
     }
 
+    .footer-nav>*:hover {
+        background-color: #EE8865;
+        transition: 0.1s;
+    }
+
     .footer-nav-logo {
         display: none;
     }
@@ -227,5 +243,10 @@ body {
         border-radius: 14px;
         padding: 5px 10px;
         margin: 0 8px;
+    }
+
+    .header-navlink:hover {
+        color: #FF6026;
+        transition: 0.2s;
     }
 }
