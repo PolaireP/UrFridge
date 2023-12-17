@@ -56,14 +56,10 @@ final class PersonFactory extends ModelFactory
 
         $email = $formatted_name.'@'.$domain;
 
-        $phone = self::faker()->phoneNumber();
-
         return [
-            'inventoryId' => null,
             'email' => $email,
             'firstname' => $firstname,
             'lastname' => $lastname,
-            'phone' => $phone,
             'password' => hash('sha512', 'test'),
         ];
     }
