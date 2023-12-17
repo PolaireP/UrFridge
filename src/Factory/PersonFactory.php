@@ -37,6 +37,7 @@ final class PersonFactory extends ModelFactory
     public function __construct()
     {
         parent::__construct();
+        $this->transliterator = transliterator_create('Any-Lower; Latin-ASCII');
     }
 
     /**
@@ -80,5 +81,10 @@ final class PersonFactory extends ModelFactory
     protected static function getClass(): string
     {
         return Person::class;
+    }
+
+    protected function normalizeName(string $str): string
+    {
+        return preg_replace('/\s+/', '-', transliterator_transliterate($this->transliterator, mb_strtolower($str)));
     }
 }
