@@ -7,6 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Nom recette</title>
     <link rel="stylesheet" href="css/style-recipe-page.css">
+    <link rel="preload" href="js/recipe-page.js">
     <link rel="icon" href="img/logo/icon.png" type="image/x-icon">
 </head>
 <body>
@@ -26,7 +27,7 @@
             </article>
         </section>
         <section class="recipe-information-area">
-            <section class="recipe-classifier-area">
+            <section class="recipe-classify-area">
                 <article class="recipe-allergens-area">
                     <h1 class="recipe-allergens-title">Allergènes</h1>
                     <div class="recipe-allergens-list">
@@ -56,76 +57,151 @@
                     </button>
                 </div>
             </article>
+        </section>
+        <section class="recipe-realization-area">
             <article class="recipe-ingredients-area">
                 <h1 class="recipe-ingredients-title">Ingrédients</h1>
-                <div class="recipe-ingredient">
-                    <img class="recipe-ingredient-picture" src="img/tomato.jpg" alt="Image de nom ingrédient">
-                    <article class="recipe-ingredient-informations">
-                        <h1 class="recipe-ingredient-title">Nom ingrédient</h1>
-                        <div class="recipe-ingredient-quantity-area">
-                            <p class="recipe-ingredient-">Quantité : </p>
-                            <p class="recipe-ingredient-quantity">X</p>
-                        </div>
-                    </article>
+                <div class="recipe-ingredients-list">
+                    <div class="recipe-ingredient">
+                        <img class="recipe-ingredient-picture" src="img/tomato.jpg" alt="Image de nom ingrédient">
+                        <article class="recipe-ingredient-informations">
+                            <h1 class="recipe-ingredient-title">Nom ingrédient</h1>
+                            <div class="recipe-ingredient-quantity-area">
+                                <p class="recipe-ingredient-quantity-label">Quantité : </p>
+                                <p class="recipe-ingredient-quantity">X</p>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="recipe-ingredient">
+                        <img class="recipe-ingredient-picture" src="img/tomato.jpg" alt="Image de nom ingrédient">
+                        <article class="recipe-ingredient-informations">
+                            <h1 class="recipe-ingredient-title">Nom ingrédient</h1>
+                            <div class="recipe-ingredient-quantity-area">
+                                <p class="recipe-ingredient-quantity-label">Quantité : </p>
+                                <p class="recipe-ingredient-quantity">X</p>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="recipe-ingredient">
+                        <img class="recipe-ingredient-picture" src="img/tomato.jpg" alt="Image de nom ingrédient">
+                        <article class="recipe-ingredient-informations">
+                            <h1 class="recipe-ingredient-title">Nom ingrédient</h1>
+                            <div class="recipe-ingredient-quantity-area">
+                                <p class="recipe-ingredient-quantity-label">Quantité : </p>
+                                <p class="recipe-ingredient-quantity">X</p>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="recipe-ingredient">
+                        <img class="recipe-ingredient-picture" src="img/tomato.jpg" alt="Image de nom ingrédient">
+                        <article class="recipe-ingredient-informations">
+                            <h1 class="recipe-ingredient-title">Nom ingrédient</h1>
+                            <div class="recipe-ingredient-quantity-area">
+                                <p class="recipe-ingredient-quantity-label">Quantité : </p>
+                                <p class="recipe-ingredient-quantity">X</p>
+                            </div>
+                        </article>
+                    </div>
                 </div>
             </article>
             <article class="recipe-tools-area"></article>
-                <h1 class="recipe-tools-title">Ustensiles</h1>
-                <div class="recipe-tool">
-                    <img class="recipe-tool-picture" src="img/tomato.jpg" alt="Image de nom ustensile">
+            <h1 class="recipe-tools-title">Ustensiles</h1>
+            <div class="recipe-tools-list">
+                <a href="#" class="recipe-tool">
+                    <img class="recipe-tool-picture" src="img/marmite.jpg" alt="Image de nom ustensile">
                     <article class="recipe-tool-informations">
                         <h1 class="recipe-tool-title">Nom ustensile</h1>
                     </article>
-                </div>
+                </a>
+                <a href="#" class="recipe-tool">
+                    <img class="recipe-tool-picture" src="img/marmite.jpg" alt="Image de nom ustensile">
+                    <article class="recipe-tool-informations">
+                        <h1 class="recipe-tool-title">Nom ustensile</h1>
+                    </article>
+                </a>
+                <a href="#" class="recipe-tool">
+                    <img class="recipe-tool-picture" src="img/marmite.jpg" alt="Image de nom ustensile">
+                    <article class="recipe-tool-informations">
+                        <h1 class="recipe-tool-title">Nom ustensile</h1>
+                    </article>
+                </a>
+            </div>
             <article class="recipe-steps-area">
                 <h1 class="recipe-steps-title">Etapes</h1>
-                <div class="recipe-step">
-                    <h1 class="recipe-step-title">Etape X</h1>
-                    <p class="recipe-step-description">
-                        Description d'une étape plus ou moins longue
-                        lors de la réalisation de la recette en question
-                    </p>
-                </div>
-                <div class="recipe-step">
-                    <h1 class="recipe-step-title">Etape X</h1>
-                    <p class="recipe-step-description">
-                        Description d'une étape plus ou moins longue
-                        lors de la réalisation de la recette en question
-                    </p>
-                </div>
-                <div class="recipe-step">
-                    <h1 class="recipe-step-title">Etape X</h1>
-                    <p class="recipe-step-description">
-                        Description d'une étape plus ou moins longue
-                        lors de la réalisation de la recette en question
-                    </p>
+                <div class="recipe-steps-list">
+                    <div class="recipe-step">
+                        <h1 class="recipe-step-title">Etape X</h1>
+                        <p class="recipe-step-description">
+                            Description d'une étape plus ou moins longue
+                            lors de la réalisation de la recette en question
+                        </p>
+                    </div>
+                    <div class="recipe-step">
+                        <h1 class="recipe-step-title">Etape X</h1>
+                        <p class="recipe-step-description">
+                            Description d'une étape plus ou moins longue
+                            lors de la réalisation de la recette en question
+                        </p>
+                    </div>
+                    <div class="recipe-step">
+                        <h1 class="recipe-step-title">Etape X</h1>
+                        <p class="recipe-step-description">
+                            Description d'une étape plus ou moins longue
+                            lors de la réalisation de la recette en question
+                        </p>
+                    </div>
                 </div>
             </article>
         </section>
-        <section class="recipe-commentaries-area">
-            <h2 class="recipe-commentaries-title">Commentaires</h2>
-            <form class="recipe-commentary-write-area">
-                <input class="recipe-commentary-write" type="text" name="commentary" id="commentary"
-                       placeholder="Laissez votre avis" required>
-                <button class="recipe-commentary-submit" type="submit">
-                    Envoyer
-                </button>
-            </form>
-            <section class="recipe-commentaries-list">
-                <div class="recipe-commentary">
-                    <div class="recipe-commentary-author">
-                        <img class="recipe-commentary-author-profile-picture" src="img/profilePicture.jpg"
-                             alt="photo de profil de Nom utilisateur">
-                        <h1 class="recipe-commentary-author-username">
-                            Nom utilisateur
-                        </h1>
-                    </div>
-                    <p class="recipe-commentary-content">
-                        Un commentaire intéressant sur la recette et un retour à prendre en compte.
-                    </p>
-                </div>
-            </section>
-        </section>
     </main>
+    <section class="recipe-commentaries-area">
+        <h2 class="recipe-commentaries-title">Commentaires</h2>
+        <form class="recipe-commentary-write-area">
+            <textarea class="recipe-commentary-write" name="commentary" id="commentary"
+                      placeholder="Laissez votre avis" rows="1" required></textarea>
+            <button class="recipe-commentary-submit" type="submit">
+                Envoyer
+            </button>
+        </form>
+        <section class="recipe-commentaries-list">
+            <div class="recipe-commentary blue">
+                <div class="recipe-commentary-author blue-back">
+                    <img class="recipe-commentary-author-profile-picture" src="img/profilePicture.jpg"
+                         alt="photo de profil de Nom utilisateur">
+                    <h1 class="recipe-commentary-author-username">
+                        Nom utilisateur
+                    </h1>
+                </div>
+                <p class="recipe-commentary-content">
+                    Un commentaire intéressant sur la recette et un retour à prendre en compte.
+                </p>
+            </div>
+            <div class="recipe-commentary orange">
+                <div class="recipe-commentary-author orange-back">
+                    <img class="recipe-commentary-author-profile-picture" src="img/profilePicture.jpg"
+                         alt="photo de profil de Nom utilisateur">
+                    <h1 class="recipe-commentary-author-username">
+                        Nom utilisateur
+                    </h1>
+                </div>
+                <p class="recipe-commentary-content">
+                    Un commentaire intéressant sur la recette et un retour à prendre en compte.
+                </p>
+            </div>
+            <div class="recipe-commentary green">
+                <div class="recipe-commentary-author green-back">
+                    <img class="recipe-commentary-author-profile-picture" src="img/profilePicture.jpg"
+                         alt="photo de profil de Nom utilisateur">
+                    <h1 class="recipe-commentary-author-username">
+                        Nom utilisateur
+                    </h1>
+                </div>
+                <p class="recipe-commentary-content">
+                    Un commentaire intéressant sur la recette et un retour à prendre en compte.
+                </p>
+            </div>
+        </section>
+    </section>
+    <script src="js/recipe-page.js"></script>
 </body>
 </html>
