@@ -48,7 +48,7 @@ final class CategoryFactory extends ModelFactory
     {
         return [
             'categoryDescription' => self::faker()->text(400),
-            'name' => mb_convert_case(self::faker()->text(30), MB_CASE_TITLE, 'UTF-8'),
+            'categoryName' => mb_convert_case(self::faker()->text(30), MB_CASE_TITLE, 'UTF-8'),
         ];
     }
 
