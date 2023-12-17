@@ -11,6 +11,5 @@ class InventoryFixtures extends Fixture
 {
     public function load(ObjectManager $manager): void
     {
-        InventoryFactory::createMany(20);
     }
 }
