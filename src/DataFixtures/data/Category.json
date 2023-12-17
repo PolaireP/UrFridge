@@ -1,95 +1,95 @@
 [
   {
-    "name": "Cuisine du monde"
+    "categoryName": "Cuisine du monde"
   },
   {
-    "name": "Vegan"
+    "categoryName": "Vegan"
   },
   {
-    "name": "Végétarien"
+    "categoryName": "Végétarien"
   },
   {
-    "name": "Végétalien"
+    "categoryName": "Végétalien"
   },
   {
-    "name": "Sans gluten"
+    "categoryName": "Sans gluten"
   },
   {
-    "name": "Sans lactose"
+    "categoryName": "Sans lactose"
   },
   {
-    "name": "Sans sucre ajouté"
+    "categoryName": "Sans sucre ajouté"
   },
   {
-    "name": "Avec de l'alcool"
+    "categoryName": "Avec de l'alcool"
   },
   {
-    "name": "Alimentation équilibrée"
+    "categoryName": "Alimentation équilibrée"
   },
   {
-    "name": "Boissons et cocktails"
+    "categoryName": "Boissons et cocktails"
   },
   {
-    "name": "Faible en calories"
+    "categoryName": "Faible en calories"
   },
   {
-    "name": "Sur le pouce"
+    "categoryName": "Sur le pouce"
   },
   {
-    "name": "Cuisine asiatique"
+    "categoryName": "Cuisine asiatique"
   },
   {
-    "name": "Cuisine italienne"
+    "categoryName": "Cuisine italienne"
   },
   {
-    "name": "Cuisine mexicaine"
+    "categoryName": "Cuisine mexicaine"
   },
   {
-    "name": "Cuisine méditerranéenne"
+    "categoryName": "Cuisine méditerranéenne"
   },
   {
-    "name": "Snacks"
+    "categoryName": "Snacks"
   },
   {
-    "name": "Recettes familiales"
+    "categoryName": "Recettes familiales"
   },
   {
-    "name": "Plats réconfortants"
+    "categoryName": "Plats réconfortants"
   },
   {
-    "name": "Recettes pour enfants"
+    "categoryName": "Recettes pour enfants"
   },
   {
-    "name": "Pique-nique"
+    "categoryName": "Pique-nique"
   },
   {
-    "name": "Recettes pour le barbecue"
+    "categoryName": "Recettes pour le barbecue"
   },
   {
-    "name": "Soupes et potages"
+    "categoryName": "Soupes et potages"
   },
   {
-    "name": "Salades"
+    "categoryName": "Salades"
   },
   {
-    "name": "Petits plaisirs sucrés"
+    "categoryName": "Petits plaisirs sucrés"
   },
   {
-    "name": "Pâtes et risottos"
+    "categoryName": "Pâtes et risottos"
   },
   {
-    "name": "Plats à base de poisson"
+    "categoryName": "Plats à base de poisson"
   },
   {
-    "name": "Plats à base de poulet"
+    "categoryName": "Plats à base de poulet"
   },
   {
-    "name": "Plats végétaliens"
+    "categoryName": "Plats végétaliens"
   },
   {
-    "name": "Smoothies et jus frais"
+    "categoryName": "Smoothies et jus frais"
   },
   {
-    "name": "Recettes festives"
+    "categoryName": "Recettes festives"
   }
 ]
