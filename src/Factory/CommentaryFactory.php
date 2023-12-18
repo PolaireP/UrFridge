@@ -47,7 +47,7 @@ final class CommentaryFactory extends ModelFactory
     protected function getDefaults(): array
     {
         return [
-            'commentaryContent' => self::faker()->text(400),
+            'commentaryContent' => self::faker()->text(100),
             'commentaryPubDate' => self::faker()->dateTime(),
         ];
     }
