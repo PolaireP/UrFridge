@@ -46,9 +46,7 @@ final class RecipePhotoFactory extends ModelFactory
      */
     protected function getDefaults(): array
     {
-        return [
-            'recipePhoto' => file_get_contents(__DIR__.'/data/img/recipeImg/currentRecipeNoPicture.jpg'),
-        ];
+        return [];
     }
 
     /**
