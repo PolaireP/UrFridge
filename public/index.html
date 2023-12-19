@@ -1,0 +1,65 @@
+<!-- page d'accueil du site (on cherche ici des ingrédients pour les recettes) -->
+<!doctype html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Bienvenue</title>
+    <link rel="preload" href="js/index.js" as="script">
+    <link rel="stylesheet" href="css/style-index.css">
+    <link rel="icon" href="img/favicon.png" type="image/x-icon">
+</head>
+<body>
+    <main class="content">
+        <section class="main-interaction-area">
+            <section class="search-ingredients-area">
+                <h1 class="title">Quels ingrédients définiront vos saveurs ?</h1>
+                <form class="search-area" method="post">
+                    <div class="search-bar">
+                        <input type="text" name="search-ingredients"
+                               id="search-ingredients" placeholder="Poire, Oignons, Lait ...">
+                        <img src="img/loop.png" alt="loupe">
+                    </div>
+                </form>
+            </section>
+            <section class="filters-with-result-statistics-area">
+                <div class="result-statistics-area">
+                    <p class="results-number">
+                        X Résultats
+                    </p>
+                    <p class="ingredients-number">
+                        X Ingrédients
+                    </p>
+                </div>
+                <div class="allergens-with-categories-area">
+                    <button class="add-allergens-button">
+                        Ajouter un allergène
+                    </button>
+                    <button class="add-categories-button">
+                        Ajouter une catégorie
+                    </button>
+                    <button class="add-allergens-button-icon">
+                        <img src="img/allergene.png" alt="Ajouter un allergène">
+                    </button>
+                    <button class="add-categories-button-icon">
+                        <img src="img/categorie.png" alt="Ajouter une catégorie">
+                    </button>
+                </div>
+                <button class="add-filters-button">
+                    Filtres
+                </button>
+            </section>
+        </section>
+        <section class="recipes-list">
+            <p class="no-recipe">Bientôt de délicieux plats apparaitront ici</p>
+            <p>
+                Ici pas de recette, voir dans le template de recettes favorites comment
+                implémenter l'affichage des recettes (insérer en remplacement du
+                paragraphe p.no-recipe.
+            </p>
+        </section>
+    </main>
+</body>
+</html>
