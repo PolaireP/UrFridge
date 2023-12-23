@@ -1,0 +1,122 @@
+[
+  {
+    "recipeName" : "Bœuf bourguignon",
+    "recipeDescription" : "Le bœuf bourguignon est une recette de cuisine d'estouffade de bœuf considerée aujourd'hui comme étant traditionnelle de la cuisine bourguignonne, en France.",
+    "verified" : false,
+    "recipePhoto" : 0
+  },
+  {
+    "recipeName" : "Cheeseburger",
+    "recipeDescription" : "Un cheeseburger ou hamburger au fromage est un hamburger dans lequel une tranche de fromage accompagne la viande.",
+    "verified" : false,
+    "recipePhoto" : 1
+  },
+  {
+    "recipeName" : "Choucroute",
+    "recipeDescription" : "Une choucroute qui vous rappellera le nord est de la france",
+    "verified" : false,
+    "recipePhoto" : 2
+  },
+  {
+    "recipeName" : "Cookie",
+    "recipeDescription" : "Biscuit américain, très bon mais très mauvais pour la santé.",
+    "verified" : false,
+    "recipePhoto" : 3
+  },
+  {
+    "recipeName" : "Coq au vin",
+    "recipeDescription" : "Coq mariné braisé au vin rouge ou blanc.",
+    "verified" : false,
+    "recipePhoto" : 4
+  },
+  {
+    "recipeName" : "Fondue",
+    "recipeDescription" : "Fromage fondu à partager au chalet.",
+    "verified" : false,
+    "recipePhoto" : 5
+  },
+  {
+    "recipeName" : "Kebab",
+    "recipeDescription" : "Plat oriental composé de brochettes de viande rôties à feu vif et fortement épicées.",
+    "verified" : false,
+    "recipePhoto" : 6
+  },
+  {
+    "recipeName" : "Mitraillette",
+    "recipeDescription" : "Sandwich Belge composé de frite et de fricadelle.",
+    "verified" : false,
+    "recipePhoto" : 7
+  },
+  {
+    "recipeName" : "Omelette Vanille",
+    "recipeDescription" : "Une omelette qui saura ravir vos journées.",
+    "verified" : false,
+    "recipePhoto" : 8
+  },
+  {
+    "recipeName" : "Pancakes",
+    "recipeDescription" : "Petits et aérés ils sauront vous donner un début de journée tout en douceur.",
+    "verified" : false,
+    "recipePhoto" : 9
+  },
+  {
+    "recipeName" : "Pâté aux pommes de terre",
+    "recipeDescription" : "Recette typique d'auvergne en hiver il vous réchauffera et en été vous refroidira.",
+    "verified" : false,
+    "recipePhoto" : 10
+  },
+  {
+    "recipeName" : "Pâtes à la carbonara",
+    "recipeDescription" : "Un plat de pates avec du fromage italien",
+    "verified" : false,
+    "recipePhoto" : 11
+  },
+  {
+    "recipeName" : "Pizza Chèvre Miel",
+    "recipeDescription" : "Cette pizza on l'appelle le meilleur des deux mondes sucré salé",
+    "verified" : false,
+    "recipePhoto" : 12
+  },
+  {
+    "recipeName" : "Risotto",
+    "recipeDescription" : "Un plat simple à base de riz, mais réconfortant",
+    "verified" : false,
+    "recipePhoto" : 13
+  },
+  {
+    "recipeName" : "Roulés au saumon",
+    "recipeDescription" : "Des roulés qui ravieront les papilles de tout le monde.",
+    "verified" : false,
+    "recipePhoto" : 14
+  },
+  {
+    "recipeName" : "Salade au poulet",
+    "recipeDescription" : "Une salade au poulet très goutue.",
+    "verified" : false,
+    "recipePhoto" : 15
+  },
+  {
+    "recipeName" : "Sushi au saumon et à l'avocat",
+    "recipeDescription" : "Des sushis au saumon avec une touche d'avocat pour colorer le tout.",
+    "verified" : false,
+    "recipePhoto" : 16
+  },
+  {
+    "recipeName" : "Tarte au chocolat",
+    "recipeDescription" : "Une tarte au chocolat qui saura faire plaisir au petits comme aux grands.",
+    "verified" : false,
+    "recipePhoto" : 17
+  },
+  {
+    "recipeName" : "Tarte tatin",
+    "recipeDescription" : "La seule, l'unique la vraie tarte tatin.",
+    "verified" : false,
+    "recipePhoto" : 18
+  },
+  {
+    "recipeName" : "Wraps aux tenders",
+    "recipeDescription" : "Simple et agréable, leur croustillant vous feront tomber.",
+    "verified" : false,
+    "recipePhoto" : 19
+  }
+]
