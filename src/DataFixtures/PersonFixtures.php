@@ -5,9 +5,10 @@ namespace App\DataFixtures;
 use App\Factory\InventoryFactory;
 use App\Factory\PersonFactory;
 use Doctrine\Bundle\FixturesBundle\Fixture;
+use Doctrine\Common\DataFixtures\DependentFixtureInterface;
 use Doctrine\Persistence\ObjectManager;
 
-class PersonFixtures extends Fixture
+class PersonFixtures extends Fixture implements DependentFixtureInterface
 {
     public function load(ObjectManager $manager): void
     {
