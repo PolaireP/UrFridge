@@ -1,0 +1,58 @@
+[
+  {
+    "allergenName" : "Gluten",
+    "allergenDescription" : "Céréales contenant du gluten et tous les produits à base de ces céréales (avoine, blé, épeautre, orge...)"
+  },
+  {
+    "allergenName" : "Crustacés",
+    "allergenDescription" : "Crustacés et tous les produits contenant des crustacés"
+  },
+  {
+    "allergenName" : "Oeufs",
+    "allergenDescription" : "Oeufs et tous les produits contenant des oeufs"
+  },
+  {
+    "allergenName" : "Poissons",
+    "allergenDescription" : "Poissons et tous les produits contenant du poisson"
+  },
+  {
+    "allergenName" : "Arachides",
+    "allergenDescription" : "Arachides et tous les produits contenant des arachides"
+  },
+  {
+    "allergenName" : "Soja",
+    "allergenDescription" : "Soja et tous les produits contenant du soja"
+  },
+  {
+    "allergenName" : "Fruits à coque",
+    "allergenDescription" : "Fruits à coque et tous les produits contenant ces fruits"
+  },
+  {
+    "allergenName" : "Lait",
+    "allergenDescription" : "Lait et tous les produits contenant du lait"
+  },
+  {
+    "allergenName" : "Céléri",
+    "allergenDescription" : "Céléri et tous les produits à base de céléri"
+  },
+  {
+    "allergenName" : "Moutarde",
+    "allergenDescription" : "Moutarde et tous les produits contenant de la moutarde"
+  },
+  {
+    "allergenName" : "Graines de sésame",
+    "allergenDescription" : "Graines de sésame et produits à base de graines de sésame"
+  },
+  {
+    "allergenName" : "Anhydride sulfureux et sulfites",
+    "allergenDescription" : "Tous les produits contenant des traces de ces composants"
+  },
+  {
+    "allergenName" : "Lupin",
+    "allergenDescription" : "Lupin et tous les produits à base de lupin"
+  },
+  {
+    "allergenName" : "Mollusques",
+    "allergenDescription" : "Mollusques et produits à base de mollusques"
+  }
+]
