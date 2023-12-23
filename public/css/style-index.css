@@ -16,8 +16,33 @@ body {
 .main-interaction-area {
     display: flex;
     flex-direction: column;
-    padding: 10px;
+    padding: 0 10px;
     margin: 50px 0;
+}
+
+.overlapping-search-box {
+    display: flex;
+    position: absolute;
+    height: 0;
+    width: 100%;
+    overflow: hidden;
+    box-sizing: border-box;
+    z-index: 2;
+    border-radius: 0 0 20px 20px;
+    background: linear-gradient(#fff,#fff) padding-box,
+    linear-gradient(to left, rgba(76, 185, 165, 58%), rgba(66, 186, 64, 66%), rgba(255, 127, 80, 74%)) border-box;
+}
+
+.overlapping-box {
+    display: flex;
+    position: absolute;
+    z-index: 1;
+    height: 0;
+    background-color: white;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 0 0 20px 20px;
+    box-sizing: border-box;
 }
 
 .search-ingredients-area {
@@ -39,7 +64,6 @@ body {
 .search-area {
     display: flex;
     justify-content: center;
-    padding: 2%;
 }
 
 .search-bar {
@@ -84,7 +108,7 @@ body {
     background-color: #4CB9A5;
     border-radius: 20px;
     flex-direction: column;
-    margin: 20px 0;
+    margin-top: 20px;
 }
 
 .result-statistics-area {
