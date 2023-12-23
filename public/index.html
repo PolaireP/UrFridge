@@ -14,17 +14,20 @@
 <body>
     <main class="content">
         <section class="main-interaction-area">
-            <section class="search-ingredients-area">
+            <section class="search-ingredients-area" id="ingredients-research-area">
                 <h1 class="title">Quels ingrédients définiront vos saveurs ?</h1>
                 <form class="search-area" method="post">
                     <div class="search-bar">
-                        <input type="text" name="search-ingredients"
+                        <input type="text" name="search-ingredients" autocomplete="off"
                                id="search-ingredients" placeholder="Poire, Oignons, Lait ...">
                         <img src="img/loop.png" alt="loupe">
                     </div>
                 </form>
             </section>
-            <section class="filters-with-result-statistics-area">
+            <div class="overlapping-search-box" id="ingredients-research">
+                <p>ça c'est ma fusée à recherche</p>
+            </div>
+            <section class="filters-with-result-statistics-area" id="filters-area-box">
                 <div class="result-statistics-area">
                     <p class="results-number">
                         X Résultats
@@ -51,6 +54,15 @@
                     Filtres
                 </button>
             </section>
+            <div class="overlapping-box" id="allergens-box">
+                <p>ça c'est ma fusée à allergène</p>
+            </div>
+            <div class="overlapping-box" id="categories-box">
+                <p>ça c'est ma fusée à catégorie</p>
+            </div>
+            <div class="overlapping-box" id="filters-box">
+                <p>ça c'est ma fusée à filtres</p>
+            </div>
         </section>
         <section class="recipes-list">
             <p class="no-recipe">Bientôt de délicieux plats apparaitront ici</p>
@@ -61,5 +73,6 @@
             </p>
         </section>
     </main>
+    <script src="js/index.js"></script>
 </body>
 </html>
