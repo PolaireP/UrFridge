@@ -19,7 +19,6 @@ const ingredientBox = document.getElementById("ingredients-research");
 
 function closeBox (box, followedBox, boxType = "default") {
     box.style.height = '0px';
-    box.style.padding = "0px";
     box.style.borderWidth = "0px";
     if (boxType === "default") {
         followedBox.style.borderRadius = "";
@@ -31,7 +30,6 @@ function closeBox (box, followedBox, boxType = "default") {
 
 function openBox (box, followedBox, color, boxType = "default") {
     box.style.height = "auto";
-    box.style.padding = "20px 10px";
     box.style.borderColor = color;
     box.style.borderStyle = "solid";
     box.style.borderWidth = "0 2px 2px 2px";
