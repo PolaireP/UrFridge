@@ -19,7 +19,7 @@
                 <form class="search-area" method="post">
                     <div class="search-bar">
                         <input type="text" name="search-ingredients" autocomplete="off"
-                               id="search-ingredients" placeholder="Poire, Oignons, Lait ...">
+                               id="search-ingredients" class="search-input" placeholder="Poire, Oignons, Lait ...">
                         <img src="img/loop.png" alt="loupe">
                     </div>
                 </form>
@@ -142,7 +142,7 @@
             </section>
             <div class="overlapping-box" id="allergens-box">
                 <p class="allergens-title">Ajouter un allergène</p>
-                <form id="allergens-append">
+                <form class="entity-checkbox-append" id="allergens-append">
                     <label class="checkbox-container">
                         <input class="checkbox" type="checkbox" name="allergen-name" value="allergen-id">
                         <span class="checkmark"></span>
@@ -156,10 +156,59 @@
                 </form>
             </div>
             <div class="overlapping-box" id="categories-box">
-                <p>ça c'est ma fusée à catégorie</p>
+                <p class="categories-title">Ajouter une catégorie</p>
+                <form class="search-area" method="post">
+                    <div class="search-bar">
+                        <input type="text" name="search-categories" autocomplete="off"
+                               id="search-categories" class="search-input" placeholder="Végétarien, épicé...">
+                        <img src="img/loop.png" alt="loupe">
+                    </div>
+                </form>
+                <form class="entity-checkbox-append" id="categories-append">
+                    <label class="checkbox-container">
+                        <input class="checkbox" type="checkbox" name="category-name" value="category-id">
+                        <span class="checkmark"></span>
+                        Category-name
+                    </label>
+                    <label class="checkbox-container">
+                        <input class="checkbox" type="checkbox" name="category-name" value="category-id">
+                        <span class="checkmark"></span>
+                        Category-name
+                    </label>
+                </form>
+                <p class="no-category">Pas de catégorie correspondant à votre recherche</p>
             </div>
             <div class="overlapping-box" id="filters-box">
-                <p>ça c'est ma fusée à filtres</p>
+                <p class="filter-title">Ajouter un filtre</p>
+                <div class="filters-area">
+                    <label id="alpha">Ordre alphabétique :
+                        <select class="select-box">
+                            <option selected value="ASC">Croissant</option>
+                            <option value="DESC">Décroissant</option>
+                        </select>
+                    </label>
+                    <label id="energy">Recette calorique :
+                        <select class="select-box">
+                            <option selected value="default">Aucun Tri</option>
+                            <option value="ASC">Croissant</option>
+                            <option value="DESC">Décroissant</option>
+                        </select>
+                    </label>
+                    <label id="cost"> Coût :
+                        <select class="select-box">
+                            <option selected value="default">Aucun Tri</option>
+                            <option value="ASC">Croissant</option>
+                            <option value="DESC">Décroissant</option>
+                        </select>
+                    </label>
+                    <label id="famous"> Popularité :
+                        <select class="select-box">
+                            <option selected value="default">Aucun Tri</option>
+                            <option value="ASC">Croissant</option>
+                            <option value="DESC">Décroissant</option>
+                        </select>
+                    </label>
+                </div>
             </div>
         </section>
         <section class="recipes-list">

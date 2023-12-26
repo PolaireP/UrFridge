@@ -35,6 +35,7 @@ body {
 
 .overlapping-box {
     display: flex;
+    flex-direction: column;
     position: absolute;
     z-index: 1;
     height: 0;
@@ -64,6 +65,7 @@ body {
 .search-area {
     display: flex;
     justify-content: center;
+    width: 100%;
 }
 
 .search-bar {
@@ -79,7 +81,7 @@ body {
     linear-gradient(to left, rgba(76, 185, 165, 58%), rgba(66, 186, 64, 66%), rgba(255, 127, 80, 74%)) border-box;
 }
 
-.search-bar #search-ingredients {
+.search-bar .search-input {
     display: flex;
     font-size: 18px;
     font-weight: 500;
@@ -90,12 +92,16 @@ body {
     border-radius: 38px;
 }
 
-#search-ingredients:focus {
+.search-input:focus {
     outline: none;
 }
 
-.search-bar #search-ingredients::placeholder {
+.search-bar .search-input::placeholder {
     color: #B9B9B9;
+}
+
+.search-bar .search-input:focus::placeholder {
+    color: transparent;
 }
 
 .search-bar>img {
@@ -103,7 +109,7 @@ body {
     height: 30px;
 }
 
-.allergens-title {
+.allergens-title, .categories-title, .filter-title {
     display: flex;
     width: 100%;
     font-family: "Roboto", sans-serif;
@@ -114,12 +120,57 @@ body {
     margin: 5px 0;
 }
 
-#allergens-box {
-    display: flex;
-    flex-direction: column;
+#categories-box>.search-area>.search-bar {
+    margin: 10px 20px;
 }
 
-#allergens-append {
+.filters-area {
+    display: flex;
+    padding: 20px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    max-height: 210px;
+    overflow: auto;
+}
+
+.filters-area>label {
+    display: flex;
+    flex-direction: column;
+    font-weight: 500;
+    font-family: "Roboto", sans-serif;
+    font-size: 20px;
+    color: #FF7F50;
+    align-items: center;
+    margin: 10px;
+}
+
+.select-box {
+    appearance: none;
+    border: 0;
+    outline: 0;
+    font-weight: 500;
+    font-family: "Roboto", sans-serif;
+    font-size: 20px;
+    padding: 10px 60px 10px 10px;
+    background: url(https://upload.wikimedia.org/wikipedia/commons/9/9d/Caret_down_font_awesome_whitevariation.svg) no-repeat right 0.8em center / 1.4em,
+    linear-gradient(to left, #FF7F50 3em, #FF7F50 3em);
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.select-box:focus {
+     outline: none;
+ }
+
+.select-box>option {
+    color: white;
+    background-color: #4CB9A5;
+    padding: 10px 2px;
+}
+
+.entity-checkbox-append {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -412,7 +463,7 @@ body {
     flex-direction: column;
 }
 
-.no-recipe {
+.no-recipe, .no-category {
     display: flex;
     margin: 15px 0;
     font-size: 18px;
@@ -445,7 +496,7 @@ body {
         border: 3px solid #00000000
     }
 
-    .search-bar #search-ingredients, .search-bar #search-tools {
+    .search-bar .search-input, .search-bar #search-tools {
         font-size: 22px;
     }
 
@@ -454,7 +505,11 @@ body {
         height: 38px;
     }
 
-    .ingredients-list {
+    .filters-area>label {
+        flex-direction: row;
+    }
+
+    .ingredients-list, .filters-area {
         max-height: 315px;
     }
 
@@ -556,7 +611,7 @@ body {
         border: 4px solid #00000000
     }
 
-    .search-bar #search-ingredients, .search-bar #search-tools {
+    .search-bar .search-input, .search-bar #search-tools {
         font-size: 30px;
     }
 
@@ -568,7 +623,7 @@ body {
         font-size: 44px;
     }
 
-    .ingredients-list {
+    .ingredients-list, .filters-area {
         max-height: 420px;
     }
 
