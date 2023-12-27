@@ -6,7 +6,13 @@ hamburger.addEventListener("click", function () {
     "0px" !== navMobile.style.height && navMobile.getAttribute("style") ? (navMobile.style.height = "0px") : (navMobile.style.height = navMobile.scrollHeight + "px");
 });
 
-document.addEventListener("scroll", function() {
+window.addEventListener("scroll", function() {
+    if ("0px" !== navMobile.style.height) {
+        navMobile.style.height = "0px";
+    }
+});
+
+window.addEventListener("resize", function() {
     if ("0px" !== navMobile.style.height) {
         navMobile.style.height = "0px";
     }
