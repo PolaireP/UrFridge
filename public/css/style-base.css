@@ -171,6 +171,7 @@ body {
         width: 39px;
         height: 39px;
         margin: 10px 15px;
+        justify-content: center;
     }
 }
 
