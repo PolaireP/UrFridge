@@ -1,0 +1,687 @@
+[
+  {
+    "recipe" : 0,
+    "stepTitle" : "Étape 1",
+    "stepDescription" : "Détailler la viande en cubes de 3 cm de côté, enlever les gros morceaux de gras."
+  },
+  {
+    "recipe" : 0,
+    "stepTitle" : "Étape 2",
+    "stepDescription" : "Couper l'oignon en morceaux. Le faire revenir dans une poêle au beurre. Une fois transparent, le verser dans une cocotte en fonte de préférence."
+  },
+  {
+    "recipe" : 0,
+    "stepTitle" : "Étape 3",
+    "stepDescription" : "Procéder de même avec la viande mais en plusieurs fois, jusqu'à ce que tous les morceaux soient cuits. Les ajouter au fur et à mesure dans la cocotte. Ne pas avoir peur d'ajouter du beurre entre chaque fournée."
+  },
+  {
+    "recipe" : 0,
+    "stepTitle" : "Étape 4",
+    "stepDescription" : "Quand toute la viande est dans la cocotte, déglacer la poêle avec de l'eau ou du vin et faire bouillir en raclant pour récupérer le suc. Saler, poivrer, ajouter au reste."
+  },
+  {
+    "recipe" : 0,
+    "stepTitle" : "Étape 5",
+    "stepDescription" : "Recouvrir le tout avec une partie du vin et faire mijoter quelques heures avec le bouquet garni et les carottes en rondelles."
+  },
+  {
+    "recipe" : 0,
+    "stepTitle" : "Étape 6",
+    "stepDescription" : "Le lendemain, faire mijoter au moins 2 heures en plusieurs fois, ajouter du vin ou de l'eau si nécessaire."
+  },
+  {
+    "recipe" : 1,
+    "stepTitle" : "Étape 1",
+    "stepDescription" : "Mélanger la mayonnaise, la moutarde, les cornichons et les câpres dans un bol. Garder au frais jusqu'à utilisation."
+  },
+  {
+    "recipe" : 1,
+    "stepTitle" : "Étape 2",
+    "stepDescription" : "Mélanger la chapelure et l’oeuf à la viande hachée. Ajouter l'oignon et mêler le tout. Assaisonner selon les goûts."
+  },
+  {
+    "recipe" : 1,
+    "stepTitle" : "Étape 3",
+    "stepDescription" : "Former 4 grands burgers (ils doivent être au moins aussi larges que le pain)."
+  },
+  {
+    "recipe" : 1,
+    "stepTitle" : "Étape 4",
+    "stepDescription" : "Dans une grande poêle, faire chauffer de l'huile. Laisser cuire les burgers 5 min de chaque côté à feu moyen."
+  },
+  {
+    "recipe" : 1,
+    "stepTitle" : "Étape 5",
+    "stepDescription" : "Ouvrir les pains, les chauffer quelques secondes au four à micro-ondes. Sur le fond, poser une tranche de fromage, le burger, la laitue puis la sauce, et enfin le couvercle."
+  },
+  {
+    "recipe" : 2,
+    "stepTitle" : "Étape 1",
+    "stepDescription" : "Incorporer ensuite le lard fumé et la palette, puis les recouvrir du reste de choucroute."
+  },
+  {
+    "recipe" : 2,
+    "stepTitle" : "Étape 2",
+    "stepDescription" : "Ajouter le saindoux, les gousses d'ail non pelées, le genièvre, le bouquet garni et l'oignon piqué."
+  },
+  {
+    "recipe" : 2,
+    "stepTitle" : "Étape 3",
+    "stepDescription" : "Arroser le tout de vin blanc et laisser cuire à couvert à feu doux pendant 1 heure."
+  },
+  {
+    "recipe" : 2,
+    "stepTitle" : "Étape 4",
+    "stepDescription" : "Ajouter les pommes de terre et poursuivre la cuisson pendant 50 minutes."
+  },
+  {
+    "recipe" : 2,
+    "stepTitle" : "Étape 5",
+    "stepDescription" : "Incorporer les saucisses, poursuivre la cuisson encore 10 minutes puis servir."
+  },
+  {
+    "recipe" : 3,
+    "stepTitle" : "Étape 1",
+    "stepDescription" : "Mélangez la farine, les sucres, le sel et la levure dans un grand saladier."
+  },
+  {
+    "recipe" : 3,
+    "stepTitle" : "Étape 2",
+    "stepDescription" : "Faites fondre le beurre."
+  },
+  {
+    "recipe" : 3,
+    "stepTitle" : "Étape 3",
+    "stepDescription" : "Ajoutez-y l'oeuf battu et les 2 cuillères à café de miel"
+  },
+  {
+    "recipe" : 3,
+    "stepTitle" : "Étape 4",
+    "stepDescription" : "incorporez le tout à la préparation."
+  },
+  {
+    "recipe" : 3,
+    "stepTitle" : "Étape 5",
+    "stepDescription" : "Ajouter les pépites de chocolat (de préférence au lait, mais j'ai déjà goûté des cookies aux 3 chocolats et c'est exquis), et mélangez."
+  },
+  {
+    "recipe" : 3,
+    "stepTitle" : "Étape 6",
+    "stepDescription" : "Préchauffez votre four à 220°C (thermostat 7-8), avec la grille au plus bas. Façonnez des cookies d’environ 10 cm de diamètre (avec une cuillère à glace c'est facile)."
+  },
+  {
+    "recipe" : 3,
+    "stepTitle" : "Étape 7",
+    "stepDescription" : "Disposez-les sur une plaque. Ils doivent être assez espacés."
+  },
+  {
+    "recipe" : 3,
+    "stepTitle" : "Étape 8",
+    "stepDescription" : "Enfournez-les 9 à 11 minutes, selon que vous les souhaitiez respectivement « extra-moelleux, moelleux ou crousti-moelleux »"
+  },
+  {
+    "recipe" : 4,
+    "stepTitle" : "Étape 1",
+    "stepDescription" : "La veille : mettez le coq à mariner : placez-le dans un grand saladier avec l'oignon et les carottes. Versez le vin, posez le bouquet garni et ajoutez les grains de poivres."
+  },
+  {
+    "recipe" : 4,
+    "stepTitle" : "Étape 2",
+    "stepDescription" : "Couvrez et laissez mariner une nuit au réfrigérateur. (ou toute la journée si c'est pour le soir)."
+  },
+  {
+    "recipe" : 4,
+    "stepTitle" : "Étape 3",
+    "stepDescription" : "Le jour même : égouttez les morceaux de coq et les légumes, épongez-les bien avec du papier absorbant."
+  },
+  {
+    "recipe" : 4,
+    "stepTitle" : "Étape 4",
+    "stepDescription" : "Filtrez la marinade et réservez."
+  },
+  {
+    "recipe" : 4,
+    "stepTitle" : "Étape 5",
+    "stepDescription" : "Faites chauffez l'huile dans une cocotte, jetez-y les morceaux de coq et laissez-les bien dorer sur toutes les faces."
+  },
+  {
+    "recipe" : 4,
+    "stepTitle" : "Étape 6",
+    "stepDescription" : "Retirez-les de la cocotte une fois dorés, mettez les légumes à la place. Laissez-les revenir à feu doux 5 minutes. Saupoudrez le tout de farine, remuez pour bien enrober les légumes."
+  },
+  {
+    "recipe" : 4,
+    "stepTitle" : "Étape 7",
+    "stepDescription" : "Remettez les morceaux de coq dans la cocotte, ajoutez les gousses d'ail écrasées. Faites chauffer le cognac, versez-le et flambez."
+  },
+  {
+    "recipe" : 4,
+    "stepTitle" : "Étape 8",
+    "stepDescription" : "Mouillez le tout avec le vin de la marinade, ajoutez le fond de veau, salez et poivrez. Portez à ébullition, puis couvrez et baissez le feu. Laissez mijoter 2 h 30 à feu doux."
+  },
+  {
+    "recipe" : 4,
+    "stepTitle" : "Étape 9",
+    "stepDescription" : "Emincez les champignons. Faites-les dorer dans une poêle avec les lardons pendant environ 5-10 minutes. Rajoutez-les dans la cocotte 15 minutes avant de servir. Goûtez et rectifiez l'assaisonnement."
+  },
+  {
+    "recipe" : 5,
+    "stepTitle" : "Étape 1",
+    "stepDescription" : "Commencer par couper le pain en morceaux pour qu'il durcisse."
+  },
+  {
+    "recipe" : 5,
+    "stepTitle" : "Étape 2",
+    "stepDescription" : "Couper le fromage en lamelles EN ENLEVANT LES CROÛTES."
+  },
+  {
+    "recipe" : 5,
+    "stepTitle" : "Étape 3",
+    "stepDescription" : "Réserver le reblochon à part (il sera ajouté à la fin pour lier tous les fromages)."
+  },
+  {
+    "recipe" : 5,
+    "stepTitle" : "Étape 4",
+    "stepDescription" : "Dissoudre une cuillère de Maïzena dans un petit verre de kirsch."
+  },
+  {
+    "recipe" : 5,
+    "stepTitle" : "Étape 5",
+    "stepDescription" : "Frotter le caquelon avec la gousse d'ail jusqu'à usure de l'ail.\n\n"
+  },
+  {
+    "recipe" : 5,
+    "stepTitle" : "Étape 6",
+    "stepDescription" : "Mettre à chauffer le vin blanc (feux moyen), quand il mousse, baisser le feu et ajouter petit à petit les fromages en lamelles en remuant avec une cuillère en bois en faisant des \"8\"."
+  },
+  {
+    "recipe" : 5,
+    "stepTitle" : "Étape 7",
+    "stepDescription" : "Quand tout le fromage est fondu, ajouter le reblochon, et le kirsch + Maïzena."
+  },
+  {
+    "recipe" : 5,
+    "stepTitle" : "Étape 8",
+    "stepDescription" : "Allumer le réchaud et poser la fondue dessus, remuer de temps en temps avec la cuillère en bois, c'est prêt à déguster."
+  },
+  {
+    "recipe" : 6,
+    "stepTitle" : "Étape 1",
+    "stepDescription" : "Ne dégraissez pas la viande. Coupez-la en cubes de 3 cm et mettez-la dans un récipient avec l'oignon, le paprika, le cumin, le persil et l'huile d'olive. Poivrez. Remuez la viande pour l'enrober de sauce, couvrez et laissez mariner 2 heures au réfrigérateur."
+  },
+  {
+    "recipe" : 6,
+    "stepTitle" : "Étape 2",
+    "stepDescription" : "Piquez la viande sur des brochettes et faites la cuire environ 6 minutes au barbecue, en les retournant et en les badigeonnant de marinade."
+  },
+  {
+    "recipe" : 6,
+    "stepTitle" : "Étape 3",
+    "stepDescription" : "Assembler le tout dans un kebab."
+  },
+  {
+    "recipe" : 7,
+    "stepTitle" : "Étape 4",
+    "stepDescription" : "Dans une poêle antiadhésive, à feu moyen, dorer les saucisses dans l’huile de 6 à 8 minutes ou jusqu’à ce qu’elles soient bien cuites."
+  },
+  {
+    "recipe" : 7,
+    "stepTitle" : "Étape 5",
+    "stepDescription" : "null"
+  },
+  {
+    "recipe" : 8,
+    "stepTitle" : "Étape 1",
+    "stepDescription" : "Casser les oeufs, ajouter le sucre vanillé et le sucre."
+  },
+  {
+    "recipe" : 8,
+    "stepTitle" : "Étape 2",
+    "stepDescription" : "Faire cuire à la poêle, servir une fois l'omelette prête."
+  },
+  {
+    "recipe" : 9,
+    "stepTitle" : "Étape 1",
+    "stepDescription" : "Battre grossièrement l'oeuf et le sucre dans un saladier."
+  },
+  {
+    "recipe" : 9,
+    "stepTitle" : "Étape 2",
+    "stepDescription" : "Y rajouter le beurre fondu ou l'huile."
+  },
+  {
+    "recipe" : 9,
+    "stepTitle" : "Étape 3",
+    "stepDescription" : "Mélanger à part la farine et la levure, puis en mélanger la moitié avec la préparation."
+  },
+  {
+    "recipe" : 9,
+    "stepTitle" : "Étape 4",
+    "stepDescription" : "Délayer progressivement avec le lait tout en rajoutant l'autre moitié de farine petit à petit (cela évitera de créer des grumeaux)."
+  },
+  {
+    "recipe" : 9,
+    "stepTitle" : "Étape 5",
+    "stepDescription" : "Aucun temps de repos n'est nécessaire, si ce n'est juste le temps de faire chauffer votre poêle à feu moyen. Huilez ou beurrez la poêle à l'aide de papier essuie-tout."
+  },
+  {
+    "recipe" : 9,
+    "stepTitle" : "Étape 6",
+    "stepDescription" : "A l'aide d'une petite louche ou d'une grosse cuillère à sauce, déposer des \"ronds\" dans la poêle."
+  },
+  {
+    "recipe" : 9,
+    "stepTitle" : "Étape 7",
+    "stepDescription" : "Lorsque les bulles apparaissent et éclatent, retourner les pancakes et ne pas les laisser plus d'une min sur l'autre face."
+  },
+  {
+    "recipe" : 10,
+    "stepTitle" : "Étape 1",
+    "stepDescription" : "Dans un moule à tarte un peu profond, dérouler 1 pâte feuilletée de manière à ce que les bords dépassent du moule."
+  },
+  {
+    "recipe" : 10,
+    "stepTitle" : "Étape 2",
+    "stepDescription" : "Dans une poêle, faire revenir les rondelles d'oignon dans un peu d'huile jusqu'à ce qu'elles deviennent transparentes."
+  },
+  {
+    "recipe" : 10,
+    "stepTitle" : "Étape 3",
+    "stepDescription" : "Eplucher les pommes de terre et les couper en rondelles fines (elles cuiront plus vite)."
+  },
+  {
+    "recipe" : 10,
+    "stepTitle" : "Étape 4",
+    "stepDescription" : "Dans un saladier, mettre les rondelles de pommes de terre et les oignons cuits, puis ajouter le persil frais haché (l'équivalent de 2 grosses cuillères à soupe) et la ciboulette hachée (1 cuillère à soupe) + 2 cuillères à soupe de crème fraîche épaisse. Mélanger le tout avec les mains de manière à bien enrober les pommes de terre."
+  },
+  {
+    "recipe" : 10,
+    "stepTitle" : "Étape 5",
+    "stepDescription" : "Eparpiller la préparation sur la pâte, bien répartir et recouvrir avec la 2éme pâte, puis souder les 2 pâtes en faisant un petit bourrelet avec la pâte du dessous. Piquer la pâte avec une fouchette et avec un pinceau étaler le jaune d'oeuf pour donner une belle dorure au pâté."
+  },
+  {
+    "recipe" : 10,
+    "stepTitle" : "Étape 6",
+    "stepDescription" : "Faire cuire 45 min à four moyen (thermostat 6/180°C)."
+  },
+  {
+    "recipe" : 10,
+    "stepTitle" : "Étape 7",
+    "stepDescription" : "Au moment de servir, faire à l'aide d'un couteau un 'chapeau' large (décalotter le pâté) et remplir l'intérieur de crème fraîche (environ 3 à 4 cuillères à soupe), puis remettre le chapeau."
+  },
+  {
+    "recipe" : 10,
+    "stepTitle" : "Étape 8",
+    "stepDescription" : "Servir accompagné d'une salade verte."
+  },
+  {
+    "recipe" : 11,
+    "stepTitle" : "Étape 1",
+    "stepDescription" : "Faire cuire les pâtes dans une grande casserole d'eau salée, le temps indiqué sur le paquet."
+  },
+  {
+    "recipe" : 11,
+    "stepTitle" : "Étape 2",
+    "stepDescription" : "Pendant ce temps, casser les oeufs dans un récipient, ajouter le parmesan râpé, et battre le tout; saler et poivrer."
+  },
+  {
+    "recipe" : 11,
+    "stepTitle" : "Étape 3",
+    "stepDescription" : "Faire cuire les lardons."
+  },
+  {
+    "recipe" : 11,
+    "stepTitle" : "Étape 4",
+    "stepDescription" : "Une fois les pâtes cuites, les égoutter, mais pas trop (toujours garder un peu d'eau pour les pâtes en sauce)."
+  },
+  {
+    "recipe" : 11,
+    "stepTitle" : "Étape 5",
+    "stepDescription" : "Ajouter les lardons, avec leur jus de cuisson, porter à feu très doux et y ajouter la préparation (oeuf, parmesan) en remuant sans arrêt."
+  },
+  {
+    "recipe" : 11,
+    "stepTitle" : "Étape 6",
+    "stepDescription" : "Eteindre le feu avant que la préparation devienne trop sèche !"
+  },
+  {
+    "recipe" : 11,
+    "stepTitle" : "Étape 7",
+    "stepDescription" : "Servir chaud, avec un peu de parmesan râpé en plus."
+  },
+  {
+    "recipe" : 12,
+    "stepTitle" : "Étape 1",
+    "stepDescription" : "Bien étaler la pâte sur du papier sulfurisé et la répartir dans un plat à four rond avec un minimum de rebords."
+  },
+  {
+    "recipe" : 12,
+    "stepTitle" : "Étape 2",
+    "stepDescription" : "Verser la totalité du pot de crème fraîche dans le plat et bien la répartir."
+  },
+  {
+    "recipe" : 12,
+    "stepTitle" : "Étape 3",
+    "stepDescription" : "Couper le chèvre en tranches ou en petits morceaux, puis le répartir sur le plat. Ajouter éventuellement l'oignon émincé."
+  },
+  {
+    "recipe" : 12,
+    "stepTitle" : "Étape 4",
+    "stepDescription" : "Ajouter le miel liquide uniformément."
+  },
+  {
+    "recipe" : 12,
+    "stepTitle" : "Étape 5",
+    "stepDescription" : "Puis ajouter le fromage râpé."
+  },
+  {
+    "recipe" : 12,
+    "stepTitle" : "Étape 6",
+    "stepDescription" : "Rajouter un peu de miel sur le fromage et éventuellement ajouter quelques olives."
+  },
+  {
+    "recipe" : 12,
+    "stepTitle" : "Étape 7",
+    "stepDescription" : "Enfourner à thermostat 6 pendant 30 mn environ, mais surveiller !"
+  },
+  {
+    "recipe" : 12,
+    "stepTitle" : "Étape 8",
+    "stepDescription" : "Retirer quand la pâte est bien cuite dessous."
+  },
+  {
+    "recipe" : 13,
+    "stepTitle" : "Étape 1",
+    "stepDescription" : "Faire blanchir les champignons dans 1/2 litre d'eau salée pendant 5 minutes. Égouttez-les et conservez leur bouillon."
+  },
+  {
+    "recipe" : 13,
+    "stepTitle" : "Étape 2",
+    "stepDescription" : "Dans un poêlon ou une grande casserole à fond peu épais, faire revenir l'oignon, l'ail et le persil hachés fin dans 2 cuillères à soupe de crème fraiche."
+  },
+  {
+    "recipe" : 13,
+    "stepTitle" : "Étape 3",
+    "stepDescription" : "Rajoutez le riz, les champignons, le reste de la crème et le mascarpone et recouvrez du bouillon. Assaisonnez. Laissez cuire à couvert à feu moyen jusqu'à ce que le riz soit fondant et la sauce crémeuse (au moins 45 minutes)."
+  },
+  {
+    "recipe" : 13,
+    "stepTitle" : "Étape 4",
+    "stepDescription" : "Hors du feu, incorporez le parmesan râpé. Remuez bien."
+  },
+  {
+    "recipe" : 13,
+    "stepTitle" : "Étape 5",
+    "stepDescription" : "Servez bien chaud."
+  },
+  {
+    "recipe" : 14,
+    "stepTitle" : "Étape 1",
+    "stepDescription" : "Dérouler la pâte feuilletée, plier les bords afin d'obtenir un carré."
+  },
+  {
+    "recipe" : 14,
+    "stepTitle" : "Étape 2",
+    "stepDescription" : "Bien aplatir les bords avec le rouleau à pâtisserie."
+  },
+  {
+    "recipe" : 14,
+    "stepTitle" : "Étape 3",
+    "stepDescription" : "Mettre le four à chauffer à 210°C."
+  },
+  {
+    "recipe" : 14,
+    "stepTitle" : "Étape 4",
+    "stepDescription" : "Poser sur la pâte de fines tranches de saumon fumé. Parsemer les tranches de saumon de gruyère râpé."
+  },
+  {
+    "recipe" : 14,
+    "stepTitle" : "Étape 5",
+    "stepDescription" : "Prendre un côté de la pâte, et rouler serré jusqu'au milieu. Faire pareil de l'autre côté."
+  },
+  {
+    "recipe" : 14,
+    "stepTitle" : "Étape 6",
+    "stepDescription" : "Couper des tronçons d'environ 1/2 centimètres. Placer sur un papier sulfurisé. Faire cuire environ 10 à 12 min à four chaud (210°C)."
+  },
+  {
+    "recipe" : 14,
+    "stepTitle" : "Étape 7",
+    "stepDescription" : "Déguster chaud ou tiède, à l'apéritif ou en accompagnement d'une salade verte."
+  },
+  {
+    "recipe" : 15,
+    "stepTitle" : "Étape 1",
+    "stepDescription" : "Emincer le poulet en fines lamelles. Les disposer dans une assiette en arrosant d'huile d'olive et en ajoutant l'ail écrasé (ou bien en saupoudrant d'ail semoule) et hop au frigo pour au moins une heure (toute une nuit, c'est bon aussi, mais une heure peut suffire)."
+  },
+  {
+    "recipe" : 15,
+    "stepTitle" : "Étape 2",
+    "stepDescription" : "Faire revenir au wok ou dans une poele le gros oignon et les échalotes avec une CS d'huile d'olive. Y ajouter le poulet puis le bacon coupé en fines lamelles, puis remuer vivement jusqu'à ce que le poulet soit bien doré et les lamelles de bacon bien croustillantes."
+  },
+  {
+    "recipe" : 15,
+    "stepTitle" : "Étape 3",
+    "stepDescription" : "Ajouter alors le miel pour faire caraméliser le tout et enfin le vinaigre. Saisir le tout vivement et verser sur des assiettes garnies de roquette. La salade est naturellement assaisonnée par la sauce du plat. Servir immédiatement."
+  },
+  {
+    "recipe" : 16,
+    "stepTitle" : "Étape 1",
+    "stepDescription" : "Rincez le riz jusqu'à ce que l'eau de rincage ne soit plus trouble. Laissez égoutter."
+  },
+  {
+    "recipe" : 16,
+    "stepTitle" : "Étape 2",
+    "stepDescription" : "Plongez le riz dans 1,5 fois son volume d'eau. A ébullition donnez un coup de spatule et laissez cuire 15 min à feux doux et à couvert."
+  },
+  {
+    "recipe" : 16,
+    "stepTitle" : "Étape 3",
+    "stepDescription" : "Laissez refroidir le riz quelques instants, et incorporez le sucre dissous au préalable dans le vinaigre de riz."
+  },
+  {
+    "recipe" : 16,
+    "stepTitle" : "Étape 4",
+    "stepDescription" : "Coupez en lamelles le saumon, le concombre, les avocats."
+  },
+  {
+    "recipe" : 16,
+    "stepTitle" : "Étape 5",
+    "stepDescription" : "Etalez une feuille de célophane sur le plan de travail."
+  },
+  {
+    "recipe" : 16,
+    "stepTitle" : "Étape 6",
+    "stepDescription" : "Humidifiez vos mains (avec du vinaigre de riz par exemple)."
+  },
+  {
+    "recipe" : 16,
+    "stepTitle" : "Étape 7",
+    "stepDescription" : "Posez la feuille d'algue dans le sens de la largeur, et recouvrez-la d'une couche de riz. Laissez un ou deux centimètres non recouvert sur la largeur supérieure afin de pouvoir ensuite refermer aisément le rouleau."
+  },
+  {
+    "recipe" : 16,
+    "stepTitle" : "Étape 8",
+    "stepDescription" : "Placez dans le sens de la largeur une bande de saumon, une de concombre, une d'avocat. Saupoudrez de grains de sésame, et du persil haché."
+  },
+  {
+    "recipe" : 16,
+    "stepTitle" : "Étape 9",
+    "stepDescription" : "Enroulez l'algue en vous servant du célophane. Humidifiez la bande laissée libre pour une fermeture plus facile. Placez au frais."
+  },
+  {
+    "recipe" : 16,
+    "stepTitle" : "Étape 10",
+    "stepDescription" : "Reproduisez les mêmes opérations jusqu'à épuisement des ingrédients."
+  },
+  {
+    "recipe" : 16,
+    "stepTitle" : "Étape 11",
+    "stepDescription" : "Avant de servir, découpez les rouleaux en lamelles de 2 à 3 cm."
+  },
+  {
+    "recipe" : 17,
+    "stepTitle" : "Étape 1",
+    "stepDescription" : "Prévoir - 1 moule à tarte de 26 cm et préchauffer le four à 180°C (thermostat 6). Préparer la pâte en mélangeant d'abord tous les ingrédients secs."
+  },
+  {
+    "recipe" : 17,
+    "stepTitle" : "Étape 2",
+    "stepDescription" : "Ajouter le beurre coupé en morceaux."
+  },
+  {
+    "recipe" : 17,
+    "stepTitle" : "Étape 3",
+    "stepDescription" : "Ajouter l'oeuf et mélanger."
+  },
+  {
+    "recipe" : 17,
+    "stepTitle" : "Étape 4",
+    "stepDescription" : "Malaxer la pâte jusqu'à pouvoir en façonner une boule."
+  },
+  {
+    "recipe" : 17,
+    "stepTitle" : "Étape 5",
+    "stepDescription" : "Etaler à l'aide d'un rouleau à pâtisserie."
+  },
+  {
+    "recipe" : 17,
+    "stepTitle" : "Étape 6",
+    "stepDescription" : "Disposer dans le moule à tarte."
+  },
+  {
+    "recipe" : 17,
+    "stepTitle" : "Étape 7",
+    "stepDescription" : "Retirer l'excédent de pâte sur les bords (en faire des petits sablés)."
+  },
+  {
+    "recipe" : 17,
+    "stepTitle" : "Étape 8",
+    "stepDescription" : "La faire cuire à blanc 15 min, avec une feuille de papier cuisson et des légumes secs, pour empêcher la pâte de gonfler."
+  },
+  {
+    "recipe" : 17,
+    "stepTitle" : "Étape 9",
+    "stepDescription" : "Faire fondre le chocolat cassé en morceaux en versant dessus la crème bien chaude. Patienter 1 minute."
+  },
+  {
+    "recipe" : 17,
+    "stepTitle" : "Étape 10",
+    "stepDescription" : "Remuer pour bien diluer le chocolat et laisser refroidir un peu."
+  },
+  {
+    "recipe" : 17,
+    "stepTitle" : "Étape 11",
+    "stepDescription" : "Lorsque le fond de pâte est cuit, mélanger l'oeuf battu au mélange chocolat-crème."
+  },
+  {
+    "recipe" : 17,
+    "stepTitle" : "Étape 12",
+    "stepDescription" : "Verser le tout sur la pâte, et laisser cuire 10 minutes."
+  },
+  {
+    "recipe" : 17,
+    "stepTitle" : "Étape 13",
+    "stepDescription" : "Saupoudrer éventuellement de cacao en poudre une fois la tarte refroidie."
+  },
+  {
+    "recipe" : 18,
+    "stepTitle" : "Étape 1",
+    "stepDescription" : "Préchauffer le four à 180°C (thermostat 6). Dans un moule à tarte rond antiadhésif, faire fondre le beurre directement sur le feu."
+  },
+  {
+    "recipe" : 18,
+    "stepTitle" : "Étape 2",
+    "stepDescription" : "Y ajouter le sucre fin"
+  },
+  {
+    "recipe" : 18,
+    "stepTitle" : "Étape 3",
+    "stepDescription" : "et baisser le feu pour faire un caramel."
+  },
+  {
+    "recipe" : 18,
+    "stepTitle" : "Étape 4",
+    "stepDescription" : "Eplucher les 8 pommes golden entières. Les couper en deux et enlever le coeur sans défaire les moitiés. Disposer les pommes reconstituées en couronne dans le plat."
+  },
+  {
+    "recipe" : 18,
+    "stepTitle" : "Étape 5",
+    "stepDescription" : "en mettre une ou deux au milieu. Aplatir avec une spatule de temps en temps, les pommes doivent pocher dans le caramel, qui ne doit pas devenir noir, mais tout juste doré."
+  },
+  {
+    "recipe" : 18,
+    "stepTitle" : "Étape 6",
+    "stepDescription" : "Saupoudrer les pommes de sucre vanillé et de cannelle."
+  },
+  {
+    "recipe" : 18,
+    "stepTitle" : "Étape 7",
+    "stepDescription" : "Sortir le tout du feu et recouvrir de pâte feuilletée en appuyant bien sur les bords."
+  },
+  {
+    "recipe" : 18,
+    "stepTitle" : "Étape 8",
+    "stepDescription" : "Mettre au four moyen pendant 35 à 40 minutes."
+  },
+  {
+    "recipe" : 18,
+    "stepTitle" : "Étape 9",
+    "stepDescription" : "Déguster tiède."
+  },
+  {
+    "recipe" : 19,
+    "stepTitle" : "Étape 1",
+    "stepDescription" : "Couper les filets de poulet en larges lamelles. Saler et poivrer les 2 faces."
+  },
+  {
+    "recipe" : 19,
+    "stepTitle" : "Étape 2",
+    "stepDescription" : "Dans un plat, fouetter les oeufs avec du paprika fumé. Plonger les morceaux de poulet et bien les mélanger pour les enrober d'oeuf."
+  },
+  {
+    "recipe" : 19,
+    "stepTitle" : "Étape 3",
+    "stepDescription" : "Dans un sachet zip mettre la chapelure panko, ajouter les morceaux de poulet retirés du bain d'oeufs, fermer et bien secouer pour que le poulet soit bien pané."
+  },
+  {
+    "recipe" : 19,
+    "stepTitle" : "Étape 4",
+    "stepDescription" : "Chauffer la friteuse à 160°c. Plonger les chicken nuggets 3 minutes, les retirer avec une écumoire et les déposer sur du papier absorbant."
+  },
+  {
+    "recipe" : 19,
+    "stepTitle" : "Étape 5",
+    "stepDescription" : "Préchauffer le grille-viande ou appareil à panini (230°c, en haut et en bas)."
+  },
+  {
+    "recipe" : 19,
+    "stepTitle" : "Étape 6",
+    "stepDescription" : "Sur une galette wrap, déposer au centre de la sauce hannibal."
+  },
+  {
+    "recipe" : 19,
+    "stepTitle" : "Étape 7",
+    "stepDescription" : "Déposer au centre, sur la sauce, des feuilles de laitue, puis des tenders."
+  },
+  {
+    "recipe" : 19,
+    "stepTitle" : "Étape 8",
+    "stepDescription" : "Saupoudrer sur les nuggets une poignée (environ 40g) de cheddar, puis d'un peu d'oignons frits."
+  },
+  {
+    "recipe" : 19,
+    "stepTitle" : "Étape 9",
+    "stepDescription" : "Fermer le tacos :\n– d'abord replier la base sur le garniture\n– puis replier les côtés"
+  },
+  {
+    "recipe" : 19,
+    "stepTitle" : "Étape 10",
+    "stepDescription" : "Placer dans l'appareil à panini environ 30 secondes."
+  },
+  {
+    "recipe" : 19,
+    "stepTitle" : "Étape 11",
+    "stepDescription" : "Déguster !"
+  }
+]
