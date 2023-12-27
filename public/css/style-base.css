@@ -217,6 +217,10 @@ body {
 
 @media only screen and (min-width: 1000px) {
     /* modification css ici */
+}
+
+@media only screen and (min-width: 1200px) {
+    /* modification css ici */
     .header-logo-area a {
         font-size: 36px;
         margin: 0 14px;
@@ -243,6 +247,8 @@ body {
         border-radius: 14px;
         padding: 5px 10px;
         margin: 0 8px;
+        width: fit-content;
+        text-align: center;
     }
 
     .header-navlink:hover {
