@@ -46,7 +46,7 @@ body {
     box-sizing: border-box;
 }
 
-.search-ingredients-area {
+.search-recipes-area {
     display: flex;
     flex-direction: column;
 }
