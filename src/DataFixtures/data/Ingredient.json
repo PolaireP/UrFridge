@@ -58,11 +58,11 @@
     {
       "ingredientName": "Huile de coco", "avgUnitWeight": 0.18, "avgUnitVolume": null, "countable":  false},
     {
-      "ingredientName": "Lait", "avgUnitWeight": null, "avgUnitVolume": 0.25, "countable":  false},
+      "ingredientName": "Lait", "avgUnitWeight": 0.206, "avgUnitVolume": 0.200, "countable":  false},
     {
-      "ingredientName": "Lait de coco", "avgUnitWeight": null, "avgUnitVolume": 0.3, "countable":  false},
+      "ingredientName": "Lait de coco", "avgUnitWeight": 0.196, "avgUnitVolume": 0.200, "countable":  false},
     {
-      "ingredientName": "Lait d'amande", "avgUnitWeight": null, "avgUnitVolume": 0.28, "countable":  false},
+      "ingredientName": "Lait d'amande", "avgUnitWeight": 0.202, "avgUnitVolume": 0.200, "countable":  false},
     {
       "ingredientName": "Lentille", "avgUnitWeight": 0.02, "avgUnitVolume": null, "countable":  false},
     {
@@ -162,7 +162,7 @@
     {
       "ingredientName": "Grenade", "avgUnitWeight": 0.2, "avgUnitVolume": null, "countable":  false},
     {
-      "ingredientName": "Lait d'avoine", "avgUnitWeight": null, "avgUnitVolume": 0.28, "countable":  false},
+      "ingredientName": "Lait d'avoine", "avgUnitWeight": 0.206, "avgUnitVolume": 0.200, "countable":  false},
     {
       "ingredientName": "Moutarde", "avgUnitWeight": 0.25, "avgUnitVolume": null, "countable":  false},
     {
@@ -198,7 +198,7 @@
     {
       "ingredientName": "Saumon fumé", "avgUnitWeight": 0.3, "avgUnitVolume": null, "countable":  false},
     {
-      "ingredientName": "Sirop d'érable", "avgUnitWeight": null, "avgUnitVolume": 0.250, "countable":  false},
+      "ingredientName": "Sirop d'érable", "avgUnitWeight": 0.343, "avgUnitVolume": 0.250, "countable":  false},
     {
       "ingredientName": "Sirop de maïs", "avgUnitWeight": 0.3, "avgUnitVolume": null, "countable":  false},
     {
@@ -300,7 +300,7 @@
     {
       "ingredientName": "Extrait de vanille", "avgUnitWeight": 0.005, "avgUnitVolume": null,"countable":  false},
     {
-      "ingredientName": "Vinaigre de riz", "avgUnitWeight": null, "avgUnitVolume": 0.150,"countable":  false},
+      "ingredientName": "Vinaigre de riz", "avgUnitWeight": 0.152, "avgUnitVolume": 0.150,"countable":  false},
     {
       "ingredientName": "Wasabi", "avgUnitWeight": 0.005, "avgUnitVolume": null,"countable":  false},
     {
@@ -336,7 +336,7 @@
     {
       "ingredientName": "Bok choy", "avgUnitWeight": 0.150, "avgUnitVolume": null,"countable":  true},
     {
-      "ingredientName": "Bouillon de légumes", "avgUnitWeight": null, "avgUnitVolume": 0.250, "countable":  true},
+      "ingredientName": "Bouillon de légumes", "avgUnitWeight": 0.250, "avgUnitVolume": 0.250, "countable":  true},
     {
       "ingredientName": "Cacahuète", "avgUnitWeight": 0.030, "avgUnitVolume": null,"countable":  true},
     {
@@ -386,9 +386,9 @@
     {
       "ingredientName": "Clémentine", "avgUnitWeight": 0.100, "avgUnitVolume": null,"countable":  true},
     {
-      "ingredientName": "Cognac", "avgUnitWeight": null, "avgUnitVolume": 0.015,"countable":  false},
+      "ingredientName": "Cognac", "avgUnitWeight": 0.0141, "avgUnitVolume": 0.015,"countable":  false},
     {
-      "ingredientName": "Cointreau", "avgUnitWeight": null, "avgUnitVolume": 0.015,"countable":  false},
+      "ingredientName": "Cointreau", "avgUnitWeight": 0.0141, "avgUnitVolume": 0.015,"countable":  false},
     {
       "ingredientName": "Concombre de mer", "avgUnitWeight": 0.200, "avgUnitVolume": null,"countable":  true},
     {
@@ -402,15 +402,15 @@
     {
       "ingredientName": "Courgette", "avgUnitWeight": 0.200, "avgUnitVolume": null,"countable":  true},
     {
-      "ingredientName": "Crème aigre", "avgUnitWeight": null, "avgUnitVolume": 0.200,"countable":  false},
+      "ingredientName": "Crème aigre", "avgUnitWeight": 0.200, "avgUnitVolume": 0.200,"countable":  false},
     {
-      "ingredientName": "Crème de coco", "avgUnitWeight": null, "avgUnitVolume": 0.200,"countable":  false},
+      "ingredientName": "Crème de coco", "avgUnitWeight": 0.202, "avgUnitVolume": 0.200,"countable":  false},
     {
-      "ingredientName": "Crème fraîche", "avgUnitWeight": null, "avgUnitVolume": 0.200,"countable":  false},
+      "ingredientName": "Crème fraîche", "avgUnitWeight": 0.202, "avgUnitVolume": 0.200,"countable":  false},
     {
-      "ingredientName": "Crème liquide", "avgUnitWeight": null, "avgUnitVolume": 0.200,"countable":  false},
+      "ingredientName": "Crème liquide", "avgUnitWeight": 0.202, "avgUnitVolume": 0.200,"countable":  false},
     {
-      "ingredientName": "Crème sure", "avgUnitWeight": null, "avgUnitVolume": 0.200,"countable":  false},
+      "ingredientName": "Crème sure", "avgUnitWeight": 0.200, "avgUnitVolume": 0.200,"countable":  false},
     {
       "ingredientName": "Crêpe", "avgUnitWeight": 0.050, "avgUnitVolume": null,"countable":  true},
     {
@@ -500,45 +500,45 @@
     {
       "ingredientName": "Herbe de la pampa", "avgUnitWeight": 0.030, "avgUnitVolume": null,"countable":  false},
     {
-      "ingredientName": "Huile de lin", "avgUnitWeight": null, "avgUnitVolume": 0.200,"countable":  false},
+      "ingredientName": "Huile de lin", "avgUnitWeight": 0.186, "avgUnitVolume": 0.200,"countable":  false},
     {
-      "ingredientName": "Huile de pépins de raisin", "avgUnitWeight": null, "avgUnitVolume": 0.200,"countable":  false},
+      "ingredientName": "Huile de pépins de raisin", "avgUnitWeight": 0.184, "avgUnitVolume": 0.200,"countable":  false},
     {
-      "ingredientName": "Huile de tournesol", "avgUnitWeight": null, "avgUnitVolume": 0.200,"countable":  false},
+      "ingredientName": "Huile de tournesol", "avgUnitWeight": 0.184, "avgUnitVolume": 0.200,"countable":  false},
     {
       "ingredientName": "Huître", "avgUnitWeight": 0.030, "avgUnitVolume": null,"countable":  true},
     {
-      "ingredientName": "Jus de citron", "avgUnitWeight": null, "avgUnitVolume": 0.200,"countable":  false},
+      "ingredientName": "Jus de citron", "avgUnitWeight": 0.206, "avgUnitVolume": 0.200,"countable":  false},
     {
-      "ingredientName": "Jus de pomme", "avgUnitWeight": null, "avgUnitVolume": 0.200,"countable":  false},
+      "ingredientName": "Jus de pomme", "avgUnitWeight": 0.210, "avgUnitVolume": 0.200,"countable":  false},
     {
-      "ingredientName": "Jus de raisin", "avgUnitWeight": null, "avgUnitVolume": 0.200,"countable":  false},
+      "ingredientName": "Jus de raisin", "avgUnitWeight": 0.210, "avgUnitVolume": 0.200,"countable":  false},
     {
       "ingredientName": "Kaki", "avgUnitWeight": 0.150, "avgUnitVolume": null,"countable":  true},
     {
-      "ingredientName": "Kéfir", "avgUnitWeight": null, "avgUnitVolume": 0.200,"countable":  false},
+      "ingredientName": "Kéfir", "avgUnitWeight": 0.204, "avgUnitVolume": 0.200,"countable":  false},
     {
       "ingredientName": "Kirsch", "avgUnitWeight": 0.030, "avgUnitVolume": null,"countable":  false},
     {
       "ingredientName": "Kiwi", "avgUnitWeight": 0.100, "avgUnitVolume": null,"countable":  true},
     {
-      "ingredientName": "Lait concentré", "avgUnitWeight": null, "avgUnitVolume": 0.200,"countable":  false},
+      "ingredientName": "Lait concentré", "avgUnitWeight": 0.256, "avgUnitVolume": 0.200,"countable":  false},
     {
-      "ingredientName": "Lait d'amande non sucré", "avgUnitWeight": null, "avgUnitVolume": 0.200,"countable":  false},
+      "ingredientName": "Lait d'amande non sucré", "avgUnitWeight": 0.202, "avgUnitVolume": 0.200,"countable":  false},
     {
-      "ingredientName": "Lait de chèvre", "avgUnitWeight": null, "avgUnitVolume": 0.200,"countable":  false},
+      "ingredientName": "Lait de chèvre", "avgUnitWeight": 0.206, "avgUnitVolume": 0.200,"countable":  false},
     {
-      "ingredientName": "Lait de coco light", "avgUnitWeight": null, "avgUnitVolume": 0.200,"countable":  false},
+      "ingredientName": "Lait de coco light", "avgUnitWeight": 0.200, "avgUnitVolume": 0.200,"countable":  false},
     {
-      "ingredientName": "Lait demi-écrémé", "avgUnitWeight": null, "avgUnitVolume": 0.200,"countable":  false},
+      "ingredientName": "Lait demi-écrémé", "avgUnitWeight": 0.206, "avgUnitVolume": 0.200,"countable":  false},
     {
-      "ingredientName": "Lait écrémé", "avgUnitWeight": null, "avgUnitVolume": 0.200,"countable":  false},
+      "ingredientName": "Lait écrémé", "avgUnitWeight": 0.206, "avgUnitVolume": 0.200,"countable":  false},
     {
-      "ingredientName": "Lait entier", "avgUnitWeight": null, "avgUnitVolume": 0.200,"countable":  false},
+      "ingredientName": "Lait entier", "avgUnitWeight": 0.206, "avgUnitVolume": 0.200,"countable":  false},
     {
-      "ingredientName": "Lait évaporé", "avgUnitWeight": null, "avgUnitVolume": 0.200,"countable":  false},
+      "ingredientName": "Lait évaporé", "avgUnitWeight": 0.252, "avgUnitVolume": 0.200,"countable":  false},
     {
-      "ingredientName": "Lait fermenté", "avgUnitWeight": null, "avgUnitVolume": 0.200,"countable":  false},
+      "ingredientName": "Lait fermenté", "avgUnitWeight": 0.206, "avgUnitVolume": 0.200,"countable":  false},
     {
       "ingredientName": "Arachide", "avgUnitWeight": 0.050, "avgUnitVolume": null,"countable":  false},
     {
@@ -548,7 +548,7 @@
     {
       "ingredientName": "Beurre clarifié", "avgUnitWeight": 0.100, "avgUnitVolume": null,"countable":  false},
     {
-      "ingredientName": "Bière", "avgUnitWeight": null, "avgUnitVolume": 0.330,"countable":  false},
+      "ingredientName": "Bière", "avgUnitWeight": 0.333, "avgUnitVolume": 0.330,"countable":  false},
     {
       "ingredientName": "Blanc d'oeuf", "avgUnitWeight": 0.030, "avgUnitVolume": null,"countable":  true},
     {
@@ -556,7 +556,7 @@
     {
       "ingredientName": "Cheddar", "avgUnitWeight": 0.100, "avgUnitVolume": null,"countable":  false},
     {
-      "ingredientName": "Cidre", "avgUnitWeight": null, "avgUnitVolume": 0.330,"countable":  false},
+      "ingredientName": "Cidre", "avgUnitWeight": 0.333, "avgUnitVolume": 0.330,"countable":  false},
     {
       "ingredientName": "Palourde", "avgUnitWeight": 0.030, "avgUnitVolume": null,"countable":  true},
     {
@@ -564,13 +564,7 @@
     {
       "ingredientName": "Crabe", "avgUnitWeight": 0.100, "avgUnitVolume": null,"countable":  false},
     {
-      "ingredientName": "Crème aigre", "avgUnitWeight": null, "avgUnitVolume": 0.200,"countable":  false},
-    {
-      "ingredientName": "Crème de coco", "avgUnitWeight": null, "avgUnitVolume": 0.200,"countable":  false},
-    {
-      "ingredientName": "Crème fraîche", "avgUnitWeight": null, "avgUnitVolume": 0.200,"countable":  false},
-    {
-      "ingredientName": "Crème liquide", "avgUnitWeight": null, "avgUnitVolume": 0.200,"countable":  false},
+      "ingredientName": "Crème aigre", "avgUnitWeight": 0.200, "avgUnitVolume": 0.200,"countable":  false},
     {
       "ingredientName": "Écrevisse", "avgUnitWeight": 0.100, "avgUnitVolume": null,"countable":  true},
     {
@@ -578,7 +572,7 @@
     {
       "ingredientName": "Fève de cacao", "avgUnitWeight": 0.030, "avgUnitVolume": null,"countable":  true},
     {
-      "ingredientName": "Fleur d'oranger", "avgUnitWeight": null, "avgUnitVolume": 0.005, "countable":  false},
+      "ingredientName": "Fleur d'oranger", "avgUnitWeight": 0.005, "avgUnitVolume": 0.005, "countable":  false},
     {
       "ingredientName": "Flocons de maïs", "avgUnitWeight": 0.030, "avgUnitVolume": null, "countable":  false},
     {
@@ -598,17 +592,17 @@
     {
       "ingredientName": "Houmous", "avgUnitWeight": 0.200, "avgUnitVolume": null, "countable":  false},
     {
-      "ingredientName": "Huile de sésame", "avgUnitWeight": null, "avgUnitVolume": 0.200, "countable":  false},
+      "ingredientName": "Huile de sésame", "avgUnitWeight": 0.184, "avgUnitVolume": 0.200, "countable":  false},
     {
-      "ingredientName": "Huile végétale", "avgUnitWeight": null, "avgUnitVolume": 0.200, "countable":  false},
+      "ingredientName": "Huile végétale", "avgUnitWeight": 0.184, "avgUnitVolume": 0.200, "countable":  false},
     {
-      "ingredientName": "Jus d'agrumes", "avgUnitWeight": null, "avgUnitVolume": 0.200, "countable":  false},
+      "ingredientName": "Jus d'agrumes", "avgUnitWeight": 0.206, "avgUnitVolume": 0.200, "countable":  false},
     {
-      "ingredientName": "Jus de tomate", "avgUnitWeight": null, "avgUnitVolume": 0.200, "countable":  false},
+      "ingredientName": "Jus de tomate", "avgUnitWeight": 0.200, "avgUnitVolume": 0.200, "countable":  false},
     {
       "ingredientName": "Kombu", "avgUnitWeight": 0.010, "avgUnitVolume": null, "countable":  true},
     {
-      "ingredientName": "Lait concentré", "avgUnitWeight": null, "avgUnitVolume": 0.200, "countable":  false},
+      "ingredientName": "Lait concentré", "avgUnitWeight": 0.256, "avgUnitVolume": 0.200, "countable":  false},
     {
       "ingredientName": "Lait en poudre", "avgUnitWeight": 0.100, "avgUnitVolume": null, "countable":  false},
     {
@@ -626,15 +620,15 @@
     {
       "ingredientName": "Mascarpone", "avgUnitWeight": 0.100, "avgUnitVolume": null, "countable":  false},
     {
-      "ingredientName": "Mayonnaise", "avgUnitWeight": null, "avgUnitVolume": 0.200, "countable":  false},
+      "ingredientName": "Mayonnaise", "avgUnitWeight": 0.182, "avgUnitVolume": 0.200, "countable":  false},
     {
       "ingredientName": "Menthe poivrée", "avgUnitWeight": 0.005, "avgUnitVolume": null, "countable":  false},
     {
       "ingredientName": "Miel de sarrasin", "avgUnitWeight": 0.200, "avgUnitVolume": null, "countable":  false},
     {
-      "ingredientName": "Moutarde de Dijon", "avgUnitWeight": null, "avgUnitVolume": 0.200, "countable":  false},
+      "ingredientName": "Moutarde de Dijon", "avgUnitWeight": 0.220, "avgUnitVolume": 0.200, "countable":  false},
     {
-      "ingredientName": "Moutarde de Meaux", "avgUnitWeight": null, "avgUnitVolume": 0.200, "countable":  false},
+      "ingredientName": "Moutarde de Meaux", "avgUnitWeight": 0.220, "avgUnitVolume": 0.200, "countable":  false},
     {
       "ingredientName": "Mûre", "avgUnitWeight": 0.050, "avgUnitVolume": null, "countable":  true},
     {
@@ -704,7 +698,7 @@
     {
       "ingredientName": "Porc", "avgUnitWeight": 0.100, "avgUnitVolume": null, "countable":  false},
     {
-      "ingredientName": "Porto", "avgUnitWeight": null, "avgUnitVolume": 0.200, "countable":  false},
+      "ingredientName": "Porto", "avgUnitWeight": 0.196, "avgUnitVolume": 0.200, "countable":  false},
     {
       "ingredientName": "Potiron", "avgUnitWeight": 0.500, "avgUnitVolume": null, "countable":  true},
     {
@@ -726,25 +720,25 @@
     {
       "ingredientName": "Riz Arborio", "avgUnitWeight": 0.200, "avgUnitVolume": null, "countable":  false},
     {
-      "ingredientName": "Rouille", "avgUnitWeight": null, "avgUnitVolume": 0.200, "countable":  false},
+      "ingredientName": "Rouille", "avgUnitWeight": 0.184, "avgUnitVolume": 0.200, "countable":  false},
     {
       "ingredientName": "Rouleau de printemps", "avgUnitWeight": 0.050, "avgUnitVolume": null, "countable":  false},
     {
-      "ingredientName": "Sabayon", "avgUnitWeight": null, "avgUnitVolume": 0.200, "countable":  false},
+      "ingredientName": "Sabayon", "avgUnitWeight": 0.200, "avgUnitVolume": 0.200, "countable":  false},
     {
       "ingredientName": "Sachet de levure de boulanger", "avgUnitWeight": 0.010, "avgUnitVolume": null, "countable":  true},
     {
       "ingredientName": "Saindoux", "avgUnitWeight": 0.100, "avgUnitVolume": null, "countable":  false},
     {
-      "ingredientName": "Sauce béarnaise", "avgUnitWeight": null, "avgUnitVolume": 0.200, "countable":  false},
+      "ingredientName": "Sauce béarnaise", "avgUnitWeight": 0.196, "avgUnitVolume": 0.200, "countable":  false},
     {
-      "ingredientName": "Sauce béchamel", "avgUnitWeight": null, "avgUnitVolume": 0.200, "countable":  false},
+      "ingredientName": "Sauce béchamel", "avgUnitWeight": 0.210, "avgUnitVolume": 0.200, "countable":  false},
     {
-      "ingredientName": "Sauce hollandaise", "avgUnitWeight": null, "avgUnitVolume": 0.200, "countable":  false},
+      "ingredientName": "Sauce hollandaise", "avgUnitWeight": 0.196, "avgUnitVolume": 0.200, "countable":  false},
     {
-      "ingredientName": "Sauce teriyaki", "avgUnitWeight": null, "avgUnitVolume": 0.200, "countable":  false},
+      "ingredientName": "Sauce teriyaki", "avgUnitWeight": 0.224, "avgUnitVolume": 0.200, "countable":  false},
     {
-      "ingredientName": "Sauce Worcestershire", "avgUnitWeight": null, "avgUnitVolume": 200, "countable":  false},
+      "ingredientName": "Sauce Worcestershire", "avgUnitWeight": 0.206, "avgUnitVolume": 200, "countable":  false},
     {
       "ingredientName": "Saumon frais", "avgUnitWeight": 0.100, "avgUnitVolume": null, "countable":  false},
     {
@@ -756,27 +750,27 @@
     {
       "ingredientName": "Seiche", "avgUnitWeight": 0.200, "avgUnitVolume": null, "countable":  true},
     {
-      "ingredientName": "Sirop de grenadine", "avgUnitWeight": null, "avgUnitVolume": 0.200, "countable":  false},
+      "ingredientName": "Sirop de grenadine", "avgUnitWeight": 0.266, "avgUnitVolume": 0.200, "countable":  false},
     {
-      "ingredientName": "Sirop de menthe", "avgUnitWeight": null, "avgUnitVolume": 0.200, "countable":  false},
+      "ingredientName": "Sirop de menthe", "avgUnitWeight": 0.262, "avgUnitVolume": 0.200, "countable":  false},
     {
-      "ingredientName": "Sirop de poire", "avgUnitWeight": null, "avgUnitVolume": 0.200, "countable":  false},
+      "ingredientName": "Sirop de poire", "avgUnitWeight": 0.262, "avgUnitVolume": 0.200, "countable":  false},
     {
-      "ingredientName": "Sirop de framboise", "avgUnitWeight": null, "avgUnitVolume": 0.200, "countable":  false},
+      "ingredientName": "Sirop de framboise", "avgUnitWeight": 0.262, "avgUnitVolume": 0.200, "countable":  false},
     {
-      "ingredientName": "Sirop d'orgeat", "avgUnitWeight": null, "avgUnitVolume": 0.200, "countable":  false},
+      "ingredientName": "Sirop d'orgeat", "avgUnitWeight": 0.262, "avgUnitVolume": 0.200, "countable":  false},
     {
-      "ingredientName": "Sirop de pêche", "avgUnitWeight": null, "avgUnitVolume": 0.200, "countable":  false},
+      "ingredientName": "Sirop de pêche", "avgUnitWeight": 0.262, "avgUnitVolume": 0.200, "countable":  false},
     {
-      "ingredientName": "Sirop de fraise", "avgUnitWeight": null, "avgUnitVolume": 0.200, "countable":  false},
+      "ingredientName": "Sirop de fraise", "avgUnitWeight": 0.262, "avgUnitVolume": 0.200, "countable":  false},
     {
-      "ingredientName": "Sirop de citron", "avgUnitWeight": null, "avgUnitVolume": 0.200, "countable":  false},
+      "ingredientName": "Sirop de citron", "avgUnitWeight": 0.262, "avgUnitVolume": 0.200, "countable":  false},
     {
-      "ingredientName": "Sirop d'orange", "avgUnitWeight": null, "avgUnitVolume": 0.200, "countable":  false},
+      "ingredientName": "Sirop d'orange", "avgUnitWeight": 0.262, "avgUnitVolume": 0.200, "countable":  false},
     {
-      "ingredientName": "Sirop de sucre de canne", "avgUnitWeight": null, "avgUnitVolume": 0.200, "countable":  false},
+      "ingredientName": "Sirop de sucre de canne", "avgUnitWeight": 0.262, "avgUnitVolume": 0.200, "countable":  false},
     {
-      "ingredientName": "Sirop d'agave", "avgUnitWeight": null, "avgUnitVolume": 0.200, "countable":  false},
+      "ingredientName": "Sirop d'agave", "avgUnitWeight": 0.262, "avgUnitVolume": 0.200, "countable":  false},
     {
       "ingredientName": "Sole", "avgUnitWeight": 0.200, "avgUnitVolume": null, "countable":  true},
     {
@@ -818,15 +812,15 @@
     {
       "ingredientName": "Viande hachée", "avgUnitWeight": 0.100, "avgUnitVolume": null, "countable":  false},
     {
-      "ingredientName": "Vinaigre balsamique blanc", "avgUnitWeight": null, "avgUnitVolume": 0.200, "countable":  false},
+      "ingredientName": "Vinaigre balsamique blanc", "avgUnitWeight": 0.202, "avgUnitVolume": 0.200, "countable":  false},
     {
-      "ingredientName": "Vinaigre de framboise", "avgUnitWeight": null, "avgUnitVolume": 0.200, "countable":  false},
+      "ingredientName": "Vinaigre de framboise", "avgUnitWeight": 0.202, "avgUnitVolume": 0.200, "countable":  false},
     {
-      "ingredientName": "Vinaigre de xérès", "avgUnitWeight": null, "avgUnitVolume": 0.200, "countable":  false},
+      "ingredientName": "Vinaigre de xérès", "avgUnitWeight": 0.202, "avgUnitVolume": 0.200, "countable":  false},
     {
       "ingredientName": "Wasabi en poudre", "avgUnitWeight": 0.005, "avgUnitVolume": null, "countable":  false},
     {
-      "ingredientName": "Whisky", "avgUnitWeight": null, "avgUnitVolume": 0.200, "countable":  false},
+      "ingredientName": "Whisky", "avgUnitWeight": 0.188, "avgUnitVolume": 0.200, "countable":  false},
     {
       "ingredientName": "Yaourt à la vanille", "avgUnitWeight": 0.200, "avgUnitVolume": null, "countable":  true},
     {
