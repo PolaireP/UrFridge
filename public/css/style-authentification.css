@@ -26,7 +26,7 @@ body {
     display: none;
 }
 
-.authentication-area {
+.authentication-area, .register-area {
     display: flex;
     margin: 75px 0;
     border: dashed 4px #4CB9A5;
@@ -40,7 +40,7 @@ body {
     height: fit-content;
 }
 
-.authentication-form {
+.authentication-form, .register-form {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -48,15 +48,16 @@ body {
     max-width: 400px;
 }
 
-.authentication-form-title {
+.authentication-form-title, .register-form-title {
     display: flex;
     font-weight: 700;
     font-family: "Roboto", sans-serif;
     font-size: 24px;
     color: #4CB9A5;
+    text-align: center;
 }
 
-.new-signup {
+.new-signup, .old-signin {
     display: flex;
     color: #FF7F50;
     font-family: "Roboto", sans-serif;
@@ -65,20 +66,34 @@ body {
     margin: 5px;
 }
 
-.signup-link {
+.signup-link, .signin-link {
     display: flex;
     color: #FF7F50;
     margin-left: 5px;
 }
 
-.authentication-inputs-area {
+.authentication-inputs-area, .register-inputs-area {
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 100%;
 }
 
-.auth-input {
+.register-inputs-identity {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#lastname, #firstname {
+    width: 45%;
+}
+
+#email, #password, #confirm-password {
+    width: 100%;
+}
+
+.auth-input, .reg-input {
     display: flex;
     background-color: rgba(255, 127, 80, 0.8);
     color: white;
@@ -90,14 +105,17 @@ body {
     border-radius: 22px;
     box-sizing: border-box;
     margin: 10px 0;
+}
+
+.auth-input {
     width: 100%;
 }
 
-.auth-input::placeholder {
+.auth-input::placeholder, .reg-input::placeholder {
     color: white;
 }
 
-.auth-input:focus {
+.auth-input:focus, .reg-input:focus {
     outline: none;
 }
 
@@ -111,7 +129,7 @@ body {
     align-self: flex-end;
 }
 
-.authentication-submit {
+.authentication-submit, .register-submit {
     display: flex;
     cursor: pointer;
     border: none;
@@ -127,7 +145,7 @@ body {
     box-shadow: 2px 4px 4px 0 rgba(0,0,0,0.25);
 }
 
-.authentication-submit:hover {
+.authentication-submit:hover, .register-submit:hover {
     background-color: #218A77;
     transition: 0.2s;
 }
@@ -200,7 +218,7 @@ body {
         justify-self: right;
     }
 
-    .authentication-area {
+    .authentication-area, .register-area {
         margin: 75px 10px;
     }
 
