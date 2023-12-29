@@ -33,7 +33,7 @@ class Ingredient
     #[ORM\ManyToMany(targetEntity: recipe::class, inversedBy: 'ingredients')]
     private Collection $recipes;
 
-    #[ORM\OneToMany(mappedBy: 'ingredient', targetEntity: Quantity::class, orphanRemoval: true)]
+    #[ORM\OneToMany(mappedBy: 'ingredient', targetEntity: FridgeQuantity::class, orphanRemoval: true)]
     private Collection $quantities;
 
     #[ORM\ManyToMany(targetEntity: Allergen::class, mappedBy: 'ingredients')]
@@ -42,12 +42,16 @@ class Ingredient
     #[ORM\ManyToMany(targetEntity: IngredientType::class, mappedBy: 'ingredients')]
     private Collection $ingredientTypes;
 
+    #[ORM\OneToMany(mappedBy: 'ingredient', targetEntity: RecipeQuantity::class)]
+    private Collection $recipeQuantities;
+
     public function __construct()
     {
         $this->recipes = new ArrayCollection();
         $this->quantities = new ArrayCollection();
         $this->allergens = new ArrayCollection();
         $this->ingredientTypes = new ArrayCollection();
+        $this->recipeQuantities = new ArrayCollection();
     }
 
     public function getId(): ?int
@@ -140,14 +144,14 @@ class Ingredient
     }
 
     /**
-     * @return Collection<int, Quantity>
+     * @return Collection<int, FridgeQuantity>
      */
     public function getQuantities(): Collection
     {
         return $this->quantities;
     }
 
-    public function addQuantity(Quantity $quantity): static
+    public function addQuantity(FridgeQuantity $quantity): static
     {
         if (!$this->quantities->contains($quantity)) {
             $this->quantities->add($quantity);
@@ -157,7 +161,7 @@ class Ingredient
         return $this;
     }
 
-    public function removeQuantity(Quantity $quantity): static
+    public function removeQuantity(FridgeQuantity $quantity): static
     {
         if ($this->quantities->removeElement($quantity)) {
             // set the owning side to null (unless already changed)
@@ -218,6 +222,36 @@ class Ingredient
     {
         if ($this->ingredientTypes->removeElement($ingredientType)) {
             $ingredientType->removeIngredient($this);
+        }
+
+        return $this;
+    }
+
+    /**
+     * @return Collection<int, RecipeQuantity>
+     */
+    public function getRecipeQuantities(): Collection
+    {
+        return $this->recipeQuantities;
+    }
+
+    public function addRecipeQuantity(RecipeQuantity $recipeQuantity): static
+    {
+        if (!$this->recipeQuantities->contains($recipeQuantity)) {
+            $this->recipeQuantities->add($recipeQuantity);
+            $recipeQuantity->setIngredient($this);
+        }
+
+        return $this;
+    }
+
+    public function removeRecipeQuantity(RecipeQuantity $recipeQuantity): static
+    {
+        if ($this->recipeQuantities->removeElement($recipeQuantity)) {
+            // set the owning side to null (unless already changed)
+            if ($recipeQuantity->getIngredient() === $this) {
+                $recipeQuantity->setIngredient(null);
+            }
         }
 
         return $this;
