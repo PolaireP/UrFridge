@@ -2,27 +2,27 @@
 
 namespace App\Repository;
 
-use App\Entity\Quantity;
+use App\Entity\FridgeQuantity;
 use Doctrine\Bundle\DoctrineBundle\Repository\ServiceEntityRepository;
 use Doctrine\Persistence\ManagerRegistry;
 
 /**
- * @extends ServiceEntityRepository<Quantity>
+ * @extends ServiceEntityRepository<FridgeQuantity>
  *
- * @method Quantity|null find($id, $lockMode = null, $lockVersion = null)
- * @method Quantity|null findOneBy(array $criteria, array $orderBy = null)
- * @method Quantity[]    findAll()
- * @method Quantity[]    findBy(array $criteria, array $orderBy = null, $limit = null, $offset = null)
+ * @method FridgeQuantity|null find($id, $lockMode = null, $lockVersion = null)
+ * @method FridgeQuantity|null findOneBy(array $criteria, array $orderBy = null)
+ * @method FridgeQuantity[]    findAll()
+ * @method FridgeQuantity[]    findBy(array $criteria, array $orderBy = null, $limit = null, $offset = null)
  */
-class QuantityRepository extends ServiceEntityRepository
+class FridgeQuantityRepository extends ServiceEntityRepository
 {
     public function __construct(ManagerRegistry $registry)
     {
-        parent::__construct($registry, Quantity::class);
+        parent::__construct($registry, FridgeQuantity::class);
     }
 
     //    /**
-    //     * @return Quantity[] Returns an array of Quantity objects
+    //     * @return FridgeQuantity[] Returns an array of FridgeQuantity objects
     //     */
     //    public function findByExampleField($value): array
     //    {
@@ -36,7 +36,7 @@ class QuantityRepository extends ServiceEntityRepository
     //        ;
     //    }
 
-    //    public function findOneBySomeField($value): ?Quantity
+    //    public function findOneBySomeField($value): ?FridgeQuantity
     //    {
     //        return $this->createQueryBuilder('q')
     //            ->andWhere('q.exampleField = :val')
