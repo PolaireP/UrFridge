@@ -1,832 +1,1247 @@
-  [
-    {
-      "ingredientName": "Ail des ours", "avgUnitWeight": 0.05, "avgUnitVolume": null, "countable":  false},
-    {
-      "ingredientName": "Ail", "avgUnitWeight": 0.05, "avgUnitVolume": null, "countable":  false},
-    {
-      "ingredientName": "Ananas", "avgUnitWeight": 1.2, "avgUnitVolume": null, "countable":  false},
-    {
-      "ingredientName": "Avocat", "avgUnitWeight": 0.2, "avgUnitVolume": null, "countable":  true},
-    {
-      "ingredientName": "Banane", "avgUnitWeight": 0.12, "avgUnitVolume": null, "countable":  true},
-    {
-      "ingredientName": "Basilic", "avgUnitWeight": 0.02, "avgUnitVolume": null, "countable":  true},
-    {
-      "ingredientName": "Beurre", "avgUnitWeight": 0.1, "avgUnitVolume": null, "countable":  false},
-    {
-      "ingredientName": "Boeuf", "avgUnitWeight": 0.25, "avgUnitVolume": null, "countable":  false},
-    {
-      "ingredientName": "Brocoli", "avgUnitWeight": 0.3, "avgUnitVolume": null, "countable":  true},
-    {
-      "ingredientName": "Cannelle", "avgUnitWeight": 0.005, "avgUnitVolume": null, "countable":  true},
-    {
-      "ingredientName": "Cannelle en poudre", "avgUnitWeight": 0.005, "avgUnitVolume": null, "countable":  false},
-    {
-      "ingredientName": "Carotte", "avgUnitWeight": 0.1, "avgUnitVolume": null, "countable":  true},
-    {
-      "ingredientName": "Cerise", "avgUnitWeight": 0.01, "avgUnitVolume": null, "countable":  true},
-    {
-      "ingredientName": "Champignon", "avgUnitWeight": 0.05, "avgUnitVolume": null, "countable":  true},
-    {
-      "ingredientName": "Chocolat", "avgUnitWeight": 0.1, "avgUnitVolume": null, "countable":  true},
-    {
-      "ingredientName": "Citron", "avgUnitWeight": 0.1, "avgUnitVolume": null, "countable":  true},
-    {
-      "ingredientName": "Citron vert", "avgUnitWeight": 0.1, "avgUnitVolume": null, "countable":  true},
-    {
-      "ingredientName": "Concombre", "avgUnitWeight": 0.25, "avgUnitVolume": null, "countable":  true},
-    {
-      "ingredientName": "Coriandre", "avgUnitWeight": 0.015, "avgUnitVolume": null, "countable":  false},
-    {
-      "ingredientName": "Cumin", "avgUnitWeight": 0.01, "avgUnitVolume": null, "countable":  false},
-    {
-      "ingredientName": "Curcuma", "avgUnitWeight": 0.008, "avgUnitVolume": null, "countable":  false},
-    {
-      "ingredientName": "Datte", "avgUnitWeight": 0.02, "avgUnitVolume": null, "countable":  true},
-    {
-      "ingredientName": "Épinard", "avgUnitWeight": 0.03, "avgUnitVolume": null, "countable":  false},
-    {
-      "ingredientName": "Fraise", "avgUnitWeight": 0.02, "avgUnitVolume": null, "countable":  true},
-    {
-      "ingredientName": "Framboise", "avgUnitWeight": 0.015, "avgUnitVolume": null, "countable":  true},
-    {
-      "ingredientName": "Gingembre", "avgUnitWeight": 0.02, "avgUnitVolume": null, "countable":  false},
-    {
-      "ingredientName": "Haricot vert", "avgUnitWeight": 0.05, "avgUnitVolume": null, "countable":  false},
-    {
-      "ingredientName": "Huile d'olive", "avgUnitWeight": 0.2, "avgUnitVolume": null, "countable":  false},
-    {
-      "ingredientName": "Huile de coco", "avgUnitWeight": 0.18, "avgUnitVolume": null, "countable":  false},
-    {
-      "ingredientName": "Lait", "avgUnitWeight": 0.206, "avgUnitVolume": 0.200, "countable":  false},
-    {
-      "ingredientName": "Lait de coco", "avgUnitWeight": 0.196, "avgUnitVolume": 0.200, "countable":  false},
-    {
-      "ingredientName": "Lait d'amande", "avgUnitWeight": 0.202, "avgUnitVolume": 0.200, "countable":  false},
-    {
-      "ingredientName": "Lentille", "avgUnitWeight": 0.02, "avgUnitVolume": null, "countable":  false},
-    {
-      "ingredientName": "Mangue", "avgUnitWeight": 0.3, "avgUnitVolume": null, "countable":  true},
-    {
-      "ingredientName": "Feuille de menthe", "avgUnitWeight": 0.005, "avgUnitVolume": null, "countable":  true},
-    {
-      "ingredientName": "Miel", "avgUnitWeight": 0.3, "avgUnitVolume": null, "countable":  false},
-    {
-      "ingredientName": "Noix", "avgUnitWeight": 0.05, "avgUnitVolume": null, "countable":  false},
-    {
-      "ingredientName": "Noix de coco", "avgUnitWeight": 0.3, "avgUnitVolume": null, "countable":  true},
-    {
-      "ingredientName": "Oeuf", "avgUnitWeight": 0.05, "avgUnitVolume": null, "countable":  true},
-    {
-      "ingredientName": "Oignon", "avgUnitWeight": 0.15, "avgUnitVolume": null, "countable":  true},
-    {
-      "ingredientName": "Orange", "avgUnitWeight": 0.2, "avgUnitVolume": null, "countable":  true},
-    {
-      "ingredientName": "Paprika", "avgUnitWeight": 0.01, "avgUnitVolume": null, "countable":  false},
-    {
-      "ingredientName": "Pâte à pizza", "avgUnitWeight": 0.25, "avgUnitVolume": null, "countable":  false},
-    {
-      "ingredientName": "Pâte feuilletée", "avgUnitWeight": 0.3, "avgUnitVolume": null, "countable":  false},
-    {
-      "ingredientName": "Patate douce", "avgUnitWeight": 0.2, "avgUnitVolume": null, "countable":  true},
-    {
-      "ingredientName": "Pêche", "avgUnitWeight": 0.15, "avgUnitVolume": null, "countable":  true},
-    {
-      "ingredientName": "Persil", "avgUnitWeight": 0.015, "avgUnitVolume": null, "countable":  false},
-    {
-      "ingredientName": "Poire", "avgUnitWeight": 0.15, "avgUnitVolume": null, "countable":  true},
-    {
-      "ingredientName": "Poireau", "avgUnitWeight": 0.12, "avgUnitVolume": null, "countable":  true},
-    {
-      "ingredientName": "Poivron", "avgUnitWeight": 0.2, "avgUnitVolume": null, "countable":  true},
-    {
-      "ingredientName": "Pomme", "avgUnitWeight": 0.15, "avgUnitVolume": null, "countable":  true},
-    {
-      "ingredientName": "Pomme de terre", "avgUnitWeight": 0.2, "avgUnitVolume": null, "countable":  true},
-    {
-      "ingredientName": "Poulet", "avgUnitWeight": 0.25, "avgUnitVolume": null, "countable":  true},
-    {
-      "ingredientName": "Quinoa", "avgUnitWeight": 0.02, "avgUnitVolume": null, "countable":  false},
-    {
-      "ingredientName": "Radis", "avgUnitWeight": 0.01, "avgUnitVolume": null, "countable":  true},
-    {
-      "ingredientName": "Raisin", "avgUnitWeight": 0.02, "avgUnitVolume": null, "countable":  false},
-    {
-      "ingredientName": "Ricotta", "avgUnitWeight": 0.2, "avgUnitVolume": null, "countable":  false},
-    {
-      "ingredientName": "Riz", "avgUnitWeight": 0.2, "avgUnitVolume": null, "countable":  false},
-    {
-      "ingredientName": "Roquette", "avgUnitWeight": 0.02, "avgUnitVolume": null, "countable":  false},
-    {
-      "ingredientName": "Sauce soja", "avgUnitWeight": 0.25, "avgUnitVolume": null, "countable":  false},
-    {
-      "ingredientName": "Sel", "avgUnitWeight": 0.01, "avgUnitVolume": null, "countable":  false},
-    {
-      "ingredientName": "Sucre", "avgUnitWeight": 0.02, "avgUnitVolume": null, "countable":  false},
-    {
-      "ingredientName": "Thym", "avgUnitWeight": 0.005, "avgUnitVolume": null, "countable":  false},
-    {
-      "ingredientName": "Tomate", "avgUnitWeight": 0.15, "avgUnitVolume": null, "countable":  true},
-    {
-      "ingredientName": "Vinaigre balsamique", "avgUnitWeight": 0.2, "avgUnitVolume": null, "countable":  false},
-    {
-      "ingredientName": "Yaourt", "avgUnitWeight": 0.25, "avgUnitVolume": null, "countable":  true},
-    {
-      "ingredientName": "Zeste de citron", "avgUnitWeight": 0.005, "avgUnitVolume": null, "countable":  false},
-    {
-      "ingredientName": "Zeste d'orange", "avgUnitWeight": 0.005, "avgUnitVolume": null, "countable":  false},
-    {
-      "ingredientName": "Aubergine", "avgUnitWeight": 0.25, "avgUnitVolume": null, "countable":  true},
-    {
-      "ingredientName": "Baies de goji", "avgUnitWeight": 0.02, "avgUnitVolume": null, "countable":  false},
-    {
-      "ingredientName": "Beurre d'amande", "avgUnitWeight": 0.2, "avgUnitVolume": null, "countable":  false},
-    {
-      "ingredientName": "Câpre", "avgUnitWeight": 0.01, "avgUnitVolume": null, "countable":  false},
-    {
-      "ingredientName": "Céréales complètes", "avgUnitWeight": 0.1, "avgUnitVolume": null, "countable":  false},
-    {
-      "ingredientName": "Chou-fleur", "avgUnitWeight": 0.3, "avgUnitVolume": null, "countable":  true},
-    {
-      "ingredientName": "Ciboulette", "avgUnitWeight": 0.005, "avgUnitVolume": null, "countable":  false},
-    {
-      "ingredientName": "Citronnelle", "avgUnitWeight": 0.02, "avgUnitVolume": null, "countable":  false},
-    {
-      "ingredientName": "Clou de girofle", "avgUnitWeight": 0.005, "avgUnitVolume": null, "countable":  true},
-    {
-      "ingredientName": "Endive", "avgUnitWeight": 0.15, "avgUnitVolume": null, "countable":  true},
-    {
-      "ingredientName": "Flocons d'avoine", "avgUnitWeight": 0.1, "avgUnitVolume": null, "countable":  false},
-    {
-      "ingredientName": "Fromage de chèvre", "avgUnitWeight": 0.2, "avgUnitVolume": null, "countable":  false},
-    {
-      "ingredientName": "Grenade", "avgUnitWeight": 0.2, "avgUnitVolume": null, "countable":  false},
-    {
-      "ingredientName": "Lait d'avoine", "avgUnitWeight": 0.206, "avgUnitVolume": 0.200, "countable":  false},
-    {
-      "ingredientName": "Moutarde", "avgUnitWeight": 0.25, "avgUnitVolume": null, "countable":  false},
-    {
-      "ingredientName": "Nectar d'agave", "avgUnitWeight": 0.3, "avgUnitVolume": null, "countable":  false},
-    {
-      "ingredientName": "Noix de cajou", "avgUnitWeight": 0.05, "avgUnitVolume": null, "countable":  false},
-    {
-      "ingredientName": "Noix de muscade", "avgUnitWeight": 0.005, "avgUnitVolume": null, "countable":  false},
-    {
-      "ingredientName": "Origan", "avgUnitWeight": 0.01, "avgUnitVolume": null, "countable":  false},
-    {
-      "ingredientName": "Feuille de riz", "avgUnitWeight": 0.05, "avgUnitVolume": null, "countable":  true},
-    {
-      "ingredientName": "Poivre noir", "avgUnitWeight": 0.01, "avgUnitVolume": null, "countable":  false},
-    {
-      "ingredientName": "Poivron rouge", "avgUnitWeight": 0.2, "avgUnitVolume": null, "countable":  true},
-    {
-      "ingredientName": "Pomme séchée", "avgUnitWeight": 0.02, "avgUnitVolume": null, "countable":  false},
-    {
-      "ingredientName": "Pomme verte", "avgUnitWeight": 0.15, "avgUnitVolume": null, "countable":  true},
-    {
-      "ingredientName": "Poudre d'amande", "avgUnitWeight": 0.1, "avgUnitVolume": null, "countable":  false},
-    {
-      "ingredientName": "Poudre de cacao", "avgUnitWeight": 0.1, "avgUnitVolume": null, "countable":  false},
-    {
-      "ingredientName": "Poudre de curry", "avgUnitWeight": 0.01, "avgUnitVolume": null, "countable":  false},
-    {
-      "ingredientName": "Pousses de bambou", "avgUnitWeight": 0.05, "avgUnitVolume": null, "countable":  false},
-    {
-      "ingredientName": "Sauce barbecue", "avgUnitWeight": 0.25, "avgUnitVolume": null, "countable":  false},
-    {
-      "ingredientName": "Sauce pesto", "avgUnitWeight": 0.25, "avgUnitVolume": null, "countable":  false},
-    {
-      "ingredientName": "Saumon fumé", "avgUnitWeight": 0.3, "avgUnitVolume": null, "countable":  false},
-    {
-      "ingredientName": "Sirop d'érable", "avgUnitWeight": 0.343, "avgUnitVolume": 0.250, "countable":  false},
-    {
-      "ingredientName": "Sirop de maïs", "avgUnitWeight": 0.3, "avgUnitVolume": null, "countable":  false},
-    {
-      "ingredientName": "Sirop de riz", "avgUnitWeight": 0.3, "avgUnitVolume": null, "countable":  false},
-    {
-      "ingredientName": "Steak haché", "avgUnitWeight": 0.25, "avgUnitVolume": null, "countable":  false},
-    {
-      "ingredientName": "Sucre glace", "avgUnitWeight": 0.02, "avgUnitVolume": null, "countable":  false},
-    {
-      "ingredientName": "Thon en boîte", "avgUnitWeight": 0.15, "avgUnitVolume": null, "countable":  false},
-    {
-      "ingredientName": "Tomate cerise", "avgUnitWeight": 0.01, "avgUnitVolume": null, "countable":  true},
-    {
-      "ingredientName": "Tomate séchée", "avgUnitWeight": 0.1, "avgUnitVolume": null, "countable":  true},
-    {
-      "ingredientName": "Vinaigre de cidre", "avgUnitWeight": 0.2, "avgUnitVolume": null, "countable":  false},
-    {
-      "ingredientName": "Vinaigre de vin", "avgUnitWeight": 0.2, "avgUnitVolume": null, "countable":  false},
-    {
-      "ingredientName": "Yaourt grec", "avgUnitWeight": 0.25, "avgUnitVolume": null, "countable":  false},
-    {
-      "ingredientName": "Saumon", "avgUnitWeight": 2.0, "avgUnitVolume": null, "countable":  false},
-    {
-      "ingredientName": "Basilic thaï", "avgUnitWeight": 0.005, "avgUnitVolume": null, "countable":  false},
-    {
-      "ingredientName": "Ciboulette thaï", "avgUnitWeight": 0.005, "avgUnitVolume": null, "countable":  false},
-    {
-      "ingredientName": "Confiture", "avgUnitWeight": 0.300, "avgUnitVolume": null, "countable":  false},
-    {
-      "ingredientName": "Cresson", "avgUnitWeight": 0.050, "avgUnitVolume": null, "countable":  false},
-    {
-      "ingredientName": "Curry", "avgUnitWeight": 0.030, "avgUnitVolume": null, "countable":  false},
-    {
-      "ingredientName": "Fenouil", "avgUnitWeight": 0.200, "avgUnitVolume": null, "countable":  false},
-    {
-      "ingredientName": "Gousse de vanille", "avgUnitWeight": 0.005, "avgUnitVolume": null, "countable":  true},
-    {
-      "ingredientName": "Groseille", "avgUnitWeight": 0.050, "avgUnitVolume": null, "countable":  false},
-    {
-      "ingredientName": "Herbes de Provence", "avgUnitWeight": 0.010, "avgUnitVolume": null, "countable":  false},
-    {
-      "ingredientName": "Jambon", "avgUnitWeight": 0.100, "avgUnitVolume": null, "countable":  true},
-    {
-      "ingredientName": "Lentilles corail", "avgUnitWeight": 0.200, "avgUnitVolume": null, "countable":  false},
-    {
-      "ingredientName": "Marron", "avgUnitWeight": 0.050, "avgUnitVolume": null, "countable":  true},
-    {
-      "ingredientName": "Mélasse", "avgUnitWeight": 0.200, "avgUnitVolume": null, "countable":  false},
-    {
-      "ingredientName": "Moutarde de dijon", "avgUnitWeight": 0.150, "avgUnitVolume": null, "countable":  false},
-    {
-      "ingredientName": "Noisette", "avgUnitWeight": 0.050, "avgUnitVolume": null, "countable":  true},
-    {
-      "ingredientName": "Pain complet", "avgUnitWeight": 0.200, "avgUnitVolume": null, "countable":  false},
-    {
-      "ingredientName": "Papaye", "avgUnitWeight": 0.300, "avgUnitVolume": null, "countable":  true},
-    {
-      "ingredientName": "Pêche de vigne", "avgUnitWeight": 0.150, "avgUnitVolume": null, "countable":  true},
-    {
-      "ingredientName": "Pesto", "avgUnitWeight": 0.150, "avgUnitVolume": null, "countable":  false},
-    {
-      "ingredientName": "Poivre", "avgUnitWeight": 0.002, "avgUnitVolume": null, "countable":  false},
-    {
-      "ingredientName": "Pomme granny smith", "avgUnitWeight": 0.150, "avgUnitVolume": null, "countable":  true},
-    {
-      "ingredientName": "Quatre-épices", "avgUnitWeight": 0.005, "avgUnitVolume": null, "countable":  false},
-    {
-      "ingredientName": "Radis noir", "avgUnitWeight": 0.050, "avgUnitVolume": null, "countable":  true},
-    {
-      "ingredientName": "Raifort", "avgUnitWeight": 0.020, "avgUnitVolume": null, "countable":  true},
-    {
-      "ingredientName": "Ras el hanout", "avgUnitWeight": 0.030, "avgUnitVolume": null, "countable":  false},
-    {
-      "ingredientName": "Rhubarbe", "avgUnitWeight": 0.150, "avgUnitVolume": null,"countable":  false},
-    {
-      "ingredientName": "Riz basmati", "avgUnitWeight": 0.200, "avgUnitVolume": null,"countable":  false},
-    {
-      "ingredientName": "Riz complet", "avgUnitWeight": 0.200, "avgUnitVolume": null,"countable":  false},
-    {
-      "ingredientName": "Riz sauvage", "avgUnitWeight": 0.200, "avgUnitVolume": null,"countable":  false},
-    {
-      "ingredientName": "Romarin", "avgUnitWeight": 0.005, "avgUnitVolume": null,"countable":  false},
-    {
-      "ingredientName": "Sachet de levure chimique", "avgUnitWeight": 0.010, "avgUnitVolume": null,"countable":  true},
-    {
-      "ingredientName": "Sardine", "avgUnitWeight": 0.050, "avgUnitVolume": null,"countable":  false},
-    {
-      "ingredientName": "Seigle", "avgUnitWeight": 0.200, "avgUnitVolume": null,"countable":  false},
-    {
-      "ingredientName": "Sésame", "avgUnitWeight": 0.030, "avgUnitVolume": null,"countable":  false},
-    {
-      "ingredientName": "Tahini", "avgUnitWeight": 0.200, "avgUnitVolume": null,"countable":  false},
-    {
-      "ingredientName": "Tamarin", "avgUnitWeight": 0.050, "avgUnitVolume": null,"countable":  false},
-    {
-      "ingredientName": "Thon", "avgUnitWeight": 0.150, "avgUnitVolume": null,"countable":  false},
-    {
-      "ingredientName": "Tofu", "avgUnitWeight": 0.200, "avgUnitVolume": null,"countable":  false},
-    {
-      "ingredientName": "Extrait de vanille", "avgUnitWeight": 0.005, "avgUnitVolume": null,"countable":  false},
-    {
-      "ingredientName": "Vinaigre de riz", "avgUnitWeight": 0.152, "avgUnitVolume": 0.150,"countable":  false},
-    {
-      "ingredientName": "Wasabi", "avgUnitWeight": 0.005, "avgUnitVolume": null,"countable":  false},
-    {
-      "ingredientName": "Zeste de lime", "avgUnitWeight": 0.010, "avgUnitVolume": null,"countable":  false},
-    {
-      "ingredientName": "Zeste de pamplemousse", "avgUnitWeight": 0.012, "avgUnitVolume": null,"countable":  false},
-    {
-      "ingredientName": "Zeste de mandarine", "avgUnitWeight": 0.010, "avgUnitVolume": null,"countable":  false},
-    {
-      "ingredientName": "Abricot", "avgUnitWeight": 0.050, "avgUnitVolume": null,"countable":  true},
-    {
-      "ingredientName": "Agneau", "avgUnitWeight": 0.200, "avgUnitVolume": null,"countable":  false},
-    {
-      "ingredientName": "Algues", "avgUnitWeight": 0.030, "avgUnitVolume": null,"countable":  false},
-    {
-      "ingredientName": "Amande", "avgUnitWeight": 0.050, "avgUnitVolume": null,"countable":  false},
-    {
-      "ingredientName": "Aneth", "avgUnitWeight": 0.005, "avgUnitVolume": null,"countable":  false},
-    {
-      "ingredientName": "Avoine", "avgUnitWeight": 0.050, "avgUnitVolume": null,"countable":  false},
-    {
-      "ingredientName": "Baies de sureau", "avgUnitWeight": 0.030, "avgUnitVolume": null,"countable":  false},
-    {
-      "ingredientName": "Basilic pourpre", "avgUnitWeight": 0.005, "avgUnitVolume": null,"countable":  false},
-    {
-      "ingredientName": "Beurre de cacahuète", "avgUnitWeight": 0.200, "avgUnitVolume": null,"countable":  false},
-    {
-      "ingredientName": "Beurre de noix de coco", "avgUnitWeight": 0.200, "avgUnitVolume": null,"countable":  false},
-    {
-      "ingredientName": "Beurre salé", "avgUnitWeight": 0.200, "avgUnitVolume": null,"countable":  false},
-    {
-      "ingredientName": "Betterave", "avgUnitWeight": 0.150, "avgUnitVolume": null,"countable":  true},
-    {
-      "ingredientName": "Bok choy", "avgUnitWeight": 0.150, "avgUnitVolume": null,"countable":  true},
-    {
-      "ingredientName": "Bouillon de légumes", "avgUnitWeight": 0.250, "avgUnitVolume": 0.250, "countable":  true},
-    {
-      "ingredientName": "Cacahuète", "avgUnitWeight": 0.030, "avgUnitVolume": null,"countable":  true},
-    {
-      "ingredientName": "Cacao en poudre", "avgUnitWeight": 0.030, "avgUnitVolume": null,"countable":  false},
-    {
-      "ingredientName": "Cardamome", "avgUnitWeight": 0.005, "avgUnitVolume": null, "countable":  false},
-    {
-      "ingredientName": "Carvi", "avgUnitWeight": 0.005, "avgUnitVolume": null,"countable":  false},
-    {
-      "ingredientName": "Cassis", "avgUnitWeight": 0.050, "avgUnitVolume": null,"countable":  false},
-    {
-      "ingredientName": "Cèdre", "avgUnitWeight": 0.005, "avgUnitVolume": null,"countable":  false},
-    {
-      "ingredientName": "Cerfeuil", "avgUnitWeight": 0.005, "avgUnitVolume": null,"countable":  false},
-    {
-      "ingredientName": "Cerise de terre", "avgUnitWeight": 0.020, "avgUnitVolume": null,"countable":  true},
-    {
-      "ingredientName": "Champignon shiitake", "avgUnitWeight": 0.050, "avgUnitVolume": null,"countable":  true},
-    {
-      "ingredientName": "Chèvre", "avgUnitWeight": 0.100, "avgUnitVolume": null,"countable":  false},
-    {
-      "ingredientName": "Chicorée", "avgUnitWeight": 0.050, "avgUnitVolume": null,"countable":  false},
-    {
-      "ingredientName": "Chorizo", "avgUnitWeight": 0.100, "avgUnitVolume": null,"countable":  false},
-    {
-      "ingredientName": "Chou kale", "avgUnitWeight": 0.200, "avgUnitVolume": null,"countable":  true},
-    {
-      "ingredientName": "Chou rouge", "avgUnitWeight": 0.300, "avgUnitVolume": null,"countable":  true},
-    {
-      "ingredientName": "Chou-rave", "avgUnitWeight": 0.200, "avgUnitVolume": null,"countable":  true},
-    {
-      "ingredientName": "Chou chinois", "avgUnitWeight": 0.200, "avgUnitVolume": null,"countable":  true},
-    {
-      "ingredientName": "Chou de Bruxelles", "avgUnitWeight": 0.150, "avgUnitVolume": null,"countable":  true},
-    {
-      "ingredientName": "Chou frisé", "avgUnitWeight": 0.150, "avgUnitVolume": null,"countable":  true},
-    {
-      "ingredientName": "Chou nappa", "avgUnitWeight": 0.200, "avgUnitVolume": null,"countable":  true},
-    {
-      "ingredientName": "Chou romanesco", "avgUnitWeight": 0.300, "avgUnitVolume": null,"countable":  true},
-    {
-      "ingredientName": "Chou-fleur violet", "avgUnitWeight": 0.300, "avgUnitVolume": null,"countable":  true},
-    {
-      "ingredientName": "Citron confit", "avgUnitWeight": 0.20, "avgUnitVolume": null,"countable":  true},
-    {
-      "ingredientName": "Citron vert confit", "avgUnitWeight": 0.20, "avgUnitVolume": null,"countable":  true},
-    {
-      "ingredientName": "Clémentine", "avgUnitWeight": 0.100, "avgUnitVolume": null,"countable":  true},
-    {
-      "ingredientName": "Cognac", "avgUnitWeight": 0.0141, "avgUnitVolume": 0.015,"countable":  false},
-    {
-      "ingredientName": "Cointreau", "avgUnitWeight": 0.0141, "avgUnitVolume": 0.015,"countable":  false},
-    {
-      "ingredientName": "Concombre de mer", "avgUnitWeight": 0.200, "avgUnitVolume": null,"countable":  true},
-    {
-      "ingredientName": "Coppa", "avgUnitWeight": 0.100, "avgUnitVolume": null,"countable":  false},
-    {
-      "ingredientName": "Corme", "avgUnitWeight": 0.050, "avgUnitVolume": null,"countable":  true},
-    {
-      "ingredientName": "Courge butternut", "avgUnitWeight": 0.500, "avgUnitVolume": null,"countable":  true},
-    {
-      "ingredientName": "Courge spaghetti", "avgUnitWeight": 0.500, "avgUnitVolume": null,"countable":  true},
-    {
-      "ingredientName": "Courgette", "avgUnitWeight": 0.200, "avgUnitVolume": null,"countable":  true},
-    {
-      "ingredientName": "Crème aigre", "avgUnitWeight": 0.200, "avgUnitVolume": 0.200,"countable":  false},
-    {
-      "ingredientName": "Crème de coco", "avgUnitWeight": 0.202, "avgUnitVolume": 0.200,"countable":  false},
-    {
-      "ingredientName": "Crème fraîche", "avgUnitWeight": 0.202, "avgUnitVolume": 0.200,"countable":  false},
-    {
-      "ingredientName": "Crème liquide", "avgUnitWeight": 0.202, "avgUnitVolume": 0.200,"countable":  false},
-    {
-      "ingredientName": "Crème sure", "avgUnitWeight": 0.200, "avgUnitVolume": 0.200,"countable":  false},
-    {
-      "ingredientName": "Crêpe", "avgUnitWeight": 0.050, "avgUnitVolume": null,"countable":  true},
-    {
-      "ingredientName": "Crevette", "avgUnitWeight": 0.050, "avgUnitVolume": null,"countable":  true},
-    {
-      "ingredientName": "Daikon", "avgUnitWeight": 0.200, "avgUnitVolume": null,"countable":  true},
-    {
-      "ingredientName": "Datte Medjool", "avgUnitWeight": 0.020, "avgUnitVolume": null,"countable":  true},
-    {
-      "ingredientName": "Échalote", "avgUnitWeight": 0.020, "avgUnitVolume": null,"countable":  true},
-    {
-      "ingredientName": "Églefin", "avgUnitWeight": 0.150, "avgUnitVolume": null,"countable":  false},
-    {
-      "ingredientName": "Épeautre", "avgUnitWeight": 0.200, "avgUnitVolume": null,"countable":  false},
-    {
-      "ingredientName": "Épices pour tarte à la citrouille", "avgUnitWeight": 0.005, "avgUnitVolume": null,"countable":  false},
-    {
-      "ingredientName": "Épinard d'eau", "avgUnitWeight": 0.050, "avgUnitVolume": null,"countable":  false},
-    {
-      "ingredientName": "Escargot", "avgUnitWeight": 0.020, "avgUnitVolume": null,"countable":  true},
-    {
-      "ingredientName": "Espresso", "avgUnitWeight": 0.030, "avgUnitVolume": null,"countable":  true},
-    {
-      "ingredientName": "Fève", "avgUnitWeight": 0.050, "avgUnitVolume": null,"countable":  true},
-    {
-      "ingredientName": "Fève tonka", "avgUnitWeight": 0.005, "avgUnitVolume": null,"countable":  false},
-    {
-      "ingredientName": "Figue", "avgUnitWeight": 0.050, "avgUnitVolume": null,"countable":  true},
-    {
-      "ingredientName": "Filet mignon", "avgUnitWeight": 0.150, "avgUnitVolume": null,"countable":  true},
-    {
-      "ingredientName": "Foie gras", "avgUnitWeight": 0.050, "avgUnitVolume": null,"countable":  true},
-    {
-      "ingredientName": "Fruit de la passion", "avgUnitWeight": 0.050, "avgUnitVolume": null,"countable":  true},
-    {
-      "ingredientName": "Garam masala", "avgUnitWeight": 0.005, "avgUnitVolume": null,"countable":  false},
-    {
-      "ingredientName": "Gâteau aux carottes", "avgUnitWeight": 0.150, "avgUnitVolume": null,"countable":  true},
-    {
-      "ingredientName": "Gelée de coing", "avgUnitWeight": 0.030, "avgUnitVolume": null,"countable":  false},
-    {
-      "ingredientName": "Gingembre confit", "avgUnitWeight": 0.020, "avgUnitVolume": null,"countable":  true},
-    {
-      "ingredientName": "Gingembre frais", "avgUnitWeight": 0.020, "avgUnitVolume": null,"countable":  true},
-    {
-      "ingredientName": "Gingembre moulu", "avgUnitWeight": 0.005, "avgUnitVolume": null,"countable":  false},
-    {
-      "ingredientName": "Gombo", "avgUnitWeight": 0.050, "avgUnitVolume": null,"countable":  true},
-    {
-      "ingredientName": "Gouda", "avgUnitWeight": 0.100, "avgUnitVolume": null,"countable":  false},
-    {
-      "ingredientName": "Graines de chia", "avgUnitWeight": 0.030, "avgUnitVolume": null,"countable":  false},
-    {
-      "ingredientName": "Graines de courge", "avgUnitWeight": 0.030, "avgUnitVolume": null,"countable":  false},
-    {
-      "ingredientName": "Graines de lin", "avgUnitWeight": 0.030, "avgUnitVolume": null,"countable":  false},
-    {
-      "ingredientName": "Graines de moutarde", "avgUnitWeight": 0.030, "avgUnitVolume": null,"countable":  false},
-    {
-      "ingredientName": "Graines de pavot", "avgUnitWeight": 0.030, "avgUnitVolume": null,"countable":  false},
-    {
-      "ingredientName": "Grenadille", "avgUnitWeight": 0.050, "avgUnitVolume": null,"countable":  true},
-    {
-      "ingredientName": "Grondin", "avgUnitWeight": 0.150, "avgUnitVolume": null,"countable":  true},
-    {
-      "ingredientName": "Groseille à maquereau", "avgUnitWeight": 0.030, "avgUnitVolume": null,"countable":  true},
-    {
-      "ingredientName": "Groseille rouge", "avgUnitWeight": 0.030, "avgUnitVolume": null,"countable":  false},
-    {
-      "ingredientName": "Gruau", "avgUnitWeight": 0.050, "avgUnitVolume": null,"countable":  false},
-    {
-      "ingredientName": "Guacamole", "avgUnitWeight": 0.200, "avgUnitVolume": null,"countable":  false},
-    {
-      "ingredientName": "Guimauve", "avgUnitWeight": 0.030, "avgUnitVolume": null,"countable":  true},
-    {
-      "ingredientName": "Haricot mungo", "avgUnitWeight": 0.050, "avgUnitVolume": null,"countable":  false},
-    {
-      "ingredientName": "Haricot noir", "avgUnitWeight": 0.050, "avgUnitVolume": null,"countable":  false},
-    {
-      "ingredientName": "Haricot pinto", "avgUnitWeight": 0.050, "avgUnitVolume": null,"countable":  false},
-    {
-      "ingredientName": "Haricot rouge", "avgUnitWeight": 0.050, "avgUnitVolume": null,"countable":  false},
-    {
-      "ingredientName": "Hareng", "avgUnitWeight": 0.100, "avgUnitVolume": null,"countable":  true},
-    {
-      "ingredientName": "Herbe de blé", "avgUnitWeight": 0.030, "avgUnitVolume": null,"countable":  false},
-    {
-      "ingredientName": "Herbe de la pampa", "avgUnitWeight": 0.030, "avgUnitVolume": null,"countable":  false},
-    {
-      "ingredientName": "Huile de lin", "avgUnitWeight": 0.186, "avgUnitVolume": 0.200,"countable":  false},
-    {
-      "ingredientName": "Huile de pépins de raisin", "avgUnitWeight": 0.184, "avgUnitVolume": 0.200,"countable":  false},
-    {
-      "ingredientName": "Huile de tournesol", "avgUnitWeight": 0.184, "avgUnitVolume": 0.200,"countable":  false},
-    {
-      "ingredientName": "Huître", "avgUnitWeight": 0.030, "avgUnitVolume": null,"countable":  true},
-    {
-      "ingredientName": "Jus de citron", "avgUnitWeight": 0.206, "avgUnitVolume": 0.200,"countable":  false},
-    {
-      "ingredientName": "Jus de pomme", "avgUnitWeight": 0.210, "avgUnitVolume": 0.200,"countable":  false},
-    {
-      "ingredientName": "Jus de raisin", "avgUnitWeight": 0.210, "avgUnitVolume": 0.200,"countable":  false},
-    {
-      "ingredientName": "Kaki", "avgUnitWeight": 0.150, "avgUnitVolume": null,"countable":  true},
-    {
-      "ingredientName": "Kéfir", "avgUnitWeight": 0.204, "avgUnitVolume": 0.200,"countable":  false},
-    {
-      "ingredientName": "Kirsch", "avgUnitWeight": 0.030, "avgUnitVolume": null,"countable":  false},
-    {
-      "ingredientName": "Kiwi", "avgUnitWeight": 0.100, "avgUnitVolume": null,"countable":  true},
-    {
-      "ingredientName": "Lait concentré", "avgUnitWeight": 0.256, "avgUnitVolume": 0.200,"countable":  false},
-    {
-      "ingredientName": "Lait d'amande non sucré", "avgUnitWeight": 0.202, "avgUnitVolume": 0.200,"countable":  false},
-    {
-      "ingredientName": "Lait de chèvre", "avgUnitWeight": 0.206, "avgUnitVolume": 0.200,"countable":  false},
-    {
-      "ingredientName": "Lait de coco light", "avgUnitWeight": 0.200, "avgUnitVolume": 0.200,"countable":  false},
-    {
-      "ingredientName": "Lait demi-écrémé", "avgUnitWeight": 0.206, "avgUnitVolume": 0.200,"countable":  false},
-    {
-      "ingredientName": "Lait écrémé", "avgUnitWeight": 0.206, "avgUnitVolume": 0.200,"countable":  false},
-    {
-      "ingredientName": "Lait entier", "avgUnitWeight": 0.206, "avgUnitVolume": 0.200,"countable":  false},
-    {
-      "ingredientName": "Lait évaporé", "avgUnitWeight": 0.252, "avgUnitVolume": 0.200,"countable":  false},
-    {
-      "ingredientName": "Lait fermenté", "avgUnitWeight": 0.206, "avgUnitVolume": 0.200,"countable":  false},
-    {
-      "ingredientName": "Arachide", "avgUnitWeight": 0.050, "avgUnitVolume": null,"countable":  false},
-    {
-      "ingredientName": "Arrow-root", "avgUnitWeight": 0.030, "avgUnitVolume": null,"countable":  true},
-    {
-      "ingredientName": "Baies de genièvre", "avgUnitWeight": 0.005, "avgUnitVolume": null,"countable":  false},
-    {
-      "ingredientName": "Beurre clarifié", "avgUnitWeight": 0.100, "avgUnitVolume": null,"countable":  false},
-    {
-      "ingredientName": "Bière", "avgUnitWeight": 0.333, "avgUnitVolume": 0.330,"countable":  false},
-    {
-      "ingredientName": "Blanc d'oeuf", "avgUnitWeight": 0.030, "avgUnitVolume": null,"countable":  true},
-    {
-      "ingredientName": "Châtaigne", "avgUnitWeight": 0.050, "avgUnitVolume": null,"countable":  true},
-    {
-      "ingredientName": "Cheddar", "avgUnitWeight": 0.100, "avgUnitVolume": null,"countable":  false},
-    {
-      "ingredientName": "Cidre", "avgUnitWeight": 0.333, "avgUnitVolume": 0.330,"countable":  false},
-    {
-      "ingredientName": "Palourde", "avgUnitWeight": 0.030, "avgUnitVolume": null,"countable":  true},
-    {
-      "ingredientName": "Coulis de tomate", "avgUnitWeight": 0.200, "avgUnitVolume": null,"countable":  false},
-    {
-      "ingredientName": "Crabe", "avgUnitWeight": 0.100, "avgUnitVolume": null,"countable":  false},
-    {
-      "ingredientName": "Crème aigre", "avgUnitWeight": 0.200, "avgUnitVolume": 0.200,"countable":  false},
-    {
-      "ingredientName": "Écrevisse", "avgUnitWeight": 0.100, "avgUnitVolume": null,"countable":  true},
-    {
-      "ingredientName": "Feuilles de laurier", "avgUnitWeight": 0.005, "avgUnitVolume": null,"countable":  true},
-    {
-      "ingredientName": "Fève de cacao", "avgUnitWeight": 0.030, "avgUnitVolume": null,"countable":  true},
-    {
-      "ingredientName": "Fleur d'oranger", "avgUnitWeight": 0.005, "avgUnitVolume": 0.005, "countable":  false},
-    {
-      "ingredientName": "Flocons de maïs", "avgUnitWeight": 0.030, "avgUnitVolume": null, "countable":  false},
-    {
-      "ingredientName": "Fromage bleu", "avgUnitWeight": 0.100, "avgUnitVolume": null, "countable":  false},
-    {
-      "ingredientName": "Fromage de brebis", "avgUnitWeight": 0.100, "avgUnitVolume": null, "countable":  false},
-    {
-      "ingredientName": "Feuille de gélatine", "avgUnitWeight": 0.010, "avgUnitVolume": null, "countable":  true},
-    {
-      "ingredientName": "Grenadelle", "avgUnitWeight": 0.050, "avgUnitVolume": null, "countable":  true},
-    {
-      "ingredientName": "Grue de cacao", "avgUnitWeight": 0.030, "avgUnitVolume": null, "countable":  false},
-    {
-      "ingredientName": "Gruyère", "avgUnitWeight": 0.100, "avgUnitVolume": null, "countable":  false},
-    {
-      "ingredientName": "Herbes salées", "avgUnitWeight": 0.010, "avgUnitVolume": null, "countable":  false},
-    {
-      "ingredientName": "Houmous", "avgUnitWeight": 0.200, "avgUnitVolume": null, "countable":  false},
-    {
-      "ingredientName": "Huile de sésame", "avgUnitWeight": 0.184, "avgUnitVolume": 0.200, "countable":  false},
-    {
-      "ingredientName": "Huile végétale", "avgUnitWeight": 0.184, "avgUnitVolume": 0.200, "countable":  false},
-    {
-      "ingredientName": "Jus d'agrumes", "avgUnitWeight": 0.206, "avgUnitVolume": 0.200, "countable":  false},
-    {
-      "ingredientName": "Jus de tomate", "avgUnitWeight": 0.200, "avgUnitVolume": 0.200, "countable":  false},
-    {
-      "ingredientName": "Kombu", "avgUnitWeight": 0.010, "avgUnitVolume": null, "countable":  true},
-    {
-      "ingredientName": "Lait concentré", "avgUnitWeight": 0.256, "avgUnitVolume": 0.200, "countable":  false},
-    {
-      "ingredientName": "Lait en poudre", "avgUnitWeight": 0.100, "avgUnitVolume": null, "countable":  false},
-    {
-      "ingredientName": "Laitue iceberg", "avgUnitWeight": 0.500, "avgUnitVolume": null, "countable":  true},
-    {
-      "ingredientName": "Lardon", "avgUnitWeight": 0.100, "avgUnitVolume": null, "countable":  false},
-    {
-      "ingredientName": "Lardon de dinde", "avgUnitWeight": 0.100, "avgUnitVolume": null, "countable":  false},
-    {
-      "ingredientName": "Lentille verte", "avgUnitWeight": 0.200, "avgUnitVolume": null, "countable":  false},
-    {
-      "ingredientName": "Maïs", "avgUnitWeight": 0.150, "avgUnitVolume": null, "countable":  false},
-    {
-      "ingredientName": "Marmite", "avgUnitWeight": 0.500, "avgUnitVolume": null, "countable":  false},
-    {
-      "ingredientName": "Mascarpone", "avgUnitWeight": 0.100, "avgUnitVolume": null, "countable":  false},
-    {
-      "ingredientName": "Mayonnaise", "avgUnitWeight": 0.182, "avgUnitVolume": 0.200, "countable":  false},
-    {
-      "ingredientName": "Menthe poivrée", "avgUnitWeight": 0.005, "avgUnitVolume": null, "countable":  false},
-    {
-      "ingredientName": "Miel de sarrasin", "avgUnitWeight": 0.200, "avgUnitVolume": null, "countable":  false},
-    {
-      "ingredientName": "Moutarde de Dijon", "avgUnitWeight": 0.220, "avgUnitVolume": 0.200, "countable":  false},
-    {
-      "ingredientName": "Moutarde de Meaux", "avgUnitWeight": 0.220, "avgUnitVolume": 0.200, "countable":  false},
-    {
-      "ingredientName": "Mûre", "avgUnitWeight": 0.050, "avgUnitVolume": null, "countable":  true},
-    {
-      "ingredientName": "Navet", "avgUnitWeight": 0.200, "avgUnitVolume": null, "countable":  true},
-    {
-      "ingredientName": "Noix de pécan", "avgUnitWeight": 0.050, "avgUnitVolume": null, "countable":  true},
-    {
-      "ingredientName": "Noix de pin", "avgUnitWeight": 0.050, "avgUnitVolume": null, "countable":  true},
-    {
-      "ingredientName": "Noix de Saint-Jacques", "avgUnitWeight": 0.100, "avgUnitVolume": null, "countable":  true},
-    {
-      "ingredientName": "Nori", "avgUnitWeight": 0.005, "avgUnitVolume": null, "countable":  true},
-    {
-      "ingredientName": "Oeuf de caille", "avgUnitWeight": 0.020, "avgUnitVolume": null, "countable":  true},
-    {
-      "ingredientName": "Oeufs de poisson", "avgUnitWeight": 0.030, "avgUnitVolume": null, "countable":  false},
-    {
-      "ingredientName": "Oignon vert", "avgUnitWeight": 0.030, "avgUnitVolume": null, "countable":  true},
-    {
-      "ingredientName": "Olives noires", "avgUnitWeight": 0.050, "avgUnitVolume": null, "countable":  true},
-    {
-      "ingredientName": "Oseille", "avgUnitWeight": 0.030, "avgUnitVolume": null, "countable":  false},
-    {
-      "ingredientName": "Pain de seigle", "avgUnitWeight": 0.500, "avgUnitVolume": null, "countable":  false},
-    {
-      "ingredientName": "Pain pita", "avgUnitWeight": 0.150, "avgUnitVolume": null, "countable":  true},
-    {
-      "ingredientName": "Pamplemousse", "avgUnitWeight": 0.300, "avgUnitVolume": null, "countable":  true},
-    {
-      "ingredientName": "Pâte de curry", "avgUnitWeight": 0.030, "avgUnitVolume": null, "countable":  false},
-    {
-      "ingredientName": "Pâte miso", "avgUnitWeight": 0.030, "avgUnitVolume": null, "countable":  false},
-    {
-      "ingredientName": "Pâte phyllo", "avgUnitWeight": 0.200, "avgUnitVolume": null, "countable":  false},
-    {
-      "ingredientName": "Pâte sablée", "avgUnitWeight": 0.200, "avgUnitVolume": null, "countable":  false},
-    {
-      "ingredientName": "Pâte sucrée", "avgUnitWeight": 0.200, "avgUnitVolume": null, "countable":  false},
-    {
-      "ingredientName": "Pétoncle", "avgUnitWeight": 0.100, "avgUnitVolume": null, "countable":  false},
-    {
-      "ingredientName": "Petit pois", "avgUnitWeight": 0.100, "avgUnitVolume": null, "countable":  false},
-    {
-      "ingredientName": "Piment d'Espelette", "avgUnitWeight": 0.005, "avgUnitVolume": null, "countable":  false},
-    {
-      "ingredientName": "Piment de Cayenne", "avgUnitWeight": 0.005, "avgUnitVolume": null, "countable":  false},
-    {
-      "ingredientName": "Piment en poudre", "avgUnitWeight": 0.005, "avgUnitVolume": null, "countable":  false},
-    {
-      "ingredientName": "Piment jalapeño", "avgUnitWeight": 0.030, "avgUnitVolume": null, "countable":  true},
-    {
-      "ingredientName": "Piment rouge", "avgUnitWeight": 0.030, "avgUnitVolume": null, "countable":  true},
-    {
-      "ingredientName": "Piment vert", "avgUnitWeight": 0.030, "avgUnitVolume": null, "countable":  true},
-    {
-      "ingredientName": "Poire William", "avgUnitWeight": 0.200, "avgUnitVolume": null, "countable":  true},
-    {
-      "ingredientName": "Poivre blanc", "avgUnitWeight": 0.005, "avgUnitVolume": null, "countable":  false},
-    {
-      "ingredientName": "Poivre rouge", "avgUnitWeight": 0.005, "avgUnitVolume": null, "countable":  false},
-    {
-      "ingredientName": "Poivron vert", "avgUnitWeight": 0.200, "avgUnitVolume": null, "countable":  false},
-    {
-      "ingredientName": "Polenta", "avgUnitWeight": 0.150, "avgUnitVolume": null, "countable":  false},
-    {
-      "ingredientName": "Pomelo", "avgUnitWeight": 0.300, "avgUnitVolume": null, "countable":  true},
-    {
-      "ingredientName": "Porc", "avgUnitWeight": 0.100, "avgUnitVolume": null, "countable":  false},
-    {
-      "ingredientName": "Porto", "avgUnitWeight": 0.196, "avgUnitVolume": 0.200, "countable":  false},
-    {
-      "ingredientName": "Potiron", "avgUnitWeight": 0.500, "avgUnitVolume": null, "countable":  true},
-    {
-      "ingredientName": "Poulet frit", "avgUnitWeight": 0.200, "avgUnitVolume": null, "countable":  true},
-    {
-      "ingredientName": "Pralin", "avgUnitWeight": 0.200, "avgUnitVolume": null, "countable":  false},
-    {
-      "ingredientName": "Praliné", "avgUnitWeight": 0.200, "avgUnitVolume": null, "countable":  false},
-    {
-      "ingredientName": "Prosciutto", "avgUnitWeight": 0.100, "avgUnitVolume": null, "countable":  false},
-    {
-      "ingredientName": "Radicchio", "avgUnitWeight": 0.150, "avgUnitVolume": null, "countable":  false},
-    {
-      "ingredientName": "Raie", "avgUnitWeight": 0.200, "avgUnitVolume": null, "countable":  true},
-    {
-      "ingredientName": "Reblochon", "avgUnitWeight": 0.100, "avgUnitVolume": null, "countable":  true},
-    {
-      "ingredientName": "Rhubarbe fraîche", "avgUnitWeight": 0.200, "avgUnitVolume": null, "countable":  false},
-    {
-      "ingredientName": "Riz Arborio", "avgUnitWeight": 0.200, "avgUnitVolume": null, "countable":  false},
-    {
-      "ingredientName": "Rouille", "avgUnitWeight": 0.184, "avgUnitVolume": 0.200, "countable":  false},
-    {
-      "ingredientName": "Rouleau de printemps", "avgUnitWeight": 0.050, "avgUnitVolume": null, "countable":  false},
-    {
-      "ingredientName": "Sabayon", "avgUnitWeight": 0.200, "avgUnitVolume": 0.200, "countable":  false},
-    {
-      "ingredientName": "Sachet de levure de boulanger", "avgUnitWeight": 0.010, "avgUnitVolume": null, "countable":  true},
-    {
-      "ingredientName": "Saindoux", "avgUnitWeight": 0.100, "avgUnitVolume": null, "countable":  false},
-    {
-      "ingredientName": "Sauce béarnaise", "avgUnitWeight": 0.196, "avgUnitVolume": 0.200, "countable":  false},
-    {
-      "ingredientName": "Sauce béchamel", "avgUnitWeight": 0.210, "avgUnitVolume": 0.200, "countable":  false},
-    {
-      "ingredientName": "Sauce hollandaise", "avgUnitWeight": 0.196, "avgUnitVolume": 0.200, "countable":  false},
-    {
-      "ingredientName": "Sauce teriyaki", "avgUnitWeight": 0.224, "avgUnitVolume": 0.200, "countable":  false},
-    {
-      "ingredientName": "Sauce Worcestershire", "avgUnitWeight": 0.206, "avgUnitVolume": 200, "countable":  false},
-    {
-      "ingredientName": "Saumon frais", "avgUnitWeight": 0.100, "avgUnitVolume": null, "countable":  false},
-    {
-      "ingredientName": "Saumon grillé", "avgUnitWeight": 0.100, "avgUnitVolume": null, "countable":  false},
-    {
-      "ingredientName": "Saumon mariné", "avgUnitWeight": 0.100, "avgUnitVolume": null, "countable":  false},
-    {
-      "ingredientName": "Sauge", "avgUnitWeight": 0.005, "avgUnitVolume": null, "countable":  false},
-    {
-      "ingredientName": "Seiche", "avgUnitWeight": 0.200, "avgUnitVolume": null, "countable":  true},
-    {
-      "ingredientName": "Sirop de grenadine", "avgUnitWeight": 0.266, "avgUnitVolume": 0.200, "countable":  false},
-    {
-      "ingredientName": "Sirop de menthe", "avgUnitWeight": 0.262, "avgUnitVolume": 0.200, "countable":  false},
-    {
-      "ingredientName": "Sirop de poire", "avgUnitWeight": 0.262, "avgUnitVolume": 0.200, "countable":  false},
-    {
-      "ingredientName": "Sirop de framboise", "avgUnitWeight": 0.262, "avgUnitVolume": 0.200, "countable":  false},
-    {
-      "ingredientName": "Sirop d'orgeat", "avgUnitWeight": 0.262, "avgUnitVolume": 0.200, "countable":  false},
-    {
-      "ingredientName": "Sirop de pêche", "avgUnitWeight": 0.262, "avgUnitVolume": 0.200, "countable":  false},
-    {
-      "ingredientName": "Sirop de fraise", "avgUnitWeight": 0.262, "avgUnitVolume": 0.200, "countable":  false},
-    {
-      "ingredientName": "Sirop de citron", "avgUnitWeight": 0.262, "avgUnitVolume": 0.200, "countable":  false},
-    {
-      "ingredientName": "Sirop d'orange", "avgUnitWeight": 0.262, "avgUnitVolume": 0.200, "countable":  false},
-    {
-      "ingredientName": "Sirop de sucre de canne", "avgUnitWeight": 0.262, "avgUnitVolume": 0.200, "countable":  false},
-    {
-      "ingredientName": "Sirop d'agave", "avgUnitWeight": 0.262, "avgUnitVolume": 0.200, "countable":  false},
-    {
-      "ingredientName": "Sole", "avgUnitWeight": 0.200, "avgUnitVolume": null, "countable":  true},
-    {
-      "ingredientName": "Sorbet", "avgUnitWeight": 0.100, "avgUnitVolume": null, "countable":  false},
-    {
-      "ingredientName": "Soupe de poisson", "avgUnitWeight": 0.500, "avgUnitVolume": null, "countable":  false},
-    {
-      "ingredientName": "Stilton", "avgUnitWeight": 0.100, "avgUnitVolume": null, "countable":  false},
-    {
-      "ingredientName": "Sucre cassonade", "avgUnitWeight": 0.200, "avgUnitVolume": null, "countable":  false},
-    {
-      "ingredientName": "Sucre glace", "avgUnitWeight": 0.200, "avgUnitVolume": null, "countable":  false},
-    {
-      "ingredientName": "Sucre roux", "avgUnitWeight": 0.200, "avgUnitVolume": null, "countable":  false},
-    {
-      "ingredientName": "Tagliatelle", "avgUnitWeight": 0.100, "avgUnitVolume": null, "countable":  false},
-    {
-      "ingredientName": "Tamarin en poudre", "avgUnitWeight": 0.020, "avgUnitVolume": null, "countable":  false},
-    {
-      "ingredientName": "Tapenade", "avgUnitWeight": 0.200, "avgUnitVolume": null, "countable":  false},
-    {
-      "ingredientName": "Tapioca", "avgUnitWeight": 0.100, "avgUnitVolume": null, "countable":  false},
-    {
-      "ingredientName": "Thé vert", "avgUnitWeight": 0.005, "avgUnitVolume": null, "countable":  false},
-    {
-      "ingredientName": "Thon rouge", "avgUnitWeight": 0.150, "avgUnitVolume": null, "countable":  false},
-    {
-      "ingredientName": "Toast", "avgUnitWeight": 0.010, "avgUnitVolume": null, "countable":  true},
-    {
-      "ingredientName": "Tofu soyeux", "avgUnitWeight": 0.200, "avgUnitVolume": null, "countable":  false},
-    {
-      "ingredientName": "Tomate confite", "avgUnitWeight": 0.050, "avgUnitVolume": null, "countable":  true},
-    {
-      "ingredientName": "Tomme de Savoie", "avgUnitWeight": 0.200, "avgUnitVolume": null, "countable":  false},
-    {
-      "ingredientName": "Truffe", "avgUnitWeight": 0.020, "avgUnitVolume": null, "countable":  true},
-    {
-      "ingredientName": "Vermicelle", "avgUnitWeight": 0.100, "avgUnitVolume": null, "countable":  false},
-    {
-      "ingredientName": "Viande hachée", "avgUnitWeight": 0.100, "avgUnitVolume": null, "countable":  false},
-    {
-      "ingredientName": "Vinaigre balsamique blanc", "avgUnitWeight": 0.202, "avgUnitVolume": 0.200, "countable":  false},
-    {
-      "ingredientName": "Vinaigre de framboise", "avgUnitWeight": 0.202, "avgUnitVolume": 0.200, "countable":  false},
-    {
-      "ingredientName": "Vinaigre de xérès", "avgUnitWeight": 0.202, "avgUnitVolume": 0.200, "countable":  false},
-    {
-      "ingredientName": "Wasabi en poudre", "avgUnitWeight": 0.005, "avgUnitVolume": null, "countable":  false},
-    {
-      "ingredientName": "Whisky", "avgUnitWeight": 0.188, "avgUnitVolume": 0.200, "countable":  false},
-    {
-      "ingredientName": "Yaourt à la vanille", "avgUnitWeight": 0.200, "avgUnitVolume": null, "countable":  true},
-    {
-      "ingredientName": "Yaourt nature", "avgUnitWeight": 0.200, "avgUnitVolume": null, "countable":  true},
-    {
-      "ingredientName": "Zeste de citron vert", "avgUnitWeight": 0.010, "avgUnitVolume": null, "countable":  false},
-    {
-      "ingredientName": "Zeste de yuzu", "avgUnitWeight": 0.010, "avgUnitVolume": null, "countable":  false}
-  ]
+[
+  {
+    "ingredientName": "Ail des ours", "avgUnitWeight": 0.05, "avgUnitVolume": null, "kgPrice": 20.0, "countable": false, "allergens": [], "ingredientTypes": ["Légumes"]
+  },
+  {
+    "ingredientName": "Ail", "avgUnitWeight": 0.05, "avgUnitVolume": null, "kgPrice": 15.0, "countable": false, "allergens": [], "ingredientTypes": ["Légumes"]
+  },
+  {
+    "ingredientName": "Ananas", "avgUnitWeight": 1.2, "avgUnitVolume": null, "kgPrice": 5.0, "countable": false, "allergens": [], "ingredientTypes": ["Fruits"]
+  },
+  {
+    "ingredientName": "Avocat", "avgUnitWeight": 0.2, "avgUnitVolume": null, "kgPrice": 12.0, "countable": true, "allergens": [], "ingredientTypes": ["Fruits"]
+  },
+  {
+    "ingredientName": "Banane", "avgUnitWeight": 0.12, "avgUnitVolume": null, "kgPrice": 3.0, "countable": true, "allergens": [], "ingredientTypes": ["Fruits"]
+  },
+  {
+    "ingredientName": "Basilic", "avgUnitWeight": 0.02, "avgUnitVolume": null, "kgPrice": 30.0, "countable": true, "allergens": [], "ingredientTypes": ["Épices et assaisonnements"]
+  },
+  {
+    "ingredientName": "Beurre", "avgUnitWeight": 0.1, "avgUnitVolume": null, "kgPrice": 8.0, "countable": false, "allergens": ["Lait"], "ingredientTypes": ["Produits laitiers"]
+  },
+  {
+    "ingredientName": "Boeuf", "avgUnitWeight": 0.25, "avgUnitVolume": null, "kgPrice": 25.0, "countable": false, "allergens": [], "ingredientTypes": ["Viandes"]
+  },
+  {
+    "ingredientName": "Brocoli", "avgUnitWeight": 0.3, "avgUnitVolume": null, "kgPrice": 4.0, "countable": true, "allergens": [], "ingredientTypes": ["Légumes"]
+  },
+  {
+    "ingredientName": "Cannelle", "avgUnitWeight": 0.005, "avgUnitVolume": null, "kgPrice": 40.0, "countable": true, "allergens": [], "ingredientTypes": ["Épices et assaisonnements"]
+  },
+  {
+    "ingredientName": "Cannelle en poudre", "avgUnitWeight": 0.005, "avgUnitVolume": null, "kgPrice": 45.0, "countable": false, "allergens": [], "ingredientTypes": ["Épices et assaisonnements"]
+  },
+  {
+    "ingredientName": "Carotte", "avgUnitWeight": 0.1, "avgUnitVolume": null, "kgPrice": 2.5, "countable": true, "allergens": [], "ingredientTypes": ["Légumes"]
+  },
+  {
+    "ingredientName": "Cerise", "avgUnitWeight": 0.01, "avgUnitVolume": null, "kgPrice": 8.0, "countable": true, "allergens": [], "ingredientTypes": ["Fruits"]
+  },
+  {
+    "ingredientName": "Champignon", "avgUnitWeight": 0.05, "avgUnitVolume": null, "kgPrice": 7.0, "countable": true, "allergens": [], "ingredientTypes": ["Légumes"]
+  },
+  {
+    "ingredientName": "Chocolat", "avgUnitWeight": 0.1, "avgUnitVolume": null, "kgPrice": 15.0, "countable": true, "allergens": ["Lait", "Fruits à coque"], "ingredientTypes": ["Produits sucrés"]
+  },
+  {
+    "ingredientName": "Citron", "avgUnitWeight": 0.1, "avgUnitVolume": null, "kgPrice": 4.0, "countable": true, "allergens": [], "ingredientTypes": ["Fruits"]
+  },
+  {
+    "ingredientName": "Citron vert", "avgUnitWeight": 0.1, "avgUnitVolume": null, "kgPrice": 5.0, "countable": true, "allergens": [], "ingredientTypes": ["Fruits"]
+  },
+  {
+    "ingredientName": "Concombre", "avgUnitWeight": 0.25, "avgUnitVolume": null, "kgPrice": 3.0, "countable": true, "allergens": [], "ingredientTypes": ["Légumes"]
+  },
+  {
+    "ingredientName": "Coriandre", "avgUnitWeight": 0.015, "avgUnitVolume": null, "kgPrice": 25.0, "countable": false, "allergens": [], "ingredientTypes": ["Épices et assaisonnements"]
+  },
+  {
+    "ingredientName": "Cumin", "avgUnitWeight": 0.01, "avgUnitVolume": null, "kgPrice": 22.0, "countable": false, "allergens": [], "ingredientTypes": ["Épices et assaisonnements"]
+  },
+  {
+    "ingredientName": "Curcuma", "avgUnitWeight": 0.008, "avgUnitVolume": null, "kgPrice": 30.0, "countable": false, "allergens": [], "ingredientTypes": ["Épices et assaisonnements"]
+  },
+  {
+    "ingredientName": "Datte", "avgUnitWeight": 0.02, "avgUnitVolume": null, "kgPrice": 10.0, "countable": true, "allergens": [], "ingredientTypes": ["Fruits"]
+  },
+  {
+    "ingredientName": "Épinard", "avgUnitWeight": 0.03, "avgUnitVolume": null, "kgPrice": 5.0, "countable": false, "allergens": [], "ingredientTypes": ["Légumes"]
+  },
+  {
+    "ingredientName": "Fraise", "avgUnitWeight": 0.02, "avgUnitVolume": null, "kgPrice": 12.0, "countable": true, "allergens": [], "ingredientTypes": ["Fruits"]
+  },
+  {
+    "ingredientName": "Framboise", "avgUnitWeight": 0.015, "avgUnitVolume": null, "kgPrice": 15.0, "countable": true, "allergens": [], "ingredientTypes": ["Fruits"]
+  },
+  {
+    "ingredientName": "Gingembre", "avgUnitWeight": 0.02, "avgUnitVolume": null, "kgPrice": 20.0, "countable": false, "allergens": [], "ingredientTypes": ["Épices et assaisonnements"]
+  },
+  {
+    "ingredientName": "Haricot vert", "avgUnitWeight": 0.05, "avgUnitVolume": null, "kgPrice": 6.0, "countable": false, "allergens": [], "ingredientTypes": ["Légumes"]
+  },
+  {
+    "ingredientName": "Huile d'olive", "avgUnitWeight": 0.2, "avgUnitVolume": null, "kgPrice": 18.0, "countable": false, "allergens": [], "ingredientTypes": ["Huiles et vinaigres"]
+  },
+  {
+    "ingredientName": "Huile de coco", "avgUnitWeight": 0.18, "avgUnitVolume": null, "kgPrice": 22.0, "countable": false, "allergens": [], "ingredientTypes": ["Huiles et vinaigres"]
+  },
+  {
+    "ingredientName": "Lait", "avgUnitWeight": 0.206, "avgUnitVolume": 0.200, "kgPrice": 1.5, "countable": false, "allergens": ["Lait"], "ingredientTypes": ["Produits laitiers"]
+  },
+  {
+    "ingredientName": "Lait de coco", "avgUnitWeight": 0.196, "avgUnitVolume": 0.200, "kgPrice": 4.0, "countable": false, "allergens": [], "ingredientTypes": ["Produits laitiers"]
+  },
+  {
+    "ingredientName": "Lait d'amande", "avgUnitWeight": 0.202, "avgUnitVolume": 0.200, "kgPrice": 3.5, "countable": false, "allergens": ["Fruits à coque"], "ingredientTypes": ["Produits laitiers"]
+  },
+  {
+    "ingredientName": "Lentille", "avgUnitWeight": 0.02, "avgUnitVolume": null, "kgPrice": 5.0, "countable": false, "allergens": [], "ingredientTypes": ["Légumineuses"]
+  },
+  {
+    "ingredientName": "Mangue", "avgUnitWeight": 0.3, "avgUnitVolume": null, "kgPrice": 6.0, "countable": true, "allergens": [], "ingredientTypes": ["Fruits"]
+  },
+  {
+    "ingredientName": "Feuille de menthe", "avgUnitWeight": 0.005, "avgUnitVolume": null, "kgPrice": 40.0, "countable": true, "allergens": [], "ingredientTypes": ["Épices et assaisonnements"]
+  },
+  {
+    "ingredientName": "Miel", "avgUnitWeight": 0.3, "avgUnitVolume": null, "kgPrice": 20.0, "countable": false, "allergens": [], "ingredientTypes": ["Produits sucrés"]
+  },
+  {
+    "ingredientName": "Noix", "avgUnitWeight": 0.05, "avgUnitVolume": null, "kgPrice": 15.0, "countable": false, "allergens": ["Fruits à coque"], "ingredientTypes": ["Fruits"]
+  },
+  {
+    "ingredientName": "Noix de coco", "avgUnitWeight": 0.3, "avgUnitVolume": null, "kgPrice": 5.0, "countable": true, "allergens": [], "ingredientTypes": ["Fruits"]
+  },
+  {
+    "ingredientName": "Oeuf", "avgUnitWeight": 0.05, "avgUnitVolume": null, "kgPrice": 0.3, "countable": true, "allergens": ["Oeufs"], "ingredientTypes": ["Produits laitiers"]
+  },
+  {
+    "ingredientName": "Oignon", "avgUnitWeight": 0.15, "avgUnitVolume": null, "kgPrice": 2.0, "countable": true, "allergens": [], "ingredientTypes": ["Légumes"]
+  },
+  {
+    "ingredientName": "Orange", "avgUnitWeight": 0.2, "avgUnitVolume": null, "kgPrice": 3.5, "countable": true, "allergens": [], "ingredientTypes": ["Fruits"]
+  },
+  {
+    "ingredientName": "Paprika", "avgUnitWeight": 0.01, "avgUnitVolume": null, "kgPrice": 25.0, "countable": false, "allergens": [], "ingredientTypes": ["Épices et assaisonnements"]
+  },
+  {
+    "ingredientName": "Pâte à pizza", "avgUnitWeight": 0.25, "avgUnitVolume": null, "kgPrice": 4.0, "countable": false, "allergens": ["Gluten"], "ingredientTypes": ["Produits de boulangerie"]
+  },
+  {
+    "ingredientName": "Pâte feuilletée", "avgUnitWeight": 0.3, "avgUnitVolume": null, "kgPrice": 5.0, "countable": false, "allergens": ["Gluten", "Lait"], "ingredientTypes": ["Produits de boulangerie"]
+  },
+  {
+    "ingredientName": "Patate douce", "avgUnitWeight": 0.2, "avgUnitVolume": null, "kgPrice": 3.0, "countable": true, "allergens": [], "ingredientTypes": ["Légumes"]
+  },
+  {
+    "ingredientName": "Pêche", "avgUnitWeight": 0.15, "avgUnitVolume": null, "kgPrice": 4.0, "countable": true, "allergens": [], "ingredientTypes": ["Fruits"]
+  },
+  {
+    "ingredientName": "Persil", "avgUnitWeight": 0.015, "avgUnitVolume": null, "kgPrice": 20.0, "countable": false, "allergens": [], "ingredientTypes": ["Épices et assaisonnements"]
+  },
+  {
+    "ingredientName": "Poire", "avgUnitWeight": 0.15, "avgUnitVolume": null, "kgPrice": 3.5, "countable": true, "allergens": [], "ingredientTypes": ["Fruits"]
+  },
+  {
+    "ingredientName": "Poireau", "avgUnitWeight": 0.12, "avgUnitVolume": null, "kgPrice": 2.5, "countable": true, "allergens": [], "ingredientTypes": ["Légumes"]
+  },
+  {
+    "ingredientName": "Poivron", "avgUnitWeight": 0.2, "avgUnitVolume": null, "kgPrice": 3.5, "countable": true, "allergens": [], "ingredientTypes": ["Légumes"]
+  },
+  {
+    "ingredientName": "Pomme", "avgUnitWeight": 0.15, "avgUnitVolume": null, "kgPrice": 2.8, "countable": true, "allergens": [], "ingredientTypes": ["Fruits"]
+  },
+  {
+    "ingredientName": "Pomme de terre", "avgUnitWeight": 0.2, "avgUnitVolume": null, "kgPrice": 1.5, "countable": true, "allergens": [], "ingredientTypes": ["Légumes"]
+  },
+  {
+    "ingredientName": "Poulet", "avgUnitWeight": 0.25, "avgUnitVolume": null, "kgPrice": 7.0, "countable": true, "allergens": [], "ingredientTypes": ["Viandes"]
+  },
+  {
+    "ingredientName": "Quinoa", "avgUnitWeight": 0.02, "avgUnitVolume": null, "kgPrice": 11.0, "countable": false, "allergens": [], "ingredientTypes": ["Céréales et grains"]
+  },
+  {
+    "ingredientName": "Radis", "avgUnitWeight": 0.01, "avgUnitVolume": null, "kgPrice": 4.0, "countable": true, "allergens": [], "ingredientTypes": ["Légumes"]
+  },
+  {
+    "ingredientName": "Raisin", "avgUnitWeight": 0.02, "avgUnitVolume": null, "kgPrice": 3.0, "countable": false, "allergens": [], "ingredientTypes": ["Fruits"]
+  },
+  {
+    "ingredientName": "Ricotta", "avgUnitWeight": 0.2, "avgUnitVolume": null, "kgPrice": 8.0, "countable": false, "allergens": ["Lait"], "ingredientTypes": ["Produits laitiers"]
+  },
+  {
+    "ingredientName": "Riz", "avgUnitWeight": 0.2, "avgUnitVolume": null, "kgPrice": 2.5, "countable": false, "allergens": [], "ingredientTypes": ["Céréales et grains"]
+  },
+  {
+    "ingredientName": "Roquette", "avgUnitWeight": 0.02, "avgUnitVolume": null, "kgPrice": 15.0, "countable": false, "allergens": [], "ingredientTypes": ["Légumes"]
+  },
+  {
+    "ingredientName": "Sauce soja", "avgUnitWeight": 0.25, "avgUnitVolume": null, "kgPrice": 7.0, "countable": false, "allergens": ["Soja"], "ingredientTypes": ["Condiments"]
+  },
+  {
+    "ingredientName": "Sel", "avgUnitWeight": 0.01, "avgUnitVolume": null, "kgPrice": 1.0, "countable": false, "allergens": [], "ingredientTypes": ["Épices et assaisonnements"]
+  },
+  {
+    "ingredientName": "Sucre", "avgUnitWeight": 0.02, "avgUnitVolume": null, "kgPrice": 2.0, "countable": false, "allergens": [], "ingredientTypes": ["Produits sucrés"]
+  },
+  {
+    "ingredientName": "Thym", "avgUnitWeight": 0.005, "avgUnitVolume": null, "kgPrice": 30.0, "countable": false, "allergens": [], "ingredientTypes": ["Épices et assaisonnements"]
+  },
+  {
+    "ingredientName": "Tomate", "avgUnitWeight": 0.15, "avgUnitVolume": null, "kgPrice": 3.0, "countable": true, "allergens": [], "ingredientTypes": ["Légumes"]
+  },
+  {
+    "ingredientName": "Vinaigre balsamique", "avgUnitWeight": 0.2, "avgUnitVolume": null, "kgPrice": 10.0, "countable": false, "allergens": [], "ingredientTypes": ["Huiles et vinaigres"]
+  },
+  {
+    "ingredientName": "Yaourt", "avgUnitWeight": 0.25, "avgUnitVolume": null, "kgPrice": 4.0, "countable": true, "allergens": ["Lait"], "ingredientTypes": ["Produits laitiers"]
+  },
+  {
+    "ingredientName": "Zeste de citron", "avgUnitWeight": 0.005, "avgUnitVolume": null, "kgPrice": 50.0, "countable": false, "allergens": [], "ingredientTypes": ["Épices et assaisonnements"]
+  },
+  {
+    "ingredientName": "Zeste d'orange", "avgUnitWeight": 0.005, "avgUnitVolume": null, "kgPrice": 50.0, "countable": false, "allergens": [], "ingredientTypes": ["Épices et assaisonnements"]
+  },
+  {
+    "ingredientName": "Aubergine", "avgUnitWeight": 0.25, "avgUnitVolume": null, "kgPrice": 2.5, "countable": true, "allergens": [], "ingredientTypes": ["Légumes"]
+  },
+  {
+    "ingredientName": "Baies de goji", "avgUnitWeight": 0.02, "avgUnitVolume": null, "kgPrice": 60.0, "countable": false, "allergens": [], "ingredientTypes": ["Fruits"]
+  },
+  {
+    "ingredientName": "Beurre d'amande", "avgUnitWeight": 0.2, "avgUnitVolume": null, "kgPrice": 20.0, "countable": false, "allergens": ["Fruits à coque"], "ingredientTypes": ["Produits laitiers"]
+  },
+  {
+    "ingredientName": "Câpre", "avgUnitWeight": 0.01, "avgUnitVolume": null, "kgPrice": 35.0, "countable": false, "allergens": [], "ingredientTypes": ["Condiments"]
+  },
+  {
+    "ingredientName": "Céréales complètes", "avgUnitWeight": 0.1, "avgUnitVolume": null, "kgPrice": 3.0, "countable": false, "allergens": ["Gluten"], "ingredientTypes": ["Céréales et grains"]
+  },
+  {
+    "ingredientName": "Chou-fleur", "avgUnitWeight": 0.3, "avgUnitVolume": null, "kgPrice": 2.8, "countable": true, "allergens": [], "ingredientTypes": ["Légumes"]
+  },
+  {
+    "ingredientName": "Ciboulette", "avgUnitWeight": 0.005, "avgUnitVolume": null, "kgPrice": 30.0, "countable": false, "allergens": [], "ingredientTypes": ["Épices et assaisonnements"]
+  },
+  {
+    "ingredientName": "Citronnelle", "avgUnitWeight": 0.02, "avgUnitVolume": null, "kgPrice": 25.0, "countable": false, "allergens": [], "ingredientTypes": ["Épices et assaisonnements"]
+  },
+  {
+    "ingredientName": "Clou de girofle", "avgUnitWeight": 0.005, "avgUnitVolume": null, "kgPrice": 55.0, "countable": true, "allergens": [], "ingredientTypes": ["Épices et assaisonnements"]
+  },
+  {
+    "ingredientName": "Endive", "avgUnitWeight": 0.15, "avgUnitVolume": null, "kgPrice": 3.0, "countable": true, "allergens": [], "ingredientTypes": ["Légumes"]
+  },
+  {
+    "ingredientName": "Flocons d'avoine", "avgUnitWeight": 0.1, "avgUnitVolume": null, "kgPrice": 2.5, "countable": false, "allergens": ["Gluten"], "ingredientTypes": ["Céréales et grains"]
+  },
+  {
+    "ingredientName": "Fromage de chèvre", "avgUnitWeight": 0.2, "avgUnitVolume": null, "kgPrice": 20.0, "countable": false, "allergens": ["Lait"], "ingredientTypes": ["Produits laitiers"]
+  },
+  {
+    "ingredientName": "Grenade", "avgUnitWeight": 0.2, "avgUnitVolume": null, "kgPrice": 6.0, "countable": false, "allergens": [], "ingredientTypes": ["Fruits"]
+  },
+  {
+    "ingredientName": "Lait d'avoine", "avgUnitWeight": 0.206, "avgUnitVolume": 0.200, "kgPrice": 2.0, "countable": false, "allergens": ["Gluten"], "ingredientTypes": ["Produits laitiers"]
+  },
+  {
+    "ingredientName": "Moutarde", "avgUnitWeight": 0.25, "avgUnitVolume": null, "kgPrice": 7.0, "countable": false, "allergens": ["Moutarde"], "ingredientTypes": ["Condiments"]
+  },
+  {
+    "ingredientName": "Nectar d'agave", "avgUnitWeight": 0.3, "avgUnitVolume": null, "kgPrice": 15.0, "countable": false, "allergens": [], "ingredientTypes": ["Produits sucrés"]
+  },
+  {
+    "ingredientName": "Noix de cajou", "avgUnitWeight": 0.05, "avgUnitVolume": null, "kgPrice": 22.0, "countable": false, "allergens": ["Fruits à coque"], "ingredientTypes": ["Fruits"]
+  },
+  {
+    "ingredientName": "Noix de muscade", "avgUnitWeight": 0.005, "avgUnitVolume": null, "kgPrice": 60.0, "countable": false, "allergens": [], "ingredientTypes": ["Épices et assaisonnements"]
+  },
+  {
+    "ingredientName": "Origan", "avgUnitWeight": 0.01, "avgUnitVolume": null, "kgPrice": 20.0, "countable": false, "allergens": [], "ingredientTypes": ["Épices et assaisonnements"]
+  },
+  {
+    "ingredientName": "Feuille de riz", "avgUnitWeight": 0.05, "avgUnitVolume": null, "kgPrice": 15.0, "countable": true, "allergens": ["Gluten"], "ingredientTypes": ["Produits de boulangerie"]
+  },
+  {
+    "ingredientName": "Poivre noir", "avgUnitWeight": 0.01, "avgUnitVolume": null, "kgPrice": 25.0, "countable": false, "allergens": [], "ingredientTypes": ["Épices et assaisonnements"]
+  },
+  {
+    "ingredientName": "Poivron rouge", "avgUnitWeight": 0.2, "avgUnitVolume": null, "kgPrice": 4.0, "countable": true, "allergens": [], "ingredientTypes": ["Légumes"]
+  },
+  {
+    "ingredientName": "Pomme séchée", "avgUnitWeight": 0.02, "avgUnitVolume": null, "kgPrice": 30.0, "countable": false, "allergens": [], "ingredientTypes": ["Fruits"]
+  },
+  {
+    "ingredientName": "Pomme verte", "avgUnitWeight": 0.15, "avgUnitVolume": null, "kgPrice": 3.0, "countable": true, "allergens": [], "ingredientTypes": ["Fruits"]
+  },
+  {
+    "ingredientName": "Poudre d'amande", "avgUnitWeight": 0.1, "avgUnitVolume": null, "kgPrice": 20.0, "countable": false, "allergens": ["Fruits à coque"], "ingredientTypes": ["Produits sucrés"]
+  },
+  {
+    "ingredientName": "Poudre de cacao", "avgUnitWeight": 0.1, "avgUnitVolume": null, "kgPrice": 15.0, "countable": false, "allergens": [], "ingredientTypes": ["Produits sucrés"]
+  },
+  {
+    "ingredientName": "Poudre de curry", "avgUnitWeight": 0.01, "avgUnitVolume": null, "kgPrice": 28.0, "countable": false, "allergens": [], "ingredientTypes": ["Épices et assaisonnements"]
+  },
+  {
+    "ingredientName": "Pousses de bambou", "avgUnitWeight": 0.05, "avgUnitVolume": null, "kgPrice": 10.0, "countable": false, "allergens": [], "ingredientTypes": ["Légumes"]
+  },
+  {
+    "ingredientName": "Sauce barbecue", "avgUnitWeight": 0.25, "avgUnitVolume": null, "kgPrice": 7.5, "countable": false, "allergens": [], "ingredientTypes": ["Condiments"]
+  },
+  {
+    "ingredientName": "Sauce pesto", "avgUnitWeight": 0.25, "avgUnitVolume": null, "kgPrice": 15.0, "countable": false, "allergens": ["Fruits à coque"], "ingredientTypes": ["Condiments"]
+  },
+  {
+    "ingredientName": "Saumon fumé", "avgUnitWeight": 0.3, "avgUnitVolume": null, "kgPrice": 35.0, "countable": false, "allergens": ["Poissons"], "ingredientTypes": ["Poissons et fruits de mer"]
+  },
+  {
+    "ingredientName": "Sirop d'érable", "avgUnitWeight": 0.343, "avgUnitVolume": 0.250, "kgPrice": 20.0, "countable": false, "allergens": [], "ingredientTypes": ["Produits sucrés"]
+  },
+  {
+    "ingredientName": "Sirop de maïs", "avgUnitWeight": 0.3, "avgUnitVolume": null, "kgPrice": 8.0, "countable": false, "allergens": [], "ingredientTypes": ["Produits sucrés"]
+  },
+  {
+    "ingredientName": "Sirop de riz", "avgUnitWeight": 0.3, "avgUnitVolume": null, "kgPrice": 9.0, "countable": false, "allergens": [], "ingredientTypes": ["Produits sucrés"]
+  },
+  {
+    "ingredientName": "Steak haché", "avgUnitWeight": 0.25, "avgUnitVolume": null, "kgPrice": 18.0, "countable": false, "allergens": [], "ingredientTypes": ["Viandes"]
+  },
+  {
+    "ingredientName": "Sucre glace", "avgUnitWeight": 0.02, "avgUnitVolume": null, "kgPrice": 5.0, "countable": false, "allergens": [], "ingredientTypes": ["Produits sucrés"]
+  },
+  {
+    "ingredientName": "Thon en boîte", "avgUnitWeight": 0.15, "avgUnitVolume": null, "kgPrice": 20.0, "countable": false, "allergens": ["Poissons"], "ingredientTypes": ["Poissons et fruits de mer"]
+  },
+  {
+    "ingredientName": "Tomate cerise", "avgUnitWeight": 0.01, "avgUnitVolume": null, "kgPrice": 10.0, "countable": true, "allergens": [], "ingredientTypes": ["Légumes"]
+  },
+  {
+    "ingredientName": "Tomate séchée", "avgUnitWeight": 0.1, "avgUnitVolume": null, "kgPrice": 25.0, "countable": true, "allergens": [], "ingredientTypes": ["Légumes"]
+  },
+  {
+    "ingredientName": "Vinaigre de cidre", "avgUnitWeight": 0.2, "avgUnitVolume": null, "kgPrice": 4.0, "countable": false, "allergens": [], "ingredientTypes": ["Huiles et vinaigres"]
+  },
+  {
+    "ingredientName": "Vinaigre de vin", "avgUnitWeight": 0.2, "avgUnitVolume": null, "kgPrice": 3.5, "countable": false, "allergens": [], "ingredientTypes": ["Huiles et vinaigres"]
+  },
+  {
+    "ingredientName": "Yaourt grec", "avgUnitWeight": 0.25, "avgUnitVolume": null, "kgPrice": 5.0, "countable": false, "allergens": ["Lait"], "ingredientTypes": ["Produits laitiers"]
+  },
+  {
+    "ingredientName": "Saumon", "avgUnitWeight": 2.0, "avgUnitVolume": null, "kgPrice": 30.0, "countable": false, "allergens": ["Poissons"], "ingredientTypes": ["Poissons et fruits de mer"]
+  },
+  {
+    "ingredientName": "Basilic thaï", "avgUnitWeight": 0.005, "avgUnitVolume": null, "kgPrice": 35.0, "countable": false, "allergens": [], "ingredientTypes": ["Épices et assaisonnements"]
+  },
+  {
+    "ingredientName": "Ciboulette thaï", "avgUnitWeight": 0.005, "avgUnitVolume": null, "kgPrice": 40.0, "countable": false, "allergens": [], "ingredientTypes": ["Épices et assaisonnements"]
+  },
+  {
+    "ingredientName": "Confiture", "avgUnitWeight": 0.300, "avgUnitVolume": null, "kgPrice": 7.0, "countable": false, "allergens": [], "ingredientTypes": ["Produits sucrés"]
+  },
+  {
+    "ingredientName": "Cresson", "avgUnitWeight": 0.050, "avgUnitVolume": null, "kgPrice": 6.0, "countable": false, "allergens": [], "ingredientTypes": ["Légumes"]
+  },
+  {
+    "ingredientName": "Curry", "avgUnitWeight": 0.030, "avgUnitVolume": null, "kgPrice": 22.0, "countable": false, "allergens": [], "ingredientTypes": ["Épices et assaisonnements"]
+  },
+  {
+    "ingredientName": "Fenouil", "avgUnitWeight": 0.200, "avgUnitVolume": null, "kgPrice": 4.0, "countable": false, "allergens": [], "ingredientTypes": ["Légumes"]
+  },
+  {
+    "ingredientName": "Gousse de vanille", "avgUnitWeight": 0.005, "avgUnitVolume": null, "kgPrice": 150.0, "countable": true, "allergens": [], "ingredientTypes": ["Épices et assaisonnements"]
+  },
+  {
+    "ingredientName": "Groseille", "avgUnitWeight": 0.050, "avgUnitVolume": null, "kgPrice": 8.0, "countable": false, "allergens": [], "ingredientTypes": ["Fruits"]
+  },
+  {
+    "ingredientName": "Herbes de Provence", "avgUnitWeight": 0.010, "avgUnitVolume": null, "kgPrice": 18.0, "countable": false, "allergens": [], "ingredientTypes": ["Épices et assaisonnements"]
+  },
+  {
+    "ingredientName": "Jambon", "avgUnitWeight": 0.100, "avgUnitVolume": null, "kgPrice": 20.0, "countable": true, "allergens": [], "ingredientTypes": ["Viandes"]
+  },
+  {
+    "ingredientName": "Lentilles corail", "avgUnitWeight": 0.200, "avgUnitVolume": null, "kgPrice": 5.0, "countable": false, "allergens": [], "ingredientTypes": ["Légumineuses"]
+  },
+  {
+    "ingredientName": "Marron", "avgUnitWeight": 0.050, "avgUnitVolume": null, "kgPrice": 9.0, "countable": true, "allergens": [], "ingredientTypes": ["Fruits"]
+  },
+  {
+    "ingredientName": "Mélasse", "avgUnitWeight": 0.200, "avgUnitVolume": null, "kgPrice": 10.0, "countable": false, "allergens": [], "ingredientTypes": ["Produits sucrés"]
+  },
+  {
+    "ingredientName": "Moutarde de dijon", "avgUnitWeight": 0.150, "avgUnitVolume": null, "kgPrice": 6.0, "countable": false, "allergens": ["Moutarde"], "ingredientTypes": ["Condiments"]
+  },
+  {
+    "ingredientName": "Noisette", "avgUnitWeight": 0.050, "avgUnitVolume": null, "kgPrice": 20.0, "countable": true, "allergens": ["Fruits à coque"], "ingredientTypes": ["Fruits"]
+  },
+  {
+    "ingredientName": "Pain complet", "avgUnitWeight": 0.200, "avgUnitVolume": null, "kgPrice": 3.5, "countable": false, "allergens": ["Gluten"], "ingredientTypes": ["Produits de boulangerie"]
+  },
+  {
+    "ingredientName": "Papaye", "avgUnitWeight": 0.300, "avgUnitVolume": null, "kgPrice": 5.5, "countable": true, "allergens": [], "ingredientTypes": ["Fruits"]
+  },
+  {
+    "ingredientName": "Pêche de vigne", "avgUnitWeight": 0.150, "avgUnitVolume": null, "kgPrice": 6.0, "countable": true, "allergens": [], "ingredientTypes": ["Fruits"]
+  },
+  {
+    "ingredientName": "Pesto", "avgUnitWeight": 0.150, "avgUnitVolume": null, "kgPrice": 16.0, "countable": false, "allergens": ["Fruits à coque"], "ingredientTypes": ["Condiments"]
+  },
+  {
+    "ingredientName": "Poivre", "avgUnitWeight": 0.002, "avgUnitVolume": null, "kgPrice": 50.0, "countable": false, "allergens": [], "ingredientTypes": ["Épices et assaisonnements"]
+  },
+  {
+    "ingredientName": "Pomme granny smith", "avgUnitWeight": 0.150, "avgUnitVolume": null, "kgPrice": 3.0, "countable": true, "allergens": [], "ingredientTypes": ["Fruits"]
+  },
+  {
+    "ingredientName": "Quatre-épices", "avgUnitWeight": 0.005, "avgUnitVolume": null, "kgPrice": 30.0, "countable": false, "allergens": [], "ingredientTypes": ["Épices et assaisonnements"]
+  },
+  {
+    "ingredientName": "Radis noir", "avgUnitWeight": 0.050, "avgUnitVolume": null, "kgPrice": 4.0, "countable": true, "allergens": [], "ingredientTypes": ["Légumes"]
+  },
+  {
+    "ingredientName": "Raifort", "avgUnitWeight": 0.020, "avgUnitVolume": null, "kgPrice": 12.0, "countable": true, "allergens": [], "ingredientTypes": ["Légumes"]
+  },
+  {
+    "ingredientName": "Ras el hanout", "avgUnitWeight": 0.030, "avgUnitVolume": null, "kgPrice": 35.0, "countable": false, "allergens": [], "ingredientTypes": ["Épices et assaisonnements"]
+  },
+  {
+    "ingredientName": "Rhubarbe", "avgUnitWeight": 0.150, "avgUnitVolume": null, "kgPrice": 5.0, "countable": false, "allergens": [], "ingredientTypes": ["Fruits"]
+  },
+  {
+    "ingredientName": "Riz basmati", "avgUnitWeight": 0.200, "avgUnitVolume": null, "kgPrice": 4.0, "countable": false, "allergens": [], "ingredientTypes": ["Céréales et grains"]
+  },
+  {
+    "ingredientName": "Riz complet", "avgUnitWeight": 0.200, "avgUnitVolume": null, "kgPrice": 3.5, "countable": false, "allergens": [], "ingredientTypes": ["Céréales et grains"]
+  },
+  {
+    "ingredientName": "Riz sauvage", "avgUnitWeight": 0.200, "avgUnitVolume": null, "kgPrice": 6.0, "countable": false, "allergens": [], "ingredientTypes": ["Céréales et grains"]
+  },
+  {
+    "ingredientName": "Romarin", "avgUnitWeight": 0.005, "avgUnitVolume": null, "kgPrice": 40.0, "countable": false, "allergens": [], "ingredientTypes": ["Épices et assaisonnements"]
+  },
+  {
+    "ingredientName": "Sachet de levure chimique", "avgUnitWeight": 0.010, "avgUnitVolume": null, "kgPrice": 15.0, "countable": true, "allergens": [], "ingredientTypes": ["Produits de boulangerie"]
+  },
+  {
+    "ingredientName": "Sardine", "avgUnitWeight": 0.050, "avgUnitVolume": null, "kgPrice": 25.0, "countable": false, "allergens": ["Poissons"], "ingredientTypes": ["Poissons et fruits de mer"]
+  },
+  {
+    "ingredientName": "Seigle", "avgUnitWeight": 0.200, "avgUnitVolume": null, "kgPrice": 3.0, "countable": false, "allergens": ["Gluten"], "ingredientTypes": ["Céréales et grains"]
+  },
+  {
+    "ingredientName": "Sésame", "avgUnitWeight": 0.030, "avgUnitVolume": null, "kgPrice": 20.0, "countable": false, "allergens": ["Graines de sésame"], "ingredientTypes": ["Épices et assaisonnements"]
+  },
+  {
+    "ingredientName": "Tahini", "avgUnitWeight": 0.200, "avgUnitVolume": null, "kgPrice": 10.0, "countable": false, "allergens": ["Graines de sésame"], "ingredientTypes": ["Condiments"]
+  },
+  {
+    "ingredientName": "Tamarin", "avgUnitWeight": 0.050, "avgUnitVolume": null, "kgPrice": 30.0, "countable": false, "allergens": [], "ingredientTypes": ["Épices et assaisonnements"]
+  },
+  {
+    "ingredientName": "Thon", "avgUnitWeight": 0.150, "avgUnitVolume": null, "kgPrice": 20.0, "countable": false, "allergens": ["Poissons"], "ingredientTypes": ["Poissons et fruits de mer"]
+  },
+  {
+    "ingredientName": "Tofu", "avgUnitWeight": 0.200, "avgUnitVolume": null, "kgPrice": 5.0, "countable": false, "allergens": ["Soja"], "ingredientTypes": ["Produits laitiers"]
+  },
+  {
+    "ingredientName": "Extrait de vanille", "avgUnitWeight": 0.005, "avgUnitVolume": null, "kgPrice": 200.0, "countable": false, "allergens": [], "ingredientTypes": ["Épices et assaisonnements"]
+  },
+  {
+    "ingredientName": "Vinaigre de riz", "avgUnitWeight": 0.152, "avgUnitVolume": 0.150, "kgPrice": 6.0, "countable": false, "allergens": [], "ingredientTypes": ["Huiles et vinaigres"]
+  },
+  {
+    "ingredientName": "Wasabi", "avgUnitWeight": 0.005, "avgUnitVolume": null, "kgPrice": 100.0, "countable": false, "allergens": [], "ingredientTypes": ["Épices et assaisonnements"]
+  },
+  {
+    "ingredientName": "Zeste de lime", "avgUnitWeight": 0.010, "avgUnitVolume": null, "kgPrice": 50.0, "countable": false, "allergens": [], "ingredientTypes": ["Épices et assaisonnements"]
+  },
+  {
+    "ingredientName": "Zeste de pamplemousse", "avgUnitWeight": 0.012, "avgUnitVolume": null, "kgPrice": 45.0, "countable": false, "allergens": [], "ingredientTypes": ["Épices et assaisonnements"]
+  },
+  {
+    "ingredientName": "Zeste de mandarine", "avgUnitWeight": 0.010, "avgUnitVolume": null, "kgPrice": 50.0, "countable": false, "allergens": [], "ingredientTypes": ["Épices et assaisonnements"]
+  },
+  {
+    "ingredientName": "Abricot", "avgUnitWeight": 0.050, "avgUnitVolume": null, "kgPrice": 4.0, "countable": true, "allergens": [], "ingredientTypes": ["Fruits"]
+  },
+  {
+    "ingredientName": "Agneau", "avgUnitWeight": 0.200, "avgUnitVolume": null, "kgPrice": 25.0, "countable": false, "allergens": [], "ingredientTypes": ["Viandes"]
+  },
+  {
+    "ingredientName": "Algues", "avgUnitWeight": 0.030, "avgUnitVolume": null, "kgPrice": 20.0, "countable": false, "allergens": [], "ingredientTypes": ["Légumes"]
+  },
+  {
+    "ingredientName": "Amande", "avgUnitWeight": 0.050, "avgUnitVolume": null, "kgPrice": 22.0, "countable": false, "allergens": ["Fruits à coque"], "ingredientTypes": ["Fruits"]
+  },
+  {
+    "ingredientName": "Aneth", "avgUnitWeight": 0.005, "avgUnitVolume": null, "kgPrice": 40.0, "countable": false, "allergens": [], "ingredientTypes": ["Épices et assaisonnements"]
+  },
+  {
+    "ingredientName": "Avoine", "avgUnitWeight": 0.050, "avgUnitVolume": null, "kgPrice": 3.0, "countable": false, "allergens": ["Gluten"], "ingredientTypes": ["Céréales et grains"]
+  },
+  {
+    "ingredientName": "Baies de sureau", "avgUnitWeight": 0.030, "avgUnitVolume": null, "kgPrice": 30.0, "countable": false, "allergens": [], "ingredientTypes": ["Fruits"]
+  },
+  {
+    "ingredientName": "Basilic pourpre", "avgUnitWeight": 0.005, "avgUnitVolume": null, "kgPrice": 35.0, "countable": false, "allergens": [], "ingredientTypes": ["Épices et assaisonnements"]
+  },
+  {
+    "ingredientName": "Beurre de cacahuète", "avgUnitWeight": 0.200, "avgUnitVolume": null, "kgPrice": 9.0, "countable": false, "allergens": ["Arachides"], "ingredientTypes": ["Produits laitiers"]
+  },
+  {
+    "ingredientName": "Beurre de noix de coco", "avgUnitWeight": 0.200, "avgUnitVolume": null, "kgPrice": 15.0, "countable": false, "allergens": [], "ingredientTypes": ["Huiles et vinaigres"]
+  },
+  {
+    "ingredientName": "Beurre salé", "avgUnitWeight": 0.200, "avgUnitVolume": null, "kgPrice": 8.0, "countable": false, "allergens": ["Lait"], "ingredientTypes": ["Produits laitiers"]
+  },
+  {
+    "ingredientName": "Betterave", "avgUnitWeight": 0.150, "avgUnitVolume": null, "kgPrice": 2.5, "countable": true, "allergens": [], "ingredientTypes": ["Légumes"]
+  },
+  {
+    "ingredientName": "Bok choy", "avgUnitWeight": 0.150, "avgUnitVolume": null, "kgPrice": 3.0, "countable": true, "allergens": [], "ingredientTypes": ["Légumes"]
+  },
+  {
+    "ingredientName": "Bouillon de légumes", "avgUnitWeight": 0.250, "avgUnitVolume": 0.250, "kgPrice": 1.5, "countable": true, "allergens": [], "ingredientTypes": ["Condiments"]
+  },
+  {
+    "ingredientName": "Cacahuète", "avgUnitWeight": 0.030, "avgUnitVolume": null, "kgPrice": 6.0, "countable": true, "allergens": ["Arachides"], "ingredientTypes": ["Fruits à coque"]
+  },
+  {
+    "ingredientName": "Cacao en poudre", "avgUnitWeight": 0.030, "avgUnitVolume": null, "kgPrice": 15.0, "countable": false, "allergens": [], "ingredientTypes": ["Produits sucrés"]
+  },
+  {
+    "ingredientName": "Cardamome", "avgUnitWeight": 0.005, "avgUnitVolume": null, "kgPrice": 100.0, "countable": false, "allergens": [], "ingredientTypes": ["Épices et assaisonnements"]
+  },
+  {
+    "ingredientName": "Carvi", "avgUnitWeight": 0.005, "avgUnitVolume": null, "kgPrice": 20.0, "countable": false, "allergens": [], "ingredientTypes": ["Épices et assaisonnements"]
+  },
+  {
+    "ingredientName": "Cassis", "avgUnitWeight": 0.050, "avgUnitVolume": null, "kgPrice": 7.0, "countable": false, "allergens": [], "ingredientTypes": ["Fruits"]
+  },
+  {
+    "ingredientName": "Cèdre", "avgUnitWeight": 0.005, "avgUnitVolume": null, "kgPrice": 50.0, "countable": false, "allergens": [], "ingredientTypes": ["Épices et assaisonnements"]
+  },
+  {
+    "ingredientName": "Cerfeuil", "avgUnitWeight": 0.005, "avgUnitVolume": null, "kgPrice": 30.0, "countable": false, "allergens": [], "ingredientTypes": ["Épices et assaisonnements"]
+  },
+  {
+    "ingredientName": "Cerise de terre", "avgUnitWeight": 0.020, "avgUnitVolume": null, "kgPrice": 8.0, "countable": true, "allergens": [], "ingredientTypes": ["Fruits"]
+  },
+  {
+    "ingredientName": "Champignon shiitake", "avgUnitWeight": 0.050, "avgUnitVolume": null, "kgPrice": 15.0, "countable": true, "allergens": [], "ingredientTypes": ["Légumes"]
+  },
+  {
+    "ingredientName": "Chèvre", "avgUnitWeight": 0.100, "avgUnitVolume": null, "kgPrice": 25.0, "countable": false, "allergens": [], "ingredientTypes": ["Viandes"]
+  },
+  {
+    "ingredientName": "Chicorée", "avgUnitWeight": 0.050, "avgUnitVolume": null, "kgPrice": 3.0, "countable": false, "allergens": [], "ingredientTypes": ["Légumes"]
+  },
+  {
+    "ingredientName": "Chorizo", "avgUnitWeight": 0.100, "avgUnitVolume": null, "kgPrice": 18.0, "countable": false, "allergens": [], "ingredientTypes": ["Viandes"]
+  },
+  {
+    "ingredientName": "Chou kale", "avgUnitWeight": 0.200, "avgUnitVolume": null, "kgPrice": 4.0, "countable": true, "allergens": [], "ingredientTypes": ["Légumes"]
+  },
+  {
+    "ingredientName": "Chou rouge", "avgUnitWeight": 0.300, "avgUnitVolume": null, "kgPrice": 3.5, "countable": true, "allergens": [], "ingredientTypes": ["Légumes"]
+  },
+  {
+    "ingredientName": "Chou-rave", "avgUnitWeight": 0.200, "avgUnitVolume": null, "kgPrice": 4.0, "countable": true, "allergens": [], "ingredientTypes": ["Légumes"]
+  },
+  {
+    "ingredientName": "Chou chinois", "avgUnitWeight": 0.200, "avgUnitVolume": null, "kgPrice": 3.0, "countable": true, "allergens": [], "ingredientTypes": ["Légumes"]
+  },
+  {
+    "ingredientName": "Chou de Bruxelles", "avgUnitWeight": 0.150, "avgUnitVolume": null, "kgPrice": 4.0, "countable": true, "allergens": [], "ingredientTypes": ["Légumes"]
+  },
+  {
+    "ingredientName": "Chou frisé", "avgUnitWeight": 0.150, "avgUnitVolume": null, "kgPrice": 3.5, "countable": true, "allergens": [], "ingredientTypes": ["Légumes"]
+  },
+  {
+    "ingredientName": "Chou nappa", "avgUnitWeight": 0.200, "avgUnitVolume": null, "kgPrice": 3.5, "countable": true, "allergens": [], "ingredientTypes": ["Légumes"]
+  },
+  {
+    "ingredientName": "Chou romanesco", "avgUnitWeight": 0.300, "avgUnitVolume": null, "kgPrice": 4.5, "countable": true, "allergens": [], "ingredientTypes": ["Légumes"]
+  },
+  {
+    "ingredientName": "Chou-fleur violet", "avgUnitWeight": 0.300, "avgUnitVolume": null, "kgPrice": 4.0, "countable": true, "allergens": [], "ingredientTypes": ["Légumes"]
+  },
+  {
+    "ingredientName": "Citron confit", "avgUnitWeight": 0.20, "avgUnitVolume": null, "kgPrice": 10.0, "countable": true, "allergens": [], "ingredientTypes": ["Fruits"]
+  },
+  {
+    "ingredientName": "Citron vert confit", "avgUnitWeight": 0.20, "avgUnitVolume": null, "kgPrice": 10.0, "countable": true, "allergens": [], "ingredientTypes": ["Fruits"]
+  },
+  {
+    "ingredientName": "Clémentine", "avgUnitWeight": 0.100, "avgUnitVolume": null, "kgPrice": 3.0, "countable": true, "allergens": [], "ingredientTypes": ["Fruits"]
+  },
+  {
+    "ingredientName": "Cognac", "avgUnitWeight": 0.0141, "avgUnitVolume": 0.015, "kgPrice": 30.0, "countable": false, "allergens": [], "ingredientTypes": ["Boissons alcoolisées"]
+  },
+  {
+    "ingredientName": "Cointreau", "avgUnitWeight": 0.0141, "avgUnitVolume": 0.015, "kgPrice": 30.0, "countable": false, "allergens": [], "ingredientTypes": ["Boissons alcoolisées"]
+  },
+  {
+    "ingredientName": "Concombre de mer", "avgUnitWeight": 0.200, "avgUnitVolume": null, "kgPrice": 100.0, "countable": true, "allergens": [], "ingredientTypes": ["Poissons et fruits de mer"]
+  },
+  {
+    "ingredientName": "Coppa", "avgUnitWeight": 0.100, "avgUnitVolume": null, "kgPrice": 20.0, "countable": false, "allergens": [], "ingredientTypes": ["Viandes"]
+  },
+  {
+    "ingredientName": "Corme", "avgUnitWeight": 0.050, "avgUnitVolume": null, "kgPrice": 5.0, "countable": true, "allergens": [], "ingredientTypes": ["Fruits"]
+  },
+  {
+    "ingredientName": "Courge butternut", "avgUnitWeight": 0.500, "avgUnitVolume": null, "kgPrice": 1.5, "countable": true, "allergens": [], "ingredientTypes": ["Légumes"]
+  },
+  {
+    "ingredientName": "Courge spaghetti", "avgUnitWeight": 0.500, "avgUnitVolume": null, "kgPrice": 1.5, "countable": true, "allergens": [], "ingredientTypes": ["Légumes"]
+  },
+  {
+    "ingredientName": "Courgette", "avgUnitWeight": 0.200, "avgUnitVolume": null, "kgPrice": 2.0, "countable": true, "allergens": [], "ingredientTypes": ["Légumes"]
+  },
+  {
+    "ingredientName": "Crème aigre", "avgUnitWeight": 0.200, "avgUnitVolume": 0.200, "kgPrice": 3.0, "countable": false, "allergens": ["Lait"], "ingredientTypes": ["Produits laitiers"]
+  },
+  {
+    "ingredientName": "Crème de coco", "avgUnitWeight": 0.202, "avgUnitVolume": 0.200, "kgPrice": 5.0, "countable": false, "allergens": [], "ingredientTypes": ["Produits laitiers"]
+  },
+  {
+    "ingredientName": "Crème fraîche", "avgUnitWeight": 0.202, "avgUnitVolume": 0.200, "kgPrice": 4.0, "countable": false, "allergens": ["Lait"], "ingredientTypes": ["Produits laitiers"]
+  },
+  {
+    "ingredientName": "Crème liquide", "avgUnitWeight": 0.202, "avgUnitVolume": 0.200, "kgPrice": 3.5, "countable": false, "allergens": ["Lait"], "ingredientTypes": ["Produits laitiers"]
+  },
+  {
+    "ingredientName": "Crème sure", "avgUnitWeight": 0.200, "avgUnitVolume": 0.200, "kgPrice": 3.5, "countable": false, "allergens": ["Lait"], "ingredientTypes": ["Produits laitiers"]
+  },
+  {
+    "ingredientName": "Crêpe", "avgUnitWeight": 0.050, "avgUnitVolume": null, "kgPrice": 1.0, "countable": true, "allergens": ["Gluten", "Lait"], "ingredientTypes": ["Produits de boulangerie"]
+  },
+  {
+    "ingredientName": "Crevette", "avgUnitWeight": 0.050, "avgUnitVolume": null, "kgPrice": 18.0, "countable": true, "allergens": ["Crustacés"], "ingredientTypes": ["Poissons et fruits de mer"]
+  },
+  {
+    "ingredientName": "Daikon", "avgUnitWeight": 0.200, "avgUnitVolume": null, "kgPrice": 2.0, "countable": true, "allergens": [], "ingredientTypes": ["Légumes"]
+  },
+  {
+    "ingredientName": "Datte Medjool", "avgUnitWeight": 0.020, "avgUnitVolume": null, "kgPrice": 15.0, "countable": true, "allergens": [], "ingredientTypes": ["Fruits"]
+  },
+  {
+    "ingredientName": "Échalote", "avgUnitWeight": 0.020, "avgUnitVolume": null, "kgPrice": 3.0, "countable": true, "allergens": [], "ingredientTypes": ["Légumes"]
+  },
+  {
+    "ingredientName": "Églefin", "avgUnitWeight": 0.150, "avgUnitVolume": null, "kgPrice": 17.0, "countable": false, "allergens": ["Poissons"], "ingredientTypes": ["Poissons et fruits de mer"]
+  },
+  {
+    "ingredientName": "Épeautre", "avgUnitWeight": 0.200, "avgUnitVolume": null, "kgPrice": 4.0, "countable": false, "allergens": ["Gluten"], "ingredientTypes": ["Céréales et grains"]
+  },
+  {
+    "ingredientName": "Épices pour tarte à la citrouille", "avgUnitWeight": 0.005, "avgUnitVolume": null, "kgPrice": 50.0, "countable": false, "allergens": [], "ingredientTypes": ["Épices et assaisonnements"]
+  },
+  {
+    "ingredientName": "Épinard d'eau", "avgUnitWeight": 0.050, "avgUnitVolume": null, "kgPrice": 5.0, "countable": false, "allergens": [], "ingredientTypes": ["Légumes"]
+  },
+  {
+    "ingredientName": "Escargot", "avgUnitWeight": 0.020, "avgUnitVolume": null, "kgPrice": 35.0, "countable": true, "allergens": [], "ingredientTypes": ["Poissons et fruits de mer"]
+  },
+  {
+    "ingredientName": "Espresso", "avgUnitWeight": 0.030, "avgUnitVolume": null, "kgPrice": 60.0, "countable": true, "allergens": [], "ingredientTypes": ["Boissons"]
+  },
+  {
+    "ingredientName": "Fève", "avgUnitWeight": 0.050, "avgUnitVolume": null, "kgPrice": 6.0, "countable": true, "allergens": [], "ingredientTypes": ["Légumineuses"]
+  },
+  {
+    "ingredientName": "Fève tonka", "avgUnitWeight": 0.005, "avgUnitVolume": null, "kgPrice": 100.0, "countable": false, "allergens": [], "ingredientTypes": ["Épices et assaisonnements"]
+  },
+  {
+    "ingredientName": "Figue", "avgUnitWeight": 0.050, "avgUnitVolume": null, "kgPrice": 10.0, "countable": true, "allergens": [], "ingredientTypes": ["Fruits"]
+  },
+  {
+    "ingredientName": "Filet mignon", "avgUnitWeight": 0.150, "avgUnitVolume": null, "kgPrice": 30.0, "countable": true, "allergens": [], "ingredientTypes": ["Viandes"]
+  },
+  {
+    "ingredientName": "Foie gras", "avgUnitWeight": 0.050, "avgUnitVolume": null, "kgPrice": 100.0, "countable": true, "allergens": [], "ingredientTypes": ["Viandes"]
+  },
+  {
+    "ingredientName": "Fruit de la passion", "avgUnitWeight": 0.050, "avgUnitVolume": null, "kgPrice": 7.0, "countable": true, "allergens": [], "ingredientTypes": ["Fruits"]
+  },
+  {
+    "ingredientName": "Garam masala", "avgUnitWeight": 0.005, "avgUnitVolume": null, "kgPrice": 40.0, "countable": false, "allergens": [], "ingredientTypes": ["Épices et assaisonnements"]
+  },
+  {
+    "ingredientName": "Gâteau aux carottes", "avgUnitWeight": 0.150, "avgUnitVolume": null, "kgPrice": 5.0, "countable": true, "allergens": ["Gluten", "Lait", "Œufs"], "ingredientTypes": ["Produits de boulangerie"]
+  },
+  {
+    "ingredientName": "Gelée de coing", "avgUnitWeight": 0.030, "avgUnitVolume": null, "kgPrice": 10.0, "countable": false, "allergens": [], "ingredientTypes": ["Produits sucrés"]
+  },
+  {
+    "ingredientName": "Gingembre confit", "avgUnitWeight": 0.020, "avgUnitVolume": null, "kgPrice": 15.0, "countable": true, "allergens": [], "ingredientTypes": ["Produits sucrés"]
+  },
+  {
+    "ingredientName": "Gingembre frais", "avgUnitWeight": 0.020, "avgUnitVolume": null, "kgPrice": 12.0, "countable": true, "allergens": [], "ingredientTypes": ["Épices et assaisonnements"]
+  },
+  {
+    "ingredientName": "Gingembre moulu", "avgUnitWeight": 0.005, "avgUnitVolume": null, "kgPrice": 30.0, "countable": false, "allergens": [], "ingredientTypes": ["Épices et assaisonnements"]
+  },
+  {
+    "ingredientName": "Gombo", "avgUnitWeight": 0.050, "avgUnitVolume": null, "kgPrice": 3.0, "countable": true, "allergens": [], "ingredientTypes": ["Légumes"]
+  },
+  {
+    "ingredientName": "Gouda", "avgUnitWeight": 0.100, "avgUnitVolume": null, "kgPrice": 12.0, "countable": false, "allergens": ["Lait"], "ingredientTypes": ["Produits laitiers"]
+  },
+  {
+    "ingredientName": "Graines de chia", "avgUnitWeight": 0.030, "avgUnitVolume": null, "kgPrice": 20.0, "countable": false, "allergens": [], "ingredientTypes": ["Graines et noix"]
+  },
+  {
+    "ingredientName": "Graines de courge", "avgUnitWeight": 0.030, "avgUnitVolume": null, "kgPrice": 15.0, "countable": false, "allergens": [], "ingredientTypes": ["Graines et noix"]
+  },
+  {
+    "ingredientName": "Graines de lin", "avgUnitWeight": 0.030, "avgUnitVolume": null, "kgPrice": 10.0, "countable": false, "allergens": [], "ingredientTypes": ["Graines et noix"]
+  },
+  {
+    "ingredientName": "Graines de moutarde", "avgUnitWeight": 0.030, "avgUnitVolume": null, "kgPrice": 5.0, "countable": false, "allergens": ["Moutarde"], "ingredientTypes": ["Épices et assaisonnements"]
+  },
+  {
+    "ingredientName": "Graines de pavot", "avgUnitWeight": 0.030, "avgUnitVolume": null, "kgPrice": 18.0, "countable": false, "allergens": [], "ingredientTypes": ["Graines et noix"]
+  },
+  {
+    "ingredientName": "Grenadille", "avgUnitWeight": 0.050, "avgUnitVolume": null, "kgPrice": 7.0, "countable": true, "allergens": [], "ingredientTypes": ["Fruits"]
+  },
+  {
+    "ingredientName": "Grondin", "avgUnitWeight": 0.150, "avgUnitVolume": null, "kgPrice": 15.0, "countable": true, "allergens": ["Poissons"], "ingredientTypes": ["Poissons et fruits de mer"]
+  },
+  {
+    "ingredientName": "Groseille à maquereau", "avgUnitWeight": 0.030, "avgUnitVolume": null, "kgPrice": 8.0, "countable": true, "allergens": [], "ingredientTypes": ["Fruits"]
+  },
+  {
+    "ingredientName": "Groseille rouge", "avgUnitWeight": 0.030, "avgUnitVolume": null, "kgPrice": 8.0, "countable": false, "allergens": [], "ingredientTypes": ["Fruits"]
+  },
+  {
+    "ingredientName": "Gruau", "avgUnitWeight": 0.050, "avgUnitVolume": null, "kgPrice": 2.0, "countable": false, "allergens": ["Gluten"], "ingredientTypes": ["Céréales et grains"]
+  },
+  {
+    "ingredientName": "Guacamole", "avgUnitWeight": 0.200, "avgUnitVolume": null, "kgPrice": 10.0, "countable": false, "allergens": [], "ingredientTypes": ["Condiments"]
+  },
+  {
+    "ingredientName": "Guimauve", "avgUnitWeight": 0.030, "avgUnitVolume": null, "kgPrice": 5.0, "countable": true, "allergens": [], "ingredientTypes": ["Produits sucrés"]
+  },
+  {
+    "ingredientName": "Haricot mungo", "avgUnitWeight": 0.050, "avgUnitVolume": null, "kgPrice": 3.0, "countable": false, "allergens": [], "ingredientTypes": ["Légumineuses"]
+  },
+  {
+    "ingredientName": "Haricot noir", "avgUnitWeight": 0.050, "avgUnitVolume": null, "kgPrice": 3.0, "countable": false, "allergens": [], "ingredientTypes": ["Légumineuses"]
+  },
+  {
+    "ingredientName": "Haricot pinto", "avgUnitWeight": 0.050, "avgUnitVolume": null, "kgPrice": 3.0, "countable": false, "allergens": [], "ingredientTypes": ["Légumineuses"]
+  },
+  {
+    "ingredientName": "Haricot rouge", "avgUnitWeight": 0.050, "avgUnitVolume": null, "kgPrice": 3.0, "countable": false, "allergens": [], "ingredientTypes": ["Légumineuses"]
+  },
+  {
+    "ingredientName": "Hareng", "avgUnitWeight": 0.100, "avgUnitVolume": null, "kgPrice": 12.0, "countable": true, "allergens": ["Poissons"], "ingredientTypes": ["Poissons et fruits de mer"]
+  },
+  {
+    "ingredientName": "Herbe de blé", "avgUnitWeight": 0.030, "avgUnitVolume": null, "kgPrice": 20.0, "countable": false, "allergens": [], "ingredientTypes": ["Légumes"]
+  },
+  {
+    "ingredientName": "Herbe de la pampa", "avgUnitWeight": 0.030, "avgUnitVolume": null, "kgPrice": 25.0, "countable": false, "allergens": [], "ingredientTypes": ["Épices et assaisonnements"]
+  },
+  {
+    "ingredientName": "Huile de lin", "avgUnitWeight": 0.186, "avgUnitVolume": 0.200, "kgPrice": 10.0, "countable": false, "allergens": [], "ingredientTypes": ["Huiles et vinaigres"]
+  },
+  {
+    "ingredientName": "Huile de pépins de raisin", "avgUnitWeight": 0.184, "avgUnitVolume": 0.200, "kgPrice": 9.0, "countable": false, "allergens": [], "ingredientTypes": ["Huiles et vinaigres"]
+  },
+  {
+    "ingredientName": "Huile de tournesol", "avgUnitWeight": 0.184, "avgUnitVolume": 0.200, "kgPrice": 8.0, "countable": false, "allergens": [], "ingredientTypes": ["Huiles et vinaigres"]
+  },
+  {
+    "ingredientName": "Huître", "avgUnitWeight": 0.030, "avgUnitVolume": null, "kgPrice": 20.0, "countable": true, "allergens": ["Mollusques"], "ingredientTypes": ["Poissons et fruits de mer"]
+  },
+  {
+    "ingredientName": "Jus de citron", "avgUnitWeight": 0.206, "avgUnitVolume": 0.200, "kgPrice": 3.0, "countable": false, "allergens": [], "ingredientTypes": ["Boissons"]
+  },
+  {
+    "ingredientName": "Jus de pomme", "avgUnitWeight": 0.210, "avgUnitVolume": 0.200, "kgPrice": 2.5, "countable": false, "allergens": [], "ingredientTypes": ["Boissons"]
+  },
+  {
+    "ingredientName": "Jus de raisin", "avgUnitWeight": 0.210, "avgUnitVolume": 0.200, "kgPrice": 2.5, "countable": false, "allergens": [], "ingredientTypes": ["Boissons"]
+  },
+  {
+    "ingredientName": "Kaki", "avgUnitWeight": 0.150, "avgUnitVolume": null, "kgPrice": 4.0, "countable": true, "allergens": [], "ingredientTypes": ["Fruits"]
+  },
+  {
+    "ingredientName": "Kéfir", "avgUnitWeight": 0.204, "avgUnitVolume": 0.200, "kgPrice": 6.0, "countable": false, "allergens": ["Lait"], "ingredientTypes": ["Produits laitiers"]
+  },
+  {
+    "ingredientName": "Kirsch", "avgUnitWeight": 0.030, "avgUnitVolume": null, "kgPrice": 30.0, "countable": false, "allergens": [], "ingredientTypes": ["Boissons alcoolisées"]
+  },
+  {
+    "ingredientName": "Kiwi", "avgUnitWeight": 0.100, "avgUnitVolume": null, "kgPrice": 3.0, "countable": true, "allergens": [], "ingredientTypes": ["Fruits"]
+  },
+  {
+    "ingredientName": "Lait concentré", "avgUnitWeight": 0.256, "avgUnitVolume": 0.200, "kgPrice": 5.0, "countable": false, "allergens": ["Lait"], "ingredientTypes": ["Produits laitiers"]
+  },
+  {
+    "ingredientName": "Lait d'amande non sucré", "avgUnitWeight": 0.202, "avgUnitVolume": 0.200, "kgPrice": 4.0, "countable": false, "allergens": ["Fruits à coque"], "ingredientTypes": ["Produits laitiers"]
+  },
+  {
+    "ingredientName": "Lait de chèvre", "avgUnitWeight": 0.206, "avgUnitVolume": 0.200, "kgPrice": 4.5, "countable": false, "allergens": ["Lait"], "ingredientTypes": ["Produits laitiers"]
+  },
+  {
+    "ingredientName": "Lait de coco light", "avgUnitWeight": 0.200, "avgUnitVolume": 0.200, "kgPrice": 3.5, "countable": false, "allergens": [], "ingredientTypes": ["Produits laitiers"]
+  },
+  {
+    "ingredientName": "Lait demi-écrémé", "avgUnitWeight": 0.206, "avgUnitVolume": 0.200, "kgPrice": 2.0, "countable": false, "allergens": ["Lait"], "ingredientTypes": ["Produits laitiers"]
+  },
+  {
+    "ingredientName": "Lait écrémé", "avgUnitWeight": 0.206, "avgUnitVolume": 0.200, "kgPrice": 2.0, "countable": false, "allergens": ["Lait"], "ingredientTypes": ["Produits laitiers"]
+  },
+  {
+    "ingredientName": "Lait entier", "avgUnitWeight": 0.206, "avgUnitVolume": 0.200, "kgPrice": 2.5, "countable": false, "allergens": ["Lait"], "ingredientTypes": ["Produits laitiers"]
+  },
+  {
+    "ingredientName": "Lait évaporé", "avgUnitWeight": 0.252, "avgUnitVolume": 0.200, "kgPrice": 3.0, "countable": false, "allergens": ["Lait"], "ingredientTypes": ["Produits laitiers"]
+  },
+  {
+    "ingredientName": "Lait fermenté", "avgUnitWeight": 0.206, "avgUnitVolume": 0.200, "kgPrice": 2.5, "countable": false, "allergens": ["Lait"], "ingredientTypes": ["Produits laitiers"]
+  },
+  {
+    "ingredientName": "Arachide", "avgUnitWeight": 0.050, "avgUnitVolume": null, "kgPrice": 6.0, "countable": false, "allergens": ["Arachides"], "ingredientTypes": ["Graines et noix"]
+  },
+  {
+    "ingredientName": "Arrow-root", "avgUnitWeight": 0.030, "avgUnitVolume": null, "kgPrice": 15.0, "countable": true, "allergens": [], "ingredientTypes": ["Épices et assaisonnements"]
+  },
+  {
+    "ingredientName": "Baies de genièvre", "avgUnitWeight": 0.005, "avgUnitVolume": null, "kgPrice": 40.0, "countable": false, "allergens": [], "ingredientTypes": ["Épices et assaisonnements"]
+  },
+  {
+    "ingredientName": "Beurre clarifié", "avgUnitWeight": 0.100, "avgUnitVolume": null, "kgPrice": 10.0, "countable": false, "allergens": ["Lait"], "ingredientTypes": ["Produits laitiers"]
+  },
+  {
+    "ingredientName": "Bière", "avgUnitWeight": 0.333, "avgUnitVolume": 0.330, "kgPrice": 3.0, "countable": false, "allergens": ["Gluten"], "ingredientTypes": ["Boissons alcoolisées"]
+  },
+  {
+    "ingredientName": "Blanc d'oeuf", "avgUnitWeight": 0.030, "avgUnitVolume": null, "kgPrice": 0.5, "countable": true, "allergens": ["Oeufs"], "ingredientTypes": ["Produits laitiers"]
+  },
+  {
+    "ingredientName": "Châtaigne", "avgUnitWeight": 0.050, "avgUnitVolume": null, "kgPrice": 7.0, "countable": true, "allergens": [], "ingredientTypes": ["Fruits"]
+  },
+  {
+    "ingredientName": "Cheddar", "avgUnitWeight": 0.100, "avgUnitVolume": null, "kgPrice": 12.0, "countable": false, "allergens": ["Lait"], "ingredientTypes": ["Produits laitiers"]
+  },
+  {
+    "ingredientName": "Cidre", "avgUnitWeight": 0.333, "avgUnitVolume": 0.330, "kgPrice": 4.0, "countable": false, "allergens": [], "ingredientTypes": ["Boissons alcoolisées"]
+  },
+  {
+    "ingredientName": "Palourde", "avgUnitWeight": 0.030, "avgUnitVolume": null, "kgPrice": 18.0, "countable": true, "allergens": ["Mollusques"], "ingredientTypes": ["Poissons et fruits de mer"]
+  },
+  {
+    "ingredientName": "Coulis de tomate", "avgUnitWeight": 0.200, "avgUnitVolume": null, "kgPrice": 5.0, "countable": false, "allergens": [], "ingredientTypes": ["Condiments"]
+  },
+  {
+    "ingredientName": "Crabe", "avgUnitWeight": 0.100, "avgUnitVolume": null, "kgPrice": 20.0, "countable": false, "allergens": ["Crustacés"], "ingredientTypes": ["Poissons et fruits de mer"]
+  },
+  {
+    "ingredientName": "Crème aigre", "avgUnitWeight": 0.200, "avgUnitVolume": 0.200, "kgPrice": 3.0, "countable": false, "allergens": ["Lait"], "ingredientTypes": ["Produits laitiers"]
+  },
+  {
+    "ingredientName": "Écrevisse", "avgUnitWeight": 0.100, "avgUnitVolume": null, "kgPrice": 22.0, "countable": true, "allergens": ["Crustacés"], "ingredientTypes": ["Poissons et fruits de mer"]
+  },
+  {
+    "ingredientName": "Feuilles de laurier", "avgUnitWeight": 0.005, "avgUnitVolume": null, "kgPrice": 15.0, "countable": true, "allergens": [], "ingredientTypes": ["Épices et assaisonnements"]
+  },
+  {
+    "ingredientName": "Fève de cacao", "avgUnitWeight": 0.030, "avgUnitVolume": null, "kgPrice": 25.0, "countable": true, "allergens": [], "ingredientTypes": ["Produits sucrés"]
+  },
+  {
+    "ingredientName": "Fleur d'oranger", "avgUnitWeight": 0.005, "avgUnitVolume": 0.005, "kgPrice": 100.0, "countable": false, "allergens": [], "ingredientTypes": ["Épices et assaisonnements"]
+  },
+  {
+    "ingredientName": "Flocons de maïs", "avgUnitWeight": 0.030, "avgUnitVolume": null, "kgPrice": 4.0, "countable": false, "allergens": [], "ingredientTypes": ["Céréales et grains"]
+  },
+  {
+    "ingredientName": "Fromage bleu", "avgUnitWeight": 0.100, "avgUnitVolume": null, "kgPrice": 15.0, "countable": false, "allergens": ["Lait"], "ingredientTypes": ["Produits laitiers"]
+  },
+  {
+    "ingredientName": "Fromage de brebis", "avgUnitWeight": 0.100, "avgUnitVolume": null, "kgPrice": 20.0, "countable": false, "allergens": ["Lait"], "ingredientTypes": ["Produits laitiers"]
+  },
+  {
+    "ingredientName": "Feuille de gélatine", "avgUnitWeight": 0.010, "avgUnitVolume": null, "kgPrice": 50.0, "countable": true, "allergens": [], "ingredientTypes": ["Produits de boulangerie"]
+  },
+  {
+    "ingredientName": "Grenadelle", "avgUnitWeight": 0.050, "avgUnitVolume": null, "kgPrice": 7.0, "countable": true, "allergens": [], "ingredientTypes": ["Fruits"]
+  },
+  {
+    "ingredientName": "Grue de cacao", "avgUnitWeight": 0.030, "avgUnitVolume": null, "kgPrice": 35.0, "countable": false, "allergens": [], "ingredientTypes": ["Produits sucrés"]
+  },
+  {
+    "ingredientName": "Gruyère", "avgUnitWeight": 0.100, "avgUnitVolume": null, "kgPrice": 20.0, "countable": false, "allergens": ["Lait"], "ingredientTypes": ["Produits laitiers"]
+  },
+  {
+    "ingredientName": "Herbes salées", "avgUnitWeight": 0.010, "avgUnitVolume": null, "kgPrice": 15.0, "countable": false, "allergens": [], "ingredientTypes": ["Épices et assaisonnements"]
+  },
+  {
+    "ingredientName": "Houmous", "avgUnitWeight": 0.200, "avgUnitVolume": null, "kgPrice": 6.0, "countable": false, "allergens": ["Sésame"], "ingredientTypes": ["Condiments"]
+  },
+  {
+    "ingredientName": "Huile de sésame", "avgUnitWeight": 0.184, "avgUnitVolume": 0.200, "kgPrice": 10.0, "countable": false, "allergens": ["Sésame"], "ingredientTypes": ["Huiles et vinaigres"]
+  },
+  {
+    "ingredientName": "Huile végétale", "avgUnitWeight": 0.184, "avgUnitVolume": 0.200, "kgPrice": 5.0, "countable": false, "allergens": [], "ingredientTypes": ["Huiles et vinaigres"]
+  },
+  {
+    "ingredientName": "Jus d'agrumes", "avgUnitWeight": 0.206, "avgUnitVolume": 0.200, "kgPrice": 3.0, "countable": false, "allergens": [], "ingredientTypes": ["Boissons"]
+  },
+  {
+    "ingredientName": "Jus de tomate", "avgUnitWeight": 0.200, "avgUnitVolume": 0.200, "kgPrice": 2.5, "countable": false, "allergens": [], "ingredientTypes": ["Boissons"]
+  },
+  {
+    "ingredientName": "Kombu", "avgUnitWeight": 0.010, "avgUnitVolume": null, "kgPrice": 50.0, "countable": true, "allergens": [], "ingredientTypes": ["Légumes"]
+  },
+  {
+    "ingredientName": "Lait concentré", "avgUnitWeight": 0.256, "avgUnitVolume": 0.200, "kgPrice": 5.0, "countable": false, "allergens": ["Lait"], "ingredientTypes": ["Produits laitiers"]
+  },
+  {
+    "ingredientName": "Lait en poudre", "avgUnitWeight": 0.100, "avgUnitVolume": null, "kgPrice": 7.0, "countable": false, "allergens": ["Lait"], "ingredientTypes": ["Produits laitiers"]
+  },
+  {
+    "ingredientName": "Laitue iceberg", "avgUnitWeight": 0.500, "avgUnitVolume": null, "kgPrice": 2.0, "countable": true, "allergens": [], "ingredientTypes": ["Légumes"]
+  },
+  {
+    "ingredientName": "Lardon", "avgUnitWeight": 0.100, "avgUnitVolume": null, "kgPrice": 12.0, "countable": false, "allergens": [], "ingredientTypes": ["Viandes"]
+  },
+  {
+    "ingredientName": "Lardon de dinde", "avgUnitWeight": 0.100, "avgUnitVolume": null, "kgPrice": 14.0, "countable": false, "allergens": [], "ingredientTypes": ["Viandes"]
+  },
+  {
+    "ingredientName": "Lentille verte", "avgUnitWeight": 0.200, "avgUnitVolume": null, "kgPrice": 4.0, "countable": false, "allergens": [], "ingredientTypes": ["Légumineuses"]
+  },
+  {
+    "ingredientName": "Maïs", "avgUnitWeight": 0.150, "avgUnitVolume": null, "kgPrice": 3.0, "countable": false, "allergens": [], "ingredientTypes": ["Légumes"]
+  },
+  {
+    "ingredientName": "Marmite", "avgUnitWeight": 0.500, "avgUnitVolume": null, "kgPrice": 20.0, "countable": false, "allergens": [], "ingredientTypes": ["Condiments"]
+  },
+  {
+    "ingredientName": "Mascarpone", "avgUnitWeight": 0.100, "avgUnitVolume": null, "kgPrice": 8.0, "countable": false, "allergens": ["Lait"], "ingredientTypes": ["Produits laitiers"]
+  },
+  {
+    "ingredientName": "Mayonnaise", "avgUnitWeight": 0.182, "avgUnitVolume": 0.200, "kgPrice": 5.0, "countable": false, "allergens": ["Oeufs"], "ingredientTypes": ["Condiments"]
+  },
+  {
+    "ingredientName": "Menthe poivrée", "avgUnitWeight": 0.005, "avgUnitVolume": null, "kgPrice": 30.0, "countable": false, "allergens": [], "ingredientTypes": ["Épices et assaisonnements"]
+  },
+  {
+    "ingredientName": "Miel de sarrasin", "avgUnitWeight": 0.200, "avgUnitVolume": null, "kgPrice": 15.0, "countable": false, "allergens": [], "ingredientTypes": ["Produits sucrés"]
+  },
+  {
+    "ingredientName": "Moutarde de Dijon", "avgUnitWeight": 0.220, "avgUnitVolume": 0.200, "kgPrice": 6.0, "countable": false, "allergens": ["Moutarde"], "ingredientTypes": ["Condiments"]
+  },
+  {
+    "ingredientName": "Moutarde de Meaux", "avgUnitWeight": 0.220, "avgUnitVolume": 0.200, "kgPrice": 7.0, "countable": false, "allergens": ["Moutarde"], "ingredientTypes": ["Condiments"]
+  },
+  {
+    "ingredientName": "Mûre", "avgUnitWeight": 0.050, "avgUnitVolume": null, "kgPrice": 6.0, "countable": true, "allergens": [], "ingredientTypes": ["Fruits"]
+  },
+  {
+    "ingredientName": "Navet", "avgUnitWeight": 0.200, "avgUnitVolume": null, "kgPrice": 2.0, "countable": true, "allergens": [], "ingredientTypes": ["Légumes"]
+  },
+  {
+    "ingredientName": "Noix de pécan", "avgUnitWeight": 0.050, "avgUnitVolume": null, "kgPrice": 20.0, "countable": true, "allergens": ["Fruits à coque"], "ingredientTypes": ["Graines et noix"]
+  },
+  {
+    "ingredientName": "Noix de pin", "avgUnitWeight": 0.050, "avgUnitVolume": null, "kgPrice": 22.0, "countable": true, "allergens": ["Fruits à coque"], "ingredientTypes": ["Graines et noix"]
+  },
+  {
+    "ingredientName": "Noix de Saint-Jacques", "avgUnitWeight": 0.100, "avgUnitVolume": null, "kgPrice": 30.0, "countable": true, "allergens": ["Mollusques"], "ingredientTypes": ["Poissons et fruits de mer"]
+  },
+  {
+    "ingredientName": "Nori", "avgUnitWeight": 0.005, "avgUnitVolume": null, "kgPrice": 60.0, "countable": true, "allergens": [], "ingredientTypes": ["Légumes"]
+  },
+  {
+    "ingredientName": "Oeuf de caille", "avgUnitWeight": 0.020, "avgUnitVolume": null, "kgPrice": 0.2, "countable": true, "allergens": ["Oeufs"], "ingredientTypes": ["Produits laitiers"]
+  },
+  {
+    "ingredientName": "Oeufs de poisson", "avgUnitWeight": 0.030, "avgUnitVolume": null, "kgPrice": 35.0, "countable": false, "allergens": ["Poissons"], "ingredientTypes": ["Poissons et fruits de mer"]
+  },
+  {
+    "ingredientName": "Oignon vert", "avgUnitWeight": 0.030, "avgUnitVolume": null, "kgPrice": 2.0, "countable": true, "allergens": [], "ingredientTypes": ["Légumes"]
+  },
+  {
+    "ingredientName": "Olives noires", "avgUnitWeight": 0.050, "avgUnitVolume": null, "kgPrice": 8.0, "countable": true, "allergens": [], "ingredientTypes": ["Fruits"]
+  },
+  {
+    "ingredientName": "Oseille", "avgUnitWeight": 0.030, "avgUnitVolume": null, "kgPrice": 5.0, "countable": false, "allergens": [], "ingredientTypes": ["Légumes"]
+  },
+  {
+    "ingredientName": "Pain de seigle", "avgUnitWeight": 0.500, "avgUnitVolume": null, "kgPrice": 3.0, "countable": false, "allergens": ["Gluten"], "ingredientTypes": ["Produits de boulangerie"]
+  },
+  {
+    "ingredientName": "Pain pita", "avgUnitWeight": 0.150, "avgUnitVolume": null, "kgPrice": 1.5, "countable": true, "allergens": ["Gluten"], "ingredientTypes": ["Produits de boulangerie"]
+  },
+  {
+    "ingredientName": "Pamplemousse", "avgUnitWeight": 0.300, "avgUnitVolume": null, "kgPrice": 2.5, "countable": true, "allergens": [], "ingredientTypes": ["Fruits"]
+  },
+  {
+    "ingredientName": "Pâte de curry", "avgUnitWeight": 0.030, "avgUnitVolume": null, "kgPrice": 20.0, "countable": false, "allergens": [], "ingredientTypes": ["Condiments"]
+  },
+  {
+    "ingredientName": "Pâte miso", "avgUnitWeight": 0.030, "avgUnitVolume": null, "kgPrice": 12.0, "countable": false, "allergens": ["Soja"], "ingredientTypes": ["Condiments"]
+  },
+  {
+    "ingredientName": "Pâte phyllo", "avgUnitWeight": 0.200, "avgUnitVolume": null, "kgPrice": 5.0, "countable": false, "allergens": ["Gluten"], "ingredientTypes": ["Produits de boulangerie"]
+  },
+  {
+    "ingredientName": "Pâte sablée", "avgUnitWeight": 0.200, "avgUnitVolume": null, "kgPrice": 4.0, "countable": false, "allergens": ["Gluten"], "ingredientTypes": ["Produits de boulangerie"]
+  },
+  {
+    "ingredientName": "Pâte sucrée", "avgUnitWeight": 0.200, "avgUnitVolume": null, "kgPrice": 4.5, "countable": false, "allergens": ["Gluten"], "ingredientTypes": ["Produits de boulangerie"]
+  },
+  {
+    "ingredientName": "Pétoncle", "avgUnitWeight": 0.100, "avgUnitVolume": null, "kgPrice": 25.0, "countable": false, "allergens": ["Mollusques"], "ingredientTypes": ["Poissons et fruits de mer"]
+  },
+  {
+    "ingredientName": "Petit pois", "avgUnitWeight": 0.100, "avgUnitVolume": null, "kgPrice": 3.0, "countable": false, "allergens": [], "ingredientTypes": ["Légumes"]
+  },
+  {
+    "ingredientName": "Piment d'Espelette", "avgUnitWeight": 0.005, "avgUnitVolume": null, "kgPrice": 120.0, "countable": false, "allergens": [], "ingredientTypes": ["Épices et assaisonnements"]
+  },
+  {
+    "ingredientName": "Piment de Cayenne", "avgUnitWeight": 0.005, "avgUnitVolume": null, "kgPrice": 50.0, "countable": false, "allergens": [], "ingredientTypes": ["Épices et assaisonnements"]
+  },
+  {
+    "ingredientName": "Piment en poudre", "avgUnitWeight": 0.005, "avgUnitVolume": null, "kgPrice": 40.0, "countable": false, "allergens": [], "ingredientTypes": ["Épices et assaisonnements"]
+  },
+  {
+    "ingredientName": "Piment jalapeño", "avgUnitWeight": 0.030, "avgUnitVolume": null, "kgPrice": 5.0, "countable": true, "allergens": [], "ingredientTypes": ["Légumes"]
+  },
+  {
+    "ingredientName": "Piment rouge", "avgUnitWeight": 0.030, "avgUnitVolume": null, "kgPrice": 6.0, "countable": true, "allergens": [], "ingredientTypes": ["Légumes"]
+  },
+  {
+    "ingredientName": "Piment vert", "avgUnitWeight": 0.030, "avgUnitVolume": null, "kgPrice": 6.0, "countable": true, "allergens": [], "ingredientTypes": ["Légumes"]
+  },
+  {
+    "ingredientName": "Poire William", "avgUnitWeight": 0.200, "avgUnitVolume": null, "kgPrice": 3.5, "countable": true, "allergens": [], "ingredientTypes": ["Fruits"]
+  },
+  {
+    "ingredientName": "Poivre blanc", "avgUnitWeight": 0.005, "avgUnitVolume": null, "kgPrice": 60.0, "countable": false, "allergens": [], "ingredientTypes": ["Épices et assaisonnements"]
+  },
+  {
+    "ingredientName": "Poivre rouge", "avgUnitWeight": 0.005, "avgUnitVolume": null, "kgPrice": 60.0, "countable": false, "allergens": [], "ingredientTypes": ["Épices et assaisonnements"]
+  },
+  {
+    "ingredientName": "Poivron vert", "avgUnitWeight": 0.200, "avgUnitVolume": null, "kgPrice": 3.0, "countable": false, "allergens": [], "ingredientTypes": ["Légumes"]
+  },
+  {
+    "ingredientName": "Polenta", "avgUnitWeight": 0.150, "avgUnitVolume": null, "kgPrice": 2.0, "countable": false, "allergens": ["Maïs"], "ingredientTypes": ["Céréales et grains"]
+  },
+  {
+    "ingredientName": "Pomelo", "avgUnitWeight": 0.300, "avgUnitVolume": null, "kgPrice": 2.5, "countable": true, "allergens": [], "ingredientTypes": ["Fruits"]
+  },
+  {
+    "ingredientName": "Porc", "avgUnitWeight": 0.100, "avgUnitVolume": null, "kgPrice": 10.0, "countable": false, "allergens": [], "ingredientTypes": ["Viandes"]
+  },
+  {
+    "ingredientName": "Porto", "avgUnitWeight": 0.196, "avgUnitVolume": 0.200, "kgPrice": 15.0, "countable": false, "allergens": [], "ingredientTypes": ["Boissons alcoolisées"]
+  },
+  {
+    "ingredientName": "Potiron", "avgUnitWeight": 0.500, "avgUnitVolume": null, "kgPrice": 1.5, "countable": true, "allergens": [], "ingredientTypes": ["Légumes"]
+  },
+  {
+    "ingredientName": "Poulet frit", "avgUnitWeight": 0.200, "avgUnitVolume": null, "kgPrice": 12.0, "countable": true, "allergens": ["Poulet"], "ingredientTypes": ["Viandes"]
+  },
+  {
+    "ingredientName": "Pralin", "avgUnitWeight": 0.200, "avgUnitVolume": null, "kgPrice": 20.0, "countable": false, "allergens": ["Fruits à coque"], "ingredientTypes": ["Produits sucrés"]
+  },
+  {
+    "ingredientName": "Praliné", "avgUnitWeight": 0.200, "avgUnitVolume": null, "kgPrice": 22.0, "countable": false, "allergens": ["Fruits à coque"], "ingredientTypes": ["Produits sucrés"]
+  },
+  {
+    "ingredientName": "Prosciutto", "avgUnitWeight": 0.100, "avgUnitVolume": null, "kgPrice": 25.0, "countable": false, "allergens": [], "ingredientTypes": ["Viandes"]
+  },
+  {
+    "ingredientName": "Radicchio", "avgUnitWeight": 0.150, "avgUnitVolume": null, "kgPrice": 3.0, "countable": false, "allergens": [], "ingredientTypes": ["Légumes"]
+  },
+  {
+    "ingredientName": "Raie", "avgUnitWeight": 0.200, "avgUnitVolume": null, "kgPrice": 20.0, "countable": true, "allergens": ["Poissons"], "ingredientTypes": ["Poissons et fruits de mer"]
+  },
+  {
+    "ingredientName": "Reblochon", "avgUnitWeight": 0.100, "avgUnitVolume": null, "kgPrice": 18.0, "countable": true, "allergens": ["Lait"], "ingredientTypes": ["Produits laitiers"]
+  },
+  {
+    "ingredientName": "Rhubarbe fraîche", "avgUnitWeight": 0.200, "avgUnitVolume": null, "kgPrice": 4.0, "countable": false, "allergens": [], "ingredientTypes": ["Légumes"]
+  },
+  {
+    "ingredientName": "Riz Arborio", "avgUnitWeight": 0.200, "avgUnitVolume": null, "kgPrice": 4.0, "countable": false, "allergens": ["Riz"], "ingredientTypes": ["Céréales et grains"]
+  },
+  {
+    "ingredientName": "Rouille", "avgUnitWeight": 0.184, "avgUnitVolume": 0.200, "kgPrice": 10.0, "countable": false, "allergens": [], "ingredientTypes": ["Condiments"]
+  },
+  {
+    "ingredientName": "Rouleau de printemps", "avgUnitWeight": 0.050, "avgUnitVolume": null, "kgPrice": 1.5, "countable": false, "allergens": [], "ingredientTypes": ["Plats préparés"]
+  },
+  {
+    "ingredientName": "Sabayon", "avgUnitWeight": 0.200, "avgUnitVolume": 0.200, "kgPrice": 8.0, "countable": false, "allergens": ["Oeufs"], "ingredientTypes": ["Desserts"]
+  },
+  {
+    "ingredientName": "Sachet de levure de boulanger", "avgUnitWeight": 0.010, "avgUnitVolume": null, "kgPrice": 0.5, "countable": true, "allergens": [], "ingredientTypes": ["Produits de boulangerie"]
+  },
+  {
+    "ingredientName": "Saindoux", "avgUnitWeight": 0.100, "avgUnitVolume": null, "kgPrice": 8.0, "countable": false, "allergens": [], "ingredientTypes": ["Huiles et vinaigres"]
+  },
+  {
+    "ingredientName": "Sauce béarnaise", "avgUnitWeight": 0.196, "avgUnitVolume": 0.200, "kgPrice": 10.0, "countable": false, "allergens": ["Oeufs"], "ingredientTypes": ["Condiments"]
+  },
+  {
+    "ingredientName": "Sauce béchamel", "avgUnitWeight": 0.210, "avgUnitVolume": 0.200, "kgPrice": 7.0, "countable": false, "allergens": ["Lait", "Gluten"], "ingredientTypes": ["Condiments"]
+  },
+  {
+    "ingredientName": "Sauce hollandaise", "avgUnitWeight": 0.196, "avgUnitVolume": 0.200, "kgPrice": 12.0, "countable": false, "allergens": ["Oeufs"], "ingredientTypes": ["Condiments"]
+  },
+  {
+    "ingredientName": "Sauce teriyaki", "avgUnitWeight": 0.224, "avgUnitVolume": 0.200, "kgPrice": 9.0, "countable": false, "allergens": ["Soja", "Blé"], "ingredientTypes": ["Condiments"]
+  },
+  {
+    "ingredientName": "Sauce Worcestershire", "avgUnitWeight": 0.206, "avgUnitVolume": 200, "kgPrice": 8.0, "countable": false, "allergens": ["Poissons", "Soja", "Blé"], "ingredientTypes": ["Condiments"]
+  },
+  {
+    "ingredientName": "Saumon frais", "avgUnitWeight": 0.100, "avgUnitVolume": null, "kgPrice": 25.0, "countable": false, "allergens": ["Poissons"], "ingredientTypes": ["Poissons et fruits de mer"]
+  },
+  {
+    "ingredientName": "Saumon grillé", "avgUnitWeight": 0.100, "avgUnitVolume": null, "kgPrice": 30.0, "countable": false, "allergens": ["Poissons"], "ingredientTypes": ["Poissons et fruits de mer"]
+  },
+  {
+    "ingredientName": "Saumon mariné", "avgUnitWeight": 0.100, "avgUnitVolume": null, "kgPrice": 28.0, "countable": false, "allergens": ["Poissons"], "ingredientTypes": ["Poissons et fruits de mer"]
+  },
+  {
+    "ingredientName": "Sauge", "avgUnitWeight": 0.005, "avgUnitVolume": null, "kgPrice": 40.0, "countable": false, "allergens": [], "ingredientTypes": ["Épices et assaisonnements"]
+  },
+  {
+    "ingredientName": "Seiche", "avgUnitWeight": 0.200, "avgUnitVolume": null, "kgPrice": 18.0, "countable": true, "allergens": ["Mollusques"], "ingredientTypes": ["Poissons et fruits de mer"]
+  },
+  {
+    "ingredientName": "Sirop de grenadine", "avgUnitWeight": 0.266, "avgUnitVolume": 0.200, "kgPrice": 5.0, "countable": false, "allergens": [], "ingredientTypes": ["Boissons"]
+  },
+  {
+    "ingredientName": "Sirop de menthe", "avgUnitWeight": 0.262, "avgUnitVolume": 0.200, "kgPrice": 5.0, "countable": false, "allergens": [], "ingredientTypes": ["Boissons"]
+  },
+  {
+    "ingredientName": "Sirop de poire", "avgUnitWeight": 0.262, "avgUnitVolume": 0.200, "kgPrice": 5.0, "countable": false, "allergens": [], "ingredientTypes": ["Boissons"]
+  },
+  {
+    "ingredientName": "Sirop de framboise", "avgUnitWeight": 0.262, "avgUnitVolume": 0.200, "kgPrice": 5.0, "countable": false, "allergens": [], "ingredientTypes": ["Boissons"]
+  },
+  {
+    "ingredientName": "Sirop d'orgeat", "avgUnitWeight": 0.262, "avgUnitVolume": 0.200, "kgPrice": 5.0, "countable": false, "allergens": [], "ingredientTypes": ["Boissons"]
+  },
+  {
+    "ingredientName": "Sirop de pêche", "avgUnitWeight": 0.262, "avgUnitVolume": 0.200, "kgPrice": 5.0, "countable": false, "allergens": [], "ingredientTypes": ["Boissons"]
+  },
+  {
+    "ingredientName": "Sirop de fraise", "avgUnitWeight": 0.262, "avgUnitVolume": 0.200, "kgPrice": 5.0, "countable": false, "allergens": [], "ingredientTypes": ["Boissons"]
+  },
+  {
+    "ingredientName": "Sirop de citron", "avgUnitWeight": 0.262, "avgUnitVolume": 0.200, "kgPrice": 5.0, "countable": false, "allergens": [], "ingredientTypes": ["Boissons"]
+  },
+  {
+    "ingredientName": "Sirop d'orange", "avgUnitWeight": 0.262, "avgUnitVolume": 0.200, "kgPrice": 5.0, "countable": false, "allergens": [], "ingredientTypes": ["Boissons"]
+  },
+  {
+    "ingredientName": "Sirop de sucre de canne", "avgUnitWeight": 0.262, "avgUnitVolume": 0.200, "kgPrice": 4.0, "countable": false, "allergens": [], "ingredientTypes": ["Boissons"]
+  },
+  {
+    "ingredientName": "Sirop d'agave", "avgUnitWeight": 0.262, "avgUnitVolume": 0.200, "kgPrice": 6.0, "countable": false, "allergens": [], "ingredientTypes": ["Boissons"]
+  },
+  {
+    "ingredientName": "Sole", "avgUnitWeight": 0.200, "avgUnitVolume": null, "kgPrice": 22.0, "countable": true, "allergens": ["Poissons"], "ingredientTypes": ["Poissons et fruits de mer"]
+  },
+  {
+    "ingredientName": "Sorbet", "avgUnitWeight": 0.100, "avgUnitVolume": null, "kgPrice": 8.0, "countable": false, "allergens": [], "ingredientTypes": ["Desserts"]
+  },
+  {
+    "ingredientName": "Soupe de poisson", "avgUnitWeight": 0.500, "avgUnitVolume": null, "kgPrice": 10.0, "countable": false, "allergens": ["Poissons"], "ingredientTypes": ["Plats préparés"]
+  },
+  {
+    "ingredientName": "Stilton", "avgUnitWeight": 0.100, "avgUnitVolume": null, "kgPrice": 20.0, "countable": false, "allergens": ["Lait"], "ingredientTypes": ["Produits laitiers"]
+  },
+  {
+    "ingredientName": "Sucre cassonade", "avgUnitWeight": 0.200, "avgUnitVolume": null, "kgPrice": 3.0, "countable": false, "allergens": [], "ingredientTypes": ["Produits sucrés"]
+  },
+  {
+    "ingredientName": "Sucre glace", "avgUnitWeight": 0.200, "avgUnitVolume": null, "kgPrice": 3.0, "countable": false, "allergens": [], "ingredientTypes": ["Produits sucrés"]
+  },
+  {
+    "ingredientName": "Sucre roux", "avgUnitWeight": 0.200, "avgUnitVolume": null, "kgPrice": 3.0, "countable": false, "allergens": [], "ingredientTypes": ["Produits sucrés"]
+  },
+  {
+    "ingredientName": "Tagliatelle", "avgUnitWeight": 0.100, "avgUnitVolume": null, "kgPrice": 5.0, "countable": false, "allergens": ["Gluten"], "ingredientTypes": ["Pâtes"]
+  },
+  {
+    "ingredientName": "Tamarin en poudre", "avgUnitWeight": 0.020, "avgUnitVolume": null, "kgPrice": 25.0, "countable": false, "allergens": [], "ingredientTypes": ["Épices et assaisonnements"]
+  },
+  {
+    "ingredientName": "Tapenade", "avgUnitWeight": 0.200, "avgUnitVolume": null, "kgPrice": 10.0, "countable": false, "allergens": ["Olives"], "ingredientTypes": ["Condiments"]
+  },
+  {
+    "ingredientName": "Tapioca", "avgUnitWeight": 0.100, "avgUnitVolume": null, "kgPrice": 4.0, "countable": false, "allergens": [], "ingredientTypes": ["Céréales et grains"]
+  },
+  {
+    "ingredientName": "Thé vert", "avgUnitWeight": 0.005, "avgUnitVolume": null, "kgPrice": 60.0, "countable": false, "allergens": [], "ingredientTypes": ["Boissons"]
+  },
+  {
+    "ingredientName": "Thon rouge", "avgUnitWeight": 0.150, "avgUnitVolume": null, "kgPrice": 30.0, "countable": false, "allergens": ["Poissons"], "ingredientTypes": ["Poissons et fruits de mer"]
+  },
+  {
+    "ingredientName": "Toast", "avgUnitWeight": 0.010, "avgUnitVolume": null, "kgPrice": 0.1, "countable": true, "allergens": ["Gluten"], "ingredientTypes": ["Produits de boulangerie"]
+  },
+  {
+    "ingredientName": "Tofu soyeux", "avgUnitWeight": 0.200, "avgUnitVolume": null, "kgPrice": 7.0, "countable": false, "allergens": ["Soja"], "ingredientTypes": ["Produits à base de soja"]
+  },
+  {
+    "ingredientName": "Tomate confite", "avgUnitWeight": 0.050, "avgUnitVolume": null, "kgPrice": 20.0, "countable": true, "allergens": [], "ingredientTypes": ["Légumes"]
+  },
+  {
+    "ingredientName": "Tomme de Savoie", "avgUnitWeight": 0.200, "avgUnitVolume": null, "kgPrice": 18.0, "countable": false, "allergens": ["Lait"], "ingredientTypes": ["Produits laitiers"]
+  },
+  {
+    "ingredientName": "Truffe", "avgUnitWeight": 0.020, "avgUnitVolume": null, "kgPrice": 200.0, "countable": true, "allergens": [], "ingredientTypes": ["Champignons"]
+  },
+  {
+    "ingredientName": "Vermicelle", "avgUnitWeight": 0.100, "avgUnitVolume": null, "kgPrice": 4.0, "countable": false, "allergens": ["Gluten"], "ingredientTypes": ["Pâtes"]
+  },
+  {
+    "ingredientName": "Viande hachée", "avgUnitWeight": 0.100, "avgUnitVolume": null, "kgPrice": 12.0, "countable": false, "allergens": [], "ingredientTypes": ["Viandes"]
+  },
+  {
+    "ingredientName": "Vinaigre balsamique blanc", "avgUnitWeight": 0.202, "avgUnitVolume": 0.200, "kgPrice": 10.0, "countable": false, "allergens": [], "ingredientTypes": ["Huiles et vinaigres"]
+  },
+  {
+    "ingredientName": "Vinaigre de framboise", "avgUnitWeight": 0.202, "avgUnitVolume": 0.200, "kgPrice": 12.0, "countable": false, "allergens": [], "ingredientTypes": ["Huiles et vinaigres"]
+  },
+  {
+    "ingredientName": "Vinaigre de xérès", "avgUnitWeight": 0.202, "avgUnitVolume": 0.200, "kgPrice": 8.0, "countable": false, "allergens": [], "ingredientTypes": ["Huiles et vinaigres"]
+  },
+  {
+    "ingredientName": "Wasabi en poudre", "avgUnitWeight": 0.005, "avgUnitVolume": null, "kgPrice": 100.0, "countable": false, "allergens": [], "ingredientTypes": ["Épices et assaisonnements"]
+  },
+  {
+    "ingredientName": "Whisky", "avgUnitWeight": 0.188, "avgUnitVolume": 0.200, "kgPrice": 40.0, "countable": false, "allergens": ["Alcool"], "ingredientTypes": ["Boissons alcoolisées"]
+  },
+  {
+    "ingredientName": "Yaourt à la vanille", "avgUnitWeight": 0.200, "avgUnitVolume": null, "kgPrice": 4.0, "countable": true, "allergens": ["Lait"], "ingredientTypes": ["Produits laitiers"]
+  },
+  {
+    "ingredientName": "Yaourt nature", "avgUnitWeight": 0.200, "avgUnitVolume": null, "kgPrice": 3.5, "countable": true, "allergens": ["Lait"], "ingredientTypes": ["Produits laitiers"]
+  },
+  {
+    "ingredientName": "Zeste de citron vert", "avgUnitWeight": 0.010, "avgUnitVolume": null, "kgPrice": 50.0, "countable": false, "allergens": [], "ingredientTypes": ["Fruits"]
+  },
+  {
+    "ingredientName": "Zeste de yuzu", "avgUnitWeight": 0.010, "avgUnitVolume": null, "kgPrice": 60.0, "countable": false, "allergens": [], "ingredientTypes": ["Fruits"]
+  }
+]
