@@ -2,21 +2,30 @@
 
 namespace App\DataFixtures;
 
+use App\Entity\Ingredient;
 use App\Factory\IngredientFactory;
 use Doctrine\Bundle\FixturesBundle\Fixture;
+use Doctrine\Common\DataFixtures\DependentFixtureInterface;
 use Doctrine\Persistence\ObjectManager;
 
 
-class IngredientFixtures extends Fixture
+class IngredientFixtures extends Fixture implements DependentFixtureInterface
 {
     public function load(ObjectManager $manager): void
     {
-        $data = json_decode(file_get_contents(__DIR__.'/data/Ingredient.json'), true);
+        $ingredientsData = json_decode(file_get_contents(__DIR__.'/data/Ingredient.json'), true);
 
-        foreach ($data as $ingredient) {
-            IngredientFactory::createOne($ingredient);
+        foreach ($ingredientsData as $data) {
+            $ingredient = new Ingredient();
+            $ingredient->setIngredientName($data['ingredientName']);
+            $ingredient->setAvgUnitWeight($data['avgUnitWeight']);
+            $ingredient->setAvgUnitVolume($data['avgUnitVolume']);
+            $ingredient->setCountable($data['countable']);
+            $ingredient->setKgPrice($data['kgPrice']);
+
+            $manager->persist($ingredient);
         }
-
+        $manager->flush();
     }
 
     public function getDependencies()
