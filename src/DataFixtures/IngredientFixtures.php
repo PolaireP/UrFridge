@@ -4,11 +4,10 @@ namespace App\DataFixtures;
 
 use App\Entity\Allergen;
 use App\Entity\Ingredient;
-use App\Factory\IngredientFactory;
+use App\Entity\IngredientType;
 use Doctrine\Bundle\FixturesBundle\Fixture;
 use Doctrine\Common\DataFixtures\DependentFixtureInterface;
 use Doctrine\Persistence\ObjectManager;
-
 
 class IngredientFixtures extends Fixture implements DependentFixtureInterface
 {
@@ -31,7 +30,15 @@ class IngredientFixtures extends Fixture implements DependentFixtureInterface
                 }
             }
 
+            foreach ($data['ingredientTypes'] as $ingredientTpName) {
+                $ingredientType = $manager->getRepository(IngredientType::class)->findOneBy(['ingredientTpName' => $ingredientTpName]);
+                if ($ingredientType) {
+                    $ingredient->addIngredientType($ingredientType);
+                }
+            }
+
             $manager->persist($ingredient);
+
         }
         $manager->flush();
     }
