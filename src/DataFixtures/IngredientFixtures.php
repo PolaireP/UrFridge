@@ -18,4 +18,12 @@ class IngredientFixtures extends Fixture
         }
 
     }
+
+    public function getDependencies()
+    {
+        return [
+            AllergenFixtures::class,
+            IngredientTypeFixtures::class,
+        ];
+    }
 }
