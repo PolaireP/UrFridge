@@ -2,6 +2,7 @@
 
 namespace App\DataFixtures;
 
+use App\Entity\Allergen;
 use App\Entity\Ingredient;
 use App\Factory\IngredientFactory;
 use Doctrine\Bundle\FixturesBundle\Fixture;
@@ -22,6 +23,13 @@ class IngredientFixtures extends Fixture implements DependentFixtureInterface
             $ingredient->setAvgUnitVolume($data['avgUnitVolume']);
             $ingredient->setCountable($data['countable']);
             $ingredient->setKgPrice($data['kgPrice']);
+
+            foreach ($data['allergens'] as $allergenName) {
+                $allergen = $manager->getRepository(Allergen::class)->findOneBy(['allergenName' => $allergenName]);
+                if ($allergen) {
+                    $ingredient->addAllergen($allergen);
+                }
+            }
 
             $manager->persist($ingredient);
         }
