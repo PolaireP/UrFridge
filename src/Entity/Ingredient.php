@@ -42,6 +42,9 @@ class Ingredient
     #[ORM\ManyToMany(targetEntity: IngredientType::class, mappedBy: 'ingredients')]
     private Collection $ingredientTypes;
 
+    #[ORM\ManyToOne(inversedBy: 'ingredients')]
+    private ?ingredientPhoto $ingredient_photo = null;
+
     public function __construct()
     {
         $this->recipes = new ArrayCollection();
@@ -219,6 +222,18 @@ class Ingredient
         if ($this->ingredientTypes->removeElement($ingredientType)) {
             $ingredientType->removeIngredient($this);
         }
+
+        return $this;
+    }
+
+    public function getIngredientPhoto(): ?ingredientPhoto
+    {
+        return $this->ingredient_photo;
+    }
+
+    public function setIngredientPhoto(?ingredientPhoto $ingredient_photo): static
+    {
+        $this->ingredient_photo = $ingredient_photo;
 
         return $this;
     }
