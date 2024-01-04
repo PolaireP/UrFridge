@@ -45,6 +45,9 @@ class Ingredient
     #[ORM\OneToMany(mappedBy: 'ingredient', targetEntity: RecipeQuantity::class)]
     private Collection $recipeQuantities;
 
+    #[ORM\ManyToOne(inversedBy: 'ingredients')]
+    private ?ingredientPhoto $ingredient_photo = null;
+
     public function __construct()
     {
         $this->recipes = new ArrayCollection();
@@ -253,6 +256,18 @@ class Ingredient
                 $recipeQuantity->setIngredient(null);
             }
         }
+
+        return $this;
+    }
+
+    public function getIngredientPhoto(): ?ingredientPhoto
+    {
+        return $this->ingredient_photo;
+    }
+
+    public function setIngredientPhoto(?ingredientPhoto $ingredient_photo): static
+    {
+        $this->ingredient_photo = $ingredient_photo;
 
         return $this;
     }
