@@ -2,17 +2,21 @@
 
 namespace App\DataFixtures;
 
+use App\Factory\EquipmentPhotoFactory;
 use Doctrine\Bundle\FixturesBundle\Fixture;
 use Doctrine\Persistence\ObjectManager;
-;
 
 class EquipmentPhotoFixtures extends Fixture
 {
     public function load(ObjectManager $manager): void
     {
-        // $product = new Product();
-        // $manager->persist($product);
+        $data = json_decode(file_get_contents(__DIR__.'/data/EquipmentPhoto.json'), true);
 
-        $manager->flush();
+        // Itération du json pour charger le contenu des images dans recipePhoto
+        foreach ($data as $key => $element) {
+            $data[$key]['equipmentPhoto'] = file_get_contents(__DIR__.'/data/'.$element['equipmentPhoto']);
+        }
+
+        $factory = EquipmentPhotoFactory::createSequence($data);
     }
 }
