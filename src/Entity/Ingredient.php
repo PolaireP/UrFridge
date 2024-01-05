@@ -25,7 +25,7 @@ class Ingredient
     private ?float $avgUnitWeight = null;
 
     #[ORM\Column(nullable: true)]
-    private ?float $avgUnitVolumn = null;
+    private ?float $avgUnitVolume = null;
 
     #[ORM\Column]
     private ?float $kgPrice = null;
@@ -91,14 +91,14 @@ class Ingredient
         return $this;
     }
 
-    public function getAvgUnitVolumn(): ?float
+    public function getAvgUnitVolume(): ?float
     {
-        return $this->avgUnitVolumn;
+        return $this->avgUnitVolume;
     }
 
-    public function setAvgUnitVolumn(?float $avgUnitVolumn): static
+    public function setAvgUnitVolume(?float $avgUnitVolume): static
     {
-        $this->avgUnitVolumn = $avgUnitVolumn;
+        $this->avgUnitVolume = $avgUnitVolume;
 
         return $this;
     }
