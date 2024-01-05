@@ -18,7 +18,7 @@ class Inventory
     #[ORM\OneToOne(mappedBy: 'inventory', cascade: ['persist', 'remove'])]
     private ?person $owner = null;
 
-    #[ORM\OneToMany(mappedBy: 'inventory', targetEntity: Quantity::class, orphanRemoval: true)]
+    #[ORM\OneToMany(mappedBy: 'inventory', targetEntity: FridgeQuantity::class, orphanRemoval: true)]
     private Collection $quantities;
 
     #[ORM\ManyToMany(targetEntity: Recipe::class, mappedBy: 'inventories')]
@@ -90,14 +90,14 @@ class Inventory
     }
 
     /**
-     * @return Collection<int, Quantity>
+     * @return Collection<int, FridgeQuantity>
      */
     public function getQuantities(): Collection
     {
         return $this->quantities;
     }
 
-    public function addQuantity(Quantity $quantity): static
+    public function addQuantity(FridgeQuantity $quantity): static
     {
         if (!$this->quantities->contains($quantity)) {
             $this->quantities->add($quantity);
@@ -107,7 +107,7 @@ class Inventory
         return $this;
     }
 
-    public function removeQuantity(Quantity $quantity): static
+    public function removeQuantity(FridgeQuantity $quantity): static
     {
         if ($this->quantities->removeElement($quantity)) {
             // set the owning side to null (unless already changed)
