@@ -17,7 +17,7 @@ class EquipmentPhoto
     private ?int $id = null;
 
     #[ORM\Column(type: Types::BLOB)]
-    private $equipmentPhoto = null;
+    private $equipmentPhoto;
 
     #[ORM\OneToMany(mappedBy: 'equipmentPhoto', targetEntity: Equipment::class)]
     private Collection $equipment;
