@@ -46,9 +46,7 @@ final class IngredientPhotoFactory extends ModelFactory
      */
     protected function getDefaults(): array
     {
-        return [
-            'ingredient_photo' => self::faker()->text(),
-        ];
+        return [];
     }
 
     /**
