@@ -1,266 +1,237 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,400;8..144,1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
 body {
     display: flex;
-    flex-direction: column;
     padding: 0;
     margin: 0;
+    flex-direction: column;
 }
 
-.content{
-    display:flex;
+.content {
+    display: flex;
     flex-direction: column;
-    box-sizing: border-box;
     flex: 1;
 }
 
-.banner{
+.banner {
     display: flex;
-    padding: 2%;
-    box-sizing: border-box;
-    background:linear-gradient(to left,rgba(76, 185, 165, 50%),rgba(183, 150, 114, 50%), rgba(255, 127, 80, 50%)) 0 0/cover,
-    url("../img/recette.jpg") center/cover no-repeat;
+    align-items: center;
+    background: linear-gradient(to left, rgba(255, 127, 80, 40%), rgba(76, 185, 165, 40%)) 0 0/cover,
+    url("../img/fridge.jpg") center/cover no-repeat;
+    padding: 2% 0;
+    align-self: normal;
+    flex-direction: column;
 }
 
-.profile-area{
+.banner-content {
     display: flex;
-    padding: 1%;
-    background-color: rgba(255, 255, 255, 74%);
+    background-color: rgba(255,255,255,0.74);
     border-radius: 10px;
-}
-
-.profile-picture{
-    display: flex;
-    width: 200px;
-    height: 200px;
     align-self: center;
-    margin-right: 25px;
-    justify-content: center;
-    align-items: center;
-    border-radius: 75%;
-    background: linear-gradient(to left,rgba(76, 185, 165, 1),rgba(183, 150, 114, 1), rgba(255, 127, 80, 1));
+    padding: 10px;
+}
+
+.banner-profile-picture {
+    display: flex;
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    border: solid 2px #00000000;
+    background: linear-gradient(#fff,#fff) padding-box,
+    linear-gradient(to left, rgba(76, 185, 165, 58%), rgba(66, 186, 64, 66%), rgba(255, 127, 80, 74%)) border-box;
+    margin: 0px 5px;
+}
+
+.banner-profile-identity {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
     padding: 5px;
-}
-
-.profile-picture>img{
-    border-radius: 75%;
-    height: 200px;
-    width: 200px;
-    box-sizing: border-box;
-}
-
-.profile-info{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin-left: 25px;
-}
-
-.profile-info>p{
-    font-family: 'Roboto Flex', sans-serif;
-    font-size: 48px;
+    font-size: 24px;
+    font-family: "Roboto", sans-serif;
     font-weight: 1000;
-    color:#4CB9A5;
-    margin: 0;
-    padding: 0;
+    color: #4CB9A5;
+    align-self: center;
 }
 
-.interact-area{
-    display: flex;
-    font-family: 'Roboto Flex', sans-serif;
-    color:#4CB9A5;
-}
-
-.statistics-area{
+.profile-area {
     display: flex;
     flex-direction: column;
-    width: 950px;
-    height: 315px;
-    align-items: start;
-    justify-content: space-around;
-    border-bottom: 2px solid #4CB9A5;
+    padding: 10px;
 }
 
-.statistics-area>h2{
-    margin-left: 30px;
-}
-
-.statistics-area>p{
-    margin-bottom: 20px;
+.in-validation-recipes-area {
     display: flex;
-    color: black;
-    justify-content: center;
-    align-items: center;
-}
-
-.edit-area{
-    display: flex;
-    align-items: center;
-    width: 950px;
-    height: 314px;
-}
-
-.bouton1,
-.bouton2 {
-    display: flex;
-    justify-content: center;
-    width: 367px;
-    height: 105px;
-    background-color: #4CB9A5;
-    border: none;
-    border-radius: 15px;
-    color: white;
-    font-size: 20px;
-    font-weight: bold;
-    cursor: pointer;
-    margin-top: 10px;
-}
-
-.bouton1:hover,
-.bouton2:hover {
-    background-color: rgb(255, 127, 80);
-}
-
-.bouton1 {
-    margin-right: 85px;
-    margin-left: 58px;
-}
-
-.right-area{
-    width: 450px;
-    height: 630px;
-    display: flex;
-    flex:1;
-    border-left: 2px solid #4CB9A5;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    align-self: center;
 }
 
-.right-area>h2{
+.in-validation-recipes-title {
+    display: flex;
+    font-weight: 700;
+    font-family: "Roboto", sans-serif;
+    font-size: 28px;
     text-align: center;
-    margin-bottom: 20px;
+    color: #4CB9A5;
+    margin: 10px 0;
 }
 
-@media only screen and (max-width: 428px){
+.recipes-list {
+    display: flex;
+    flex-direction: column;
+    min-height: 90px;
+    max-height: 300px;
+    overflow: auto;
+    justify-content: center;
+    padding: 0 0 15px 0;
+    margin: 0 10px;
+    box-sizing: border-box;
+    border-bottom: solid 3px #4CB9A5;
+}
 
-    body {
-        display: flex;
-        flex-direction: column;
-        padding: 0;
-        margin: 0;
+.no-recipe {
+    display: flex;
+    margin: 0;
+    text-align: center;
+    color: #4CB9A5;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.profile-informations-area {
+    display: flex;
+    flex-direction: column;
+}
+
+.profile-statistics-area {
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0;
+}
+
+.profile-statistics-title {
+    display: flex;
+    margin: 5px 20px 5px 0;
+    color: #4CB9A5;
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-size: 28px;
+    justify-content: center;
+}
+
+.profile-statistics {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+}
+
+.profile-statistic {
+    display: flex;
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    margin: 5px 0;
+}
+
+.profile-edit-area {
+    display: flex;
+    flex-direction: column;
+}
+
+.edit-profile, .delete-profile {
+    display: flex;
+    padding: 30px;
+    margin: 5px;
+    border-radius: 10px;
+    color: white;
+    text-decoration: none;
+    background-color: #4CB9A5;
+    font-size: 24px;
+    font-weight: 700;
+    font-family: "Roboto", sans-serif;
+    justify-content: center;
+    align-self: center;
+}
+
+.edit-profile:hover, .delete-profile:hover {
+    background-color: #3C9A89;
+    transition: 0.2s;
+}
+
+@media only screen and (min-width: 300px) {
+    /* modification css ici */
+}
+
+@media only screen and (min-width: 400px) {
+    /* modification css ici */
+}
+
+@media only screen and (min-width: 600px) {
+    /* modification css ici */
+    .banner-content {
+        align-self: flex-start;
+        margin: 0 2%;
+        padding: 15px;
     }
 
-    .content{
-        display:flex;
-        flex-direction: column;
-        box-sizing: border-box;
-        flex-wrap: nowrap;
-    }
-    .banner{
-        display: flex;
-        padding: 2%;
-        box-sizing: border-box;
-        background:linear-gradient(to left,rgba(76, 185, 165, 50%),rgba(183, 150, 114, 50%), rgba(255, 127, 80, 50%)) 0 0/cover,
-        url("../img/recette.jpg") center/cover no-repeat;
+    .banner-profile-picture {
+        width: 150px;
+        height: 150px;
+        border-radius: 75px;
+        border: solid 3px #00000000;
+        margin: 0 10px;
     }
 
-    .profile-area{
-        display: flex;
-        padding: 1%;
-        background-color: rgba(255, 255, 255, 74%);
-        border-radius: 10px;
-        align-items: center;
+    .banner-profile-identity {
+        font-size: 28px;
     }
+}
 
-    .profile-info>p{
-        font-family: 'Roboto Flex', sans-serif;
-        font-size: 30px;
-        font-weight: 1000;
-        color:#4CB9A5;
-        margin: 0;
-        padding: 0;
-    }
-
-    .profile-picture{
-        display: flex;
-        width: 125px;
-        height: 125px;
+@media only screen and (min-width: 800px) {
+    /* modification css ici */
+    .profile-area {
+        flex-direction: row;
+        flex: 1;
+        max-width: 1000px;
         align-self: center;
-        margin-right: 25px;
-        margin-left: 25px;
-        justify-content: center;
+    }
+
+    .in-validation-recipes-area {
+        order: 1;
+        align-self: normal;
+        margin: 20px 5px;
         align-items: center;
-        border-radius: 90%;
-        background: linear-gradient(to left,rgba(76, 185, 165, 1),rgba(183, 150, 114, 1), rgba(255, 127, 80, 1));
-        padding: 5px;
     }
 
-    .profile-picture>img{
-        border-radius: 75%;
-        height: 125px;
-        width: 125px;
-        box-sizing: border-box;
+    .recipes-list {
+        border-bottom: 0;
+        max-height: 500px;
+        min-height: 300px;
     }
 
-    .statistics-area{
-        display: flex;
-        flex-direction: column;
-        width: 428px;
-        height: 224px;
-        align-items: center;
-        border-bottom: 2px solid #4CB9A5;
+    .profile-informations-area {
+        flex: 1;
+        border-right: solid 3px #4CB9A5;
+        padding-bottom: 10px;
     }
 
-    .statistics-area>p{
-        margin-bottom: 20px;
-        display: flex;
-        color: black;
-        justify-content: center;
-        text-align: center;
+    .profile-edit-area {
+        min-width: 500px;
     }
 
-    .right-area{
-        width: 428px;
-        height: 392px;
-        display: flex;
-        border-left: none;
-        border-top: 2px solid #4CB9A5;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
+    .profile-statistics-area {
+        border-bottom: solid 3px #4CB9A5;
+        padding-bottom: 15px;
     }
+}
 
-    .interact-area{
-        flex-wrap: wrap;
-        display: flex;
-        font-family: 'Roboto Flex', sans-serif;
-        color:#4CB9A5;
-    }
-
-    .bouton1,
-    .bouton2 {
-        display: flex;
-        justify-content: center;
-        width: 364px;
-        height: 88px;
-        background-color: #4CB9A5;
-        border: none;
-        border-radius: 15px;
-        color: white;
-        font-size: 20px;
-        font-weight: bold;
-        cursor: pointer;
-    }
-    .edit-area{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        width: 428px;
-        height: 282px;
-    }
-    .bouton1 {
-        margin-right: 0px;
-        margin-left: 0px;
+@media only screen and (min-width: 1000px) {
+    /* modification css ici */
+    .profile-edit-area {
+        flex-direction: row;
+        min-width: 600px;
+        justify-content: space-around;
+        margin: 50px 0;
     }
 }
