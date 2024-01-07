@@ -24,6 +24,9 @@ class Equipment
     #[ORM\ManyToMany(targetEntity: recipe::class, inversedBy: 'equipments')]
     private Collection $recipes;
 
+    #[ORM\ManyToOne(inversedBy: 'equipment')]
+    private ?EquipmentPhoto $equipmentPhoto = null;
+
     public function __construct()
     {
         $this->recipes = new ArrayCollection();
@@ -78,6 +81,18 @@ class Equipment
     public function removeRecipe(recipe $recipe): static
     {
         $this->recipes->removeElement($recipe);
+
+        return $this;
+    }
+
+    public function getEquipmentPhoto(): ?EquipmentPhoto
+    {
+        return $this->equipmentPhoto;
+    }
+
+    public function setEquipmentPhoto(?EquipmentPhoto $equipmentPhoto): static
+    {
+        $this->equipmentPhoto = $equipmentPhoto;
 
         return $this;
     }
