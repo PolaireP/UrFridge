@@ -13,14 +13,14 @@ class PersonFixtures extends Fixture
         // $product = new Product();
         // $manager->persist($product);
 
-        PersonFactory::createSequence(
+        PersonFactory::createSequence([
             [
                 'email' => 'root@example.com',
                 'firstname' => 'Tony',
                 'lastname' => 'Stark',
                 'roles' => ['ROLE_ADMIN'],
-            ]
-        );
+            ],
+        ]);
 
         PersonFactory::createSequence([
             [

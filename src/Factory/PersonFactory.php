@@ -4,6 +4,7 @@ namespace App\Factory;
 
 use App\Entity\Person;
 use App\Repository\PersonRepository;
+use Symfony\Component\PasswordHasher\Hasher\UserPasswordHasherInterface;
 use Zenstruck\Foundry\ModelFactory;
 use Zenstruck\Foundry\Proxy;
 use Zenstruck\Foundry\RepositoryProxy;
@@ -11,21 +12,21 @@ use Zenstruck\Foundry\RepositoryProxy;
 /**
  * @extends ModelFactory<Person>
  *
- * @method        Person|Proxy create(array|callable $attributes = [])
- * @method static Person|Proxy createOne(array $attributes = [])
- * @method static Person|Proxy find(object|array|mixed $criteria)
- * @method static Person|Proxy findOrCreate(array $attributes)
- * @method static Person|Proxy first(string $sortedField = 'id')
- * @method static Person|Proxy last(string $sortedField = 'id')
- * @method static Person|Proxy random(array $attributes = [])
- * @method static Person|Proxy randomOrCreate(array $attributes = [])
+ * @method        Person|Proxy                     create(array|callable $attributes = [])
+ * @method static Person|Proxy                     createOne(array $attributes = [])
+ * @method static Person|Proxy                     find(object|array|mixed $criteria)
+ * @method static Person|Proxy                     findOrCreate(array $attributes)
+ * @method static Person|Proxy                     first(string $sortedField = 'id')
+ * @method static Person|Proxy                     last(string $sortedField = 'id')
+ * @method static Person|Proxy                     random(array $attributes = [])
+ * @method static Person|Proxy                     randomOrCreate(array $attributes = [])
  * @method static PersonRepository|RepositoryProxy repository()
- * @method static Person[]|Proxy[] all()
- * @method static Person[]|Proxy[] createMany(int $number, array|callable $attributes = [])
- * @method static Person[]|Proxy[] createSequence(iterable|callable $sequence)
- * @method static Person[]|Proxy[] findBy(array $attributes)
- * @method static Person[]|Proxy[] randomRange(int $min, int $max, array $attributes = [])
- * @method static Person[]|Proxy[] randomSet(int $number, array $attributes = [])
+ * @method static Person[]|Proxy[]                 all()
+ * @method static Person[]|Proxy[]                 createMany(int $number, array|callable $attributes = [])
+ * @method static Person[]|Proxy[]                 createSequence(iterable|callable $sequence)
+ * @method static Person[]|Proxy[]                 findBy(array $attributes)
+ * @method static Person[]|Proxy[]                 randomRange(int $min, int $max, array $attributes = [])
+ * @method static Person[]|Proxy[]                 randomSet(int $number, array $attributes = [])
  */
 final class PersonFactory extends ModelFactory
 {
@@ -34,9 +35,11 @@ final class PersonFactory extends ModelFactory
      *
      * @todo inject services if required
      */
-    public function __construct()
+    public function __construct(UserPasswordHasherInterface $passwordHasher)
     {
         parent::__construct();
+
+        $this->passwordHasher = $passwordHasher;
     }
 
     /**
@@ -62,7 +65,9 @@ final class PersonFactory extends ModelFactory
     protected function initialize(): self
     {
         return $this
-            // ->afterInstantiate(function(Person $person): void {})
+            ->afterInstantiate(function (Person $user) {
+                $user->setPassword($this->passwordHasher->hashPassword($user, $user->getPassword()));
+            })
         ;
     }
 
