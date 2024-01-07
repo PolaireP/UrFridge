@@ -1,0 +1,18 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}UrFridge - Accueil{% endblock %}
+
+{% block stylesheets %}
+    <link rel="stylesheet" href="{{ asset('css/style.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/accueil.css') }}">
+{% endblock %}
+
+{% block body %}
+
+    {% include 'partials/_search_and_list.html.twig' with {
+        'search_bar_title': 'Quels ingrédients définiront vos saveurs ?',
+        'placeholder_text': 'Ingrédients',
+        'list_title': 'Bientôt de délicieux plats apparaitront ici'
+    }%}
+
+{% endblock %}
