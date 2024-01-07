@@ -1243,5 +1243,101 @@
   },
   {
     "ingredientName": "Zeste de yuzu", "avgUnitWeight": 0.010, "avgUnitVolume": null, "kgPrice": 60.0, "countable": false, "allergens": [], "ingredientTypes": ["Fruits"]
+  },
+  {
+    "ingredientName": "Poivre", "avgUnitWeight": 0.005, "avgUnitVolume": null, "kgPrice": 40.0, "countable": false, "allergens": [], "ingredientTypes": ["Épices et assaisonnements"]
+  },
+  {
+    "ingredientName": "Maïzena", "avgUnitWeight": 0.150, "avgUnitVolume": null, "kgPrice": 5.0, "countable": false, "allergens": ["Maïs"], "ingredientTypes": ["Céréales et grains"]
+  },
+  {
+    "ingredientName": "Emmental", "avgUnitWeight": 0.200, "avgUnitVolume": null, "kgPrice": 18.0, "countable": false, "allergens": ["Lait"], "ingredientTypes": ["Produits laitiers"]
+  },
+  {
+    "ingredientName": "Beaufort", "avgUnitWeight": 0.200, "avgUnitVolume": null, "kgPrice": 22.0, "countable": false, "allergens": ["Lait"], "ingredientTypes": ["Produits laitiers"]
+  },
+  {
+    "ingredientName": "Comté", "avgUnitWeight": 0.200, "avgUnitVolume": null, "kgPrice": 20.0, "countable": false, "allergens": ["Lait"], "ingredientTypes": ["Produits laitiers"]
+  },
+  {
+    "ingredientName": "Vin blanc sec", "avgUnitWeight": 0.188, "avgUnitVolume": 0.200, "kgPrice": 15.0, "countable": false, "allergens": ["Alcool"], "ingredientTypes": ["Boissons alcoolisées"]
+  },
+  {
+    "ingredientName": "Sel", "avgUnitWeight": 0.250, "avgUnitVolume": null, "kgPrice": 1.0, "countable": false, "allergens": [], "ingredientTypes": ["Épices et assaisonnements"]
+  },
+  {
+    "ingredientName": "Biscotte", "avgUnitWeight": 0.020, "avgUnitVolume": null, "kgPrice": 15.0, "countable": true, "allergens": ["Gluten"], "ingredientTypes": ["Produits de boulangerie"]
+  },
+  {
+    "ingredientName": "Pain pour hamburger", "avgUnitWeight": 0.080, "avgUnitVolume": null, "kgPrice": 1.0, "countable": true, "allergens": ["Gluten"], "ingredientTypes": ["Produits de boulangerie"]
+  },
+  {
+    "ingredientName": "Beurre doux", "avgUnitWeight": 0.200, "avgUnitVolume": null, "kgPrice": 10.0, "countable": false, "allergens": ["Lait"], "ingredientTypes": ["Produits laitiers"]
+  },
+  {
+    "ingredientName": "Sucre vanillé", "avgUnitWeight": 0.008, "avgUnitVolume": null, "kgPrice": 100.0, "countable": false, "allergens": [], "ingredientTypes": ["Produits sucrés"]
+  },
+  {
+    "ingredientName": "Sucre de canne", "avgUnitWeight": 0.200, "avgUnitVolume": null, "kgPrice": 3.0, "countable": false, "allergens": [], "ingredientTypes": ["Produits sucrés"]
+  },
+  {
+    "ingredientName": "Farine", "avgUnitWeight": 0.500, "avgUnitVolume": null, "kgPrice": 2.0, "countable": false, "allergens": ["Gluten"], "ingredientTypes": ["Céréales et grains"]
+  },
+  {
+    "ingredientName": "Fond de veau", "avgUnitWeight": 0.250, "avgUnitVolume": null, "kgPrice": 20.0, "countable": false, "allergens": [], "ingredientTypes": ["Condiments"]
+  },
+  {
+    "ingredientName": "Cornichon", "avgUnitWeight": 0.010, "avgUnitVolume": null, "kgPrice": 10.0, "countable": true, "allergens": [], "ingredientTypes": ["Légumes"]
+  },
+  {
+    "ingredientName": "Coq", "avgUnitWeight": 1.5, "avgUnitVolume": null, "kgPrice": 15.0, "countable": false, "allergens": [], "ingredientTypes": ["Viandes"]
+  },
+  {
+    "ingredientName": "Vin rouge", "avgUnitWeight": 0.188, "avgUnitVolume": 0.200, "kgPrice": 12.0, "countable": false, "allergens": ["Alcool"], "ingredientTypes": ["Boissons alcoolisées"]
+  },
+  {
+    "ingredientName": "Champignon de Paris", "avgUnitWeight": 0.200, "avgUnitVolume": null, "kgPrice": 5.0, "countable": false, "allergens": [], "ingredientTypes": ["Légumes"]
+  },
+  {
+    "ingredientName": "Bouquet garni", "avgUnitWeight": 0.015, "avgUnitVolume": null, "kgPrice": 15.0, "countable": false, "allergens": [], "ingredientTypes": ["Épices et assaisonnements"]
+  },
+  {
+    "ingredientName": "Pain de campagne", "avgUnitWeight": 0.500, "avgUnitVolume": null, "kgPrice": 4.0, "countable": false, "allergens": ["Gluten"], "ingredientTypes": ["Produits de boulangerie"]
+  },
+  {
+    "ingredientName": "Pâte feuilletée", "avgUnitWeight": 0.250, "avgUnitVolume": null, "kgPrice": 5.0, "countable": false, "allergens": ["Gluten"], "ingredientTypes": ["Produits de boulangerie"]
+  },
+  {
+    "ingredientName": "Crème fraîche épaisse", "avgUnitWeight": 0.200, "avgUnitVolume": null, "kgPrice": 6.0, "countable": false, "allergens": ["Lait"], "ingredientTypes": ["Produits laitiers"]
+  },
+  {
+    "ingredientName": "Spaghetti", "avgUnitWeight": 0.500, "avgUnitVolume": null, "kgPrice": 3.0, "countable": false, "allergens": ["Gluten"], "ingredientTypes": ["Pâtes"]
+  },
+  {
+    "ingredientName": "Bourguignon", "avgUnitWeight": 0.500, "avgUnitVolume": null, "kgPrice": 15.0, "countable": false, "allergens": [], "ingredientTypes": ["Viandes"]
+  },
+  {
+    "ingredientName": "Frite", "avgUnitWeight": 0.100, "avgUnitVolume": null, "kgPrice": 2.0, "countable": false, "allergens": [], "ingredientTypes": ["Plats préparés"]
+  },
+  {
+    "ingredientName": "Saucisse merguez", "avgUnitWeight": 0.080, "avgUnitVolume": null, "kgPrice": 12.0, "countable": true, "allergens": [], "ingredientTypes": ["Viandes"]
+  },
+  {
+    "ingredientName": "Pain baguette", "avgUnitWeight": 0.250, "avgUnitVolume": null, "kgPrice": 1.5, "countable": false, "allergens": ["Gluten"], "ingredientTypes": ["Produits de boulangerie"]
+  },
+  {
+    "ingredientName": "Mayonnaise piquante", "avgUnitWeight": 0.200, "avgUnitVolume": 0.200, "kgPrice": 5.0, "countable": false, "allergens": ["Oeufs"], "ingredientTypes": ["Condiments"]
+  },
+  {
+    "ingredientName": "Paprika fumé", "avgUnitWeight": 0.050, "avgUnitVolume": null, "kgPrice": 30.0, "countable": false, "allergens": [], "ingredientTypes": ["Épices et assaisonnements"]
+  },
+  {
+    "ingredientName": "Chapelure Panko", "avgUnitWeight": 0.200, "avgUnitVolume": null, "kgPrice": 8.0, "countable": false, "allergens": ["Gluten"], "ingredientTypes": ["Pâtes et pains"]
+  },
+  {
+    "ingredientName": "Galette wrap", "avgUnitWeight": 0.050, "avgUnitVolume": null, "kgPrice": 0.5, "countable": true, "allergens": ["Gluten"], "ingredientTypes": ["Produits de boulangerie"]
+  },
+  {
+    "ingredientName": "Sauce Hannibal", "avgUnitWeight": 0.200, "avgUnitVolume": 0.200, "kgPrice": 6.0, "countable": false, "allergens": [], "ingredientTypes": ["Condiments"]
   }
 ]
