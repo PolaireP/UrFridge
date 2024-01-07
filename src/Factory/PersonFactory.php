@@ -4,6 +4,7 @@ namespace App\Factory;
 
 use App\Entity\Person;
 use App\Repository\PersonRepository;
+use Symfony\Component\PasswordHasher\Hasher\UserPasswordHasherInterface;
 use Zenstruck\Foundry\ModelFactory;
 use Zenstruck\Foundry\Proxy;
 use Zenstruck\Foundry\RepositoryProxy;
@@ -34,10 +35,11 @@ final class PersonFactory extends ModelFactory
      *
      * @todo inject services if required
      */
-    public function __construct()
+    public function __construct(UserPasswordHasherInterface $passwordHasher)
     {
         parent::__construct();
-        $this->transliterator = transliterator_create('Any-Lower; Latin-ASCII');
+
+        $this->passwordHasher = $passwordHasher;
     }
 
     /**
@@ -47,20 +49,13 @@ final class PersonFactory extends ModelFactory
      */
     protected function getDefaults(): array
     {
-        $lastname = self::faker()->lastName();
-        $firstname = self::faker()->firstName();
-
-        $formatted_name = $this->normalizeName($firstname.'.'.$lastname);
-
-        $domain = self::faker()->domainName();
-
-        $email = $formatted_name.'@'.$domain;
-
         return [
-            'email' => $email,
-            'firstname' => $firstname,
-            'lastname' => $lastname,
-            'password' => hash('sha512', 'test'),
+            'email' => self::faker()->unique()->numerify('user-###').'@'.self::faker()->domainName(),
+            'inventory' => InventoryFactory::new(),
+            'password' => 'test',
+            'firstname' => self::faker()->firstName(),
+            'lastname' => self::faker()->lastName(),
+            'roles' => [],
         ];
     }
 
@@ -70,17 +65,14 @@ final class PersonFactory extends ModelFactory
     protected function initialize(): self
     {
         return $this
-            // ->afterInstantiate(function(Person $person): void {})
+            ->afterInstantiate(function (Person $user) {
+                $user->setPassword($this->passwordHasher->hashPassword($user, $user->getPassword()));
+            })
         ;
     }
 
     protected static function getClass(): string
     {
         return Person::class;
-    }
-
-    protected function normalizeName(string $str): string
-    {
-        return preg_replace('/\s+/', '-', transliterator_transliterate($this->transliterator, mb_strtolower($str)));
     }
 }
