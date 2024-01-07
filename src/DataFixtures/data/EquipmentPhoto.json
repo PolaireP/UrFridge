@@ -88,5 +88,48 @@
   },
   {
     "equipmentPhoto" : "img/equipmentImg/pocheDouille.jpg"
+  },
+  {
+    "equipmentPhoto" : "img/equipmentImg/cocotte.jpg"
+  },
+  {
+    "equipmentPhoto" : "img/equipmentImg/couvercle.jpg"
+  },
+  {
+    "equipmentPhoto" : "img/equipmentImg/mijoteuse.jpg"
+  },
+  {
+    "equipmentPhoto" : "img/equipmentImg/cuillereBois.jpg"
+  },
+  {
+    "equipmentPhoto" : "img/equipmentImg/pinceau.jpg"
+  },
+  {
+    "equipmentPhoto" : "img/equipmentImg/fondueAp.jpg"
+  },
+  {
+    "equipmentPhoto" : "img/equipmentImg/bbq.jpg"
+  },
+  {
+    "equipmentPhoto" : "img/equipmentImg/papierSu.jpg"
+  },
+  {
+    "equipmentPhoto" : "img/equipmentImg/wok.jpg"
+  },
+  {
+    "equipmentPhoto" : "img/equipmentImg/aluminium.jpg"
+  },
+  {
+    "equipmentPhoto" : "img/equipmentImg/microOndes.jpg"
+  },
+  {
+    "equipmentPhoto" : "img/equipmentImg/entonnoir.jpg"
+  },
+  {
+    "equipmentPhoto" : "img/equipmentImg/grillePat.jpg"
+  },
+  {
+    "equipmentPhoto" : "img/equipmentImg/denoyauteur.jpg"
   }
+
 ]
