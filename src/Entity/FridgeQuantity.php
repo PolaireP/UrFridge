@@ -18,11 +18,11 @@ class FridgeQuantity
 
     #[ORM\ManyToOne(inversedBy: 'quantities')]
     #[ORM\JoinColumn(nullable: false)]
-    private ?inventory $inventory = null;
+    private ?Inventory $inventory = null;
 
     #[ORM\ManyToOne(inversedBy: 'quantities')]
     #[ORM\JoinColumn(nullable: false)]
-    private ?ingredient $ingredient = null;
+    private ?Ingredient $ingredient = null;
 
     public function getId(): ?int
     {
@@ -41,24 +41,24 @@ class FridgeQuantity
         return $this;
     }
 
-    public function getInventory(): ?inventory
+    public function getInventory(): ?Inventory
     {
         return $this->inventory;
     }
 
-    public function setInventory(?inventory $inventory): static
+    public function setInventory(?Inventory $inventory): static
     {
         $this->inventory = $inventory;
 
         return $this;
     }
 
-    public function getIngredient(): ?ingredient
+    public function getIngredient(): ?Ingredient
     {
         return $this->ingredient;
     }
 
-    public function setIngredient(?ingredient $ingredient): static
+    public function setIngredient(?Ingredient $ingredient): static
     {
         $this->ingredient = $ingredient;
 
