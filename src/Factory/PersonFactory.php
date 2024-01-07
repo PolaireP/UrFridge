@@ -55,6 +55,7 @@ final class PersonFactory extends ModelFactory
             'password' => 'test',
             'firstname' => self::faker()->firstName(),
             'lastname' => self::faker()->lastName(),
+            "avatar" => null,
             'roles' => [],
         ];
     }

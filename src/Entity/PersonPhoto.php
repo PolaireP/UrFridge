@@ -16,8 +16,8 @@ class PersonPhoto
     #[ORM\Column]
     private ?int $id = null;
 
-    #[ORM\Column(type: Types::BLOB, nullable: true)]
-    private $personPhoto = null;
+    #[ORM\Column(type: Types::BLOB)]
+    private $personPhoto;
 
     #[ORM\OneToMany(mappedBy: 'avatar', targetEntity: Person::class)]
     private Collection $people;
