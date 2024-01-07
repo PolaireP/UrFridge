@@ -2,6 +2,7 @@
 
 namespace App\Entity;
 
+use App\Factory\RecipeFactory;
 use App\Repository\IngredientRepository;
 use Doctrine\Common\Collections\ArrayCollection;
 use Doctrine\Common\Collections\Collection;
@@ -30,7 +31,7 @@ class Ingredient
     #[ORM\Column]
     private ?float $kgPrice = null;
 
-    #[ORM\ManyToMany(targetEntity: recipe::class, inversedBy: 'ingredients')]
+    #[ORM\ManyToMany(targetEntity: Recipe::class, inversedBy: 'ingredients')]
     private Collection $recipes;
 
     #[ORM\OneToMany(mappedBy: 'ingredient', targetEntity: FridgeQuantity::class, orphanRemoval: true)]
