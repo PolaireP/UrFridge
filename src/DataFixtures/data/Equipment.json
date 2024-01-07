@@ -118,5 +118,61 @@
   {
     "equipmentName": "poche à douille",
     "equipmentLink": "https://www.amazon.fr/Homtrix-Set-poches-douille-r%C3%A9utilisables/dp/B08JKWL4GM/ref=sr_1_1_sspa?__mk_fr_FR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=6W4LRQY58GPP&keywords=poche+%C3%A0+douille&qid=1702143144&s=kitchen&sprefix=poche+%C3%A0+douille%2Ckitchen%2C81&sr=1-1-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&psc=1"
+  },
+  {
+    "equipmentName" : "Cocotte",
+    "equipmentLink" : "https://www.amazon.fr/ACTIV-CUISINE-dAluminium-Rev%C3%AAtement-Anti-adh%C3%A9sif/dp/B0BJKC4P7Q/ref=sr_1_7?__mk_fr_FR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=19H34TC2Q7A1D&keywords=cocotte+cuisine&qid=1704645064&sprefix=cocote+cuisine%2Caps%2C255&sr=8-7"
+  },
+  {
+    "equipmentName" : "Couvercle",
+    "equipmentLink" : "https://www.amazon.fr/culinario-couvercles-20-28-Anti-%C3%A9claboussures/dp/B00PXWR8AU/ref=zg_bs_g_2969501031_sccl_1/257-2521335-9734045?psc=1"
+  },
+  {
+    "equipmentName" : "Mijoteuse",
+    "equipmentLink" : "https://www.amazon.fr/compatible-10-personnes-Compatible-lave-vaisselle-CSC063X/dp/B082BG5229/ref=sr_1_3?__mk_fr_FR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=3JM2AK6FK2RWV&keywords=mijoteuse&qid=1704645606&s=kitchen&sprefix=mijoteuse%2Ckitchen%2C95&sr=1-3&ufe=app_do%3Aamzn1.fos.49fccda8-a887-4188-817b-b9a64bb30e43"
+  },
+  {
+    "equipmentName" : "Cuillère en bois",
+    "equipmentLink" : "https://www.amazon.fr/Chinchilla%C2%AE-cuill%C3%A8res-cuisine-bois-h%C3%AAtre/dp/B0CLSB1K7L/ref=sr_1_5?crid=2DAML5MX3MX1R&keywords=cuillere+en+bois&qid=1704645700&s=kitchen&sprefix=cuill%2Ckitchen%2C81&sr=1-5"
+  },
+  {
+    "equipmentName" : "Pinceau",
+    "equipmentLink" : "https://www.amazon.fr/SURDOCA-badigeonner-Silicone-p%C3%A2tisserie-r%C3%A9sistante/dp/B087Q61LYS/ref=sr_1_4?__mk_fr_FR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=2CIFQX315DVMF&keywords=pinceau%2Bcuisine&qid=1704645781&s=kitchen&sprefix=pinceau%2Bcuisine%2Ckitchen%2C82&sr=1-4&th=1"
+  },
+  {
+    "equipmentName" : "Appareil a fondue",
+    "equipmentLink" : "https://www.amazon.fr/Tefal-EF351412-Appareil-Invents-personnes/dp/B008P6XOJ0/ref=sr_1_5?__mk_fr_FR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=7H3SAX6Z5JYI&keywords=appareil+a+fondue&qid=1704645877&s=kitchen&sprefix=appareil+a+fondue%2Ckitchen%2C89&sr=1-5&ufe=app_do%3Aamzn1.fos.9ad51ef1-4f85-497e-abf8-79138a00c9e5"
+  },
+  {
+    "equipmentName" : "Barbecue",
+    "equipmentLink" : "https://www.amazon.fr/BBQ-Toro-barbecue-r%C3%A9glable-couvercle-thermom%C3%A8tre/dp/B0CLLZNRQN/ref=sr_1_6?keywords=barbecue&qid=1704645954&sr=8-6&ufe=app_do%3Aamzn1.fos.49fccda8-a887-4188-817b-b9a64bb30e43"
+  },
+  {
+    "equipmentName" : "Papier sulfurisé",
+    "equipmentLink" : "https://www.amazon.fr/Papier-Cuisson-rouleau-Non-Blanchi/dp/B08PFL8SPV/ref=sr_1_6?__mk_fr_FR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=2539U2UVFR2F7&keywords=papier%2Bsulfuris%C3%A9&qid=1704646065&sprefix=papier%2Bsulfuris%C3%A9%2Caps%2C96&sr=8-6&th=1"
+  },
+  {
+    "equipmentName" : "Wok",
+    "equipmentLink" : "https://www.amazon.fr/KAMBERG-dAluminium-Rev%C3%AAtement-Couvercle-Induction/dp/B0CH1G3YGQ/ref=sr_1_5?__mk_fr_FR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=14EOEZ3OZCD3W&keywords=wok&qid=1704646131&sprefix=wok%2Caps%2C117&sr=8-5&th=1"
+  },
+  {
+    "equipmentName" : "Dénoyauteur",
+    "equipmentLink" : "https://www.amazon.fr/Leifheit-D%C3%A9noyauteur-s%C3%A9paration-p%C3%A2tisserie-encombrant/dp/B083JSRLWB/ref=sr_1_5?__mk_fr_FR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=3DFEJS9RS43UE&keywords=d%C3%A9noyauteur&qid=1704646191&sprefix=d%C3%A9noyauteur%2Caps%2C108&sr=8-5&th=1"
+  },
+  {
+    "equipmentName" : "Aluminium",
+    "equipmentLink" : "https://www.amazon.fr/Rouleau-papier-aluminium-30-x-300-m/dp/B09JT43D34/ref=sr_1_7?__mk_fr_FR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=35ITMOPNAJZFR&keywords=aluminium&qid=1704646333&sprefix=aluminium%2Caps%2C93&sr=8-7&th=1"
+  },
+  {
+    "equipmentName" : "Micro-Ondes",
+    "equipmentLink" : "https://www.amazon.fr/Samsung-MS23F300EEK-Four-micro-ondes-1150/dp/B08BG1JSCQ/ref=sr_1_14?__mk_fr_FR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=3UOVZZOTKPQQ9&keywords=micro+onde&qid=1704646380&sprefix=micro+onde%2Caps%2C119&sr=8-14&ufe=app_do%3Aamzn1.fos.49fccda8-a887-4188-817b-b9a64bb30e43"
+  },
+  {
+    "equipmentName" : "Entonnoir",
+    "equipmentLink" : "https://www.amazon.fr/McNory-Entonnoir-Inoxydable-M%C3%A9tallique-transfert/dp/B09YY4RBJX/ref=sr_1_6?__mk_fr_FR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=2EZB9R6K40A7C&keywords=entonnoir+cuisine&qid=1704646542&sprefix=entonnoir+cuisine%2Caps%2C167&sr=8-6"
+  },
+  {
+    "equipmentName" : "Grille à patisserie",
+    "equipmentLink" : "https://www.amazon.fr/Volette-Refroidissement-Rectangulaire-P%C3%A2tisserie-Restaurant/dp/B08HV97J5Z/ref=sr_1_8?__mk_fr_FR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=3MEPEC5RW8ZKL&keywords=grille+%C3%A0+patisserie&qid=1704646752&sprefix=grille+%C3%A0+patisserie%2Caps%2C112&sr=8-8"
   }
 ]
