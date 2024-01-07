@@ -1,0 +1,394 @@
+[
+  {
+    "recipeId" : 0,
+    "equipmentId" : 3
+  },
+  {
+    "recipeId" : 0,
+    "equipmentId" : 8
+  },
+  {
+    "recipeId" : 0,
+    "equipmentId" : 31
+  },
+  {
+    "recipeId" : 0,
+    "equipmentId" : 32
+  },
+  {
+    "recipeId" : 0,
+    "equipmentId" : 15
+  },
+  {
+    "recipeId" : 0,
+    "equipmentId" : 33
+  },
+  {
+    "recipeId" : 0,
+    "equipmentId" : 20
+  },
+  {
+    "recipeId" : 1,
+    "equipmentId" : 8
+  },
+  {
+    "recipeId" : 1,
+    "equipmentId" : 15
+  },
+  {
+    "recipeId" : 1,
+    "equipmentId" : 34
+  },
+  {
+    "recipeId" : 1,
+    "equipmentId" : 32
+  },
+  {
+    "recipeId" : 1,
+    "equipmentId" : 42
+  },
+  {
+    "recipeId" : 2,
+    "equipmentId" : 32
+  },
+  {
+    "recipeId" : 2,
+    "equipmentId" : 33
+  },
+  {
+    "recipeId" : 3,
+    "equipmentId" : 44
+  },
+  {
+    "recipeId" : 3,
+    "equipmentId" : 15
+  },
+  {
+    "recipeId" : 3,
+    "equipmentId" : 20
+  },
+  {
+    "recipeId" : 3,
+    "equipmentId" : 18
+  },
+  {
+    "recipeId" : 4,
+    "equipmentId" : 43
+  },
+  {
+    "recipeId" : 4,
+    "equipmentId" : 18
+  },
+  {
+    "recipeId" : 4,
+    "equipmentId" : 31
+  },
+  {
+    "recipeId" : 4,
+    "equipmentId" : 35
+  },
+  {
+    "recipeId" : 4,
+    "equipmentId" : 7
+  },
+  {
+    "recipeId" : 4,
+    "equipmentId" : 8
+  },
+  {
+    "recipeId" : 4,
+    "equipmentId" : 20
+  },
+  {
+    "recipeId" : 5,
+    "equipmentId" : 18
+  },
+  {
+    "recipeId" : 5,
+    "equipmentId" : 3
+  },
+  {
+    "recipeId" : 5,
+    "equipmentId" : 10
+  },
+  {
+    "recipeId" : 5,
+    "equipmentId" : 36
+  },
+  {
+    "recipeId" : 5,
+    "equipmentId" : 34
+  },
+  {
+    "recipeId" : 6,
+    "equipmentId" : 3
+  },
+  {
+    "recipeId" : 6,
+    "equipmentId" : 36
+  },
+  {
+    "recipeId" : 7,
+    "equipmentId" : 8
+  },
+  {
+    "recipeId" : 8,
+    "equipmentId" : 18
+  },
+  {
+    "recipeId" : 8,
+    "equipmentId" : 13
+  },
+  {
+    "recipeId" : 8,
+    "equipmentId" : 8
+  },
+  {
+    "recipeId" : 9,
+    "equipmentId" : 18
+  },
+  {
+    "recipeId" : 9,
+    "equipmentId" : 13
+  },
+  {
+    "recipeId" : 9,
+    "equipmentId" : 34
+  },
+  {
+    "recipeId" : 9,
+    "equipmentId" : 5
+  },
+  {
+    "recipeId" : 9,
+    "equipmentId" : 20
+  },
+  {
+    "recipeId" : 9,
+    "equipmentId" : 8
+  },
+  {
+    "recipeId" : 10,
+    "equipmentId" : 22
+  },
+  {
+    "recipeId" : 10,
+    "equipmentId" : 8
+  },
+  {
+    "recipeId" : 10,
+    "equipmentId" : 3
+  },
+  {
+    "recipeId" : 10,
+    "equipmentId" : 9
+  },
+  {
+    "recipeId" : 10,
+    "equipmentId" : 18
+  },
+  {
+    "recipeId" : 10,
+    "equipmentId" : 34
+  },
+  {
+    "recipeId" : 10,
+    "equipmentId" : 35
+  },
+  {
+    "recipeId" : 10,
+    "equipmentId" : 4
+  },
+  {
+    "recipeId" : 10,
+    "equipmentId" : 32
+  },
+  {
+    "recipeId" : 10,
+    "equipmentId" : 15
+  },
+  {
+    "recipeId" : 11,
+    "equipmentId" : 7
+  },
+  {
+    "recipeId" : 11,
+    "equipmentId" : 17
+  },
+  {
+    "recipeId" : 11,
+    "equipmentId" : 12
+  },
+  {
+    "recipeId" : 11,
+    "equipmentId" : 13
+  },
+  {
+    "recipeId" : 12,
+    "equipmentId" : 15
+  },
+  {
+    "recipeId" : 12,
+    "equipmentId" : 38
+  },
+  {
+    "recipeId" : 12,
+    "equipmentId" : 21
+  },
+  {
+    "recipeId" : 12,
+    "equipmentId" : 3
+  },
+  {
+    "recipeId" : 12,
+    "equipmentId" : 12
+  },
+  {
+    "recipeId" : 12,
+    "equipmentId" : 40
+  },
+  {
+    "recipeId" : 13,
+    "equipmentId" : 7
+  },
+  {
+    "recipeId" : 13,
+    "equipmentId" : 8
+  },
+  {
+    "recipeId" : 13,
+    "equipmentId" : 12
+  },
+  {
+    "recipeId" : 14,
+    "equipmentId" : 3
+  },
+  {
+    "recipeId" : 14,
+    "equipmentId" : 15
+  },
+  {
+    "recipeId" : 14,
+    "equipmentId" : 12
+  },
+  {
+    "recipeId" : 14,
+    "equipmentId" : 21
+  },
+  {
+    "recipeId" : 14,
+    "equipmentId" : 38
+  },
+  {
+    "recipeId" : 15,
+    "equipmentId" : 3
+  },
+  {
+    "recipeId" : 15,
+    "equipmentId" : 8
+  },
+  {
+    "recipeId" : 15,
+    "equipmentId" : 34
+  },
+  {
+    "recipeId" : 15,
+    "equipmentId" : 39
+  },
+  {
+    "recipeId" : 15,
+    "equipmentId" : 40
+  },
+  {
+    "recipeId" : 16,
+    "equipmentId" : 7
+  },
+  {
+    "recipeId" : 16,
+    "equipmentId" : 6
+  },
+  {
+    "recipeId" : 16,
+    "equipmentId" : 20
+  },
+  {
+    "recipeId" : 17,
+    "equipmentId" : 20
+  },
+  {
+    "recipeId" : 17,
+    "equipmentId" : 15
+  },
+  {
+    "recipeId" : 17,
+    "equipmentId" : 41
+  },
+  {
+    "recipeId" : 17,
+    "equipmentId" : 42
+  },
+  {
+    "recipeId" : 17,
+    "equipmentId" : 34
+  },
+  {
+    "recipeId" : 17,
+    "equipmentId" : 7
+  },
+  {
+    "recipeId" : 17,
+    "equipmentId" : 18
+  },
+  {
+    "recipeId" : 17,
+    "equipmentId" : 21
+  },
+  {
+    "recipeId" : 17,
+    "equipmentId" : 20
+  },
+  {
+    "recipeId" : 17,
+    "equipmentId" : 38
+  },
+  {
+    "recipeId" : 18,
+    "equipmentId" : 15
+  },
+  {
+    "recipeId" : 18,
+    "equipmentId" : 7
+  },
+  {
+    "recipeId" : 18,
+    "equipmentId" : 3
+  },
+  {
+    "recipeId" : 18,
+    "equipmentId" : 20
+  },
+  {
+    "recipeId" : 18,
+    "equipmentId" : 6
+  },
+  {
+    "recipeId" : 18,
+    "equipmentId" : 32
+  },
+  {
+    "recipeId" : 18,
+    "equipmentId" : 9
+  },
+  {
+    "recipeId" : 18,
+    "equipmentId" : 22
+  },
+  {
+    "recipeId" : 19,
+    "equipmentId" : 8
+  },
+  {
+    "recipeId" : 19,
+    "equipmentId" : 10
+  }
+]
