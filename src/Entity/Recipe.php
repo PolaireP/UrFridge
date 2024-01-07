@@ -49,7 +49,7 @@ class Recipe
     #[ORM\ManyToMany(targetEntity: Ingredient::class, mappedBy: 'recipes')]
     private Collection $ingredients;
 
-    #[ORM\ManyToMany(targetEntity: inventory::class, inversedBy: 'recipes')]
+    #[ORM\ManyToMany(targetEntity: Inventory::class, inversedBy: 'recipes')]
     private Collection $inventories;
 
     #[ORM\OneToMany(mappedBy: 'recipe', targetEntity: RecipeQuantity::class)]

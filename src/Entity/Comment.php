@@ -15,51 +15,51 @@ class Comment
 
     #[ORM\ManyToOne(inversedBy: 'comments')]
     #[ORM\JoinColumn(nullable: false)]
-    private ?commentary $commentary = null;
+    private ?Commentary $commentary = null;
 
     #[ORM\ManyToOne(inversedBy: 'comments')]
     #[ORM\JoinColumn(nullable: false)]
-    private ?person $writer = null;
+    private ?Person $writer = null;
 
     #[ORM\ManyToOne(inversedBy: 'comments')]
     #[ORM\JoinColumn(nullable: false)]
-    private ?recipe $recipe = null;
+    private ?Recipe $recipe = null;
 
     public function getId(): ?int
     {
         return $this->id;
     }
 
-    public function getCommentary(): ?commentary
+    public function getCommentary(): ?Commentary
     {
         return $this->commentary;
     }
 
-    public function setCommentary(?commentary $commentary): static
+    public function setCommentary(?Commentary $commentary): static
     {
         $this->commentary = $commentary;
 
         return $this;
     }
 
-    public function getWriter(): ?person
+    public function getWriter(): ?Person
     {
         return $this->writer;
     }
 
-    public function setWriter(?person $writer): static
+    public function setWriter(?Person $writer): static
     {
         $this->writer = $writer;
 
         return $this;
     }
 
-    public function getRecipe(): ?recipe
+    public function getRecipe(): ?Recipe
     {
         return $this->recipe;
     }
 
-    public function setRecipe(?recipe $recipe): static
+    public function setRecipe(?Recipe $recipe): static
     {
         $this->recipe = $recipe;
 
