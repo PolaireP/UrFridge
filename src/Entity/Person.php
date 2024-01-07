@@ -46,10 +46,14 @@ class Person implements UserInterface, PasswordAuthenticatedUserInterface
     #[ORM\ManyToMany(targetEntity: Recipe::class, mappedBy: 'follower')]
     private Collection $favorites;
 
+    #[ORM\OneToMany(mappedBy: 'recipeAuthor', targetEntity: Recipe::class)]
+    private Collection $recipes;
+
     public function __construct()
     {
         $this->comments = new ArrayCollection();
         $this->favorites = new ArrayCollection();
+        $this->recipes = new ArrayCollection();
     }
 
     public function getId(): ?int
@@ -219,5 +223,35 @@ class Person implements UserInterface, PasswordAuthenticatedUserInterface
     {
         // If you store any temporary, sensitive data on the user, clear it here
         // $this->plainPassword = null;
+    }
+
+    /**
+     * @return Collection<int, Recipe>
+     */
+    public function getRecipes(): Collection
+    {
+        return $this->recipes;
+    }
+
+    public function addRecipe(Recipe $recipe): static
+    {
+        if (!$this->recipes->contains($recipe)) {
+            $this->recipes->add($recipe);
+            $recipe->setRecipeAuthor($this);
+        }
+
+        return $this;
+    }
+
+    public function removeRecipe(Recipe $recipe): static
+    {
+        if ($this->recipes->removeElement($recipe)) {
+            // set the owning side to null (unless already changed)
+            if ($recipe->getRecipeAuthor() === $this) {
+                $recipe->setRecipeAuthor(null);
+            }
+        }
+
+        return $this;
     }
 }
