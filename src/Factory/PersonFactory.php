@@ -47,7 +47,7 @@ final class PersonFactory extends ModelFactory
     protected function getDefaults(): array
     {
         return [
-            'email' => self::faker()->text(180),
+            'email' => self::faker()->unique()->numerify('user-###').'@'.self::faker()->domainName(),
             'inventory' => InventoryFactory::new(),
             'password' => 'test',
             'firstname' => self::faker()->firstName(),
