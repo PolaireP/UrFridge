@@ -36,9 +36,6 @@ class Person implements UserInterface, PasswordAuthenticatedUserInterface
     #[ORM\Column(length: 50, nullable: true)]
     private ?string $firstname = null;
 
-    #[ORM\Column(type: Types::BLOB, nullable: true)]
-    private $avatar;
-
     #[ORM\OneToOne(inversedBy: 'owner', cascade: ['persist', 'remove'])]
     #[ORM\JoinColumn(nullable: false)]
     private ?Inventory $inventory = null;
@@ -136,18 +133,6 @@ class Person implements UserInterface, PasswordAuthenticatedUserInterface
     public function setFirstname(?string $firstname): static
     {
         $this->firstname = $firstname;
-
-        return $this;
-    }
-
-    public function getAvatar()
-    {
-        return $this->avatar;
-    }
-
-    public function setAvatar($avatar): static
-    {
-        $this->avatar = $avatar;
 
         return $this;
     }
