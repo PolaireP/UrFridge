@@ -19,7 +19,6 @@ class IngredientFixtures extends Fixture implements DependentFixtureInterface
         $firstPhotoId = IngredientPhotoFactory::first()->getId();
         $actualPhoto = 1;
 
-
         foreach ($ingredientsData as $data) {
             $ingredient = new Ingredient();
             $ingredient->setIngredientName($data['ingredientName']);
@@ -54,13 +53,8 @@ class IngredientFixtures extends Fixture implements DependentFixtureInterface
 
             $ingredient->setIngredientPhoto($ingredientPhoto);
 
-
-
             $manager->persist($ingredient);
         }
-
-
-
 
         $manager->flush();
     }
@@ -70,7 +64,7 @@ class IngredientFixtures extends Fixture implements DependentFixtureInterface
         return [
             AllergenFixtures::class,
             IngredientTypeFixtures::class,
-            IngredientPhotoFixtures::class
+            IngredientPhotoFixtures::class,
         ];
     }
 }
