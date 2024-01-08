@@ -1339,5 +1339,8 @@
   },
   {
     "ingredientName": "Sauce Hannibal", "avgUnitWeight": 0.200, "avgUnitVolume": 0.200, "kgPrice": 6.0, "countable": false, "allergens": [], "ingredientTypes": ["Condiments"]
+  },
+  {
+    "ingredientName": "Lard Fumé", "avgUnitWeight": 0.200, "avgUnitVolume": null, "kgPrice": 6.0, "countable": false, "allergens": [], "ingredientTypes": ["Viandes"]
   }
 ]
