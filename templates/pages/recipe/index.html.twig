@@ -44,16 +44,14 @@
         <div class="overlapping-box" id="allergens-box">
             <p class="allergens-title">Ajouter un allergène</p>
             <form class="entity-checkbox-append" id="allergens-append">
-                <label class="checkbox-container">
-                    <input class="checkbox" type="checkbox" name="allergen-name" value="allergen-id">
-                    <span class="checkmark"></span>
-                    Allergen-name
-                </label>
-                <label class="checkbox-container">
-                    <input class="checkbox" type="checkbox" name="allergen-name" value="allergen-id">
-                    <span class="checkmark"></span>
-                    Allergen-name
-                </label>
+                {% for allergen in allergens %}
+                    <label class="checkbox-container">
+                        <input class="checkbox" type="checkbox" name="allergen-name" value="allergen-id">
+                        <span class="checkmark"></span>
+                        {{ allergen.allergenName }}
+                    </label>
+                {% endfor %}
+
             </form>
         </div>
         <div class="overlapping-box" id="categories-box">
