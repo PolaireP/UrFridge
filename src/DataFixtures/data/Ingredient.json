@@ -1344,6 +1344,6 @@
     "ingredientName": "Lard Fumé", "avgUnitWeight": 0.100, "avgUnitVolume": null, "kgPrice": 13.0, "countable": false, "allergens": [], "ingredientTypes": ["Viandes"]
   },
   {
-    "ingredientName": "Choucroute", "avgUnitWeight": 0.300, "avgUnitVolume": null, "kgPrice": 2.0, "countable": false, "allergens": [], "ingredientTypes": ["Viandes"]
+    "ingredientName": "Choucroute", "avgUnitWeight": 0.300, "avgUnitVolume": null, "kgPrice": 2.0, "countable": false, "allergens": [], "ingredientTypes": ["Légumes"]
   }
 ]
