@@ -1,0 +1,157 @@
+{% extends 'base.html.twig' %}
+
+{% block stylesheets %}
+    <link rel="stylesheet" href="{{ asset('css/style-index.css') }}">
+{% endblock %}
+
+{% block body %}
+
+    <section class="main-interaction-area">
+        <section class="search-recipes-area" id="recipes-research-area">
+            <h1 class="title">Qu'allons nous cuisiner aujourd'hui ?</h1>
+            <form class="search-area" role="search-recipes" method="get" action="/recipe">
+                <div class="search-bar">
+                    <input type="search" name="search-recipes" autocomplete="off"
+                           id="search-recipes" class="search-input" placeholder="Tartiflette, Salade de fruit..." {% if searchString is defined %}value="{{ searchString }}"{% endif %}>
+                    <img src="{{ asset('img/loop.png') }}" alt="loupe">
+                </div>
+            </form>
+        </section>
+        <section class="filters-with-result-statistics-area" id="filters-area-box">
+            <div class="result-statistics-area">
+                <p class="results-number">
+                    X Résultats
+                </p>
+            </div>
+            <div class="allergens-with-categories-area">
+                <button class="add-allergens-button">
+                    Ajouter un allergène
+                </button>
+                <button class="add-categories-button">
+                    Ajouter une catégorie
+                </button>
+                <button class="add-allergens-button-icon">
+                    <img src="{{ asset('img/allergene.png') }}" alt="Ajouter un allergène">
+                </button>
+                <button class="add-categories-button-icon">
+                    <img src="{{ asset('img/categorie.png') }}" alt="Ajouter une catégorie">
+                </button>
+            </div>
+            <button class="add-filters-button">
+                Filtres
+            </button>
+        </section>
+        <div class="overlapping-box" id="allergens-box">
+            <p class="allergens-title">Ajouter un allergène</p>
+            <form class="entity-checkbox-append" id="allergens-append">
+                <label class="checkbox-container">
+                    <input class="checkbox" type="checkbox" name="allergen-name" value="allergen-id">
+                    <span class="checkmark"></span>
+                    Allergen-name
+                </label>
+                <label class="checkbox-container">
+                    <input class="checkbox" type="checkbox" name="allergen-name" value="allergen-id">
+                    <span class="checkmark"></span>
+                    Allergen-name
+                </label>
+            </form>
+        </div>
+        <div class="overlapping-box" id="categories-box">
+            <p class="categories-title">Ajouter une catégorie</p>
+            <form class="search-area" method="post">
+                <div class="search-bar">
+                    <input type="text" name="search-categories" autocomplete="off"
+                           id="search-categories" class="search-input" placeholder="Végétarien, épicé...">
+                    <img src="{{ asset('img/loop.png') }}" alt="loupe">
+                </div>
+            </form>
+            <form class="entity-checkbox-append" id="categories-append">
+                <label class="checkbox-container">
+                    <input class="checkbox" type="checkbox" name="category-name" value="category-id">
+                    <span class="checkmark"></span>
+                    Category-name
+                </label>
+                <label class="checkbox-container">
+                    <input class="checkbox" type="checkbox" name="category-name" value="category-id">
+                    <span class="checkmark"></span>
+                    Category-name
+                </label>
+            </form>
+            <p class="no-category">Pas de catégorie correspondant à votre recherche</p>
+        </div>
+        <div class="overlapping-box" id="filters-box">
+            <p class="filter-title">Ajouter un filtre</p>
+            <div class="filters-area">
+                <label id="alpha">Ordre alphabétique :
+                    <select class="select-box">
+                        <option selected value="ASC">Croissant</option>
+                        <option value="DESC">Décroissant</option>
+                    </select>
+                </label>
+                <label id="energy">Recette calorique :
+                    <select class="select-box">
+                        <option selected value="default">Aucun Tri</option>
+                        <option value="ASC">Croissant</option>
+                        <option value="DESC">Décroissant</option>
+                    </select>
+                </label>
+                <label id="cost"> Coût :
+                    <select class="select-box">
+                        <option selected value="default">Aucun Tri</option>
+                        <option value="ASC">Croissant</option>
+                        <option value="DESC">Décroissant</option>
+                    </select>
+                </label>
+                <label id="famous"> Popularité :
+                    <select class="select-box">
+                        <option selected value="default">Aucun Tri</option>
+                        <option value="ASC">Croissant</option>
+                        <option value="DESC">Décroissant</option>
+                    </select>
+                </label>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="recipes-list">
+
+        {% if searchString is not empty %}
+            {% if recipes|length > 0 %}
+                {% for recipe in recipes %}
+                    <div class="recipes-1">
+                        <div class="recipes-img">
+                            <img src="data:image/png;base64,{{ images[recipe.id] }}" alt="{{ recipe.recipeName }}">
+                        </div>
+                        <div class="recipes-desc">
+                            <div class="recipes-title-1">Boeuf Bourguignon </div>
+                            <div class="recipes-author-1">Par Romain</div>
+                            <div class="recipes-details">
+                                <div class ="recipes-time">1h30 min</div>
+                                <div class ="recipes-step">16 étapes</div>
+                            </div>
+                            <div class = "button">
+                                <button class="add-to-fridge-button-1">Ajouter dans mon frigo</button>
+                            </div>
+                        </div>
+                    </div>
+                {% endfor %}
+            {% else %}
+                <div class="contenu">
+                    <p>Aucune recette ne correspond à votre recherche.</p>
+                </div>
+            {% endif %}
+        {% else %}
+            <div class="contenu">
+                <p>Bientôt de délicieux plats apparaîtront ici</p>
+            </div>
+        {% endif %}
+
+    </section>
+
+    {% block javascripts %}
+        <script type="module" src="{{ asset('js/search-recipe.js') }}"></script>
+    {% endblock %}
+
+{% endblock %}
+
