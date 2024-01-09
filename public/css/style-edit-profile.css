@@ -54,109 +54,96 @@ body {
     align-self: center;
 }
 
-.profile-area {
+.edit-profile-area {
     display: flex;
     flex-direction: column;
-    padding: 10px;
 }
 
-.in-validation-recipes-area {
+.edit-profile-informations-form {
     display: flex;
     flex-direction: column;
+    max-width: 400px;
+    width: 100%;
     align-self: center;
 }
 
-.in-validation-recipes-title {
+.profile-information-input {
     display: flex;
+    padding: 10px;
+    font-size: 16px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    color: white;
+    background-color: rgba(255, 127, 80, 0.8);
+    border: none;
+    border-radius: 22px;
+    margin: 10px 15px;
+}
+
+.profile-information-input:focus {
+    outline: none;
+}
+
+.profile-information-input::placeholder {
+    color: white;
+}
+
+.submit-profile-informations {
+    display: flex;
+    width: fit-content;
+    padding: 15px 30px;
+    color: white;
+    font-size: 18px;
     font-weight: 700;
     font-family: "Roboto", sans-serif;
-    font-size: 28px;
-    text-align: center;
-    color: #4CB9A5;
+    background-color: #4CB9A5;
+    border: none;
+    border-radius: 22px;
+    align-self: center;
+    cursor: pointer;
+    margin: 5px;
+}
+
+.edit-profile-picture-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.profile-picture-input-area {
+    display: flex;
+    width: 200px;
+    height: 200px;
+    background-image: url("../img/profilePicture.jpg");
+    background-size: contain;
+    border-radius: 22px;
+    align-self: center;
     margin: 10px 0;
 }
 
-.recipes-list {
+.input-picture-button-area {
     display: flex;
-    flex-direction: column;
-    min-height: 90px;
-    max-height: 300px;
-    overflow: auto;
+    width: 100%;
+    height: 100%;
     justify-content: center;
-    padding: 0 0 15px 0;
-    margin: 0 10px;
-    box-sizing: border-box;
-    border-bottom: solid 3px #4CB9A5;
+    background-color: rgba(255,255,255,0.5);
 }
 
-.no-recipe {
+.input-picture-button {
     display: flex;
-    margin: 0;
-    text-align: center;
-    color: #4CB9A5;
-    font-family: "Roboto", sans-serif;
-    font-weight: 500;
-    font-size: 20px;
-}
-
-.profile-informations-area {
-    display: flex;
-    flex-direction: column;
-}
-
-.profile-statistics-area {
-    display: flex;
-    flex-direction: column;
-    margin: 20px 0;
-}
-
-.profile-statistics-title {
-    display: flex;
-    margin: 5px 20px 5px 0;
-    color: #4CB9A5;
-    font-family: "Roboto", sans-serif;
-    font-weight: 700;
-    font-size: 28px;
-    justify-content: center;
-}
-
-.profile-statistics {
-    display: flex;
-    flex-direction: column;
-    align-self: center;
-}
-
-.profile-statistic {
-    display: flex;
-    font-family: "Roboto", sans-serif;
-    font-weight: 700;
-    font-size: 20px;
-    margin: 5px 0;
-}
-
-.profile-edit-area {
-    display: flex;
-    flex-direction: column;
-}
-
-.edit-profile, .delete-profile {
-    display: flex;
-    padding: 30px;
-    margin: 5px;
-    border-radius: 10px;
-    color: white;
-    text-decoration: none;
     background-color: #4CB9A5;
-    font-size: 24px;
+    border-radius: 22px;
+    align-self: center;
+    cursor: pointer;
+    padding: 10px;
+    color: white;
+    font-size: 18px;
     font-weight: 700;
     font-family: "Roboto", sans-serif;
-    justify-content: center;
-    align-self: center;
 }
 
-.edit-profile:hover, .delete-profile:hover {
-    background-color: #3C9A89;
-    transition: 0.2s;
+.profile-picture-input {
+    display: none;
 }
 
 @media only screen and (min-width: 300px) {
@@ -186,52 +173,53 @@ body {
     .banner-profile-identity {
         font-size: 28px;
     }
+
+    .profile-information-input {
+        font-size: 20px;
+        padding: 12px;
+    }
+
+    .submit-profile-informations, .input-picture-button {
+        font-size: 28px;
+    }
+
+    .profile-picture-input-area {
+        width: 300px;
+        height: 300px;
+    }
 }
 
 @media only screen and (min-width: 800px) {
     /* modification css ici */
-    .profile-area {
+    .edit-profile-area {
         flex-direction: row;
-        flex: 1;
-        max-width: 1000px;
-        align-self: center;
-    }
-
-    .in-validation-recipes-area {
-        order: 1;
-        align-self: normal;
-        margin: 20px 5px;
-        align-items: center;
-    }
-
-    .recipes-list {
-        border-bottom: 0;
-        max-height: 500px;
-        min-height: 300px;
-    }
-
-    .profile-informations-area {
-        flex: 1;
-        border-right: solid 3px #4CB9A5;
-        padding-bottom: 10px;
-    }
-
-    .profile-edit-area {
-        min-width: 500px;
-    }
-
-    .profile-statistics-area {
-        border-bottom: solid 3px #4CB9A5;
-        padding-bottom: 15px;
+        justify-content: space-around;
     }
 }
 
 @media only screen and (min-width: 1000px) {
     /* modification css ici */
-    .profile-edit-area {
-        flex-direction: row;
-        min-width: 600px;
-        justify-content: space-around;
-        margin: 50px 0;
+    .edit-profile-area {
+        max-width: 1000px;
+        width: 100%;
+        align-self: center;
+    }
+
+    .edit-profile-informations-form {
+        max-width: 550px;
+    }
+
+    .profile-information-input {
+        font-size: 24px;
+        padding: 14px;
+    }
+
+    .submit-profile-informations, .input-picture-button {
+        font-size: 32px;
+    }
+
+    .profile-picture-input-area {
+        width: 400px;
+        height: 400px;
     }
 }

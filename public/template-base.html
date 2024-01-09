@@ -1,51 +1,91 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
-    <title>UrFridge</title>
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Bienvenue</title>
+    <link rel="preload" href="js/main.js" as="script">
+    <link rel="stylesheet" href="css/style-base.css">
+    <link rel="icon" href="img/logo/favicon-fridge.svg" type="image/x-icon">
 </head>
 <body>
-    <header>
-        <div id="left-side-header">
-            <a href="">UrFridge</a>
+    <header class="header-area">
+        <div class="header-logo-area">
+            <a href="#">UrFridge</a>
         </div>
-        <nav id="right-side-header">
-            <a href="" class="mobile"><img src="./img/hamburger-mobile-menu.svg" alt=""></a>
-            <a href="" class="desktop btn__proposer">Proposer recette</a>
-            <a href="" class="desktop btn__favoris">Mes recettes favorites</a>
-            <a href="" class="desktop btn__recherche">Chercher une recette</a>
-            <a href="" class="tablet"><img src="./img/suggest-recipe-tablet.svg" alt=""></a>
-            <a href="" class="tablet"><img src="./img/favorite-recipe-tablet.svg" alt=""></a>
-            <a href="" class="tablet"><img src="./img/find-recipe-tablet.svg" alt=""></a>
-            <a href="" id="auth-button" class="desktop"><img src="./img/auth.svg" alt=""></a>
+        <nav class="header-nav">
+            <a href="#" class="hamburger">
+                <img src="./img/hamburger-mobile-menu.svg" alt="">
+            </a>
+            <a href="#" class="header-navlink">
+                Proposer recette
+            </a>
+            <a href="#" class="header-navlink">
+                Mes recettes favorites
+            </a>
+            <a href="#" class="header-navlink">
+                Chercher une recette
+            </a>
+            <a href="#" class="header-navlink">
+                Voir mon frigo
+            </a>
+            <a href="#" class="header-navlink-icon">
+                <img src="./img/suggest-recipe-tablet.svg" alt="Proposer recette">
+            </a>
+            <a href="#" class="header-navlink-icon">
+                <img src="./img/favorite-recipe-tablet.svg" alt="Mes recettes favorites">
+            </a>
+            <a href="#" class="header-navlink-icon">
+                <img src="./img/find-recipe-tablet.svg" alt="Chercher une recette">
+            </a>
+            <a href="#" class="header-navlink-icon">
+                <img src="./img/fridge-icon.svg" alt="Voir mon frigo">
+            </a>
+            <a href="#" class="auth header-navlink">
+                Se connecter
+            </a>
+            <a href="#" class="auth header-navlink-icon">
+                <img src="./img/auth.svg" alt="Accéder à mon profil">
+            </a>
         </nav>
     </header>
-
-
-
+    <nav class="header-nav-hamburger">
+        <a href="#" class="header-navlink-hamburger">
+            Proposer recette
+        </a>
+        <a href="#" class="header-navlink-hamburger">
+            Mes recettes favorites
+        </a>
+        <a href="#" class="header-navlink-hamburger">
+            Chercher une recette
+        </a>
+        <a href="#" class="header-navlink-hamburger">
+            Voir mon frigo
+        </a>
+        <a href="#" class="header-navlink-hamburger">
+            Se connecter
+        </a>
+    </nav>
     <main class="content">
-
     </main>
-
-
-
-    <footer>
-        <div class="footer-nav-container">
-            <div class="footer-nav-list">
-                <a href="">FAQ</a>
-                <a href="">Contact</a>
-                <a href="">À propos</a>
-                <a href="">Mentions légales</a>
+    <footer class="footer-area">
+        <div class="footer-nav-area">
+            <div class="footer-nav">
+                <a href="#">FAQ</a>
+                <a href="#">Contact</a>
+                <a href="#">À propos</a>
+                <a href="#">Mentions légales</a>
             </div>
             <div class="footer-nav-logo">
-                <img src="./img/logo-urfridge-transparent-white.png" alt="">
+                <img src="./img/fridge.svg" alt="">
             </div>
         </div>
-        <p class="copyright">
-            @UrFridge 2023
+        <p class="footer-copyright">
+            &copy;UrFridge 2023
         </p>
     </footer>
+    <script src="js/main.js"></script>
 </body>
 </html>

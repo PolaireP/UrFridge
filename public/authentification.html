@@ -1,32 +1,40 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Se connecter</title>
     <link rel="stylesheet" href="css/style-authentification.css">
 </head>
 <body>
-    <div class="pizza">
-        <img src="img/pizza.png" alt="pizza">
-    </div>
-    <div class="paris">
-        <img src="img/paris.jpg" alt="vue rue Paris">
-    </div>
-    <div class="bistrot">
-        <img src="img/bistrot.jpg" alt="bistrot">
-    </div>
-    <form name="Authentification" method="GET">
-        <h3 class="titre">Ravis de vous revoir !</h3>
-        <p>Nouveau ? <a href="#">S'inscrire</a></p>
-        <label>
-            <input name="contact" type="email" placeholder="  Adresse Email *" required>
-        </label>
-        <label>
-            <input name="pswd" type="password" placeholder="  Mot de passe *" required>
-        </label>
-        <p class="mdp"><a href="#">Mot de passe oublié</a></p>
-        <button type="submit">Valider</button>
-    </form>
-    
+    <main class="content">
+        <section class="side-illustrations-area">
+            <img src="./img/pizza.png" alt="image de pizza" id="pizza" class="illustration-build">
+            <img src="./img/paris.jpg" alt="image de pizza" id="paris" class="illustration-build">
+            <img src="./img/bistrot.jpg" alt="image de pizza" id="bistrot" class="illustration-build">
+        </section>
+        <section class="authentication-area">
+            <form class="authentication-form" method="post">
+                <h1 class="authentication-form-title">
+                    Ravis de vous revoir !
+                </h1>
+                <span class="new-signup"> Nouveau ?
+                    <a href="#" class="signup-link">S'inscrire</a>
+                </span>
+                <div class="authentication-inputs-area">
+                    <input type="text" name="email" id="email" class="auth-input"
+                           placeholder="Adresse email*" autocomplete="email">
+                    <input type="text" name="password" id="password"
+                           class="auth-input" placeholder="Mot de passe*"
+                           autocomplete="current-password">
+                </div>
+                <a href="#" class="forgotten-link">Mot de passe oublié</a>
+                <button type="submit" class="authentication-submit">Valider</button>
+            </form>
+        </section>
+        <div class="blank"></div>
+    </main>
 </body>
 </html>
