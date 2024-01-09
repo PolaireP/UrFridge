@@ -20,7 +20,11 @@
         <section class="filters-with-result-statistics-area" id="filters-area-box">
             <div class="result-statistics-area">
                 <p class="results-number">
-                    {{ recipes|length}} Résultats
+                    {% if searchString is not empty %}
+                        {{ recipes|length}} Résultat(s)
+                    {% else %}
+                    0 Résultat(s)
+                    {% endif %}
                 </p>
             </div>
             <div class="allergens-with-categories-area">
@@ -46,7 +50,7 @@
             <form class="entity-checkbox-append" id="allergens-append">
                 {% for allergen in allergens %}
                     <label class="checkbox-container">
-                        <input class="checkbox" type="checkbox" name="allergen-name" value="allergen-id">
+                        <input class="checkbox" type="checkbox" name="allergen-name" value="{{ allergen.id }}">
                         <span class="checkmark"></span>
                         {{ allergen.allergenName }}
                     </label>
@@ -122,7 +126,7 @@
                             <img src="data:image/png;base64,{{ images[recipe.id] }}" alt="{{ recipe.recipeName }}">
                         </div>
                         <div class="recipes-desc">
-                            <div class="recipes-title-1">Boeuf Bourguignon </div>
+                            <div class="recipes-title-1">{{ recipe.recipeName}}</div>
                             <div class="recipes-author-1">Par Romain</div>
                             <div class="recipes-details">
                                 <div class ="recipes-time">1h30 min</div>
