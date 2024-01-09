@@ -1,13 +1,38 @@
-<div id="left-side-header">
-    <a href="">UrFridge</a>
+<div class="header-logo-area">
+    <a href="/">UrFridge</a>
 </div>
-<nav id="right-side-header">
-    <a href="" class="mobile"><img src="{{ asset('img/hamburger-mobile-menu.svg') }}" alt=""></a>
-    <a href="" class="desktop btn__proposer">Proposer recette</a>
-    <a href="" class="desktop btn__favoris">Mes recettes favorites</a>
-    <a href="" class="desktop btn__recherche">Chercher une recette</a>
-    <a href="" class="tablet"><img src="{{ asset('img/suggest-recipe-tablet.svg') }}" alt=""></a>
-    <a href="" class="tablet"><img src="{{ asset('img/favorite-recipe-tablet.svg') }}" alt=""></a>
-    <a href="" class="tablet"><img src="{{ asset('img/find-recipe-tablet.svg') }}" alt=""></a>
-    <a href="" id="auth-button" class="desktop"><img src="{{ asset('img/auth.svg') }}" alt=""></a>
+<nav class="header-nav">
+    <a href="#" class="hamburger">
+        <img src="{{ asset('img/hamburger-mobile-menu.svg') }}" alt="">
+    </a>
+    <a href="#" class="header-navlink">
+        Proposer recette
+    </a>
+    <a href="#" class="header-navlink">
+        Mes recettes favorites
+    </a>
+    <a href="/recipe" class="header-navlink">
+        Chercher une recette
+    </a>
+    <a href="#" class="header-navlink">
+        Voir mon frigo
+    </a>
+    <a href="#" class="header-navlink-icon">
+        <img src="{{ asset('img/suggest-recipe-tablet.svg') }}" alt="Proposer recette">
+    </a>
+    <a href="#" class="header-navlink-icon">
+        <img src="{{ asset('img/favorite-recipe-tablet.svg') }}" alt="Mes recettes favorites">
+    </a>
+    <a href="/recipe" class="header-navlink-icon">
+        <img src="{{ asset('img/find-recipe-tablet.svg') }}" alt="Chercher une recette">
+    </a>
+    <a href="#" class="header-navlink-icon">
+        <img src="{{ asset('img/fridge-icon.svg') }}" alt="Voir mon frigo">
+    </a>
+    <a href="#" class="auth header-navlink">
+        Se connecter
+    </a>
+    <a href="#" class="auth header-navlink-icon">
+        <img src="{{ asset('img/auth.svg') }}" alt="Accéder à mon profil">
+    </a>
 </nav>

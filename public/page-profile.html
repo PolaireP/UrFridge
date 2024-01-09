@@ -2,41 +2,48 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Page Profil</title>
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Mon profil</title>
     <link rel="stylesheet" href="css/style-profile.css">
+    <link rel="icon" href="img/logo/favicon-fridge.svg" type="image/x-icon">
 </head>
 <body>
     <main class="content">
-        <div class="banner">
-            <div class="profile-area">
-                <div class="profile-picture">
-                    <img src="img/raph.jpg" alt="Image de profil">
+        <section class="banner">
+            <div class="banner-content">
+                <img src="img/profilePicture.jpg" alt="photo de profil" class="banner-profile-picture">
+                <h1 class="banner-profile-identity">
+                    <span id="profile-firstname">Prénom</span>
+                    <span id="profile-lastname">Nom</span>
+                </h1>
+            </div>
+        </section>
+        <section class="profile-area">
+            <section class="in-validation-recipes-area">
+                <h1 class="in-validation-recipes-title">Recettes en cours de validation</h1>
+                <div class="recipes-list">
+                    <p class="no-recipe">Vos recettes en cours de validation apparaitront ici</p>
                 </div>
-                <div class="profile-info">
-                    <p>Prénom Nom</p>
-                    <p>Alias Login</p>
+            </section>
+            <div class="profile-informations-area">
+                <div class="profile-statistics-area">
+                    <h1 class="profile-statistics-title">
+                        Mes statistiques
+                    </h1>
+                    <div class="profile-statistics">
+                        <p class="profile-statistic">0 commentaires</p>
+                        <p class="profile-statistic">0 recettes publiées</p>
+                        <p class="profile-statistic">Inscrit depuis 0 jours</p>
+                    </div>
+                </div>
+                <div class="profile-edit-area">
+                    <a href="#" class="edit-profile">Modifier mon profil</a>
+                    <a href="#" class="delete-profile">Supprimer mon profil</a>
                 </div>
             </div>
-        </div>
-        <div class="interact-area">
-            <div class="left-area">
-                <div class="statistics-area">
-                    <h2>Mes Statistiques</h2>
-                    <p>Commentaires</p>
-                    <p>Recettes publiées</p>
-                    <p>Nombre de jours inscrit</p>
-                </div>
-                <div class="edit-area">
-                    <input class="bouton1" type="button" value="Modifier mon profil">
-                    <input class="bouton2" type="button" value="Supprimer mon compte">
-                </div>
-            </div>
-            <div class="right-area">
-                <h2>Recettes en cours de validation</h2>
-                <p>Vos recettes en cours de validation apparaîtront ici</p>
-            </div>
-        </div>
+        </section>
     </main>
 </body>
 </html>

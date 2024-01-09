@@ -1,190 +1,207 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Nom recette</title>
     <link rel="stylesheet" href="css/style-recipe-page.css">
-
-    <title>Recette</title>
+    <link rel="preload" href="js/recipe-page.js">
+    <link rel="icon" href="img/logo/icon.png" type="image/x-icon">
 </head>
 <body>
-
-    <main>
-        <article class="recipe-title mobile">
-            <h1>Pizza Simple</h1>
-            <p>par William</p>
-        </article>
-        
-        <section id="recipe-image">
-            <div class="image-row">
-                <div class="recipe-title on-image">
-                    <h1>Pizza Simple</h1>
-                    <p>par William</p>
-                </div>
-                <button type="button" id="like-button">
-                    <img src="img/empty-heart.svg" alt="heart icon" class="heart-icon empty">
-                    <img src="img/filled-heart.svg" alt="heart icon selected" class="heart-icon fill">
-                </button> 
-            </div>
-            <div id="steps-number">
-                <p>12 Etapes</p>
-            </div>
+    <main class="content">
+        <section class="recipe-presentation-area">
+            <section class="recipe-presentation-top-area">
+                <article class="recipe-name-with-author">
+                    <h2 class="recipe-name">Nom recette</h2>
+                    <h1 class="recipe-author">Par auteur</h1>
+                </article>
+                <button class="recipe-favorite-button">
+                    <img class="recipe-favorite-illustration" src="img/empty-heart.svg" alt="ajouter aux favoris">
+                </button>
+            </section>
+            <article class="recipe-steps-numbers-area">
+                <p class="recipe-steps-numbers">X Etapes</p>
+            </article>
         </section>
-    
-        <section id="recipe-informations">
-            <div>
-                <article class="recipe-type allergenes">
-                    <h3>Allergènes</h3>
-                    <ul>
-                        
-                        <li>Exemple</li>
-                    </ul>
+        <section class="recipe-information-area">
+            <section class="recipe-classify-area">
+                <article class="recipe-allergens-area">
+                    <h1 class="recipe-allergens-title">Allergènes</h1>
+                    <div class="recipe-allergens-list">
+                        <p class="recipe-allergen">Allergène</p>
+                        <p class="recipe-allergen">Allergène</p>
+                        <p class="recipe-allergen">Allergène</p>
+                    </div>
                 </article>
-        
-                <article class="recipe-type category">
-                    <h3>Catégorie</h3>
-                    <ul>
-                        <li>Exemple</li>
-                    </ul>
+                <article class="recipe-categories-area">
+                    <h1 class="recipe-categories-title">Catégories</h1>
+                    <div class="recipe-categories-list">
+                        <p class="recipe-category">Catégorie</p>
+                        <p class="recipe-category">Catégorie</p>
+                        <p class="recipe-category">Catégorie</p>
+                    </div>
                 </article>
-            </div>
-
-            <article id="people-numbers">
-                <h3>Nombre de personnes</h3>
-                <div>
-                    <button type="button">
-                        <img src="img/left_arrow.svg" alt="left arrow">
+            </section>
+            <article class="recipe-quantity-area">
+                <h1 class="recipe-quantity-title">Nombre de personnes</h1>
+                <div class="recipe-quantity-selector">
+                    <button class="recipe-quantity-more">
+                        <img src="img/left_arrow.svg" alt="Augmenter">
                     </button>
-                    <p>4 pers.</p>
-                    <button type="button">
-                        <img src="img/right_arrow.svg" alt="right arrow">
+                    <p class="recipe-quantity">X Personnes</p>
+                    <button class="recipe-quantity-less">
+                        <img src="img/right_arrow.svg" alt="Réduire">
                     </button>
                 </div>
             </article>
         </section>
-
-
-        <section id="ingredients">
-            <h3>Ingrédients</h3>
-            <div>
-                <article class="recipe-component ingredient">
-                    <!-- src = chemin image de l'ingrédient, alt = nom ingrédient -->
-                    <img src="" alt="">
-                    <div class="ingredient-infos">
-                        <h4>Nom ingrédient</h4>
-                        <div>
-                            <p>Quantité : </p>
-                            <p class="quantity">4</p>
-                        </div>
+        <section class="recipe-realization-area">
+            <article class="recipe-ingredients-area">
+                <h1 class="recipe-ingredients-title">Ingrédients</h1>
+                <div class="recipe-ingredients-list">
+                    <div class="recipe-ingredient">
+                        <img class="recipe-ingredient-picture" src="img/tomato.jpg" alt="Image de nom ingrédient">
+                        <article class="recipe-ingredient-informations">
+                            <h1 class="recipe-ingredient-title">Nom ingrédient</h1>
+                            <div class="recipe-ingredient-quantity-area">
+                                <p class="recipe-ingredient-quantity-label">Quantité : </p>
+                                <p class="recipe-ingredient-quantity">X</p>
+                            </div>
+                        </article>
                     </div>
-                </article>
-
-                <article class="recipe-component ingredient">
-                    <!-- src = chemin image de l'ingrédient, alt = nom ingrédient -->
-                    <img src="" alt="">
-                    <div class="ingredient-infos">
-                        <h4>Nom ingrédient</h4>
-                        <div>
-                            <p>Quantité : </p>
-                            <p class="quantity">4</p>
-                        </div>
+                    <div class="recipe-ingredient">
+                        <img class="recipe-ingredient-picture" src="img/tomato.jpg" alt="Image de nom ingrédient">
+                        <article class="recipe-ingredient-informations">
+                            <h1 class="recipe-ingredient-title">Nom ingrédient</h1>
+                            <div class="recipe-ingredient-quantity-area">
+                                <p class="recipe-ingredient-quantity-label">Quantité : </p>
+                                <p class="recipe-ingredient-quantity">X</p>
+                            </div>
+                        </article>
                     </div>
-                </article>
-
-                <article class="recipe-component ingredient">
-                    <!-- src = chemin image de l'ingrédient, alt = nom ingrédient -->
-                    <img src="" alt="">
-                    <div class="ingredient-infos">
-                        <h4>Nom ingrédient</h4>
-                        <div>
-                            <p>Quantité : </p>
-                            <p class="quantity">4</p>
-                        </div>
+                    <div class="recipe-ingredient">
+                        <img class="recipe-ingredient-picture" src="img/tomato.jpg" alt="Image de nom ingrédient">
+                        <article class="recipe-ingredient-informations">
+                            <h1 class="recipe-ingredient-title">Nom ingrédient</h1>
+                            <div class="recipe-ingredient-quantity-area">
+                                <p class="recipe-ingredient-quantity-label">Quantité : </p>
+                                <p class="recipe-ingredient-quantity">X</p>
+                            </div>
+                        </article>
                     </div>
-                </article>
-
-                <article class="recipe-component">
-                    <!-- src = chemin image de l'ingrédient, alt = nom ingrédient -->
-                    <img src="" alt="">
-                    <div class="ingredient-infos">
-                        <h4>Nom ingrédient</h4>
-                        <div>
-                            <p>Quantité : </p>
-                            <p class="quantity">4</p>
-                        </div>
+                    <div class="recipe-ingredient">
+                        <img class="recipe-ingredient-picture" src="img/tomato.jpg" alt="Image de nom ingrédient">
+                        <article class="recipe-ingredient-informations">
+                            <h1 class="recipe-ingredient-title">Nom ingrédient</h1>
+                            <div class="recipe-ingredient-quantity-area">
+                                <p class="recipe-ingredient-quantity-label">Quantité : </p>
+                                <p class="recipe-ingredient-quantity">X</p>
+                            </div>
+                        </article>
                     </div>
-                </article>
-            </div>
-
-        </section>
-
-
-        <section id="ustensils">
-            <h3>Ustensiles</h3>
-            <div>
-                <article class="recipe-component ustensil">
-                    <img src="" alt="">
-                    <h4>Nom ustensile defsfesf sefs efes dqfqzfqd zqd </h4>
-                </article>
-
-                <article class="recipe-component ustensil">
-                    <img src="" alt="">
-                    <h4>Nom ustensile defsfesf sefs efes dqfqzfqd zqd </h4>
-                </article>
-
-                <article class="recipe-component ustensil">
-                    <img src="" alt="">
-                    <h4>Nom ustensile defsfesf sefs efes dqfqzfqd zqd </h4>
-                </article>
-
-                <article class="recipe-component ustensil">
-                    <img src="" alt="">
-                    <h4>Nom ustensile defsfesf sefs efes dqfqzfqd zqd </h4>
-                </article>
-
-            </div>
-        </section>
-
-
-        <section id="steps">
-            <h3>Etapes</h3>
-
-            <article class="step">
-                <h4>Etape 1</h4>
-                <p>Description étape</p>
+                </div>
             </article>
-
+            <article class="recipe-tools-area"></article>
+            <h1 class="recipe-tools-title">Ustensiles</h1>
+            <div class="recipe-tools-list">
+                <a href="#" class="recipe-tool">
+                    <img class="recipe-tool-picture" src="img/marmite.jpg" alt="Image de nom ustensile">
+                    <article class="recipe-tool-informations">
+                        <h1 class="recipe-tool-title">Nom ustensile</h1>
+                    </article>
+                </a>
+                <a href="#" class="recipe-tool">
+                    <img class="recipe-tool-picture" src="img/marmite.jpg" alt="Image de nom ustensile">
+                    <article class="recipe-tool-informations">
+                        <h1 class="recipe-tool-title">Nom ustensile</h1>
+                    </article>
+                </a>
+                <a href="#" class="recipe-tool">
+                    <img class="recipe-tool-picture" src="img/marmite.jpg" alt="Image de nom ustensile">
+                    <article class="recipe-tool-informations">
+                        <h1 class="recipe-tool-title">Nom ustensile</h1>
+                    </article>
+                </a>
+            </div>
+            <article class="recipe-steps-area">
+                <h1 class="recipe-steps-title">Etapes</h1>
+                <div class="recipe-steps-list">
+                    <div class="recipe-step">
+                        <h1 class="recipe-step-title">Etape X</h1>
+                        <p class="recipe-step-description">
+                            Description d'une étape plus ou moins longue
+                            lors de la réalisation de la recette en question
+                        </p>
+                    </div>
+                    <div class="recipe-step">
+                        <h1 class="recipe-step-title">Etape X</h1>
+                        <p class="recipe-step-description">
+                            Description d'une étape plus ou moins longue
+                            lors de la réalisation de la recette en question
+                        </p>
+                    </div>
+                    <div class="recipe-step">
+                        <h1 class="recipe-step-title">Etape X</h1>
+                        <p class="recipe-step-description">
+                            Description d'une étape plus ou moins longue
+                            lors de la réalisation de la recette en question
+                        </p>
+                    </div>
+                </div>
+            </article>
         </section>
     </main>
-
-
-    <hr></hr>
-
-
-    <section id="comments">
-        <h3>Commentaires</h3>
-        <form action="#" method="post" id="comment-form">
-            <input type="text" name="comment-content" id="comment-input" placeholder="Laissez votre avis ici">
-            <button type="submit">Envoyer</button>
+    <section class="recipe-commentaries-area">
+        <h2 class="recipe-commentaries-title">Commentaires</h2>
+        <form class="recipe-commentary-write-area">
+            <textarea class="recipe-commentary-write" name="commentary" id="commentary"
+                      placeholder="Laissez votre avis" rows="1" required></textarea>
+            <button class="recipe-commentary-submit" type="submit">
+                Envoyer
+            </button>
         </form>
-
-        <article class="comment">
-            <img src="" alt="profile picture">
-            <div>
-                <h4>Pseudo</h4>
-                <p>Commenaitre</p>
+        <section class="recipe-commentaries-list">
+            <div class="recipe-commentary blue">
+                <div class="recipe-commentary-author blue-back">
+                    <img class="recipe-commentary-author-profile-picture" src="img/profilePicture.jpg"
+                         alt="photo de profil de Nom utilisateur">
+                    <h1 class="recipe-commentary-author-username">
+                        Nom utilisateur
+                    </h1>
+                </div>
+                <p class="recipe-commentary-content">
+                    Un commentaire intéressant sur la recette et un retour à prendre en compte.
+                </p>
             </div>
-        </article>
-
-        <article class="comment">
-            <img src="" alt="profile picture">
-            <div>
-                <h4>Pseudo</h4>
-                <p>Commenaitreaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</p>
+            <div class="recipe-commentary orange">
+                <div class="recipe-commentary-author orange-back">
+                    <img class="recipe-commentary-author-profile-picture" src="img/profilePicture.jpg"
+                         alt="photo de profil de Nom utilisateur">
+                    <h1 class="recipe-commentary-author-username">
+                        Nom utilisateur
+                    </h1>
+                </div>
+                <p class="recipe-commentary-content">
+                    Un commentaire intéressant sur la recette et un retour à prendre en compte.
+                </p>
             </div>
-        </article>
-
+            <div class="recipe-commentary green">
+                <div class="recipe-commentary-author green-back">
+                    <img class="recipe-commentary-author-profile-picture" src="img/profilePicture.jpg"
+                         alt="photo de profil de Nom utilisateur">
+                    <h1 class="recipe-commentary-author-username">
+                        Nom utilisateur
+                    </h1>
+                </div>
+                <p class="recipe-commentary-content">
+                    Un commentaire intéressant sur la recette et un retour à prendre en compte.
+                </p>
+            </div>
+        </section>
     </section>
-
+    <script src="js/recipe-page.js"></script>
 </body>
 </html>

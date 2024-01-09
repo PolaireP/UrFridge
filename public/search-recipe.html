@@ -1,0 +1,133 @@
+<!-- page d'accueil du site (on cherche ici des ingrédients pour les recettes) -->
+<!doctype html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Bienvenue</title>
+    <link rel="preload" href="js/search-recipe.js" as="script" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style-index.css">
+    <link rel="icon" href="img/favicon.png" type="image/x-icon">
+</head>
+<body>
+    <main class="content">
+        <section class="main-interaction-area">
+            <section class="search-recipes-area" id="recipes-research-area">
+                <h1 class="title">Qu'allons nous cuisiner aujourd'hui ?</h1>
+                <form class="search-area" method="post">
+                    <div class="search-bar">
+                        <input type="text" name="search-recipes" autocomplete="off"
+                               id="search-recipes" class="search-input" placeholder="Tartiflette, Salade de fruit...">
+                        <img src="img/loop.png" alt="loupe">
+                    </div>
+                </form>
+            </section>
+            <section class="filters-with-result-statistics-area" id="filters-area-box">
+                <div class="result-statistics-area">
+                    <p class="results-number">
+                        X Résultats
+                    </p>
+                </div>
+                <div class="allergens-with-categories-area">
+                    <button class="add-allergens-button">
+                        Ajouter un allergène
+                    </button>
+                    <button class="add-categories-button">
+                        Ajouter une catégorie
+                    </button>
+                    <button class="add-allergens-button-icon">
+                        <img src="img/allergene.png" alt="Ajouter un allergène">
+                    </button>
+                    <button class="add-categories-button-icon">
+                        <img src="img/categorie.png" alt="Ajouter une catégorie">
+                    </button>
+                </div>
+                <button class="add-filters-button">
+                    Filtres
+                </button>
+            </section>
+            <div class="overlapping-box" id="allergens-box">
+                <p class="allergens-title">Ajouter un allergène</p>
+                <form class="entity-checkbox-append" id="allergens-append">
+                    <label class="checkbox-container">
+                        <input class="checkbox" type="checkbox" name="allergen-name" value="allergen-id">
+                        <span class="checkmark"></span>
+                        Allergen-name
+                    </label>
+                    <label class="checkbox-container">
+                        <input class="checkbox" type="checkbox" name="allergen-name" value="allergen-id">
+                        <span class="checkmark"></span>
+                        Allergen-name
+                    </label>
+                </form>
+            </div>
+            <div class="overlapping-box" id="categories-box">
+                <p class="categories-title">Ajouter une catégorie</p>
+                <form class="search-area" method="post">
+                    <div class="search-bar">
+                        <input type="text" name="search-categories" autocomplete="off"
+                               id="search-categories" class="search-input" placeholder="Végétarien, épicé...">
+                        <img src="img/loop.png" alt="loupe">
+                    </div>
+                </form>
+                <form class="entity-checkbox-append" id="categories-append">
+                    <label class="checkbox-container">
+                        <input class="checkbox" type="checkbox" name="category-name" value="category-id">
+                        <span class="checkmark"></span>
+                        Category-name
+                    </label>
+                    <label class="checkbox-container">
+                        <input class="checkbox" type="checkbox" name="category-name" value="category-id">
+                        <span class="checkmark"></span>
+                        Category-name
+                    </label>
+                </form>
+                <p class="no-category">Pas de catégorie correspondant à votre recherche</p>
+            </div>
+            <div class="overlapping-box" id="filters-box">
+                <p class="filter-title">Ajouter un filtre</p>
+                <div class="filters-area">
+                    <label id="alpha">Ordre alphabétique :
+                        <select class="select-box">
+                            <option selected value="ASC">Croissant</option>
+                            <option value="DESC">Décroissant</option>
+                        </select>
+                    </label>
+                    <label id="energy">Recette calorique :
+                        <select class="select-box">
+                            <option selected value="default">Aucun Tri</option>
+                            <option value="ASC">Croissant</option>
+                            <option value="DESC">Décroissant</option>
+                        </select>
+                    </label>
+                    <label id="cost"> Coût :
+                        <select class="select-box">
+                            <option selected value="default">Aucun Tri</option>
+                            <option value="ASC">Croissant</option>
+                            <option value="DESC">Décroissant</option>
+                        </select>
+                    </label>
+                    <label id="famous"> Popularité :
+                        <select class="select-box">
+                            <option selected value="default">Aucun Tri</option>
+                            <option value="ASC">Croissant</option>
+                            <option value="DESC">Décroissant</option>
+                        </select>
+                    </label>
+                </div>
+            </div>
+        </section>
+        <section class="recipes-list">
+            <p class="no-recipe">Bientôt de délicieux plats apparaitront ici</p>
+            <p>
+                Ici pas de recette, voir dans le template de recettes favorites comment
+                implémenter l'affichage des recettes (insérer en remplacement du
+                paragraphe p.no-recipe.
+            </p>
+        </section>
+    </main>
+    <script type="module" src="js/search-recipe.js"></script>
+</body>
+</html>

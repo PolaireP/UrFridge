@@ -1,18 +1,130 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}UrFridge - Accueil{% endblock %}
-
 {% block stylesheets %}
-    <link rel="stylesheet" href="{{ asset('css/style.css') }}">
-    <link rel="stylesheet" href="{{ asset('css/accueil.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/style-index.css') }}">
 {% endblock %}
 
 {% block body %}
 
-    {% include 'partials/_search_and_list.html.twig' with {
-        'search_bar_title': 'Quels ingrédients définiront vos saveurs ?',
-        'placeholder_text': 'Ingrédients',
-        'list_title': 'Bientôt de délicieux plats apparaitront ici'
-    }%}
+    <link rel="preload" href="{{ asset('js/index.js') }}" as="script" crossorigin="anonymous">
+
+    <section class="main-interaction-area">
+        <section class="search-ingredients-area" id="ingredients-research-area">
+            <h1 class="title">Quels ingrédients définiront vos saveurs ?</h1>
+            <form class="search-area" method="post">
+                <div class="search-bar">
+                    <input type="text" name="search-ingredients" autocomplete="off"
+                           id="search-ingredients" class="search-input" placeholder="Poire, Oignons, Lait ...">
+                    <img src="{{ asset('img/loop.png') }}" alt="loupe">
+                </div>
+            </form>
+        </section>
+        <div class="overlapping-search-box" id="ingredients-research">
+            <div class="ingredients-list">
+                <div class="ingredient">
+                    <div class="ingredient-informations-area">
+                        <img src="{{ asset('img/tomato.jpg') }}" alt="illustration">
+                        <p>Tomates</p>
+                        <div class="ingredient-append-area">
+                            <button class="ingredient-append">
+                                <img src="{{ asset('img/cross.png') }}" alt="ajouter au frigo">
+                            </button>
+                        </div>
+                    </div>
+                    <div class="ingredient-quantity-area">
+                        <p>Quantité :</p>
+                        <button class="ingredient-quantity-less">
+                            <img src="{{ asset('img/left.png') }}" alt="réduire la quantité">
+                        </button>
+                        <p class="quantity">9</p>
+                        <button class="ingredient-quantity-more">
+                            <img src="{{ asset('img/right.png') }}" alt="augmenter la quantité">
+                        </button>
+                    </div>
+                </div>
+                <div class="ingredient">
+                    <div class="ingredient-informations-area">
+                        <img src="{{ asset('img/tomato.jpg') }}" alt="illustration">
+                        <p>Tomates</p>
+                        <div class="ingredient-append-area">
+                            <button class="ingredient-append">
+                                <img src="{{ asset('img/cross.png') }}" alt="ajouter au frigo">
+                            </button>
+                        </div>
+                    </div>
+                    <div class="ingredient-quantity-area">
+                        <p>Quantité :</p>
+                        <button class="ingredient-quantity-less">
+                            <img src="{{ asset('img/left.png') }}" alt="réduire la quantité">
+                        </button>
+                        <p class="quantity">9</p>
+                        <button class="ingredient-quantity-more">
+                            <img src="{{ asset('img/right.png') }}" alt="augmenter la quantité">
+                        </button>
+                    </div>
+                </div>
+                <div class="ingredient">
+                    <div class="ingredient-informations-area">
+                        <img src="{{ asset('img/tomato.jpg') }}" alt="illustration">
+                        <p>Tomates</p>
+                        <div class="ingredient-append-area">
+                            <button class="ingredient-append">
+                                <img src="{{ asset('img/cross.png') }}" alt="ajouter au frigo">
+                            </button>
+                        </div>
+                    </div>
+                    <div class="ingredient-quantity-area">
+                        <p>Quantité :</p>
+                        <button class="ingredient-quantity-less">
+                            <img src="{{ asset('img/left.png') }}" alt="réduire la quantité">
+                        </button>
+                        <p class="quantity">9</p>
+                        <button class="ingredient-quantity-more">
+                            <img src="{{ asset('img/right.png') }}" alt="augmenter la quantité">
+                        </button>
+                    </div>
+                </div>
+                <div class="ingredient">
+                    <div class="ingredient-informations-area">
+                        <img src="{{ asset('img/tomato.jpg') }}" alt="illustration">
+                        <p>Tomates</p>
+                        <div class="ingredient-append-area">
+                            <button class="ingredient-append">
+                                <img src="{{ asset('img/cross.png') }}" alt="ajouter au frigo">
+                            </button>
+                        </div>
+                    </div>
+                    <div class="ingredient-quantity-area">
+                        <p>Quantité :</p>
+                        <button class="ingredient-quantity-less">
+                            <img src="{{ asset('img/left.png') }}" alt="réduire la quantité">
+                        </button>
+                        <p class="quantity">9</p>
+                        <button class="ingredient-quantity-more">
+                            <img src="{{ asset('img/right.png') }}" alt="augmenter la quantité">
+                        </button>
+                    </div>
+                </div>
+                <p class="no-ingredient">Pas d'ingrédients correspondant à votre recherche</p>
+            </div>
+        </div>
+        <section class="filters-with-result-statistics-area" id="filters-area-box">
+            <div class="result-statistics-area">
+                <p class="results-number">
+                    X Résultats
+                </p>
+                <p class="ingredients-number">
+                    X Ingrédients
+                </p>
+            </div>
+            {% include 'partials/_allergens-category-filter-area.html.twig' %}
+        </section>
+        {% include 'partials/_allergens-cat-filter-box.html.twig' %}
+    </section>
+    {% include 'partials/_recipes-list.html.twig' %}
+
+    {% block javascripts %}
+        <script type="module" src="{{ asset('js/index.js') }}"></script>
+    {% endblock %}
 
 {% endblock %}

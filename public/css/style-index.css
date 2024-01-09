@@ -1,0 +1,675 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+body {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    flex-direction: column;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.main-interaction-area {
+    display: flex;
+    flex-direction: column;
+    padding: 0 10px;
+    margin: 50px 0;
+}
+
+.overlapping-search-box {
+    display: flex;
+    position: absolute;
+    height: 0;
+    width: 100%;
+    overflow: hidden;
+    box-sizing: border-box;
+    z-index: 2;
+    border-radius: 0 0 20px 20px;
+    background: linear-gradient(#fff,#fff) padding-box,
+    linear-gradient(to left, rgba(76, 185, 165, 58%), rgba(66, 186, 64, 66%), rgba(255, 127, 80, 74%)) border-box;
+}
+
+.overlapping-box {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    z-index: 1;
+    height: 0;
+    background-color: white;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 0 0 20px 20px;
+    box-sizing: border-box;
+}
+
+.search-recipes-area {
+    display: flex;
+    flex-direction: column;
+}
+
+.title {
+    display: flex;
+    margin: 15px 0;
+    font-size: 24px;
+    font-weight: 700;
+    font-family: "Roboto", sans-serif;
+    color: #4CB9A5;
+    text-align: center;
+    align-self: center;
+}
+
+.search-area {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.search-bar {
+    display: flex;
+    max-width: 1000px;
+    border: 2px solid #00000000;
+    border-radius: 38px;
+    box-sizing: border-box;
+    padding: 2px 10px;
+    align-self: center;
+    flex: 1;
+    background: linear-gradient(#fff,#fff) padding-box,
+    linear-gradient(to left, rgba(76, 185, 165, 58%), rgba(66, 186, 64, 66%), rgba(255, 127, 80, 74%)) border-box;
+}
+
+.search-bar .search-input {
+    display: flex;
+    font-size: 18px;
+    font-weight: 500;
+    font-family: "Roboto", sans-serif;
+    color: black;
+    border: none;
+    flex: 1;
+    border-radius: 38px;
+}
+
+.search-input:focus {
+    outline: none;
+}
+
+.search-bar .search-input::placeholder {
+    color: #B9B9B9;
+}
+
+.search-bar .search-input:focus::placeholder {
+    color: transparent;
+}
+
+.search-bar>img {
+    width: 30px;
+    height: 30px;
+}
+
+.allergens-title, .categories-title, .filter-title {
+    display: flex;
+    width: 100%;
+    font-family: "Roboto", sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    justify-content: center;
+    color: #4CB9A5;
+    margin: 5px 0;
+}
+
+#categories-box>.search-area>.search-bar {
+    margin: 10px 20px;
+}
+
+.filters-area {
+    display: flex;
+    padding: 20px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    max-height: 210px;
+    overflow: auto;
+}
+
+.filters-area>label {
+    display: flex;
+    flex-direction: column;
+    font-weight: 500;
+    font-family: "Roboto", sans-serif;
+    font-size: 20px;
+    color: #FF7F50;
+    align-items: center;
+    margin: 10px;
+}
+
+.select-box {
+    appearance: none;
+    border: 0;
+    outline: 0;
+    font-weight: 500;
+    font-family: "Roboto", sans-serif;
+    font-size: 20px;
+    padding: 10px 60px 10px 10px;
+    background: url(https://upload.wikimedia.org/wikipedia/commons/9/9d/Caret_down_font_awesome_whitevariation.svg) no-repeat right 0.8em center / 1.4em,
+    linear-gradient(to left, #FF7F50 3em, #FF7F50 3em);
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.select-box:focus {
+     outline: none;
+ }
+
+.select-box>option {
+    color: white;
+    background-color: #4CB9A5;
+    padding: 10px 2px;
+}
+
+.entity-checkbox-append {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    overflow: auto;
+    max-height: 200px;
+}
+
+/* The container */
+.checkbox-container {
+    display: flex;
+    cursor: pointer;
+    font-size: 22px;
+    font-weight: 500;
+    font-family: "Roboto", sans-serif;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    margin: 10px;
+}
+
+/* Hide the browser's default checkbox */
+.checkbox-container .checkbox {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+    display: flex;
+    align-self: center;
+    height: 20px;
+    width: 20px;
+    background-color: white;
+    border: solid 1px #4CB9A5;
+    border-radius: 5px;
+    box-sizing: border-box;
+    margin: 0 5px;
+}
+
+/* On mouse-over, add a grey background color */
+.checkbox-container:hover .checkbox ~ .checkmark {
+    border-color: #FF7F50;
+}
+
+/* When the checkbox is checked, add a blue background */
+.checkbox-container .checkbox:checked ~ .checkmark {
+    background-color: white;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+    content: "";
+    position: relative;
+    display: none;
+}
+
+/* Show the checkmark when checked */
+.checkbox-container .checkbox:checked ~ .checkmark:after {
+    display: block;
+}
+
+/* Style the checkmark/indicator */
+.checkbox-container .checkmark:after {
+    left: 6px;
+    top: 2px;
+    width: 4px;
+    height: 8px;
+    border: solid #4CB9A5;
+    border-width: 0 3px 3px 0;
+    transform: rotate(45deg);
+}
+
+.ingredients-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    flex: 1;
+    overflow: auto;
+    max-height: 210px;
+}
+
+.no-ingredient {
+    display: flex;
+    font-size: 18px;
+    font-weight: 500;
+    font-family: "Roboto", sans-serif;
+    color: #4CB9A5;
+    margin: 10px;
+    width: 100%;
+    justify-content: center;
+}
+
+.ingredient {
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(#fff,#fff) padding-box,
+    linear-gradient(to left, rgba(76, 185, 165, 58%), rgba(66, 186, 64, 66%), rgba(255, 127, 80, 74%)) border-box;
+    border: 2px solid #00000000;
+    box-sizing: border-box;
+    border-radius: 9px;
+    padding: 2px;
+    min-width: 200px;
+    max-width: 250px;
+    max-height: 200px;
+    margin: 5px;
+}
+
+.ingredient-informations-area {
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+}
+
+.ingredient-informations-area>img {
+    display: flex;
+    height: 60px;
+    width: 60px;
+    border-radius: 9px;
+}
+
+.ingredient-informations-area>p {
+    display: flex;
+    align-self: start;
+    flex: 1;
+    margin: 2px;
+    font-size: 20px;
+    font-weight: 700;
+    font-family: "Roboto", sans-serif;
+    padding: 0 2%;
+}
+
+.ingredient-append-area {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+}
+
+.ingredient-append {
+    display: flex;
+    width: fit-content;
+    height: fit-content;
+    align-self: start;
+    padding: 2px;
+    cursor: pointer;
+    border: none;
+    background-color: #00000000;
+}
+
+.ingredient-append>img{
+    height: 15px;
+    width: 15px;
+    rotate: 45deg;
+}
+
+.ingredient-quantity-area {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.ingredient-quantity-area p {
+    font-size: 20px;
+    font-weight: 700;
+    font-family: "Roboto", sans-serif;
+    margin: 0;
+    align-self: center;
+}
+
+.quantity {
+    font-size: 24px;
+    font-weight: 700;
+    font-family: "Roboto", sans-serif;
+    align-self: center;
+}
+
+.ingredient-quantity-less, .ingredient-quantity-more {
+    display: flex;
+    width: fit-content;
+    height: fit-content;
+    padding: 0;
+    cursor: pointer;
+    border: none;
+    background-color: #00000000;
+}
+
+.ingredient-quantity-less>img, .ingredient-quantity-more>img {
+    display: flex;
+    width: 30px;
+    height: 30px;
+}
+
+.filters-with-result-statistics-area {
+    display: flex;
+    background-color: #4CB9A5;
+    border-radius: 20px;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.result-statistics-area {
+    display: flex;
+    justify-content: space-around;
+}
+
+.results-number, .ingredients-number {
+    display: flex;
+    margin: 10px 0;
+    font-size: 18px;
+    font-weight: 700;
+    font-family: "Roboto", sans-serif;
+    color: white;
+    text-align: center;
+    align-self: center;
+    background-color: #FF7F50;
+    padding: 4px 6px;
+    border-radius: 14px;
+}
+
+.allergens-with-categories-area {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: #FF7F50;
+}
+
+.add-allergens-button, .add-categories-button {
+    display: none;
+    margin: 10px 0;
+    font-size: 18px;
+    font-weight: 700;
+    font-family: "Roboto", sans-serif;
+    color: white;
+    text-align: center;
+    align-self: center;
+    background-color: #4CB9A5;
+    border: none;
+    padding: 4px 6px;
+    border-radius: 14px;
+    cursor: pointer;
+}
+
+.add-allergens-button-icon, .add-categories-button-icon {
+    display: flex;
+    width: fit-content;
+    height: fit-content;
+    margin: 10px 0;
+    background-color: #4CB9A5;
+    border: none;
+    padding: 4px 6px;
+    border-radius: 14px;
+    cursor: pointer;
+}
+
+.add-allergens-button-icon>img, .add-categories-button-icon>img {
+    display: flex;
+    width: 50px;
+    height: 50px;
+}
+
+.add-filters-button {
+    display: flex;
+    margin: 0;
+    font-size: 18px;
+    font-weight: 700;
+    font-family: "Roboto", sans-serif;
+    color: white;
+    justify-content: center;
+    align-self: center;
+    width: 100%;
+    background-color: #4CB9A5;
+    border: none;
+    padding: 4px 6px;
+    border-radius: 0 0 14px 14px;
+    cursor: pointer;
+}
+
+.add-allergens-button:hover, .add-categories-button:hover,
+.add-allergens-button-icon:hover, .add-categories-button-icon:hover {
+    background-color: #218A77;
+    transition: 0.2s;
+}
+
+.recipes-list {
+    display: flex;
+    flex-direction: column;
+}
+
+.no-recipe, .no-category {
+    display: flex;
+    margin: 15px 0;
+    font-size: 18px;
+    font-weight: 700;
+    font-family: "Roboto", sans-serif;
+    color: #4CB9A5;
+    text-align: center;
+    align-self: center;
+}
+
+@media only screen and (min-width: 300px) {
+    /* modification css ici */
+}
+
+@media only screen and (min-width: 400px) {
+    /* modification css ici */
+}
+
+@media only screen and (min-width: 600px) {
+    /* modification css ici */
+    .add-allergens-button, .add-categories-button {
+        display: flex;
+    }
+
+    .add-allergens-button-icon, .add-categories-button-icon {
+        display: none;
+    }
+
+    .search-bar {
+        border: 3px solid #00000000
+    }
+
+    .search-bar .search-input, .search-bar #search-tools {
+        font-size: 22px;
+    }
+
+    .search-bar>img {
+        width: 38px;
+        height: 38px;
+    }
+
+    .filters-area>label {
+        flex-direction: row;
+    }
+
+    .ingredients-list, .filters-area {
+        max-height: 315px;
+    }
+
+    .no-ingredient {
+        font-size: 24px;
+    }
+
+    .ingredient {
+        border: 4px solid #00000000;
+        padding: 4px;
+        min-width: 300px;
+        max-width: 500px;
+        max-height: 300px;
+        margin: 10px;
+    }
+
+    .ingredient-informations-area>img {
+        display: flex;
+        height: 90px;
+        width: 90px;
+    }
+
+    .ingredient-informations-area>p {
+        margin: 5px;
+        font-size: 28px;
+    }
+
+    .ingredient-append>img{
+        height: 20px;
+        width: 20px;
+    }
+
+    .ingredient-quantity-area {
+        max-width: 375px;
+    }
+
+    .ingredient-quantity-area p {
+        font-size: 26px;
+    }
+
+    .quantity {
+        font-size: 32px;
+    }
+
+    .ingredient-quantity-less>img, .ingredient-quantity-more>img {
+        width: 45px;
+        height: 45px;
+    }
+}
+
+@media only screen and (min-width: 800px) {
+    /* modification css ici */
+    .filters-with-result-statistics-area {
+        flex-direction: row;
+        justify-content: normal;
+    }
+
+    .add-filters-button {
+        width: unset;
+        border-radius: 0 14px 14px 0;
+    }
+
+    .allergens-with-categories-area {
+        flex: 1;
+    }
+
+    .results-number, .ingredients-number {
+        margin: 10px 15px;
+    }
+
+    .content {
+        max-width: 900px;
+        align-self: center;
+        width: 100%;
+    }
+
+    .add-allergens-button, .add-categories-button, .add-filters-button,
+    .results-number, .ingredients-number {
+        font-size: 20px;
+    }
+
+    .no-recipe {
+        font-size: 24px;
+    }
+
+    .title {
+        font-size: 32px;
+    }
+}
+
+@media only screen and (min-width: 1000px) {
+    /* modification css ici */
+    .search-bar>img {
+        width: 56px;
+        height: 56px;
+    }
+
+    .search-bar {
+        border: 4px solid #00000000
+    }
+
+    .search-bar .search-input, .search-bar #search-tools {
+        font-size: 30px;
+    }
+
+    .no-recipe {
+        font-size: 32px;
+    }
+
+    .title {
+        font-size: 44px;
+    }
+
+    .ingredients-list, .filters-area {
+        max-height: 420px;
+    }
+
+    .no-ingredient {
+        font-size: 30px;
+    }
+
+    .ingredient {
+        border: 4px solid #00000000;
+        padding: 4px;
+        min-width: 400px;
+        max-width: 800px;
+        max-height: 400px;
+        margin: 10px;
+    }
+
+    .ingredient-informations-area>img {
+        display: flex;
+        height: 120px;
+        width: 120px;
+    }
+
+    .ingredient-informations-area>p {
+        margin: 5px;
+        font-size: 36px;
+    }
+
+    .ingredient-quantity-area {
+        max-width: 500px;
+    }
+
+    .ingredient-quantity-area p {
+        font-size: 32px;
+    }
+
+    .quantity {
+        font-size: 40px;
+    }
+
+    .ingredient-quantity-less>img, .ingredient-quantity-more>img {
+        width: 60px;
+        height: 60px;
+    }
+
+    .ingredient-append>img{
+        height: 25px;
+        width: 25px;
+    }
+}

@@ -1,0 +1,43 @@
+{% extends 'base.html.twig' %}
+
+{% block stylesheets %}
+    <link rel="stylesheet" href="{{ asset('css/style-index.css') }}">
+{% endblock %}
+
+{% block body %}
+
+    <link rel="preload" href="{{ asset('js/main.js') }}" as="script">
+
+    <section class="main-interaction-area">
+        <section class="search-recipes-area" id="recipes-research-area">
+            <h1 class="title">Qu'allons nous cuisiner aujourd'hui ?</h1>
+            <form class="search-area" role="search-recipes" method="get" action="/recipe">
+                <div class="search-bar">
+                    <input type="search" name="search-recipes" autocomplete="off"
+                           id="search-recipes" class="search-input" placeholder="Tartiflette, Salade de fruit..." {% if searchString is defined %}value="{{ searchString }}"{% endif %}>
+                    <img src="{{ asset('img/loop.png') }}" alt="loupe">
+                </div>
+            </form>
+        </section>
+        <section class="filters-with-result-statistics-area" id="filters-area-box">
+            <div class="result-statistics-area">
+                <p class="results-number">
+                    {% if searchString is not empty %}
+                        {{ recipes|length}} Résultat(s)
+                    {% else %}
+                    0 Résultat(s)
+                    {% endif %}
+                </p>
+            </div>
+            {% include 'partials/_allergens-category-filter-area.html.twig' %}
+        </section>
+        {% include 'partials/_allergens-cat-filter-box.html.twig' %}
+    </section>
+    {% include 'partials/_recipes-list.html.twig' %}
+
+    {% block javascripts %}
+        <script type="module" src="{{ asset('js/search-recipe.js') }}"></script>
+    {% endblock %}
+
+{% endblock %}
+
