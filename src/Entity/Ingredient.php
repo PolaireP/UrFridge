@@ -45,6 +45,9 @@ class Ingredient
     #[ORM\OneToMany(mappedBy: 'ingredient', targetEntity: RecipeQuantity::class)]
     private Collection $recipeQuantities;
 
+    #[ORM\ManyToOne(inversedBy: 'ingredients')]
+    private ?ingredientPhoto $ingredient_photo = null;
+
     public function __construct()
     {
         $this->recipes = new ArrayCollection();
@@ -95,14 +98,14 @@ class Ingredient
         return $this;
     }
 
-    public function getAvgUnitVolume(): ?float
+    public function getAvgUnitVolumn(): ?float
     {
-        return $this->avgUnitVolume;
+        return $this->avgUnitVolumn;
     }
 
-    public function setAvgUnitVolume(?float $avgUnitVolume): static
+    public function setAvgUnitVolumn(?float $avgUnitVolumn): static
     {
-        $this->avgUnitVolume = $avgUnitVolume;
+        $this->avgUnitVolumn = $avgUnitVolumn;
 
         return $this;
     }
@@ -144,14 +147,14 @@ class Ingredient
     }
 
     /**
-     * @return Collection<int, FridgeQuantity>
+     * @return Collection<int, Quantity>
      */
     public function getQuantities(): Collection
     {
         return $this->quantities;
     }
 
-    public function addQuantity(FridgeQuantity $quantity): static
+    public function addQuantity(Quantity $quantity): static
     {
         if (!$this->quantities->contains($quantity)) {
             $this->quantities->add($quantity);
@@ -161,7 +164,7 @@ class Ingredient
         return $this;
     }
 
-    public function removeQuantity(FridgeQuantity $quantity): static
+    public function removeQuantity(Quantity $quantity): static
     {
         if ($this->quantities->removeElement($quantity)) {
             // set the owning side to null (unless already changed)
@@ -253,6 +256,18 @@ class Ingredient
                 $recipeQuantity->setIngredient(null);
             }
         }
+
+        return $this;
+    }
+
+    public function getIngredientPhoto(): ?ingredientPhoto
+    {
+        return $this->ingredient_photo;
+    }
+
+    public function setIngredientPhoto(?ingredientPhoto $ingredient_photo): static
+    {
+        $this->ingredient_photo = $ingredient_photo;
 
         return $this;
     }

@@ -5,6 +5,7 @@ namespace App\DataFixtures;
 use App\Entity\Allergen;
 use App\Entity\Ingredient;
 use App\Entity\IngredientType;
+use App\Factory\IngredientPhotoFactory;
 use Doctrine\Bundle\FixturesBundle\Fixture;
 use Doctrine\Common\DataFixtures\DependentFixtureInterface;
 use Doctrine\Persistence\ObjectManager;
@@ -15,11 +16,14 @@ class IngredientFixtures extends Fixture implements DependentFixtureInterface
     {
         $ingredientsData = json_decode(file_get_contents(__DIR__.'/data/Ingredient.json'), true);
 
+        $firstPhotoId = IngredientPhotoFactory::first()->getId();
+        $actualPhoto = 1;
+
         foreach ($ingredientsData as $data) {
             $ingredient = new Ingredient();
             $ingredient->setIngredientName($data['ingredientName']);
             $ingredient->setAvgUnitWeight($data['avgUnitWeight']);
-            $ingredient->setAvgUnitVolume($data['avgUnitVolume']);
+            $ingredient->setAvgUnitVolumn($data['avgUnitVolume']);
             $ingredient->setCountable($data['countable']);
             $ingredient->setKgPrice($data['kgPrice']);
 
@@ -37,17 +41,30 @@ class IngredientFixtures extends Fixture implements DependentFixtureInterface
                 }
             }
 
-            $manager->persist($ingredient);
+            $ingredientPhotoProxy = IngredientPhotoFactory::findBy(['id' => $firstPhotoId + $actualPhoto])[0] ?? null;
+            if ($ingredientPhotoProxy) {
+                $ingredientPhoto = $ingredientPhotoProxy->object();
+            } else {
+                $ingredientPhotoDefault = IngredientPhotoFactory::findBy(['id' => $firstPhotoId])[0];
+                $ingredientPhoto = $ingredientPhotoDefault->object();
+            }
 
+            ++$actualPhoto;
+
+            $ingredient->setIngredientPhoto($ingredientPhoto);
+
+            $manager->persist($ingredient);
         }
+
         $manager->flush();
     }
 
-    public function getDependencies()
+    public function getDependencies(): array
     {
         return [
             AllergenFixtures::class,
             IngredientTypeFixtures::class,
+            IngredientPhotoFixtures::class,
         ];
     }
 }
