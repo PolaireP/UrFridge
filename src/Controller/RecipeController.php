@@ -3,6 +3,7 @@
 namespace App\Controller;
 
 use App\Entity\Allergen;
+use App\Entity\Recipe;
 use App\Repository\RecipeRepository;
 use Doctrine\ORM\EntityManagerInterface;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
@@ -33,6 +34,14 @@ class RecipeController extends AbstractController
             'images' => $images,
             'searchString' => $searchString,
             'allergens' => $allergens,
+        ]);
+    }
+
+    #[Route('/recipe/{id}', name: 'app_recipe_show')]
+    public function show(Recipe $recipe): Response
+    {
+        return $this->render('pages/recipe/show.html.twig', [
+           'recipe' => dump($recipe),
         ]);
     }
 }
