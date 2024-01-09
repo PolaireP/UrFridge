@@ -283,6 +283,7 @@ body {
     .fridge-ingredients-area {
         align-self: center;
         max-width: 1300px;
+        width: 100%;
     }
 
     .ingredient {
