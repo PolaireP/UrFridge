@@ -46,6 +46,9 @@ class Person implements UserInterface, PasswordAuthenticatedUserInterface
     #[ORM\ManyToMany(targetEntity: Recipe::class, mappedBy: 'follower')]
     private Collection $favorites;
 
+    #[ORM\ManyToOne(inversedBy: 'people')]
+    private ?PersonPhoto $avatar = null;
+
     public function __construct()
     {
         $this->comments = new ArrayCollection();
@@ -222,4 +225,15 @@ class Person implements UserInterface, PasswordAuthenticatedUserInterface
         // $this->plainPassword = null;
     }
 
+    public function getAvatar(): ?PersonPhoto
+    {
+        return $this->avatar;
+    }
+
+    public function setAvatar(?PersonPhoto $avatar): static
+    {
+        $this->avatar = $avatar;
+
+        return $this;
+    }
 }
