@@ -1,0 +1,259 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+body {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    flex-direction: column;
+}
+
+.header-area {
+    display: flex;
+    justify-content: space-between;
+    background-color: #4CB9A5;
+}
+
+.header-logo-area {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: fit-content;
+    margin: 0 8px;
+}
+
+.header-logo-area a {
+    font-size: 23px;
+    font-weight: 900;
+    font-family: "Roboto", sans-serif;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+}
+
+.header-nav {
+    display: flex;
+    align-items: center
+}
+
+.header-nav-hamburger {
+    display: flex;
+    height: 0;
+    background-color: #4CB9A5;
+    flex-direction: column;
+    overflow: hidden;
+    transition: 0.2s;
+    padding: 0 15px;
+}
+
+.header-navlink-hamburger {
+    display: flex;
+    text-decoration: none;
+    background-color: white;
+    color: #4CB9A5;
+    font-size: 23px;
+    font-weight: 500;
+    font-family: "Roboto", sans-serif;
+    border-radius: 14px;
+    padding: 5px 10px;
+    margin: 4px 0;
+    align-self: center;
+    width: 100%;
+}
+
+.header-navlink-hamburger:hover {
+    color: #FF6026;
+    transition: 0.2s;
+}
+
+.header-navlink-hamburger:last-child {
+    margin-bottom: 8px;
+}
+
+.header-navlink, .header-navlink-icon {
+    display: none;
+}
+
+.hamburger {
+    display: flex;
+    width: fit-content;
+    height: fit-content;
+    align-items: center;
+    justify-content: center;
+    margin: 0 4px;
+}
+
+.hamburger img {
+    width: 47px;
+    height: 47px;
+}
+
+.content {
+    display: flex;
+    flex: 1;
+}
+
+.footer-area {
+    display: flex;
+    background-color: #FF6026;
+    flex-direction: column;
+}
+
+.footer-nav-area {
+    display: flex;
+    justify-content: space-between;
+    background-color: #FF7F50;
+    padding: 10px;
+    margin: 10px 10px 0 10px;
+}
+
+.footer-nav {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    justify-content: space-between;
+}
+
+.footer-nav>* {
+    display: block;
+    color: white;
+    text-decoration: none;
+    font-size: 23px;
+    font-weight: 500;
+    font-family: "Roboto", sans-serif;
+}
+
+.footer-nav-logo {
+    display: flex;
+    width: fit-content;
+    height: fit-content;
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+}
+
+.footer-nav-logo img {
+    width: 67px;
+    height: 151px;
+}
+
+.footer-copyright {
+    display: flex;
+    align-self: center;
+    color: #FFA07A;
+    font-size: 12px;
+    font-weight: 700;
+    font-family: "Roboto", sans-serif;
+    text-align: center;
+    margin: 3px 0;
+}
+
+@media only screen and (min-width: 300px) {
+    /* modification css ici */
+}
+
+@media only screen and (min-width: 400px) {
+    /* modification css ici */
+}
+
+@media only screen and (min-width: 600px) {
+    /* modification css ici */
+    .header-logo-area a {
+        font-size: 28px;
+        margin: 0 10px;
+    }
+
+    .hamburger {
+        display: none;
+    }
+
+    .header-navlink-icon {
+        display: flex;
+        width: 39px;
+        height: 39px;
+        margin: 10px 15px;
+        justify-content: center;
+    }
+}
+
+@media only screen and (min-width: 800px) {
+    /* modification css ici */
+    .footer-area {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .footer-nav-area {
+        background-color: #00000000;
+        align-items: center;
+        margin: 0;
+    }
+
+    .footer-nav {
+        flex-direction: row;
+    }
+
+    .footer-nav>* {
+        background-color: #FF7F50;
+        border-radius: 14px;
+        padding: 5px 20px;
+        margin: 0 10px;
+        width: fit-content;
+    }
+
+    .footer-nav>*:hover {
+        background-color: #EE8865;
+        transition: 0.1s;
+    }
+
+    .footer-nav-logo {
+        display: none;
+    }
+
+    .footer-copyright {
+        font-size: 16px;
+        margin: 0 10px;
+    }
+}
+
+@media only screen and (min-width: 1000px) {
+    /* modification css ici */
+}
+
+@media only screen and (min-width: 1200px) {
+    /* modification css ici */
+    .header-logo-area a {
+        font-size: 36px;
+        margin: 0 14px;
+    }
+
+    .header-navlink-icon, .auth.header-navlink {
+        display: none;
+    }
+
+    .auth {
+        display: flex;
+        width: 60px;
+        height: 60px;
+    }
+
+    .header-navlink {
+        display: flex;
+        text-decoration: none;
+        background-color: white;
+        color: #4CB9A5;
+        font-size: 23px;
+        font-weight: 500;
+        font-family: "Roboto", sans-serif;
+        border-radius: 14px;
+        padding: 5px 10px;
+        margin: 0 8px;
+        width: fit-content;
+        text-align: center;
+    }
+
+    .header-navlink:hover {
+        color: #FF6026;
+        transition: 0.2s;
+    }
+}
