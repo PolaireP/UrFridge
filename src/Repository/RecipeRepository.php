@@ -32,4 +32,15 @@ class RecipeRepository extends ServiceEntityRepository
 
         return $query->execute();
     }
+
+    public function countStepsForRecipe(int $recipeId): int
+    {
+        $qb = $this->createQueryBuilder('r')
+            ->select('count(s.id)')
+            ->join('r.steps', 's')
+            ->where('r.id = :recipeId')
+            ->setParameter('recipeId', $recipeId);
+
+        return (int) $qb->getQuery()->getSingleScalarResult();
+    }
 }
