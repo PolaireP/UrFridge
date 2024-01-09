@@ -49,6 +49,10 @@ class Person implements UserInterface, PasswordAuthenticatedUserInterface
     #[ORM\ManyToOne(inversedBy: 'people')]
     private ?PersonPhoto $avatar = null;
 
+    #[ORM\OneToMany(mappedBy: 'author', targetEntity: Recipe::class)]
+    private Collection $recipes;
+
+
     public function __construct()
     {
         $this->comments = new ArrayCollection();
@@ -225,6 +229,7 @@ class Person implements UserInterface, PasswordAuthenticatedUserInterface
         // $this->plainPassword = null;
     }
 
+
     public function getAvatar(): ?PersonPhoto
     {
         return $this->avatar;
@@ -233,6 +238,36 @@ class Person implements UserInterface, PasswordAuthenticatedUserInterface
     public function setAvatar(?PersonPhoto $avatar): static
     {
         $this->avatar = $avatar;
+
+        return $this;
+    }
+
+    /**
+     * @return Collection<int, Recipe>
+     */
+    public function getRecipes(): Collection
+    {
+        return $this->recipes;
+    }
+
+    public function addRecipe(Recipe $recipe): static
+    {
+        if (!$this->recipes->contains($recipe)) {
+            $this->recipes->add($recipe);
+            $recipe->setAuthor($this);
+        }
+
+        return $this;
+    }
+
+    public function removeRecipe(Recipe $recipe): static
+    {
+        if ($this->recipes->removeElement($recipe)) {
+            // set the owning side to null (unless already changed)
+            if ($recipe->getAuthor() === $this) {
+                $recipe->setAuthor(null);
+            }
+        }
 
         return $this;
     }

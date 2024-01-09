@@ -16,7 +16,7 @@ class Inventory
     private ?int $id = null;
 
     #[ORM\OneToOne(mappedBy: 'inventory', cascade: ['persist', 'remove'])]
-    private ?person $owner = null;
+    private ?Person $owner = null;
 
     #[ORM\OneToMany(mappedBy: 'inventory', targetEntity: FridgeQuantity::class, orphanRemoval: true)]
     private Collection $quantities;
@@ -26,8 +26,8 @@ class Inventory
 
     public function __construct()
     {
-        $this->recipes = new ArrayCollection();
         $this->quantities = new ArrayCollection();
+        $this->recipes = new ArrayCollection();
     }
 
     public function getId(): ?int
@@ -47,44 +47,14 @@ class Inventory
         return $this;
     }
 
-    public function getOwner(): ?person
+    public function getOwner(): ?Person
     {
         return $this->owner;
     }
 
-    public function setOwner(person $owner): static
+    public function setOwner(Person $owner): static
     {
         $this->owner = $owner;
-
-        return $this;
-    }
-
-    /**
-     * @return Collection<int, Recipe>
-     */
-    public function getRecipes(): Collection
-    {
-        return $this->recipes;
-    }
-
-    public function addRecipe(Recipe $recipe): static
-    {
-        if (!$this->recipes->contains($recipe)) {
-            $this->recipes->add($recipe);
-            $recipe->setInventories($this);
-        }
-
-        return $this;
-    }
-
-    public function removeRecipe(Recipe $recipe): static
-    {
-        if ($this->recipes->removeElement($recipe)) {
-            // set the owning side to null (unless already changed)
-            if ($recipe->getInventories() === $this) {
-                $recipe->setInventories(null);
-            }
-        }
 
         return $this;
     }
@@ -114,6 +84,33 @@ class Inventory
             if ($quantity->getInventory() === $this) {
                 $quantity->setInventory(null);
             }
+        }
+
+        return $this;
+    }
+
+    /**
+     * @return Collection<int, Recipe>
+     */
+    public function getRecipes(): Collection
+    {
+        return $this->recipes;
+    }
+
+    public function addRecipe(Recipe $recipe): static
+    {
+        if (!$this->recipes->contains($recipe)) {
+            $this->recipes->add($recipe);
+            $recipe->addInventory($this);
+        }
+
+        return $this;
+    }
+
+    public function removeRecipe(Recipe $recipe): static
+    {
+        if ($this->recipes->removeElement($recipe)) {
+            $recipe->removeInventory($this);
         }
 
         return $this;

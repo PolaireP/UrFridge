@@ -49,11 +49,14 @@ class Recipe
     #[ORM\ManyToMany(targetEntity: Ingredient::class, mappedBy: 'recipes')]
     private Collection $ingredients;
 
+    #[ORM\OneToMany(mappedBy: 'recipe', targetEntity: RecipeQuantity::class)]
+    private Collection $recipeQuantities;
+
     #[ORM\ManyToMany(targetEntity: Inventory::class, inversedBy: 'recipes')]
     private Collection $inventories;
 
-    #[ORM\OneToMany(mappedBy: 'recipe', targetEntity: RecipeQuantity::class)]
-    private Collection $recipeQuantities;
+    #[ORM\ManyToOne(inversedBy: 'recipes')]
+    private ?Person $author = null;
 
     public function __construct()
     {
@@ -63,8 +66,8 @@ class Recipe
         $this->categories = new ArrayCollection();
         $this->steps = new ArrayCollection();
         $this->ingredients = new ArrayCollection();
-        $this->inventories = new ArrayCollection();
         $this->recipeQuantities = new ArrayCollection();
+        $this->inventories = new ArrayCollection();
     }
 
     public function getId(): ?int
@@ -184,11 +187,6 @@ class Recipe
         $this->follower->removeElement($follower);
 
         return $this;
-    }
-
-    public function getInventories(): ArrayCollection|Collection
-    {
-        return $this->inventories;
     }
 
     /**
@@ -314,21 +312,6 @@ class Recipe
         return $this;
     }
 
-    public function addInventory(inventory $inventory): static
-    {
-        if (!$this->inventories->contains($inventory)) {
-            $this->inventories->add($inventory);
-        }
-
-        return $this;
-    }
-
-    public function removeInventory(inventory $inventory): static
-    {
-        $this->inventories->removeElement($inventory);
-
-        return $this;
-    }
 
     /**
      * @return Collection<int, RecipeQuantity>
@@ -356,6 +339,42 @@ class Recipe
                 $recipeQuantity->setRecipe(null);
             }
         }
+
+        return $this;
+    }
+
+    /**
+     * @return Collection<int, Inventory>
+     */
+    public function getInventories(): Collection
+    {
+        return $this->inventories;
+    }
+
+    public function addInventory(Inventory $inventory): static
+    {
+        if (!$this->inventories->contains($inventory)) {
+            $this->inventories->add($inventory);
+        }
+
+        return $this;
+    }
+
+    public function removeInventory(Inventory $inventory): static
+    {
+        $this->inventories->removeElement($inventory);
+
+        return $this;
+    }
+
+    public function getAuthor(): ?Person
+    {
+        return $this->author;
+    }
+
+    public function setAuthor(?Person $author): static
+    {
+        $this->author = $author;
 
         return $this;
     }
