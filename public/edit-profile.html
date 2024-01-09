@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Mon profil</title>
+    <link rel="stylesheet" href="css/style-edit-profile.css">
+    <link rel="icon" href="img/logo/favicon-fridge.svg" type="image/x-icon">
+</head>
+<body>
+    <main class="content">
+        <section class="banner">
+            <div class="banner-content">
+                <img src="img/profilePicture.jpg" alt="photo de profil" class="banner-profile-picture">
+                <h1 class="banner-profile-identity">
+                    <span id="profile-firstname">Prénom</span>
+                    <span id="profile-lastname">Nom</span>
+                </h1>
+            </div>
+        </section>
+        <section class="edit-profile-area">
+            <form class="edit-profile-informations-form" method="post">
+                <input type="text" name="firstname" placeholder="Prénom"
+                       id="firstname" class="profile-information-input">
+                <input type="text" name="lastname" placeholder="Nom"
+                       id="lastname" class="profile-information-input">
+                <input type="text" name="email" placeholder="Email"
+                       id="email" class="profile-information-input">
+                <input type="password" name="new-password" placeholder="Nouveau mot de passe"
+                       id="new-password" class="profile-information-input">
+                <input type="password" name="confirm-password" placeholder="Confirmer le mot de passe"
+                       id="confirm-password" class="profile-information-input">
+                <button type="submit" class="submit-profile-informations">
+                    Valider
+                </button>
+            </form>
+            <form class="edit-profile-picture-form" method="post">
+                <div class="profile-picture-input-area">
+                    <div class="input-picture-button-area">
+                        <label class="input-picture-button">
+                            Nouvelle image
+                            <input type="file" name="profilePicture" id="profilePicture"
+                                   class="profile-picture-input">
+                        </label>
+                    </div>
+                </div>
+            </form>
+        </section>
+    </main>
+</body>
+</html>
+
