@@ -38,10 +38,19 @@ class RecipeController extends AbstractController
     }
 
     #[Route('/recipe/{id}', name: 'app_recipe_show')]
-    public function show(Recipe $recipe): Response
+    public function show(Recipe $recipe, RecipeRepository $repository): Response
     {
+        $numberOfStep = $repository->countStepsForRecipe($recipe->getRecipeId());
+        $allergens = $repository->getAllergensForRecipe($recipe->getRecipeId());
+
+        //Image de la recette
+        $image = base64_encode(stream_get_contents($recipe->getRecipePhoto()->getRecipePhoto()));
+
         return $this->render('pages/recipe/show.html.twig', [
-           'recipe' => dump($recipe),
+           'recipe' => $recipe,
+            'numberOfStep' => $numberOfStep,
+            'allergens' => $allergens,
+            'image' => $image,
         ]);
     }
 }
