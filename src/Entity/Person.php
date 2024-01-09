@@ -46,12 +46,12 @@ class Person implements UserInterface, PasswordAuthenticatedUserInterface
     #[ORM\ManyToMany(targetEntity: Recipe::class, mappedBy: 'follower')]
     private Collection $favorites;
 
+
     #[ORM\ManyToOne(inversedBy: 'people')]
     private ?PersonPhoto $avatar = null;
 
     #[ORM\OneToMany(mappedBy: 'author', targetEntity: Recipe::class)]
     private Collection $recipes;
-
 
     public function __construct()
     {
