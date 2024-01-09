@@ -31,9 +31,13 @@
                 <article class="recipe-allergens-area">
                     <h1 class="recipe-allergens-title">Allergènes</h1>
                     <div class="recipe-allergens-list">
-                        <p class="recipe-allergen">Allergène</p>
-                        <p class="recipe-allergen">Allergène</p>
-                        <p class="recipe-allergen">Allergène</p>
+                        {% if allergens|length > 0 %}
+                            {% for allergen in allergens %}
+                                <p class="recipe-allergen">{{ allergen.allergenName }}</p>
+                            {% endfor %}
+                        {% else %}
+                            <p class="recipe-allergen">Aucun allergène connu</p>
+                        {% endif %}
                     </div>
                 </article>
                 <article class="recipe-categories-area">
