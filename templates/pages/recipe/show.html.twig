@@ -43,9 +43,13 @@
                 <article class="recipe-categories-area">
                     <h1 class="recipe-categories-title">Catégories</h1>
                     <div class="recipe-categories-list">
-                        <p class="recipe-category">Catégorie</p>
-                        <p class="recipe-category">Catégorie</p>
-                        <p class="recipe-category">Catégorie</p>
+                        {% if recipe.categories|length > 0 %}
+                            {% for category in recipe.categories %}
+                                <p class="recipe-category">{{ category.categoryName }}</p>
+                            {% endfor %}
+                        {% else %}
+                            <p class="recipe-category">Non classifié</p>
+                        {% endif %}
                     </div>
                 </article>
             </section>
