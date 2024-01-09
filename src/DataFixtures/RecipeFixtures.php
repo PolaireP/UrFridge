@@ -6,7 +6,6 @@ use App\Entity\Equipment;
 use App\Factory\EquipmentFactory;
 use App\Factory\RecipeFactory;
 use App\Factory\RecipePhotoFactory;
-use App\Repository\EquipmentRepository;
 use Doctrine\Bundle\FixturesBundle\Fixture;
 use Doctrine\Common\DataFixtures\DependentFixtureInterface;
 use Doctrine\Persistence\ObjectManager;
@@ -32,10 +31,7 @@ class RecipeFixtures extends Fixture implements DependentFixtureInterface
 
         // Ajout des collections
 
-
-
         foreach ($equipments as $element) {
-
             $equipment = $manager->getRepository(Equipment::class)
                 ->findOneBy(['id' => $firstEquipment + $element['equipmentId']]);
             RecipeFactory::findBy(['id' => $element['recipeId'] + $firstRecipe])[0]
