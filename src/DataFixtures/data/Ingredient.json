@@ -1345,5 +1345,11 @@
   },
   {
     "ingredientName": "Choucroute", "avgUnitWeight": 0.300, "avgUnitVolume": null, "kgPrice": 2.0, "countable": false, "allergens": [], "ingredientTypes": ["Légumes"]
+  },
+  {
+    "ingredientName": "Saucisse de Strasbourg", "avgUnitWeight": 0.070, "avgUnitVolume": null, "kgPrice": 11.3, "countable": true, "allergens": [], "ingredientTypes": ["Viandes"]
+  },
+  {
+    "ingredientName": "Parmesan", "avgUnitWeight": 0.1, "avgUnitVolume": null, "kgPrice": 11.3, "countable": false, "allergens": ["Lait"], "ingredientTypes": ["Produits laitiers"]
   }
 ]
