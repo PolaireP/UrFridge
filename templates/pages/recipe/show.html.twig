@@ -70,46 +70,20 @@
             <article class="recipe-ingredients-area">
                 <h1 class="recipe-ingredients-title">Ingrédients</h1>
                 <div class="recipe-ingredients-list">
-                    <div class="recipe-ingredient">
-                        <img class="recipe-ingredient-picture" src="{{ asset('img/tomato.jpg') }}" alt="Image de nom ingrédient">
-                        <article class="recipe-ingredient-informations">
-                            <h1 class="recipe-ingredient-title">Nom ingrédient</h1>
-                            <div class="recipe-ingredient-quantity-area">
-                                <p class="recipe-ingredient-quantity-label">Quantité : </p>
-                                <p class="recipe-ingredient-quantity">X</p>
-                            </div>
-                        </article>
-                    </div>
-                    <div class="recipe-ingredient">
-                        <img class="recipe-ingredient-picture" src="{{ asset('img/tomato.jpg') }}" alt="Image de nom ingrédient">
-                        <article class="recipe-ingredient-informations">
-                            <h1 class="recipe-ingredient-title">Nom ingrédient</h1>
-                            <div class="recipe-ingredient-quantity-area">
-                                <p class="recipe-ingredient-quantity-label">Quantité : </p>
-                                <p class="recipe-ingredient-quantity">X</p>
-                            </div>
-                        </article>
-                    </div>
-                    <div class="recipe-ingredient">
-                        <img class="recipe-ingredient-picture" src="{{ asset('img/tomato.jpg') }}" alt="Image de nom ingrédient">
-                        <article class="recipe-ingredient-informations">
-                            <h1 class="recipe-ingredient-title">Nom ingrédient</h1>
-                            <div class="recipe-ingredient-quantity-area">
-                                <p class="recipe-ingredient-quantity-label">Quantité : </p>
-                                <p class="recipe-ingredient-quantity">X</p>
-                            </div>
-                        </article>
-                    </div>
-                    <div class="recipe-ingredient">
-                        <img class="recipe-ingredient-picture" src="{{ asset('img/tomato.jpg') }}" alt="Image de nom ingrédient">
-                        <article class="recipe-ingredient-informations">
-                            <h1 class="recipe-ingredient-title">Nom ingrédient</h1>
-                            <div class="recipe-ingredient-quantity-area">
-                                <p class="recipe-ingredient-quantity-label">Quantité : </p>
-                                <p class="recipe-ingredient-quantity">X</p>
-                            </div>
-                        </article>
-                    </div>
+
+                    {% for ingredient in recipe.ingredients %}
+                        <div class="recipe-ingredient">
+                            <img class="recipe-ingredient-picture" src="{{ asset('img/tomato.jpg') }}" alt="Image de nom ingrédient">
+                            <article class="recipe-ingredient-informations">
+                                <h1 class="recipe-ingredient-title">{{ ingredient.ingredientName }}</h1>
+                                <div class="recipe-ingredient-quantity-area">
+                                    <p class="recipe-ingredient-quantity-label">Quantité : </p>
+                                    <p class="recipe-ingredient-quantity">X</p>
+                                </div>
+                            </article>
+                        </div>
+                    {% endfor %}
+
                 </div>
             </article>
             <article class="recipe-tools-area"></article>
