@@ -47,9 +47,9 @@ final class CommentFactory extends ModelFactory
     protected function getDefaults(): array
     {
         return [
-            'commentary' => null, // TODO add App\Entity\commentary type manually
-            'recipe' => null, // TODO add App\Entity\recipe type manually
-            'writer' => null, // TODO add App\Entity\person type manually
+            'commentary' => CommentaryFactory::new(),
+            'recipe' => RecipeFactory::new(),
+            'writer' => PersonFactory::new(),
         ];
     }
 
