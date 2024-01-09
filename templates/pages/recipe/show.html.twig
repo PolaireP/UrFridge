@@ -12,7 +12,7 @@
     <link rel="icon" href="{{ asset('img/logo/icon.png') }}" type="image/x-icon">
 
     <main class="content">
-        <section class="recipe-presentation-area" style="background-image: url('data:image/png;base64,{{ image}}');">
+        <section class="recipe-presentation-area" style="background-image: url('data:image/png;base64,{{ imageRecipe}}');">
             <section class="recipe-presentation-top-area">
                 <article class="recipe-name-with-author">
                     <h2 class="recipe-name">{{ recipe.recipeName }}</h2>
@@ -89,24 +89,16 @@
             <article class="recipe-tools-area"></article>
             <h1 class="recipe-tools-title">Ustensiles</h1>
             <div class="recipe-tools-list">
-                <a href="#" class="recipe-tool">
-                    <img class="recipe-tool-picture" src="{{ asset('img/marmite.jpg') }}" alt="Image de nom ustensile">
-                    <article class="recipe-tool-informations">
-                        <h1 class="recipe-tool-title">Nom ustensile</h1>
-                    </article>
-                </a>
-                <a href="#" class="recipe-tool">
-                    <img class="recipe-tool-picture" src="{{ asset('img/marmite.jpg') }}" alt="Image de nom ustensile">
-                    <article class="recipe-tool-informations">
-                        <h1 class="recipe-tool-title">Nom ustensile</h1>
-                    </article>
-                </a>
-                <a href="#" class="recipe-tool">
-                    <img class="recipe-tool-picture" src="{{ asset('img/marmite.jpg') }}" alt="Image de nom ustensile">
-                    <article class="recipe-tool-informations">
-                        <h1 class="recipe-tool-title">Nom ustensile</h1>
-                    </article>
-                </a>
+
+                {% for equipment in recipe.equipments %}
+                    <a href="{{ equipment.equipmentLink }}" class="recipe-tool">
+                        <img class="recipe-tool-picture" src="data:image/png;base64,{{ imagesEquipments[equipment.id] }}" alt="{{ equipment.equipmentName }}">
+                        <article class="recipe-tool-informations">
+                            <h1 class="recipe-tool-title">{{ equipment.equipmentName|capitalize }}</h1>
+                        </article>
+                    </a>
+                {% endfor %}
+
             </div>
             <article class="recipe-steps-area">
                 <h1 class="recipe-steps-title">Etapes</h1>

@@ -44,13 +44,20 @@ class RecipeController extends AbstractController
         $allergens = $repository->getAllergensForRecipe($recipe->getRecipeId());
 
         //Image de la recette
-        $image = base64_encode(stream_get_contents($recipe->getRecipePhoto()->getRecipePhoto()));
+        $imageRecipe = base64_encode(stream_get_contents($recipe->getRecipePhoto()->getRecipePhoto()));
+
+        // Liste des images des équipements
+        $imagesEquipments = [];
+        foreach ($recipe->getEquipments() as $key => $equipment) {
+            $imagesEquipments[$equipment->getId()] = base64_encode(stream_get_contents($equipment->getEquipmentPhoto()->getEquipmentPhoto()));
+        }
 
         return $this->render('pages/recipe/show.html.twig', [
            'recipe' => $recipe,
             'numberOfStep' => $numberOfStep,
             'allergens' => $allergens,
-            'image' => $image,
+            'imageRecipe' => $imageRecipe,
+            'imagesEquipments' => $imagesEquipments,
         ]);
     }
 }
