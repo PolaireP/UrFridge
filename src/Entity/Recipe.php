@@ -74,7 +74,7 @@ class Recipe
 
     public function getRecipeId(): ?int
     {
-        return $this->recipeId;
+        return $this->id;
     }
 
     public function setRecipeId(int $recipeId): static

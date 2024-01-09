@@ -2,26 +2,46 @@
 <html lang="fr">
     <head>
         <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="viewport"
+              content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <title>{% block title %}Bienvenue sur UrFridge{% endblock %}</title>
-        {% block stylesheets %}
-            <link rel="stylesheet" href="{{ asset('css/style.css') }}">
-        {% endblock %}
-
+        <link rel="preload" href="{{ asset('js/main.js') }}" as="script">
+        <link rel="stylesheet" href="{{ asset('css/style-base.css') }}">
+        <link rel="icon" href="{{ asset('img/logo/favicon-fridge.svg') }}" type="image/x-icon">
+        {% block stylesheets %}{% endblock %}
     </head>
     <body>
-        <header>
+        <header class="header-area">
             {% block header %}
                 {% include 'partials/_header.html.twig' %}
             {% endblock %}
         </header>
+
+        <nav class="header-nav-hamburger">
+            <a href="#" class="header-navlink-hamburger">
+                Proposer recette
+            </a>
+            <a href="#" class="header-navlink-hamburger">
+                Mes recettes favorites
+            </a>
+            <a href="#" class="header-navlink-hamburger">
+                Chercher une recette
+            </a>
+            <a href="#" class="header-navlink-hamburger">
+                Voir mon frigo
+            </a>
+            <a href="#" class="header-navlink-hamburger">
+                Se connecter
+            </a>
+        </nav>
 
         <main class="content">
             {% block body %}
             {% endblock %}
         </main>
 
-        <footer>
+        <footer class="footer-area">
             {% block footer %}
                 {% include 'partials/_footer.html.twig' %}
             {% endblock %}
