@@ -16,7 +16,7 @@
             <section class="recipe-presentation-top-area">
                 <article class="recipe-name-with-author">
                     <h2 class="recipe-name">{{ recipe.recipeName }}</h2>
-                    <h1 class="recipe-author">Par auteur</h1>
+                    <h1 class="recipe-author">{% if recipe.author is not null %} Par {{ recipe.author.firstname }} {% endif %}</h1>
                 </article>
                 <button class="recipe-favorite-button">
                     <img class="recipe-favorite-illustration" src="{{ asset('img/empty-heart.svg') }}" alt="ajouter aux favoris">
