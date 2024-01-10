@@ -77,7 +77,11 @@
                                 <h1 class="recipe-ingredient-title">{{ ingredient.ingredientName }}</h1>
                                 <div class="recipe-ingredient-quantity-area">
                                     <p class="recipe-ingredient-quantity-label">Quantité : </p>
-                                    <p class="recipe-ingredient-quantity">{{ quantities[ingredient.id] }}</p>
+                                    {% if ingredient.countable == false %}
+                                        <p class="recipe-ingredient-quantity">{{ quantities[ingredient.id] }} grammes</p>
+                                    {% else %}
+                                        <p class="recipe-ingredient-quantity">{{ quantities[ingredient.id] }}</p>
+                                    {% endif %}
                                 </div>
                             </article>
                         </div>
@@ -102,27 +106,14 @@
             <article class="recipe-steps-area">
                 <h1 class="recipe-steps-title">Etapes</h1>
                 <div class="recipe-steps-list">
-                    <div class="recipe-step">
-                        <h1 class="recipe-step-title">Etape X</h1>
-                        <p class="recipe-step-description">
-                            Description d'une étape plus ou moins longue
-                            lors de la réalisation de la recette en question
-                        </p>
-                    </div>
-                    <div class="recipe-step">
-                        <h1 class="recipe-step-title">Etape X</h1>
-                        <p class="recipe-step-description">
-                            Description d'une étape plus ou moins longue
-                            lors de la réalisation de la recette en question
-                        </p>
-                    </div>
-                    <div class="recipe-step">
-                        <h1 class="recipe-step-title">Etape X</h1>
-                        <p class="recipe-step-description">
-                            Description d'une étape plus ou moins longue
-                            lors de la réalisation de la recette en question
-                        </p>
-                    </div>
+
+                    {% for step in recipe.steps %}
+                        <div class="recipe-step">
+                            <h1 class="recipe-step-title">{{ step.stepTitle }}</h1>
+                            <p class="recipe-step-description">{{ step.stepDescription }}</p>
+                        </div>
+                    {% endfor %}
+
                 </div>
             </article>
         </section>
