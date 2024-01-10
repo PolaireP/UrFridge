@@ -128,6 +128,22 @@
             </button>
         </form>
         <section class="recipe-commentaries-list">
+
+            {% for comment in recipe.comments %}
+                <div class="recipe-commentary blue">
+                    <div class="recipe-commentary-author blue-back">
+                        <img class="recipe-commentary-author-profile-picture" src="{{ asset('img/profilePicture.jpg') }}"
+                             alt="photo de profil de Nom utilisateur">
+                        <h1 class="recipe-commentary-author-username">
+                            {{ comment.writer.firstname }}
+                        </h1>
+                    </div>
+                    <p class="recipe-commentary-content">
+                        {{comment.commentary.commentaryContent}}
+                    </p>
+                </div>
+            {% endfor %}
+
             <div class="recipe-commentary blue">
                 <div class="recipe-commentary-author blue-back">
                     <img class="recipe-commentary-author-profile-picture" src="{{ asset('img/profilePicture.jpg') }}"
