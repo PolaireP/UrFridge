@@ -1339,5 +1339,17 @@
   },
   {
     "ingredientName": "Sauce Hannibal", "avgUnitWeight": 0.200, "avgUnitVolume": 0.200, "kgPrice": 6.0, "countable": false, "allergens": [], "ingredientTypes": ["Condiments"]
+  },
+  {
+    "ingredientName": "Lard Fumé", "avgUnitWeight": 0.100, "avgUnitVolume": null, "kgPrice": 13.0, "countable": false, "allergens": [], "ingredientTypes": ["Viandes"]
+  },
+  {
+    "ingredientName": "Choucroute", "avgUnitWeight": 0.300, "avgUnitVolume": null, "kgPrice": 2.0, "countable": false, "allergens": [], "ingredientTypes": ["Légumes"]
+  },
+  {
+    "ingredientName": "Saucisse de Strasbourg", "avgUnitWeight": 0.070, "avgUnitVolume": null, "kgPrice": 11.3, "countable": true, "allergens": [], "ingredientTypes": ["Viandes"]
+  },
+  {
+    "ingredientName": "Parmesan", "avgUnitWeight": 0.1, "avgUnitVolume": null, "kgPrice": 11.3, "countable": false, "allergens": ["Lait"], "ingredientTypes": ["Produits laitiers"]
   }
 ]

@@ -1,0 +1,306 @@
+[
+  {
+    "recipe" : 0,
+    "category" : 17
+  },
+  {
+    "recipe" : 0,
+    "category" : 7
+  },
+  {
+    "recipe" : 0,
+    "category" : 4
+  },
+  {
+    "recipe" : 0,
+    "category" : 5
+  },
+  {
+    "recipe" : 0,
+    "category" : 6
+  },
+  {
+    "recipe" : 0,
+    "category" : 18
+  },
+  {
+    "recipe" : 1,
+    "category" : 6
+  },
+  {
+    "recipe" : 1,
+    "category" : 0
+  },
+  {
+    "recipe" : 2,
+    "category" : 7
+  },
+  {
+    "recipe" : 2,
+    "category" : 4
+  },
+  {
+    "recipe" : 2,
+    "category" : 5
+  },
+  {
+    "recipe" : 2,
+    "category" : 17
+  },
+  {
+    "recipe" : 2,
+    "category" : 18
+  },
+  {
+    "recipe" : 3,
+    "category" : 0
+  },
+  {
+    "recipe" : 3,
+    "category" : 16
+  },
+  {
+    "recipe" : 3,
+    "category" : 18
+  },
+  {
+    "recipe" : 3,
+    "category" : 24
+  },
+  {
+    "recipe" : 4,
+    "category" : 5
+  },
+  {
+    "recipe" : 4,
+    "category" : 7
+  },
+  {
+    "recipe" : 4,
+    "category" : 17
+  },
+  {
+    "recipe" : 4,
+    "category" : 18
+  },
+  {
+    "recipe" : 5,
+    "category" : 7
+  },
+  {
+    "recipe" : 5,
+    "category" : 17
+  },
+  {
+    "recipe" : 5,
+    "category" : 18
+  },
+  {
+    "recipe" : 5,
+    "category" : 30
+  },
+  {
+    "recipe" : 6,
+    "category" : 0
+  },
+  {
+    "recipe" : 6,
+    "category" : 5
+  },
+  {
+    "recipe" : 6,
+    "category" : 6
+  },
+  {
+    "recipe" : 6,
+    "category" : 21
+  },
+  {
+    "recipe" : 7,
+    "category" : 0
+  },
+  {
+    "recipe" : 7,
+    "category" : 16
+  },
+  {
+    "recipe" : 7,
+    "category" : 18
+  },
+  {
+    "recipe" : 7,
+    "category" : 21
+  },
+  {
+    "recipe" : 8,
+    "category" : 4
+  },
+  {
+    "recipe" : 8,
+    "category" : 5
+  },
+  {
+    "recipe" : 8,
+    "category" : 11
+  },
+  {
+    "recipe" : 8,
+    "category" : 18
+  },
+  {
+    "recipe" : 8,
+    "category" : 24
+  },
+  {
+    "recipe" : 9,
+    "category" : 0
+  },
+  {
+    "recipe" : 9,
+    "category" : 24
+  },
+  {
+    "recipe" : 9,
+    "category" : 19
+  },
+  {
+    "recipe" : 10,
+    "category" : 6
+  },
+  {
+    "recipe" : 10,
+    "category" : 14
+  },
+  {
+    "recipe" : 10,
+    "category" : 15
+  },
+  {
+    "recipe" : 11,
+    "category" : 0
+  },
+  {
+    "recipe" : 11,
+    "category" : 13
+  },
+  {
+    "recipe" : 11,
+    "category" : 18
+  },
+  {
+    "recipe" : 11,
+    "category" : 25
+  },
+  {
+    "recipe" : 12,
+    "category" : 0
+  },
+  {
+    "recipe" : 12,
+    "category" : 13
+  },
+  {
+    "recipe" : 12,
+    "category" : 6
+  },
+  {
+    "recipe" : 12,
+    "category" : 18
+  },
+  {
+    "recipe" : 13,
+    "category" : 0
+  },
+  {
+    "recipe" : 13,
+    "category" : 13
+  },
+  {
+    "recipe" : 13,
+    "category" : 17
+  },
+  {
+    "recipe" : 13,
+    "category" : 18
+  },
+  {
+    "recipe" : 14,
+    "category" : 16
+  },
+  {
+    "recipe" : 14,
+    "category" : 20
+  },
+  {
+    "recipe" : 14,
+    "category" : 30
+  },
+  {
+    "recipe" : 16,
+    "category" : 0
+  },
+  {
+    "recipe" : 16,
+    "category" : 12
+  },
+  {
+    "recipe" : 16,
+    "category" : 5
+  },
+  {
+    "recipe" : 16,
+    "category" : 26
+  },
+  {
+    "recipe" : 17,
+    "category" : 19
+  },
+  {
+    "recipe" : 17,
+    "category" : 24
+  },
+  {
+    "recipe" : 17,
+    "category" : 0
+  },
+  {
+    "recipe" : 18,
+    "category" : 19
+  },
+  {
+    "recipe" : 18,
+    "category" : 24
+  },
+  {
+    "recipe" : 18,
+    "category" : 0
+  },
+  {
+    "recipe" : 15,
+    "category" : 27
+  },
+  {
+    "recipe" : 15,
+    "category" : 23
+  },
+  {
+    "recipe" : 15,
+    "category" : 6
+  },
+  {
+    "recipe" : 19,
+    "category" : 17
+  },
+  {
+    "recipe" : 19,
+    "category" : 18
+  },
+  {
+    "recipe" : 19,
+    "category" : 19
+  },
+  {
+    "recipe" : 19,
+    "category" : 27
+  }
+]

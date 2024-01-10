@@ -47,8 +47,8 @@ final class FridgeQuantityFactory extends ModelFactory
     protected function getDefaults(): array
     {
         return [
-            'ingredient' => null, // TODO add App\Entity\ingredient type manually
-            'inventory' => null, // TODO add App\Entity\inventory type manually
+            'ingredient' => IngredientFactory::new(),
+            'inventory' => InventoryFactory::new(),
         ];
     }
 
