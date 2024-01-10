@@ -4,6 +4,9 @@ namespace App\Controller;
 
 use App\Entity\Allergen;
 use App\Entity\Recipe;
+use App\Factory\IngredientPhotoFactory;
+use App\Repository\IngredientPhotoRepository;
+use App\Repository\RecipeQuantityRepository;
 use App\Repository\RecipeRepository;
 use Doctrine\ORM\EntityManagerInterface;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
@@ -38,12 +41,12 @@ class RecipeController extends AbstractController
     }
 
     #[Route('/recipe/{id}', name: 'app_recipe_show')]
-    public function show(Recipe $recipe, RecipeRepository $repository): Response
+    public function show(Recipe $recipe, RecipeRepository $recipeRepository, IngredientPhotoRepository $ingredientPhotoRepository, RecipeQuantityRepository $recipeQuantityRepository): Response
     {
-        $numberOfStep = $repository->countStepsForRecipe($recipe->getRecipeId());
-        $allergens = $repository->getAllergensForRecipe($recipe->getRecipeId());
+        $numberOfStep = $recipeRepository->countStepsForRecipe($recipe->getRecipeId());
+        $allergens = $recipeRepository->getAllergensForRecipe($recipe->getRecipeId());
 
-        //Image de la recette
+        // Image de la recette
         $imageRecipe = base64_encode(stream_get_contents($recipe->getRecipePhoto()->getRecipePhoto()));
 
         // Liste des images des équipements
@@ -52,12 +55,16 @@ class RecipeController extends AbstractController
             $imagesEquipments[$equipment->getId()] = base64_encode(stream_get_contents($equipment->getEquipmentPhoto()->getEquipmentPhoto()));
         }
 
+        $quantities = $recipeQuantityRepository->getIngredientQuantitiesForRecipe($recipe->getId());
+
+
         return $this->render('pages/recipe/show.html.twig', [
            'recipe' => $recipe,
             'numberOfStep' => $numberOfStep,
             'allergens' => $allergens,
             'imageRecipe' => $imageRecipe,
             'imagesEquipments' => $imagesEquipments,
+            'quantities' => $quantities,
         ]);
     }
 }
