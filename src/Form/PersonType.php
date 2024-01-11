@@ -19,69 +19,6 @@ class PersonType extends AbstractType
 {
     public function buildForm(FormBuilderInterface $builder, array $options): void
     {
-        $builder
-            ->add('firstname', options: [
-                'required' => true,
-                'label' => false,
-                'row_attr' => ['id' => 'firstname'],
-                'attr' => [
-                    'placeholder' => 'Prénom',
-                    'class' => 'profile-information-input',
-                    'autocomplete' => 'given-name',
-                    'id' => 'firstname',
-                ],
-            ])
-            ->add('lastname', options: [
-                'required' => true,
-                'label' => false,
-                'row_attr' => ['id' => 'lastname'],
-                'attr' => [
-                    'placeholder' => 'Nom',
-                    'class' => 'profile-information-input',
-                    'autocomplete' => 'family-name',
-                    'id' => 'lastname',
-                ],
-            ])
-            ->add('email', options: [
-                'required' => true,
-                'label' => false,
-                'row_attr' => ['id' => 'email'],
-                'attr' => [
-                    'placeholder' => 'Email',
-                    'class' => 'profile-information-input',
-                    'autocomplete' => 'email',
-                ],
-            ])
-            ->add('plainPassword', RepeatedType::class, [
-                // instead of being set onto the object directly,
-                // this is read and encoded in the controller
-                'type' => PasswordType::class,
-                'mapped' => false,
-                'attr' => ['autocomplete' => 'new-password'],
-                'required' => true,
-                'constraints' => [
-                    new NotBlank([
-                        'message' => "Merci d'entrer un mot de passe",
-                    ]),
-                    new Length([
-                        'min' => 4,
-                        'minMessage' => 'Votre mot de passe doit faire {{ limit }} caractères',
-                        // max length allowed by Symfony for security reasons
-                        'max' => 4096,
-                    ]),
-                ],
-                'first_options' => [
-                    'attr' => ['placeholder' => 'Mot de passe', 'class' => 'profile-information-input'],
-                    'label' => false,
-                    'row_attr' => ['id' => 'password'],
-                ],
-                'second_options' => [
-                    'attr' => ['placeholder' => 'Confirmer le mot de passe', 'class' => 'profile-information-input'],
-                    'label' => false,
-                    'row_attr' => ['id' => 'confirm-password'],
-                ],
-            ])
-        ;
     }
 
     public function configureOptions(OptionsResolver $resolver): void
