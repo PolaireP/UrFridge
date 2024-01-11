@@ -34,7 +34,7 @@ class RecipeFixtures extends Fixture implements DependentFixtureInterface
         RecipeFactory::createSequence($data);
         $firstRecipe = RecipeFactory::first()->getId();
         $firstEquipment = EquipmentFactory::first()->getId() - 1;
-        $firstIngredient = IngredientFactory::first()->getId() + 1;
+        $firstIngredient = IngredientFactory::first()->getId();
         $firstCategory = CategoryFactory::first()->getId();
 
         // Ajout des collections
