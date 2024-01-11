@@ -56,12 +56,12 @@
             <article class="recipe-quantity-area">
                 <h1 class="recipe-quantity-title">Nombre de personnes</h1>
                 <div class="recipe-quantity-selector">
-                    <button class="recipe-quantity-more">
-                        <img src="{{ asset('img/left_arrow.svg') }}" alt="Augmenter">
+                    <button class="recipe-quantity-less">
+                        <img src="{{ asset('img/left_arrow.svg') }}" alt="Réduire">
                     </button>
                     <p class="recipe-quantity">X Personnes</p>
-                    <button class="recipe-quantity-less">
-                        <img src="{{ asset('img/right_arrow.svg') }}" alt="Réduire">
+                    <button class="recipe-quantity-more">
+                        <img src="{{ asset('img/right_arrow.svg') }}" alt="Augmenter">
                     </button>
                 </div>
             </article>
@@ -70,15 +70,17 @@
             <article class="recipe-ingredients-area">
                 <h1 class="recipe-ingredients-title">Ingrédients</h1>
                 <div class="recipe-ingredients-list">
-
                     {% for ingredient in recipe.ingredients %}
                         <div class="recipe-ingredient">
                             <article class="recipe-ingredient-informations">
                                 <h1 class="recipe-ingredient-title">{{ ingredient.ingredientName }}</h1>
-                                {% if quantities[ingredient.id] != 0%}
+                                {% if quantities[ingredient.id] != 0 %}
                                     <div class="recipe-ingredient-quantity-area">
-                                            <p class="recipe-ingredient-quantity-label">Quantité : </p>
-                                            <p class="recipe-ingredient-quantity">{{ quantities[ingredient.id] }}
+                                        <p class="recipe-ingredient-quantity-label">Quantité : </p>
+                                        <p class="recipe-ingredient-quantity"
+                                           data-original-quantity="{{ quantities[ingredient.id] }}"
+                                           data-unit="{{ ingredient.countable == false ? (ingredient.avgUnitVolume is null ? 'g' : 'mL') : '' }}">
+                                            {{ quantities[ingredient.id] }}
                                             {% if ingredient.countable == false %}
                                                 {% if ingredient.avgUnitVolume is null %}
                                                     g
@@ -86,15 +88,15 @@
                                                     mL
                                                 {% endif %}
                                             {% endif %}
-                                            </p>
+                                        </p>
                                     </div>
                                 {% endif %}
                             </article>
                         </div>
                     {% endfor %}
-
                 </div>
             </article>
+
             <article class="recipe-tools-area"></article>
             <h1 class="recipe-tools-title">Ustensiles</h1>
             <div class="recipe-tools-list">
@@ -191,6 +193,7 @@
 
     {% block javascripts %}
         <script src="{{ asset('js/recipe-page.js') }}"></script>
+        <script src="{{ asset('js/recipe-quantity.js') }}"></script>
     {% endblock %}
 
 {% endblock %}
