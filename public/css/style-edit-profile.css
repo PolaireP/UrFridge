@@ -65,6 +65,7 @@ body {
     max-width: 400px;
     width: 100%;
     align-self: center;
+    box-sizing: border-box;
 }
 
 .profile-information-input {
@@ -78,6 +79,7 @@ body {
     border: none;
     border-radius: 22px;
     margin: 10px 15px;
+    width: 500px;
 }
 
 .profile-information-input:focus {

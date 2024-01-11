@@ -2,14 +2,23 @@
 
 namespace App\Controller;
 
+use App\Entity\Person;
 use App\Entity\PersonPhoto;
+use App\Form\PersonType;
 use App\Repository\PersonPhotoRepository;
 use App\Repository\PersonRepository;
 use App\Repository\RecipeRepository;
+use Doctrine\ORM\EntityManager;
+use Doctrine\ORM\EntityManagerInterface;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
+use Symfony\Component\Form\Extension\Core\Type\PasswordType;
+use Symfony\Component\Form\Extension\Core\Type\RepeatedType;
 use Symfony\Component\HttpFoundation\BinaryFileResponse;
+use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
+use Symfony\Component\Validator\Constraints\Length;
+use Symfony\Component\Validator\Constraints\NotBlank;
 use function Zenstruck\Foundry\repository;
 
 class PersonController extends AbstractController
@@ -19,7 +28,6 @@ class PersonController extends AbstractController
     {
         $this->denyAccessUnlessGranted('IS_AUTHENTICATED_FULLY');
         $repository = $rep->findWithPhotoAndRecipes($this->getUser()->getId());
-        dump($repository);
 
         if ($this->getUser()->getAvatar() != null) {
             $avatar = base64_encode(stream_get_contents($repository[1]['person_photo']->getPersonPhoto()));
@@ -56,6 +64,32 @@ class PersonController extends AbstractController
             'recipes' => $recipes,
             'verifiedRecipes' => $verifiedRecipes,
             'commentNumber' => $commentNumber
+        ]);
+    }
+
+    #[Route('/profil/{id}/update', requirements: ['id' => '\d+'])]
+    public function update(Person $person, Request $request, EntityManagerInterface $manager): Response {
+
+        $this->denyAccessUnlessGranted('IS_AUTHENTICATED_FULLY');
+
+        if ($this->getUser()->getId() != $person->getId()) {
+            $this->redirectToRoute('app_home');
+        }
+
+        $form = $this->createForm(PersonType::class, $person, ['attr' => [ 'class' => 'edit-profile-informations-form' ]]);
+
+        $form->handleRequest($request);
+
+        if ( $form->isSubmitted() && $form->isValid()) {
+            $person = $form->getData();
+            $manager->flush();
+
+            return $this->redirectToRoute('app_profil');
+        }
+
+
+        return $this->render('person/update.html.twig', [
+            'updateForm' => $form,
         ]);
     }
 }
