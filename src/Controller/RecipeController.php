@@ -12,6 +12,7 @@ use App\Repository\RecipeQuantityRepository;
 use App\Repository\RecipeRepository;
 use Doctrine\ORM\EntityManagerInterface;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
+use Symfony\Component\HttpFoundation\RedirectResponse;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
@@ -95,6 +96,31 @@ class RecipeController extends AbstractController
             'imagesEquipments' => $imagesEquipments,
             'quantities' => $quantities,
             'form' => $form->createView(),
+            'user' => $this->getUser(),
         ]);
+    }
+
+    #[Route('/updateFavorite/{id}', name: 'app_recipe_favorite')]
+    public function updateFavorite(Recipe $recipe, EntityManagerInterface $manager): RedirectResponse
+    {
+        $user = $this->getUser();
+        $listeFavoris = $user->getFavorites();
+
+        $exist = false;
+        foreach ($listeFavoris as $favoris) {
+            if ($favoris->getId() == $recipe->getId()) {
+                $exist = true;
+                break;
+            }
+        }
+
+        if (!$exist) {
+            $user->addFavorite($recipe);
+        } else {
+            $user->removeFavorite($recipe);
+        }
+        $manager->flush();
+
+        return $this->redirectToRoute('app_recipe_show', ['id' => $recipe->getId()]);
     }
 }
