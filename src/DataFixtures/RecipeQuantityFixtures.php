@@ -16,7 +16,7 @@ class RecipeQuantityFixtures extends Fixture implements DependentFixtureInterfac
     public function load(ObjectManager $manager): void
     {
         $data = json_decode(file_get_contents(__DIR__.'/data/RecipeQuantity.json'), true);
-        $ingredientId = IngredientFactory::first()->getId() + 1;
+        $ingredientId = IngredientFactory::first()->getId();
         $recipeId = RecipeFactory::first()->getId();
 
         // Ajout des entités dans les données pour remplir la BD
