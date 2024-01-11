@@ -1,8 +1,9 @@
+// Event listener pour récupérer les modifs
 document.addEventListener('DOMContentLoaded', function () {
-    var currentPeople = 4; // Nombre de personnes par défaut
-    var peopleDisplay = document.querySelector('.recipe-quantity');
-    var increaseButton = document.querySelector('.recipe-quantity-more');
-    var decreaseButton = document.querySelector('.recipe-quantity-less');
+    let currentPeople = 4;
+    let peopleDisplay = document.querySelector('.recipe-quantity');
+    let increaseButton = document.querySelector('.recipe-quantity-more');
+    let decreaseButton = document.querySelector('.recipe-quantity-less');
 
     // Met à jour l'affichage du nombre de personnes
     function updatePeopleDisplay() {
@@ -11,15 +12,15 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // Met à jour les quantités d'ingrédients
     function updateQuantities() {
-        var ingredientQuantities = document.querySelectorAll('.recipe-ingredient-quantity');
+        let ingredientQuantities = document.querySelectorAll('.recipe-ingredient-quantity');
         ingredientQuantities.forEach(function (element) {
-            var originalQuantity = parseFloat(element.getAttribute('data-original-quantity'));
-            var newQuantity = originalQuantity * currentPeople / 4;
+            let originalQuantity = parseFloat(element.getAttribute('data-original-quantity'));
+            let newQuantity = originalQuantity * currentPeople / 4;
             element.textContent = newQuantity.toFixed(2) + " " + element.getAttribute('data-unit');
         });
     }
 
-    // Augmenter le nombre de personnes
+    // Augmenter le nombre de personnes pour une recette
     increaseButton.addEventListener('click', function () {
         currentPeople++;
         updatePeopleDisplay();
@@ -28,12 +29,12 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // Réduire le nombre de personnes
     decreaseButton.addEventListener('click', function () {
-        if (currentPeople > 1) { // Empêcher le nombre de personnes de devenir inférieur à 1
+        if (currentPeople > 1) {
             currentPeople--;
             updatePeopleDisplay();
             updateQuantities();
         }
     });
 
-    updatePeopleDisplay(); // Mise à jour initiale de l'affichage
+    updatePeopleDisplay();
 });
