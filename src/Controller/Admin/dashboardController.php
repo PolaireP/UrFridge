@@ -58,16 +58,20 @@ class dashboardController extends AbstractDashboardController
 
     public function configureMenuItems(): iterable
     {
+        yield MenuItem::section('Utilisateurs');
+        yield MenuItem::linkToCrud('Person', 'fas fa-list', Person::class);
+        yield MenuItem::section('Ingrédients');
         yield MenuItem::linkToCrud('Ingredients', 'fas fa-list', Ingredient::class);
         yield MenuItem::linkToCrud('IngredientType', 'fas fa-list', IngredientType::class);
         yield MenuItem::linkToCrud('IngredientPhoto', 'fas fa-list', IngredientPhoto::class);
         yield MenuItem::linkToCrud('Allergen', 'fas fa-list', Allergen::class);
+        yield MenuItem::section('Recettes');
         yield MenuItem::linkToCrud('Recipe', 'fas fa-list', Recipe::class);
         yield MenuItem::linkToCrud('RecipePhoto', 'fas fa-list', RecipePhoto::class);
         yield MenuItem::linkToCrud('Category', 'fas fa-list', Category::class);
+        yield MenuItem::linkToCrud('Step', 'fas fa-list', Step::class);
+        yield MenuItem::section('Equipements');
         yield MenuItem::linkToCrud('Equipement', 'fas fa-list', Equipment::class);
         yield MenuItem::linkToCrud('EquipementPhoto', 'fas fa-list', EquipmentPhoto::class);
-        yield MenuItem::linkToCrud('Step', 'fas fa-list', Step::class);
-        yield MenuItem::linkToCrud('Person', 'fas fa-list', Person::class);
     }
 }
