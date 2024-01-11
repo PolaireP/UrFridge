@@ -17,7 +17,7 @@ class IngredientPhoto
     private ?int $id = null;
 
     #[ORM\Column(type: Types::BLOB)]
-    private $ingredient_photo = null;
+    private $ingredient_photo;
 
     #[ORM\OneToMany(mappedBy: 'ingredient_photo', targetEntity: Ingredient::class)]
     private Collection $ingredients;

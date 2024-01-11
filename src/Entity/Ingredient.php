@@ -47,7 +47,7 @@ class Ingredient
     private Collection $recipeQuantities;
 
     #[ORM\ManyToOne(inversedBy: 'ingredients')]
-    private ?ingredientPhoto $ingredient_photo = null;
+    private ?IngredientPhoto $ingredient_photo = null;
 
     public function __construct()
     {
@@ -261,12 +261,12 @@ class Ingredient
         return $this;
     }
 
-    public function getIngredientPhoto(): ?ingredientPhoto
+    public function getIngredientPhoto(): ?IngredientPhoto
     {
         return $this->ingredient_photo;
     }
 
-    public function setIngredientPhoto(?ingredientPhoto $ingredient_photo): static
+    public function setIngredientPhoto(?IngredientPhoto $ingredient_photo): static
     {
         $this->ingredient_photo = $ingredient_photo;
 
