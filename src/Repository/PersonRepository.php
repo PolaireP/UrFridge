@@ -39,6 +39,21 @@ class PersonRepository extends ServiceEntityRepository implements PasswordUpgrad
         $this->getEntityManager()->flush();
     }
 
+    public function findWithPhotoAndRecipes(int $id) {
+
+        return $this->createQueryBuilder('prs')
+            ->select('prs as person')
+            ->addSelect('im as person_photo')
+            ->addSelect('rcp as recipe')
+            ->addSelect('cmt as comment')
+            ->leftJoin('App\Entity\PersonPhoto', 'im', 'WITH', 'prs.avatar = im')
+            ->leftJoin('App\Entity\Recipe', 'rcp', 'WITH', 'prs.id = rcp.author')
+            ->leftJoin('App\Entity\Comment','cmt', 'WITH', 'cmt.writer = prs.id')
+            ->where($this->createQueryBuilder('person')->expr()->eq('prs.id', $id))
+            ->getQuery()
+            ->getResult();
+    }
+
 //    /**
 //     * @return Person[] Returns an array of Person objects
 //     */

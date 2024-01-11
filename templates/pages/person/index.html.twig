@@ -1,0 +1,60 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Mon profil{% endblock %}
+
+{% block stylesheets %}
+<link rel="stylesheet" href="css/style-profile.css">
+<link rel="icon" href="img/logo/favicon-fridge.svg" type="image/x-icon">
+{% endblock %}
+
+{% block body %}
+    <main class="content">
+        <section class="banner">
+            <div class="banner-content">
+                {% if user.avatar is null %}
+                    <img src="" alt="photo de profil" class="banner-profile-picture">
+                {% else %}
+                    <img  src="data:image/jpg;base64,{{ avatar }}" alt="photo de profil" class="banner-profile-picture">
+                {% endif %}
+
+                <h1 class="banner-profile-identity">
+                    <span id="profile-firstname">{{ user.firstname }}</span>
+                    <span id="profile-lastname">{{ user.lastname }}</span>
+                </h1>
+            </div>
+        </section>
+        <section class="profile-area">
+            <section class="in-validation-recipes-area">
+                <h1 class="in-validation-recipes-title">Recettes en cours de validation</h1>
+                <div class="recipes-list">
+                    {% if recipes|length > 0 %}
+                        {% for element in recipes %}
+                            <div class="recipe-element">
+                                <!-- path('recipe/{id}', {'id' : element['id']} ) -->
+                                <a href="{{ element['id']  }}">{{ element['title'] }}</a>
+                                <p>En attente</p>
+                            </div>
+                        {% endfor %}
+                        {% else %}
+                            <p class="no-recipe">Vos recettes en cours de validation apparaitront ici</p>
+                    {% endif %}
+                </div>
+            </section>
+            <div class="profile-informations-area">
+                <div class="profile-statistics-area">
+                    <h1 class="profile-statistics-title">
+                        Mes statistiques
+                    </h1>
+                    <div class="profile-statistics">
+                        <p class="profile-statistic">{{ commentNumber }} commentaires</p>
+                        <p class="profile-statistic">{{ verifiedRecipes}} recettes publiées</p>
+                    </div>
+                </div>
+                <div class="profile-edit-area">
+                    <a href="{{ path('app_person_update', {'id' : user.getId()}) }}" class="edit-profile">Modifier mon profil</a>
+                    <a href="{{ path('app_person_delete', {'id' : user.getId()}) }}" class="delete-profile">Supprimer mon profil</a>
+                </div>
+            </div>
+        </section>
+    </main>
+{% endblock %}
