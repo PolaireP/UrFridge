@@ -75,14 +75,12 @@
                         <div class="recipe-ingredient">
                             <article class="recipe-ingredient-informations">
                                 <h1 class="recipe-ingredient-title">{{ ingredient.ingredientName }}</h1>
-                                <div class="recipe-ingredient-quantity-area">
-                                    <p class="recipe-ingredient-quantity-label">Quantité : </p>
-                                    {% if ingredient.countable == false %}
-                                        <p class="recipe-ingredient-quantity">{{ quantities[ingredient.id] }} grammes</p>
-                                    {% else %}
-                                        <p class="recipe-ingredient-quantity">{{ quantities[ingredient.id] }}</p>
-                                    {% endif %}
-                                </div>
+                                {% if quantities[ingredient.id] != 0%}
+                                    <div class="recipe-ingredient-quantity-area">
+                                            <p class="recipe-ingredient-quantity-label">Quantité : </p>
+                                            <p class="recipe-ingredient-quantity">{{ quantities[ingredient.id] }}</p>
+                                    </div>
+                                {% endif %}
                             </article>
                         </div>
                     {% endfor %}
