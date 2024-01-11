@@ -51,7 +51,7 @@
                     </div>
                 </div>
                 <div class="profile-edit-area">
-                    <a href="#" class="edit-profile">Modifier mon profil</a>
+                    <a href="{{ path('app_person_update', {'id' : user.getId()}) }}" class="edit-profile">Modifier mon profil</a>
                     <a href="#" class="delete-profile">Supprimer mon profil</a>
                 </div>
             </div>
