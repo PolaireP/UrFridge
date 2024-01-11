@@ -1,5 +1,5 @@
 // récupération des éléments
-import {displayBox, setOverlappingBoxesListeners, updateBoxSize} from "./overlapping-box.js";
+import {displayBox, setOverlappingBoxesListeners, updateBoxSize, updateCategoriesElt} from "./overlapping-box.js";
 
 const parentInteractingArea = document.getElementsByClassName("main-interaction-area")[0];
 const filtersArea = document.getElementById("filters-area-box");
@@ -17,6 +17,10 @@ const addFiltersButton = document.getElementsByClassName("add-filters-button")[0
 const allergenBox = document.getElementById("allergens-box");
 const categoryBox = document.getElementById("categories-box");
 const filterBox = document.getElementById("filters-box");
+
+const searchCategories = document.getElementById("search-categories");
+
+const controller = new AbortController();
 
 setOverlappingBoxesListeners(
     [addAllergensButton, addAllergensButtonIcon, addCategoriesButton, addCategoriesButtonIcon, addFiltersButton],
@@ -53,4 +57,25 @@ document.addEventListener("click", (clickedPoint) => {
     ) {
         displayBox(filterBox, filtersArea, "#4CB9A5");
     }
+});
+
+searchCategories.controller = controller;
+
+searchCategories.addEventListener("input", (event) => {
+    searchCategories.controller.abort();
+    searchCategories.controller = new AbortController();
+    const search = event.target.value;
+    updateCategoriesElt(search, searchCategories.controller);
+});
+
+document.addEventListener('DOMContentLoaded', function () {
+    const forms = document.querySelectorAll('form');
+
+    forms.forEach(function (form) {
+        form.addEventListener('keydown', function (event) {
+            if (event.key === 'Enter') {
+                event.preventDefault();
+            }
+        });
+    });
 });

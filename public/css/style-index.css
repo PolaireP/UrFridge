@@ -394,6 +394,10 @@ body {
     border-radius: 14px;
 }
 
+#res-number {
+    margin-right: 2px;
+}
+
 .allergens-with-categories-area {
     display: flex;
     flex-direction: row;

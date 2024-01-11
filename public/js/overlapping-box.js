@@ -87,3 +87,122 @@ export function setOverlappingBoxesListeners(buttons, boxes, parent, followedBox
         })
     });
 }
+
+export function buildCategoryCheckBox(categoryId, categoryName) {
+    const checkBoxContainer = document.createElement('label');
+    checkBoxContainer.classList.add('checkbox-container');
+
+    const checkBoxInput = document.createElement('input');
+    checkBoxInput.classList.add('checkbox');
+    checkBoxInput.setAttribute('type', 'checkbox');
+    checkBoxInput.setAttribute('name', categoryName);
+    checkBoxInput.setAttribute('value', categoryId);
+    checkBoxContainer.appendChild(checkBoxInput);
+
+    const checkBoxCheckMark = document.createElement('span');
+    checkBoxCheckMark.classList.add('checkmark');
+    checkBoxContainer.appendChild(checkBoxCheckMark);
+
+    checkBoxContainer.innerHTML += categoryName;
+
+    console.log(checkBoxContainer);
+    return checkBoxContainer;
+}
+
+export function emptyElt(elt) {
+    while (elt.firstChild) {
+        elt.removeChild(elt.firstChild);
+    }
+}
+
+export function getCategories(search, controller) {
+    const criterias = {
+        searchCategories: search,
+    };
+
+    const fetchInit = {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json',
+        },
+        signal: controller.signal,
+        body: JSON.stringify(criterias),
+    };
+    const fetchCategories = fetch(`/recipe/categories`, fetchInit);
+    return fetchCategories.then((response) =>
+        response.json(),
+    );
+}
+
+export function setLoading() {
+    const categoriesBox = document.getElementById("categories-box");
+    if (categoriesBox.lastElementChild.classList.contains("no-category")) {
+        categoriesBox.lastElementChild.remove();
+    }
+    const loadingText = document.createElement("p");
+    loadingText.classList.add("no-category");
+    loadingText.innerHTML += "Chargement...";
+    categoriesBox.appendChild(loadingText);
+}
+
+export function setNoResult() {
+    const categoriesBox = document.getElementById("categories-box");
+    if (categoriesBox.lastElementChild.classList.contains("no-category")) {
+        categoriesBox.lastElementChild.remove();
+    }
+    const noResultText = document.createElement("p");
+    noResultText.classList.add("no-category");
+    noResultText.innerHTML += "Pas de catégorie correspondant à votre recherche";
+    categoriesBox.appendChild(noResultText);
+}
+
+export function clearNoCategoryElement() {
+    const categoriesBox = document.getElementById("categories-box");
+    if (categoriesBox.lastElementChild.classList.contains("no-category")) {
+        categoriesBox.lastElementChild.remove();
+    }
+}
+
+export function updateCategoriesElt(search, controller) {
+    const targetList = document.getElementsByClassName("entity-checkbox-append")[1];
+    emptyElt(targetList);
+    setLoading();
+    getCategories(search, controller).then((response) => {
+        if (response && Array.isArray(response)) {
+            response.forEach((category) => {
+                const categoryElt = buildCategoryCheckBox(category.id, category.categoryName);
+                targetList.appendChild(categoryElt);
+            });
+            if (response.length === 0) {
+                setNoResult();
+            } else {
+                clearNoCategoryElement();
+            }
+        } else {
+            setNoResult();
+        }
+    });
+}
+
+export function getRecipes(search, ingredientsId, allergensId, categoriesId, filters) {
+    const criterias = {
+        search: search,
+        ingredientsId: ingredientsId,
+        allergensId: allergensId,
+        categoriesId: categoriesId,
+        filters: filters,
+    };
+
+    const fetchInit = {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(criterias),
+    };
+    const fetchRecipes = fetch(`/recipe/recipes`, fetchInit);
+    return fetchRecipes.then((response) =>
+        response.json(),
+    );
+}
+
