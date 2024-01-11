@@ -8,6 +8,7 @@
 
     <link rel="preload" href="{{ asset('js/index.js') }}" as="script" crossorigin="anonymous">
 
+    <main class="content">
     <section class="main-interaction-area">
         <section class="search-ingredients-area" id="ingredients-research-area">
             <h1 class="title">Quels ingrédients définiront vos saveurs ?</h1>
@@ -122,6 +123,7 @@
         {% include 'partials/_allergens-cat-filter-box.html.twig' %}
     </section>
     {% include 'partials/_recipes-list.html.twig' %}
+    </main>
 
     {% block javascripts %}
         <script type="module" src="{{ asset('js/index.js') }}"></script>

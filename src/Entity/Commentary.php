@@ -28,6 +28,7 @@ class Commentary
     public function __construct()
     {
         $this->comments = new ArrayCollection();
+        $this->commentaryPubDate = new \DateTime();
     }
 
     public function getId(): ?int
