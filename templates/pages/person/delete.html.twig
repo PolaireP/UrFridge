@@ -1,0 +1,57 @@
+{% extends 'base.html.twig' %}
+
+{% block stylesheets %}
+    <style>
+        html {
+            height: 100%;
+        }
+        body {
+            height: 100%;
+        }
+        main {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            flex-direction: column;
+        }
+        h1 {
+            font-family: "Roboto", sans-serif;
+            font-weight: bolder;
+            font-size: 40px;
+        }
+        form {
+            display: flex;
+        }
+
+        button {
+            box-sizing: border-box;
+            border-radius: 10px;
+            border-width: 0;
+            height: 70px;
+            width: 150px;
+            margin-right: 5px;
+            margin-left: 5px;
+            font-family: "Roboto", sans-serif;
+            font-size: larger;
+            font-weight: bold;
+            color: white;
+        }
+        #person_supprimer {
+            background-color: crimson;
+        }
+        #person_annuler {
+            background-color: black;
+        }
+    </style>
+{% endblock %}
+
+{% block body %}
+    <h1>Souhaitez vous vraiment supprimer votre compte ?</h1>
+    <div class="boutons">
+        {{ form_start(deleteForm) }}
+            {{ form_row(deleteForm.supprimer) }}
+            {{ form_row(deleteForm.annuler) }}
+        {{ form_end(deleteForm) }}
+    </div>
+{% endblock %}
