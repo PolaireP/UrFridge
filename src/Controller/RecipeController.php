@@ -5,7 +5,6 @@ namespace App\Controller;
 use App\Entity\Allergen;
 use App\Entity\Comment;
 use App\Entity\Commentary;
-use App\Entity\Person;
 use App\Entity\Recipe;
 use App\Form\CommentaryType;
 use App\Repository\IngredientPhotoRepository;
@@ -65,6 +64,7 @@ class RecipeController extends AbstractController
         $commentary = new Commentary();
         $form = $this->createForm(CommentaryType::class, $commentary);
 
+        $form->handleRequest($request);
         if ($form->isSubmitted() && $form->isValid()) {
             $commentary = $form->getData();
             $manager->persist($commentary);
@@ -74,9 +74,12 @@ class RecipeController extends AbstractController
             $comment->setRecipe($recipe);
 
             $user = $this->getUser();
-            if ($user instanceof Person) {
-                $comment->setWriter($user);
+            if (!$user) {
+                $this->addFlash('error', 'Vous devez être connecté pour poster un commentaire.');
+
+                return $this->redirectToRoute('app_login');
             }
+            $comment->setWriter($user);
 
             $manager->persist($comment);
             $manager->flush();
