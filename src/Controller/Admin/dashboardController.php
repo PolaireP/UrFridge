@@ -7,11 +7,13 @@ use App\Entity\Category;
 use App\Entity\Equipment;
 use App\Entity\EquipmentPhoto;
 use App\Entity\Ingredient;
+use App\Entity\IngredientPhoto;
 use App\Entity\IngredientType;
 use App\Entity\Person;
 use App\Entity\Recipe;
 use App\Entity\RecipePhoto;
 use App\Entity\Step;
+use EasyCorp\Bundle\EasyAdminBundle\Config\Crud;
 use EasyCorp\Bundle\EasyAdminBundle\Config\Dashboard;
 use EasyCorp\Bundle\EasyAdminBundle\Config\MenuItem;
 use EasyCorp\Bundle\EasyAdminBundle\Controller\AbstractDashboardController;
@@ -48,10 +50,17 @@ class dashboardController extends AbstractDashboardController
             ->setTitle('Sae3 01');
     }
 
+    public function configureCrud(): Crud
+    {
+        return parent::configureCrud()
+            ->showEntityActionsInlined();
+    }
+
     public function configureMenuItems(): iterable
     {
         yield MenuItem::linkToCrud('Ingredients', 'fas fa-list', Ingredient::class);
         yield MenuItem::linkToCrud('IngredientType', 'fas fa-list', IngredientType::class);
+        yield MenuItem::linkToCrud('IngredientPhoto', 'fas fa-list', IngredientPhoto::class);
         yield MenuItem::linkToCrud('Allergen', 'fas fa-list', Allergen::class);
         yield MenuItem::linkToCrud('Recipe', 'fas fa-list', Recipe::class);
         yield MenuItem::linkToCrud('RecipePhoto', 'fas fa-list', RecipePhoto::class);
@@ -59,5 +68,6 @@ class dashboardController extends AbstractDashboardController
         yield MenuItem::linkToCrud('Equipement', 'fas fa-list', Equipment::class);
         yield MenuItem::linkToCrud('EquipementPhoto', 'fas fa-list', EquipmentPhoto::class);
         yield MenuItem::linkToCrud('Step', 'fas fa-list', Step::class);
+        yield MenuItem::linkToCrud('Person', 'fas fa-list', Person::class);
     }
 }
