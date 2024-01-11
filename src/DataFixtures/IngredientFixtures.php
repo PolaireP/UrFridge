@@ -23,7 +23,7 @@ class IngredientFixtures extends Fixture implements DependentFixtureInterface
             $ingredient = new Ingredient();
             $ingredient->setIngredientName($data['ingredientName']);
             $ingredient->setAvgUnitWeight($data['avgUnitWeight']);
-            $ingredient->setAvgUnitVolumn($data['avgUnitVolume']);
+            $ingredient->setAvgUnitVolume($data['avgUnitVolume']);
             $ingredient->setCountable($data['countable']);
             $ingredient->setKgPrice($data['kgPrice']);
 
