@@ -8,7 +8,6 @@
 
 {% block body %}
 
-    <link rel="preload" href="{{ asset('js/recipe-page.js') }}">
     <link rel="icon" href="{{ asset('img/logo/icon.png') }}" type="image/x-icon">
 
     <main class="content">
@@ -18,9 +17,19 @@
                     <h2 class="recipe-name">{{ recipe.recipeName }}</h2>
                     <h1 class="recipe-author">{% if recipe.author is not null %} Par {{ recipe.author.firstname }} {% endif %}</h1>
                 </article>
-                <button class="recipe-favorite-button">
-                    <img class="recipe-favorite-illustration" src="{{ asset('img/empty-heart.svg') }}" alt="ajouter aux favoris">
-                </button>
+                {% if app.user %}
+
+                    <button class="recipe-favorite-button">
+                        <a href="{{ path('app_recipe_favorite', {'id' : recipe.id}) }}">
+                            {% if recipe in user.getFavorites() %}
+                                <img class="recipe-favorite-illustration" src="{{ asset('img/filled-heart.svg') }}" alt="recette favorite">
+                            {% else %}
+                                <img class="recipe-favorite-illustration" src="{{ asset('img/empty-heart.svg') }}" alt="recette pas favorite">
+                            {% endif %}
+                        </a>
+                    </button>
+
+                {% endif %}
             </section>
             <article class="recipe-steps-numbers-area">
                 <p class="recipe-steps-numbers">{{ numberOfStep}} Etapes</p>
@@ -154,7 +163,6 @@
     </section>
 
     {% block javascripts %}
-        <script src="{{ asset('js/recipe-page.js') }}"></script>
         <script src="{{ asset('js/recipe-quantity.js') }}"></script>
     {% endblock %}
 
