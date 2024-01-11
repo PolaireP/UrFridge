@@ -2,6 +2,16 @@
 
 namespace App\Controller\Admin;
 
+use App\Entity\Allergen;
+use App\Entity\Category;
+use App\Entity\Equipment;
+use App\Entity\EquipmentPhoto;
+use App\Entity\Ingredient;
+use App\Entity\IngredientType;
+use App\Entity\Person;
+use App\Entity\Recipe;
+use App\Entity\RecipePhoto;
+use App\Entity\Step;
 use EasyCorp\Bundle\EasyAdminBundle\Config\Dashboard;
 use EasyCorp\Bundle\EasyAdminBundle\Config\MenuItem;
 use EasyCorp\Bundle\EasyAdminBundle\Controller\AbstractDashboardController;
@@ -13,7 +23,7 @@ class dashboardController extends AbstractDashboardController
     #[Route('/admin', name: 'admin')]
     public function index(): Response
     {
-        return parent::index();
+        return $this->render('admin/index.html.twig');
 
         // Option 1. You can make your dashboard redirect to some common page of your backend
         //
@@ -41,6 +51,6 @@ class dashboardController extends AbstractDashboardController
     public function configureMenuItems(): iterable
     {
         yield MenuItem::linkToDashboard('Dashboard', 'fa fa-home');
-        // yield MenuItem::linkToCrud('The Label', 'fas fa-list', EntityClass::class);
+        yield MenuItem::linkToCrud('Ingredients', 'fas fa-list', Ingredient::class);
     }
 }
