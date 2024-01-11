@@ -1,6 +1,12 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Se connecter{% endblock %}
+{% if app.user %}
+{% set titre = 'Se déconnecter' %}
+{% else %}
+{% set titre = 'Se connecter' %}
+{% endif %}
+
+{% block title %}{{ titre }}{% endblock %}
 
 {% block stylesheets %}<link rel="stylesheet" href="css/style-authentification.css">{% endblock %}
 
