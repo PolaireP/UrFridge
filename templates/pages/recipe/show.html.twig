@@ -130,9 +130,10 @@
         <h2 class="recipe-commentaries-title">Commentaires</h2>
 
         {{ form_start(form, {'attr': {'class': 'recipe-commentary-write-area'}}) }}
-        {{ form_row(form.commentaryContent) }}
-        {{ form_row(form.submit) }}
+        {{ form_widget(form.commentaryContent, {'attr': {'class': 'recipe-commentary-write'}}) }}
+        {{ form_widget(form.submit, {'attr': {'class': 'recipe-commentary-submit'}}) }}
         {{ form_end(form) }}
+
 
         <section class="recipe-commentaries-list">
             {% for comment in recipe.comments %}
