@@ -21,7 +21,7 @@ class Allergen
     #[ORM\Column(length: 400, nullable: true)]
     private ?string $allergenDescription = null;
 
-    #[ORM\ManyToMany(targetEntity: ingredient::class, inversedBy: 'allergens')]
+    #[ORM\ManyToMany(targetEntity: Ingredient::class, inversedBy: 'allergens')]
     private Collection $ingredients;
 
     public function __construct()
@@ -66,7 +66,7 @@ class Allergen
         return $this->ingredients;
     }
 
-    public function addIngredient(ingredient $ingredient): static
+    public function addIngredient(Ingredient $ingredient): static
     {
         if (!$this->ingredients->contains($ingredient)) {
             $this->ingredients->add($ingredient);
