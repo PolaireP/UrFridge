@@ -20,7 +20,8 @@
 
                 {% if app.user %}
                 <div class="mb-3">
-                    Vous êtes connecté en tant que : {{ app.user.userIdentifier }}, <a style="text-decoration: none" class="authentication-submit" href="{{ path('app_logout') }}">Déconnexion</a>
+                    <p style='font-family: "Roboto", sans-serif; font-size: larger'>Vous êtes connecté en tant que : {{ app.user.firstname }} {{ app.user.lastname }}</p>
+                    <a style="text-decoration: none" class="authentication-submit" href="{{ path('app_logout') }}">Déconnexion</a>
                 </div>
                 {% else %}
 

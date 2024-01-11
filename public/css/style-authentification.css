@@ -20,6 +20,8 @@ body {
     background-size: cover;
     background-image: url("../img/paris.jpg");
     align-items: center;
+    margin-top: 20px;
+    margin-bottom: 30px;
 }
 
 .side-illustrations-area {
