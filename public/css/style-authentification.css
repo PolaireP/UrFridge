@@ -81,14 +81,22 @@ body {
     width: 100%;
 }
 
+.register-inputs-area > div > input {
+    width: 100%;
+}
+
 .register-inputs-identity {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
 
-#lastname, #firstname {
+.register-inputs-identity > div {
     width: 45%;
+}
+
+#registration_form_lastname, #registration_form_firstname {
+    width: 100%;
 }
 
 #email, #password, #confirm-password {
