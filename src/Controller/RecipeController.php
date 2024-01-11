@@ -3,8 +3,11 @@
 namespace App\Controller;
 
 use App\Entity\Allergen;
+use App\Entity\Comment;
+use App\Entity\Commentary;
+use App\Entity\Person;
 use App\Entity\Recipe;
-use App\Factory\IngredientPhotoFactory;
+use App\Form\CommentaryType;
 use App\Repository\IngredientPhotoRepository;
 use App\Repository\RecipeQuantityRepository;
 use App\Repository\RecipeRepository;
@@ -41,7 +44,7 @@ class RecipeController extends AbstractController
     }
 
     #[Route('/recipe/{id}', name: 'app_recipe_show')]
-    public function show(Recipe $recipe, RecipeRepository $recipeRepository, IngredientPhotoRepository $ingredientPhotoRepository, RecipeQuantityRepository $recipeQuantityRepository): Response
+    public function show(Recipe $recipe, RecipeRepository $recipeRepository, IngredientPhotoRepository $ingredientPhotoRepository, RecipeQuantityRepository $recipeQuantityRepository, Request $request, EntityManagerInterface $manager): Response
     {
         $numberOfStep = $recipeRepository->countStepsForRecipe($recipe->getRecipeId());
         $allergens = $recipeRepository->getAllergensForRecipe($recipe->getRecipeId());
@@ -57,6 +60,29 @@ class RecipeController extends AbstractController
 
         $quantities = $recipeQuantityRepository->getIngredientQuantitiesForRecipe($recipe->getId());
 
+        // Partie commentaire
+
+        $commentary = new Commentary();
+        $form = $this->createForm(CommentaryType::class, $commentary);
+
+        if ($form->isSubmitted() && $form->isValid()) {
+            $commentary = $form->getData();
+            $manager->persist($commentary);
+
+            $comment = new Comment();
+            $comment->setCommentary($commentary);
+            $comment->setRecipe($recipe);
+
+            $user = $this->getUser();
+            if ($user instanceof Person) {
+                $comment->setWriter($user);
+            }
+
+            $manager->persist($comment);
+            $manager->flush();
+
+            return $this->redirectToRoute('app_recipe_show', ['id' => $recipe->getId()]);
+        }
 
         return $this->render('pages/recipe/show.html.twig', [
            'recipe' => $recipe,
@@ -65,6 +91,7 @@ class RecipeController extends AbstractController
             'imageRecipe' => $imageRecipe,
             'imagesEquipments' => $imagesEquipments,
             'quantities' => $quantities,
+            'form' => $form->createView(),
         ]);
     }
 }

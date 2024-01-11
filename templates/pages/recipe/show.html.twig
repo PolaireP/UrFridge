@@ -128,15 +128,13 @@
     </main>
     <section class="recipe-commentaries-area">
         <h2 class="recipe-commentaries-title">Commentaires</h2>
-        <form class="recipe-commentary-write-area">
-            <textarea class="recipe-commentary-write" name="commentary" id="commentary"
-                      placeholder="Laissez votre avis" rows="1" required></textarea>
-            <button class="recipe-commentary-submit" type="submit">
-                Envoyer
-            </button>
-        </form>
-        <section class="recipe-commentaries-list">
 
+        {{ form_start(form, {'attr': {'class': 'recipe-commentary-write-area'}}) }}
+        {{ form_row(form.commentaryContent) }}
+        {{ form_row(form.submit) }}
+        {{ form_end(form) }}
+
+        <section class="recipe-commentaries-list">
             {% for comment in recipe.comments %}
                 <div class="recipe-commentary blue">
                     <div class="recipe-commentary-author blue-back">
@@ -151,43 +149,6 @@
                     </p>
                 </div>
             {% endfor %}
-
-            <div class="recipe-commentary blue">
-                <div class="recipe-commentary-author blue-back">
-                    <img class="recipe-commentary-author-profile-picture" src="{{ asset('img/profilePicture.jpg') }}"
-                         alt="photo de profil de Nom utilisateur">
-                    <h1 class="recipe-commentary-author-username">
-                        Nom utilisateur
-                    </h1>
-                </div>
-                <p class="recipe-commentary-content">
-                    Un commentaire intéressant sur la recette et un retour à prendre en compte.
-                </p>
-            </div>
-            <div class="recipe-commentary orange">
-                <div class="recipe-commentary-author orange-back">
-                    <img class="recipe-commentary-author-profile-picture" src="{{ asset('img/profilePicture.jpg') }}"
-                         alt="photo de profil de Nom utilisateur">
-                    <h1 class="recipe-commentary-author-username">
-                        Nom utilisateur
-                    </h1>
-                </div>
-                <p class="recipe-commentary-content">
-                    Un commentaire intéressant sur la recette et un retour à prendre en compte.
-                </p>
-            </div>
-            <div class="recipe-commentary green">
-                <div class="recipe-commentary-author green-back">
-                    <img class="recipe-commentary-author-profile-picture" src="{{ asset('img/profilePicture.jpg') }}"
-                         alt="photo de profil de Nom utilisateur">
-                    <h1 class="recipe-commentary-author-username">
-                        Nom utilisateur
-                    </h1>
-                </div>
-                <p class="recipe-commentary-content">
-                    Un commentaire intéressant sur la recette et un retour à prendre en compte.
-                </p>
-            </div>
         </section>
     </section>
 
