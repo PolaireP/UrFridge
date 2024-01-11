@@ -4,6 +4,7 @@ namespace App\Controller;
 
 use App\Entity\Person;
 use App\Entity\PersonPhoto;
+use App\Form\PersonPhotoType;
 use App\Form\PersonType;
 use App\Repository\PersonPhotoRepository;
 use App\Repository\PersonRepository;
@@ -68,15 +69,25 @@ class PersonController extends AbstractController
     }
 
     #[Route('/profil/{id}/update', requirements: ['id' => '\d+'])]
-    public function update(Person $person, Request $request, EntityManagerInterface $manager): Response {
+    public function update(Person $person, PersonPhoto $personPhoto = null, PersonPhotoRepository $rep, Request $request, EntityManagerInterface $manager): Response {
 
         $this->denyAccessUnlessGranted('IS_AUTHENTICATED_FULLY');
 
+
         if ($this->getUser()->getId() != $person->getId()) {
-            $this->redirectToRoute('app_home');
+            return $this->redirectToRoute('app_person_update', ['id' => $this->getUser()->getId()]);
         }
 
+        if ($personPhoto != null) {
+            $personPhoto = $rep->findOneBy(['id' => $personPhoto->getId()]);
+            $avatar = base64_encode(stream_get_contents($personPhoto->getPersonPhoto()));
+        } else {
+            $avatar = null;
+        }
+
+
         $form = $this->createForm(PersonType::class, $person, ['attr' => [ 'class' => 'edit-profile-informations-form' ]]);
+        //$imageForm = $this->createForm(PersonPhotoType::class,$personPhoto, ['attr' => ['class' => 'profile-picture-input']]);
 
         $form->handleRequest($request);
 
@@ -89,7 +100,9 @@ class PersonController extends AbstractController
 
 
         return $this->render('person/update.html.twig', [
+            'user' => $person,
             'updateForm' => $form,
+            'avatar' => $avatar,
         ]);
     }
 }

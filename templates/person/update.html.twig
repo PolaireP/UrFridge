@@ -12,10 +12,10 @@
     <main class="content">
         <section class="banner">
             <div class="banner-content">
-                <img src="img/profilePicture.jpg" alt="photo de profil" class="banner-profile-picture">
+                <img src="data:image/jpg;base64,{{ avatar }}" alt="photo de profil" class="banner-profile-picture">
                 <h1 class="banner-profile-identity">
-                    <span id="profile-firstname">Prénom</span>
-                    <span id="profile-lastname">Nom</span>
+                    <span id="profile-firstname">{{user.getFirstname()}}</span>
+                    <span id="profile-lastname">{{ user.getLastname() }}</span>
                 </h1>
             </div>
         </section>
@@ -27,17 +27,6 @@
                 {{ form_row(updateForm.plainPassword) }}
                 <button type="submit" class="submit-profile-informations">Valider</button>
             {{ form_end(updateForm) }}
-            <form class="edit-profile-picture-form" method="post">
-                <div class="profile-picture-input-area">
-                    <div class="input-picture-button-area">
-                        <label class="input-picture-button">
-                            Nouvelle image
-                            <input type="file" name="profilePicture" id="profilePicture"
-                                   class="profile-picture-input">
-                        </label>
-                    </div>
-                </div>
-            </form>
         </section>
     </main>
 
