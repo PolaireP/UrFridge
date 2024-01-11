@@ -1,0 +1,37 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Inscription{% endblock %}
+
+{% block stylesheets %}
+    <link rel="stylesheet" href="css/style-authentification.css">
+{% endblock %}
+
+{% block body %}
+    <section class="register-area">
+
+        {{ form_start(registrationForm) }}
+        <h1 class="register-form-title">
+            Rejoignez la communauté UrFridge
+        </h1>
+        <span class="old-signin">
+                        <a href="{{path('app_login') }}" class="signin-link">J'ai déjà un compte</a>
+                    </span>
+        <div class="register-inputs-area">
+            <div class="register-inputs-identity">
+                {{ form_row(registrationForm.firstname) }}
+                {{ form_row(registrationForm.lastname) }}
+            </div>
+            {{ form_row(registrationForm.email) }}
+            {{ form_row(registrationForm.plainPassword) }}
+        </div>
+        <button type="submit" class="register-submit">Valider</button>
+        {{ form_errors(registrationForm) }}
+        {{ form_end(registrationForm) }}
+    </section>
+    <section class="side-illustrations-area">
+        <img src="./img/pizza.png" alt="image de pizza" id="pizza" class="illustration-build">
+        <img src="./img/paris.jpg" alt="image de pizza" id="paris" class="illustration-build">
+        <img src="./img/bistrot.jpg" alt="image de pizza" id="bistrot" class="illustration-build">
+    </section>
+    <div class="blank"></div>
+{% endblock %}

@@ -1,0 +1,57 @@
+{% extends 'base.html.twig' %}
+
+{% if app.user %}
+{% set titre = 'Se déconnecter' %}
+{% else %}
+{% set titre = 'Se connecter' %}
+{% endif %}
+
+{% block title %}{{ titre }}{% endblock %}
+
+{% block stylesheets %}<link rel="stylesheet" href="css/style-authentification.css">{% endblock %}
+
+{% block body %}
+    <main class="content">
+        <section class="side-illustrations-area">
+            <img src="./img/pizza.png" alt="image de pizza" id="pizza" class="illustration-build">
+            <img src="./img/paris.jpg" alt="image de pizza" id="paris" class="illustration-build">
+            <img src="./img/bistrot.jpg" alt="image de pizza" id="bistrot" class="illustration-build">
+        </section>
+        <section class="authentication-area">
+            <form class="authentication-form" method="post">
+
+                {% if error %}
+                    <div class="alert alert-danger">{{ error.messageKey|trans(error.messageData, 'security') }}</div>
+                {% endif %}
+
+                {% if app.user %}
+                <div class="mb-3">
+                    <p style='font-family: "Roboto", sans-serif; font-size: larger'>Vous êtes connecté en tant que : {{ app.user.firstname }} {{ app.user.lastname }}</p>
+                    <a style="text-decoration: none" class="authentication-submit" href="{{ path('app_logout') }}">Déconnexion</a>
+                </div>
+                {% else %}
+
+                <h1 class="h3 mb-3 font-weight-normal authentication-form-title">Ravis de vous revoir !</h1>
+
+                <span class="new-signup"> Nouveau ?
+                    <a href="{{ path('app_register') }}" class="signup-link">S'inscrire</a>
+                </span>
+
+                <div class="authentication-inputs-area">
+
+                        <input type="email" value="{{ last_username }}" name="email" id="inputEmail" class="form-control auth-input" placeholder="Adresse email*"  autocomplete="email" required autofocus>
+                        <input type="password" name="password" id="inputPassword" class="form-control auth-input" placeholder="Mot de passe*" autocomplete="current-password" required>
+                </div>
+
+                <input type="hidden" name="_csrf_token"
+                       value="{{ csrf_token('authenticate') }}"
+                >
+
+                <a href="#" class="forgotten-link">Mot de passe oublié</a>
+                <button type="submit" class="btn btn-lg btn-primary authentication-submit">Valider</button>
+                {% endif %}
+            </form>
+        </section>
+        <div class="blank"></div>
+    </main>
+{% endblock %}
