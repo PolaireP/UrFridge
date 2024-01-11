@@ -78,7 +78,15 @@
                                 {% if quantities[ingredient.id] != 0%}
                                     <div class="recipe-ingredient-quantity-area">
                                             <p class="recipe-ingredient-quantity-label">Quantité : </p>
-                                            <p class="recipe-ingredient-quantity">{{ quantities[ingredient.id] }}</p>
+                                            <p class="recipe-ingredient-quantity">{{ quantities[ingredient.id] }}
+                                            {% if ingredient.countable == false %}
+                                                {% if ingredient.avgUnitVolume is null %}
+                                                    g
+                                                {% else %}
+                                                    mL
+                                                {% endif %}
+                                            {% endif %}
+                                            </p>
                                     </div>
                                 {% endif %}
                             </article>
