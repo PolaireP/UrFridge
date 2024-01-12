@@ -4,11 +4,14 @@ namespace App\Controller\Admin;
 
 use App\Entity\Allergen;
 use App\Entity\Category;
+use App\Entity\Comment;
+use App\Entity\Commentary;
 use App\Entity\Equipment;
 use App\Entity\EquipmentPhoto;
 use App\Entity\Ingredient;
 use App\Entity\IngredientPhoto;
 use App\Entity\IngredientType;
+use App\Entity\Inventory;
 use App\Entity\Person;
 use App\Entity\Recipe;
 use App\Entity\RecipePhoto;
@@ -60,18 +63,26 @@ class dashboardController extends AbstractDashboardController
     {
         yield MenuItem::section('Utilisateurs');
         yield MenuItem::linkToCrud('Person', 'fas fa-list', Person::class);
+        yield MenuItem::linkToCrud('Inventory', 'fas fa-list', Inventory::class);
+
         yield MenuItem::section('Ingrédients');
         yield MenuItem::linkToCrud('Ingredients', 'fas fa-list', Ingredient::class);
         yield MenuItem::linkToCrud('IngredientType', 'fas fa-list', IngredientType::class);
         yield MenuItem::linkToCrud('IngredientPhoto', 'fas fa-list', IngredientPhoto::class);
         yield MenuItem::linkToCrud('Allergen', 'fas fa-list', Allergen::class);
+
         yield MenuItem::section('Recettes');
         yield MenuItem::linkToCrud('Recipe', 'fas fa-list', Recipe::class);
         yield MenuItem::linkToCrud('RecipePhoto', 'fas fa-list', RecipePhoto::class);
         yield MenuItem::linkToCrud('Category', 'fas fa-list', Category::class);
         yield MenuItem::linkToCrud('Step', 'fas fa-list', Step::class);
+
         yield MenuItem::section('Equipements');
         yield MenuItem::linkToCrud('Equipement', 'fas fa-list', Equipment::class);
         yield MenuItem::linkToCrud('EquipementPhoto', 'fas fa-list', EquipmentPhoto::class);
+
+        yield MenuItem::section('Commentaires');
+        yield MenuItem::linkToCrud('Commentary', 'fas fa-list', Commentary::class);
+        yield MenuItem::linkToCrud('Comment', 'fas fa-list', Comment::class);
     }
 }
