@@ -18,21 +18,25 @@
         </header>
 
         <nav class="header-nav-hamburger">
-            <a href="#" class="header-navlink-hamburger">
-                Proposer recette
-            </a>
-            <a href="#" class="header-navlink-hamburger">
+            {% if is_granted('IS_AUTHENTICATED_FULLY') %}
+            <a href="{{ path('app_person_favorites') }}" class="header-navlink-hamburger">
                 Mes recettes favorites
             </a>
-            <a href="#" class="header-navlink-hamburger">
+            {% endif %}
+            <a href="{{ path('app_recipe') }}" class="header-navlink-hamburger">
                 Chercher une recette
             </a>
-            <a href="#" class="header-navlink-hamburger">
-                Voir mon frigo
-            </a>
-            <a href="#" class="header-navlink-hamburger">
+            {% if is_granted('IS_AUTHENTICATED_FULLY') %}
+                <a href="{{ path('app_profil') }}" class="header-navlink-hamburger">
+                    Mon Profil
+                </a>
+            {% else %}
+            <a href="{{ path('app_login') }}" class="header-navlink-hamburger">
                 Se connecter
             </a>
+            {% endif %}
+
+
         </nav>
 
             {% block body %}

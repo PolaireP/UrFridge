@@ -5,34 +5,41 @@
     <a href="#" class="hamburger">
         <img src="{{ asset('img/hamburger-mobile-menu.svg') }}" alt="">
     </a>
-    <a href="#" class="header-navlink">
-        Proposer recette
-    </a>
-    <a href="#" class="header-navlink">
+
+    {% if is_granted('IS_AUTHENTICATED_FULLY') %}
+    <a href="{{ path('app_person_favorites') }}" class="header-navlink">
         Mes recettes favorites
     </a>
-    <a href="/recipe" class="header-navlink">
-        Chercher une recette
-    </a>
-    <a href="#" class="header-navlink">
-        Voir mon frigo
-    </a>
-    <a href="#" class="header-navlink-icon">
-        <img src="{{ asset('img/suggest-recipe-tablet.svg') }}" alt="Proposer recette">
-    </a>
-    <a href="#" class="header-navlink-icon">
+    <a href="{{ path('app_person_favorites') }}" class="header-navlink-icon">
         <img src="{{ asset('img/favorite-recipe-tablet.svg') }}" alt="Mes recettes favorites">
     </a>
-    <a href="/recipe" class="header-navlink-icon">
+    {% endif %}
+
+
+    <a href="{{ path('app_recipe') }}" class="header-navlink">
+        Chercher une recette
+    </a>
+
+
+
+    <a href="{{ path('app_recipe') }}" class="header-navlink-icon">
         <img src="{{ asset('img/find-recipe-tablet.svg') }}" alt="Chercher une recette">
     </a>
-    <a href="#" class="header-navlink-icon">
-        <img src="{{ asset('img/fridge-icon.svg') }}" alt="Voir mon frigo">
+
+
+    {% if is_granted('IS_AUTHENTICATED_FULLY') %}
+    <a href="{{ path('app_profil') }}" class="auth header-navlink">
+        Mon profil
     </a>
-    <a href="#" class="auth header-navlink">
-        Se connecter
-    </a>
-    <a href="#" class="auth header-navlink-icon">
+    <a href="{{ path('app_profil') }}" class="auth header-navlink-icon">
         <img src="{{ asset('img/auth.svg') }}" alt="Accéder à mon profil">
     </a>
+    {% else %}
+    <a href="{{ path('app_login') }}" class="auth header-navlink">
+        Se connecter
+    </a>
+    <a href="{{ path('app_login') }}" class="auth header-navlink-icon">
+        <img src="{{ asset('img/auth.svg') }}" alt="Connexion">
+    </a>
+    {% endif %}
 </nav>
