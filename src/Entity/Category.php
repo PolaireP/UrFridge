@@ -21,7 +21,7 @@ class Category
     #[ORM\Column(length: 400)]
     private ?string $categoryDescription = null;
 
-    #[ORM\ManyToMany(targetEntity: recipe::class, inversedBy: 'categories')]
+    #[ORM\ManyToMany(targetEntity: Recipe::class, inversedBy: 'categories')]
     private Collection $recipes;
 
     public function __construct()

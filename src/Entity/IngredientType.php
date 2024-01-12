@@ -18,7 +18,7 @@ class IngredientType
     #[ORM\Column(length: 50)]
     private ?string $ingredientTpName = null;
 
-    #[ORM\ManyToMany(targetEntity: ingredient::class, inversedBy: 'ingredientTypes')]
+    #[ORM\ManyToMany(targetEntity: Ingredient::class, inversedBy: 'ingredientTypes')]
     private Collection $ingredients;
 
     public function __construct()
