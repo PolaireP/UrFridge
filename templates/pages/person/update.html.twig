@@ -1,0 +1,35 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Modifier profil{% endblock %}
+
+{% block stylesheets %}
+    <link rel="stylesheet" href="{{ asset('css/style-edit-profile.css') }}">
+    <link rel="icon" href="img/logo/favicon-fridge.svg" type="image/x-icon">
+{% endblock %}
+
+{% block body %}
+
+    <main class="content">
+        <section class="banner">
+            <div class="banner-content">
+                <img src="data:image/jpg;base64,{{ avatar }}" alt="photo de profil" class="banner-profile-picture">
+                <h1 class="banner-profile-identity">
+                    <span id="profile-firstname">{{user.getFirstname()}}</span>
+                    <span id="profile-lastname">{{ user.getLastname() }}</span>
+                </h1>
+            </div>
+        </section>
+        <section class="edit-profile-area">
+            {{ form_start(updateForm) }}
+                {{ form_row(updateForm.firstname) }}
+                {{ form_row(updateForm.lastname) }}
+                {{ form_row(updateForm.email) }}
+                {{ form_row(updateForm.plainPassword) }}
+                <button type="submit" class="submit-profile-informations">Valider</button>
+            {{ form_end(updateForm) }}
+        </section>
+    </main>
+
+
+
+{% endblock %}

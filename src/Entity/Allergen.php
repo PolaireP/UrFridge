@@ -75,7 +75,7 @@ class Allergen
         return $this;
     }
 
-    public function removeIngredient(ingredient $ingredient): static
+    public function removeIngredient(Ingredient $ingredient): static
     {
         $this->ingredients->removeElement($ingredient);
 

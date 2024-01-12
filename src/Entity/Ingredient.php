@@ -104,7 +104,7 @@ class Ingredient
         return $this->avgUnitVolume;
     }
 
-    public function setAvgUnitVolumn(?float $avgUnitVolume): static
+    public function setAvgUnitVolume(?float $avgUnitVolume): static
     {
         $this->avgUnitVolume = $avgUnitVolume;
 

@@ -32,4 +32,30 @@ class RecipeRepository extends ServiceEntityRepository
 
         return $query->execute();
     }
+
+    public function countStepsForRecipe(int $recipeId): int
+    {
+        $qb = $this->createQueryBuilder('r')
+            ->select('count(s.id)')
+            ->join('r.steps', 's')
+            ->where('r.id = :recipeId')
+            ->setParameter('recipeId', $recipeId);
+
+        return (int) $qb->getQuery()->getSingleScalarResult();
+    }
+
+    public function getAllergensForRecipe(int $recipeId): array
+    {
+        $entityManager = $this->getEntityManager();
+
+        $query = $entityManager->createQuery(
+            'SELECT DISTINCT a
+        FROM App\Entity\Allergen a
+        INNER JOIN a.ingredients i
+        INNER JOIN i.recipes r
+        WHERE r.id = :recipeId'
+        )->setParameter('recipeId', $recipeId);
+
+        return $query->getResult();
+    }
 }
