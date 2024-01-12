@@ -88,7 +88,10 @@ body {
 }
 
 .fill {
+    align-self: center;
     display: flex;
+    justify-content: center;
+    max-width: 1300px;
     flex: 1;
 }
 
