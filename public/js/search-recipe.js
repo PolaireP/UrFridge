@@ -1,5 +1,11 @@
 // récupération des éléments
-import {displayBox, setOverlappingBoxesListeners, updateBoxSize} from "./overlapping-box.js";
+import {
+    displayBox,
+    setChangeListener,
+    setOverlappingBoxesListeners,
+    updateBoxSize,
+    updateCategoriesElt, updateRecipesElt
+} from "./overlapping-box.js";
 
 const parentInteractingArea = document.getElementsByClassName("main-interaction-area")[0];
 const filtersArea = document.getElementById("filters-area-box");
@@ -17,6 +23,16 @@ const addFiltersButton = document.getElementsByClassName("add-filters-button")[0
 const allergenBox = document.getElementById("allergens-box");
 const categoryBox = document.getElementById("categories-box");
 const filterBox = document.getElementById("filters-box");
+
+const allergensWrapper = document.getElementById("allergens-append");
+const searchCategories = document.getElementById("search-categories");
+const searchRecipes = document.getElementById("search-recipes");
+
+const controller = new AbortController();
+
+const allergensId = [];
+const categoriesId = [];
+const filters = [];
 
 setOverlappingBoxesListeners(
     [addAllergensButton, addAllergensButtonIcon, addCategoriesButton, addCategoriesButtonIcon, addFiltersButton],
@@ -52,5 +68,45 @@ document.addEventListener("click", (clickedPoint) => {
         !(filterBox.style.height === '0px' || filterBox.style.height === '')
     ) {
         displayBox(filterBox, filtersArea, "#4CB9A5");
+    }
+});
+
+searchCategories.controller = controller;
+
+searchCategories.addEventListener("input", (event) => {
+    searchCategories.controller.abort();
+    searchCategories.controller = new AbortController();
+    const search = event.target.value;
+    updateCategoriesElt(search, searchCategories.controller, categoriesId);
+});
+
+searchRecipes.controller = controller;
+
+searchRecipes.addEventListener("input", (event) => {
+    searchRecipes.controller.abort();
+    searchRecipes.controller = new AbortController();
+    const search = event.target.value;
+    updateRecipesElt(search,[], allergensId, categoriesId, filters, searchRecipes.controller);
+});
+
+document.addEventListener('DOMContentLoaded', function () {
+    const forms = document.querySelectorAll('form');
+
+    forms.forEach(function (form) {
+        form.addEventListener('keydown', function (event) {
+            if (event.key === 'Enter') {
+                event.preventDefault();
+            }
+        });
+    });
+});
+
+allergensWrapper.querySelectorAll('*').forEach(allergenElt => {
+    const checkboxElement = allergenElt.querySelector('.checkbox');
+    if (checkboxElement) {
+        const allergen = {
+            id: checkboxElement.value,
+        };
+        setChangeListener(allergen, allergenElt, allergensId);
     }
 });

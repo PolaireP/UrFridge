@@ -59,14 +59,14 @@ class Category
     }
 
     /**
-     * @return Collection<int, recipe>
+     * @return Collection<int, Recipe>
      */
     public function getRecipes(): Collection
     {
         return $this->recipes;
     }
 
-    public function addRecipe(recipe $recipe): static
+    public function addRecipe(Recipe $recipe): static
     {
         if (!$this->recipes->contains($recipe)) {
             $this->recipes->add($recipe);
@@ -75,7 +75,7 @@ class Category
         return $this;
     }
 
-    public function removeRecipe(recipe $recipe): static
+    public function removeRecipe(Recipe $recipe): static
     {
         $this->recipes->removeElement($recipe);
 

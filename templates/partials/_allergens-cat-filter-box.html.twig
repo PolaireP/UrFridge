@@ -3,7 +3,7 @@
     <form class="entity-checkbox-append" id="allergens-append">
         {% for allergen in allergens %}
             <label class="checkbox-container">
-                <input class="checkbox" type="checkbox" name="allergen-name" value="{{ allergen.id }}">
+                <input class="checkbox" type="checkbox" name="{{ allergen.allergenName }}" value="{{ allergen.id }}">
                 <span class="checkmark"></span>
                 {{ allergen.allergenName }}
             </label>
@@ -21,16 +21,6 @@
         </div>
     </form>
     <form class="entity-checkbox-append" id="categories-append">
-        <label class="checkbox-container">
-            <input class="checkbox" type="checkbox" name="category-name" value="category-id">
-            <span class="checkmark"></span>
-            Category-name
-        </label>
-        <label class="checkbox-container">
-            <input class="checkbox" type="checkbox" name="category-name" value="category-id">
-            <span class="checkmark"></span>
-            Category-name
-        </label>
     </form>
     <p class="no-category">Pas de catégorie correspondant à votre recherche</p>
 </div>
@@ -40,27 +30,6 @@
         <label id="alpha">Ordre alphabétique :
             <select class="select-box">
                 <option selected value="ASC">Croissant</option>
-                <option value="DESC">Décroissant</option>
-            </select>
-        </label>
-        <label id="energy">Recette calorique :
-            <select class="select-box">
-                <option selected value="default">Aucun Tri</option>
-                <option value="ASC">Croissant</option>
-                <option value="DESC">Décroissant</option>
-            </select>
-        </label>
-        <label id="cost"> Coût :
-            <select class="select-box">
-                <option selected value="default">Aucun Tri</option>
-                <option value="ASC">Croissant</option>
-                <option value="DESC">Décroissant</option>
-            </select>
-        </label>
-        <label id="famous"> Popularité :
-            <select class="select-box">
-                <option selected value="default">Aucun Tri</option>
-                <option value="ASC">Croissant</option>
                 <option value="DESC">Décroissant</option>
             </select>
         </label>
