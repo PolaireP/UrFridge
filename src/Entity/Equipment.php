@@ -21,7 +21,7 @@ class Equipment
     #[ORM\Column(length: 400, nullable: true)]
     private ?string $equipmentLink = null;
 
-    #[ORM\ManyToMany(targetEntity: recipe::class, inversedBy: 'equipments')]
+    #[ORM\ManyToMany(targetEntity: Recipe::class, inversedBy: 'equipments')]
     private Collection $recipes;
 
     #[ORM\ManyToOne(inversedBy: 'equipment')]

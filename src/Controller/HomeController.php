@@ -16,7 +16,7 @@ class HomeController extends AbstractController
         // Listage de tous les allergènes
         $allergens = $manager->getRepository(Allergen::class)->findAll();
 
-        //searchString juste pour faire marcher le template (à retirer)
+        // searchString juste pour faire marcher le template (à retirer)
         $searchString = '';
 
         return $this->render('pages/home/index.html.twig', [

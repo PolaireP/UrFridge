@@ -83,10 +83,33 @@ body {
     max-height: 300px;
     overflow: auto;
     justify-content: center;
-    padding: 0 0 15px 0;
+    padding: 0 0 15px 15px;
     margin: 0 10px;
     box-sizing: border-box;
     border-bottom: solid 3px #4CB9A5;
+    width: 100%;
+}
+
+.recipe-element {
+    border-radius: 20px;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 16px 10px 0 10px;
+    margin-bottom: 10px;
+    border: solid;
+    border-width: 3px;
+    border-color: #4CB9A5;
+}
+
+.recipe-element > a {
+    font-weight: bold;
+    font-size: large;
+    text-decoration: none;
+    color: black;
+}
+
+.recipe-element > * {
+    font-family: "Roboto", sans-serif;
 }
 
 .no-recipe {

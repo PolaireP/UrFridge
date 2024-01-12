@@ -21,28 +21,21 @@ class RecipeQuantityRepository extends ServiceEntityRepository
         parent::__construct($registry, RecipeQuantity::class);
     }
 
-//    /**
-//     * @return RecipeQuantity[] Returns an array of RecipeQuantity objects
-//     */
-//    public function findByExampleField($value): array
-//    {
-//        return $this->createQueryBuilder('r')
-//            ->andWhere('r.exampleField = :val')
-//            ->setParameter('val', $value)
-//            ->orderBy('r.id', 'ASC')
-//            ->setMaxResults(10)
-//            ->getQuery()
-//            ->getResult()
-//        ;
-//    }
+    public function getIngredientQuantitiesForRecipe($recipeId)
+    {
+        $qb = $this->createQueryBuilder('rq')
+            ->select('IDENTITY(rq.ingredient) as ingredientId', 'rq.quantity')
+            ->where('rq.recipe = :recipeId')
+            ->setParameter('recipeId', $recipeId);
 
-//    public function findOneBySomeField($value): ?RecipeQuantity
-//    {
-//        return $this->createQueryBuilder('r')
-//            ->andWhere('r.exampleField = :val')
-//            ->setParameter('val', $value)
-//            ->getQuery()
-//            ->getOneOrNullResult()
-//        ;
-//    }
+        $result = $qb->getQuery()->getArrayResult();
+
+        $quantities = [];
+        foreach ($result as $row) {
+            $quantities[$row['ingredientId']] = $row['quantity'];
+        }
+
+        return $quantities;
+    }
+
 }

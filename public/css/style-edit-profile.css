@@ -65,6 +65,9 @@ body {
     max-width: 400px;
     width: 100%;
     align-self: center;
+    box-sizing: border-box;
+    margin-top: 15px;
+    margin-bottom: 100px;
 }
 
 .profile-information-input {
@@ -78,6 +81,7 @@ body {
     border: none;
     border-radius: 22px;
     margin: 10px 15px;
+    width: 500px;
 }
 
 .profile-information-input:focus {
@@ -114,7 +118,6 @@ body {
     display: flex;
     width: 200px;
     height: 200px;
-    background-image: url("../img/profilePicture.jpg");
     background-size: contain;
     border-radius: 22px;
     align-self: center;
