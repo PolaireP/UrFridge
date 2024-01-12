@@ -228,6 +228,7 @@ class PersonController extends AbstractController
 
     #[Route('/profil/favorites')]
     public function favorites() {
+        $this->denyAccessUnlessGranted('IS_AUTHENTICATED_FULLY');
         return $this->render('pages/person/favorites.html.twig');
     }
 
