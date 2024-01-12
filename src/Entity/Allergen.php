@@ -59,7 +59,7 @@ class Allergen
     }
 
     /**
-     * @return Collection<int, Ingredient>
+     * @return Collection<int, ingredient>
      */
     public function getIngredients(): Collection
     {

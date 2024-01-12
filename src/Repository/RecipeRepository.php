@@ -35,55 +35,6 @@ class RecipeRepository extends ServiceEntityRepository
         return $query->execute();
     }
 
-    public function getRecipeFromCriterias(string $text = '',
-        array $ingredientsId = null,
-        array $allergensId = null,
-        array $categoriesId = null,
-        array $filters = null): array
-    {
-        $qb = $this->createQueryBuilder('r');
-        $qb->where($qb->expr()->eq('r.verified', 1))
-            ->addSelect('rp.recipePhoto')
-            ->leftJoin('App\Entity\RecipePhoto', 'rp', 'WITH', 'r.recipePhoto = rp.id')
-            ->addSelect($qb->expr()->countDistinct('s.id').' AS stepNumbers')
-            ->leftJoin('App\Entity\Step', 's', 'WITH', 's MEMBER OF r.steps')
-            ->andWhere('r.recipeName LIKE :text')
-            ->setParameter('text', '%'.$text.'%');
-
-        if (!empty($ingredientsId)) {
-            $qb->join('r.ingredients', 'ir')
-                ->andWhere($qb->expr()->in('ir.id', $ingredientsId))
-                ->having($qb->expr()->eq(
-                    $qb->expr()->countDistinct('ir.id'),
-                    count($ingredientsId)
-                ));
-        }
-
-        if (!empty($allergensId)) {
-            $qb->andWhere($qb->expr()->not($qb->expr()->exists(
-                $this->_em->createQueryBuilder()
-                    ->select('1')
-                    ->from('App:Ingredient', 'i')
-                    ->join('i.allergens', 'ai')
-                    ->where('i MEMBER OF r.ingredients')
-                    ->andWhere($qb->expr()->in('ai.id', $allergensId))
-                    ->getDQL()
-            )));
-        }
-
-        if (!empty($categoriesId)) {
-            $qb->join('r.categories', 'cr')
-                ->andWhere($qb->expr()->in('cr.id', $categoriesId))
-                ->having($qb->expr()->eq(
-                    $qb->expr()->countDistinct('cr.id'),
-                    count($categoriesId)
-                ));
-        }
-
-        $qb->groupBy('r.id', 'r.recipeName');
-
-        return $qb->getQuery()->getResult();
-
     public function countStepsForRecipe(int $recipeId): int
     {
         $qb = $this->createQueryBuilder('r')

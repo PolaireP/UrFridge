@@ -2,18 +2,20 @@
 
 {% block stylesheets %}
     <link rel="stylesheet" href="{{ asset('css/style-index.css') }}">
-    <link rel="preload" href="{{ asset('js/overlapping-box.js') }}" as="script">
-    <link rel="preload" href="{{ asset('js/search-recipe.js') }}" as="script">
 {% endblock %}
 
 {% block body %}
+
+    <link rel="preload" href="{{ asset('js/main.js') }}" as="script">
+
+    <main class="content">
     <section class="main-interaction-area">
         <section class="search-recipes-area" id="recipes-research-area">
             <h1 class="title">Qu'allons nous cuisiner aujourd'hui ?</h1>
-            <form class="search-area">
+            <form class="search-area" role="search-recipes" method="get" action="/recipe">
                 <div class="search-bar">
                     <input type="search" name="search-recipes" autocomplete="off"
-                           id="search-recipes" class="search-input" placeholder="Tartiflette, Salade de fruit..." value="">
+                           id="search-recipes" class="search-input" placeholder="Tartiflette, Salade de fruit..." {% if searchString is defined %}value="{{ searchString }}"{% endif %}>
                     <img src="{{ asset('img/loop.png') }}" alt="loupe">
                 </div>
             </form>
@@ -21,16 +23,19 @@
         <section class="filters-with-result-statistics-area" id="filters-area-box">
             <div class="result-statistics-area">
                 <p class="results-number">
-                    <span id="res-number">0</span> Résultat(s)
+                    {% if searchString is not empty %}
+                        {{ recipes|length}} Résultat(s)
+                    {% else %}
+                    0 Résultat(s)
+                    {% endif %}
                 </p>
             </div>
             {% include 'partials/_allergens-category-filter-area.html.twig' %}
         </section>
         {% include 'partials/_allergens-cat-filter-box.html.twig' %}
     </section>
-    <section class="recipes-list">
-        <p class="no-recipe">Bientôt de délicieux plats apparaitront ici</p>
-    </section>
+    {% include 'partials/_recipes-list.html.twig' %}
+    </main>
 
     {% block javascripts %}
         <script type="module" src="{{ asset('js/search-recipe.js') }}"></script>

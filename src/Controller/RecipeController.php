@@ -3,11 +3,6 @@
 namespace App\Controller;
 
 use App\Entity\Allergen;
-use App\Repository\CategoryRepository;
-use App\Repository\RecipeRepository;
-use Doctrine\ORM\EntityManagerInterface;
-use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
-use Symfony\Component\HttpFoundation\JsonResponse;
 use App\Entity\Comment;
 use App\Entity\Commentary;
 use App\Entity\Recipe;
@@ -24,63 +19,29 @@ use Symfony\Component\Routing\Annotation\Route;
 
 class RecipeController extends AbstractController
 {
-    #[Route('/recipe', name: 'app_recipe', priority: 1)]
+    #[Route('/recipe', name: 'app_recipe')]
     public function index(RecipeRepository $repository, Request $request, EntityManagerInterface $manager): Response
     {
+        // Recherche des recettes
+        $searchString = $request->query->get('search-recipes', '');
+        $recipes = $repository->search($searchString);
+
+        // Liste des images des recettes
+        $images = [];
+        foreach ($recipes as $key => $recipe) {
+            $images[$recipe->getRecipeId()] = base64_encode(stream_get_contents($recipe->getRecipePhoto()->getRecipePhoto()));
+        }
+
         // Listage de tous les allergènes
         $allergens = $manager->getRepository(Allergen::class)->findAll();
 
         return $this->render('pages/recipe/index.html.twig', [
+            'recipes' => $recipes,
+            'images' => $images,
+            'searchString' => $searchString,
             'allergens' => $allergens,
         ]);
     }
-
-    #[Route('/recipe/recipes', name: 'app_recipe_all')]
-    public function getAllRecipe(RecipeRepository $repository, Request $request): JsonResponse
-    {
-        $jsonData = json_decode($request->getContent(), true);
-        $search = $jsonData['search'] ?? '';
-        $ingredientsId = $jsonData['ingredientsId'] ?? null;
-        $allergensId = $jsonData['allergensId'] ?? null;
-        $categoriesId = $jsonData['categoriesId'] ?? null;
-        $filters = $jsonData['filters'] ?? null;
-
-        $recipes = $repository->getRecipeFromCriterias($search, $ingredientsId, $allergensId, $categoriesId, $filters);
-
-        $recipeCollection = [];
-
-        foreach ($recipes as $recipe) {
-            $recipeCollection[] = [
-                'id' => $recipe[0]->getId(),
-                'recipeName' => $recipe[0]->getRecipeName(),
-                'recipePubDate' => $recipe[0]->getRecipePubDate(),
-                'recipePhoto' => base64_encode(stream_get_contents($recipe['recipePhoto'])),
-                'author' => $recipe[0]->getAuthor(),
-                'stepNumbers' => $recipe['stepNumbers'],
-            ];
-        }
-
-        return new JsonResponse($recipeCollection, Response::HTTP_OK);
-    }
-
-    #[Route('/recipe/categories', name: 'app_category_all')]
-    public function getCategoryByName(CategoryRepository $repository, Request $request): JsonResponse
-    {
-        $jsonData = json_decode($request->getContent(), true);
-        $searchString = $jsonData['searchCategories'] ?? '';
-        $categories = $repository->search($searchString);
-
-        $categoryCollection = [];
-
-        foreach ($categories as $category) {
-            $categoryCollection[] = [
-                'id' => $category->getId(),
-                'categoryName' => $category->getCategoryName(),
-                'categoryDescription' => $category->getCategoryDescription(),
-            ];
-        }
-
-        return new JsonResponse($categoryCollection, Response::HTTP_OK);
 
     #[Route('/recipe/{id}', name: 'app_recipe_show')]
     public function show(Recipe $recipe, RecipeRepository $recipeRepository, IngredientPhotoRepository $ingredientPhotoRepository, RecipeQuantityRepository $recipeQuantityRepository, Request $request, EntityManagerInterface $manager): Response

@@ -394,10 +394,6 @@ body {
     border-radius: 14px;
 }
 
-#res-number {
-    margin-right: 2px;
-}
-
 .allergens-with-categories-area {
     display: flex;
     flex-direction: row;
@@ -464,84 +460,7 @@ body {
 
 .recipes-list {
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
-}
-
-.recipe {
-    display: flex;
     flex-direction: column;
-    box-shadow: 0 1px 4px 2px #FF7F50;
-    border-radius: 12px;
-    background-color: #F8F5F3;
-    padding: 4px;
-    max-width: 135px;
-    min-height: 225px;
-    margin: 10px 3px;
-}
-
-.recipe-illustration {
-    display: flex;
-    width: 135px;
-    height: 110px;
-    border-radius: 12px;
-}
-
-.recipe-informations-area {
-    margin-top: 6px;
-    display: flex;
-    flex-direction: column;
-    border-radius: 12px;
-    background-color: white;
-    box-shadow: 0 0 4px 2px #E0E0E0;
-    padding: 4px;
-}
-
-.recipe-name {
-    display: flex;
-    margin: 0;
-    font-size: 18px;
-    font-weight: 700;
-    font-family: "Roboto", sans-serif;
-    color: #FF7F50;
-}
-
-.recipe-author {
-    display: flex;
-    margin: 0;
-    font-size: 14px;
-    font-weight: 400;
-    font-family: "Roboto", sans-serif;
-    color: #FF7F50;
-}
-
-.step-numbers {
-    display: flex;
-    margin: 5px 0;
-    font-size: 14px;
-    font-weight: 400;
-    font-family: "Roboto", sans-serif;
-    color: #848484;
-}
-
-.see-recipe {
-    display: flex;
-    align-self: center;
-    color: white;
-    background-color: #FF7F50;
-    margin: 5px 0;
-    padding: 5px;
-    text-decoration: none;
-    font-size: 18px;
-    font-weight: 700;
-    font-family: "Roboto", sans-serif;
-    border-radius: 12px;
-}
-
-.see-recipe:hover {
-    background-color: #EE8865;
-    transition: 0.2s;
 }
 
 .no-recipe, .no-category {
@@ -638,38 +557,6 @@ body {
     .ingredient-quantity-less>img, .ingredient-quantity-more>img {
         width: 45px;
         height: 45px;
-    }
-
-    .recipe {
-        padding: 6px;
-        max-width: 250px;
-        min-height: 350px;
-        margin: 10px 6px;
-    }
-
-    .recipe-illustration {
-        display: flex;
-        width: 250px;
-        height: 205px;
-        border-radius: 12px;
-    }
-
-    .recipe-informations-area {
-        padding: 6px;
-    }
-
-    .recipe-name {
-        font-size: 24px;
-    }
-
-    .recipe-author, .step-numbers {
-        font-size: 18px;
-    }
-
-    .see-recipe {
-        margin: 10px 0;
-        padding: 10px;
-        font-size: 24px;
     }
 }
 

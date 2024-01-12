@@ -44,14 +44,14 @@ class IngredientType
     }
 
     /**
-     * @return Collection<int, Ingredient>
+     * @return Collection<int, ingredient>
      */
     public function getIngredients(): Collection
     {
         return $this->ingredients;
     }
 
-    public function addIngredient(Ingredient $ingredient): static
+    public function addIngredient(ingredient $ingredient): static
     {
         if (!$this->ingredients->contains($ingredient)) {
             $this->ingredients->add($ingredient);
@@ -60,7 +60,7 @@ class IngredientType
         return $this;
     }
 
-    public function removeIngredient(Ingredient $ingredient): static
+    public function removeIngredient(ingredient $ingredient): static
     {
         $this->ingredients->removeElement($ingredient);
 

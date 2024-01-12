@@ -6,10 +6,9 @@
               content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <title>{% block title %}Bienvenue sur UrFridge{% endblock %}</title>
-        {% block stylesheets %}{% endblock %}
         <link rel="stylesheet" href="{{ asset('css/style-base.css') }}">
         <link rel="icon" href="{{ asset('img/logo/favicon-fridge.svg') }}" type="image/x-icon">
-        <link rel="preload" href="{{ asset('js/main.js') }}" as="script">
+        {% block stylesheets %}{% endblock %}
     </head>
     <body>
         <header class="header-area">
@@ -19,21 +18,25 @@
         </header>
 
         <nav class="header-nav-hamburger">
-            <a href="#" class="header-navlink-hamburger">
-                Proposer recette
-            </a>
-            <a href="#" class="header-navlink-hamburger">
+            {% if is_granted('IS_AUTHENTICATED_FULLY') %}
+            <a href="{{ path('app_person_favorites') }}" class="header-navlink-hamburger">
                 Mes recettes favorites
             </a>
-            <a href="#" class="header-navlink-hamburger">
+            {% endif %}
+            <a href="{{ path('app_recipe') }}" class="header-navlink-hamburger">
                 Chercher une recette
             </a>
-            <a href="#" class="header-navlink-hamburger">
-                Voir mon frigo
-            </a>
-            <a href="#" class="header-navlink-hamburger">
+            {% if is_granted('IS_AUTHENTICATED_FULLY') %}
+                <a href="{{ path('app_profil') }}" class="header-navlink-hamburger">
+                    Mon Profil
+                </a>
+            {% else %}
+            <a href="{{ path('app_login') }}" class="header-navlink-hamburger">
                 Se connecter
             </a>
+            {% endif %}
+
+
         </nav>
 
             {% block body %}
