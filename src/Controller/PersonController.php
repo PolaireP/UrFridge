@@ -236,7 +236,7 @@ class PersonController extends AbstractController
     public function getfavorites(RecipeRepository $repository, Request $request) : JsonResponse {
         $jsonData = json_decode($request->getContent(), true);
         $searchString = $jsonData['search'] ?? '';
-        $recipes = $repository->findPersonFavoriteRecipes($this->getUser()->getId(), $searchString);
+        $recipes = $repository->findPersonFavoriteRecipes($this->getUser(), $searchString);
 
         $recipeCollection = [];
 

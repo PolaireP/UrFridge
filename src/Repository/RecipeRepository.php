@@ -2,6 +2,7 @@
 
 namespace App\Repository;
 
+use App\Entity\Person;
 use App\Entity\Recipe;
 use App\Entity\RecipePhoto;
 use Doctrine\Bundle\DoctrineBundle\Repository\ServiceEntityRepository;
@@ -60,12 +61,17 @@ class RecipeRepository extends ServiceEntityRepository
         return $query->getResult();
     }
 
-    public function findPersonFavoriteRecipes(int $id, string $search) {
+    public function findPersonFavoriteRecipes(Person $user, string $search) {
+
+        $recipes = [];
+        foreach ($user->getFavorites() as $elem) {
+            $recipes[] = $elem->getId();
+        }
 
         $qb = $this->createQueryBuilder('r')
             ->addSelect('rcp.recipePhoto')
             ->leftJoin('App\Entity\RecipePhoto', 'rcp', 'WITH', 'rcp.id = r.recipePhoto')
-            ->where($this->createQueryBuilder('recipe')->expr()->eq('r.author', $id));
+            ->where($this->createQueryBuilder('recipe')->expr()->in('r.id', $recipes));
 
         if ($search !== '') {
             $qb->andWhere('r.recipeName LIKE :search')
