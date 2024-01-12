@@ -29,7 +29,7 @@ class RecipeCrudController extends AbstractCrudController
                 ])
                 ->setCrudController(RecipePhotoCrudController::class),
             TextField::new('recipeName'),
-            TextEditorField::new('recipeDescription'),
+            TextField::new('recipeDescription'),
             DateField::new('recipePubDate'),
             BooleanField::new('verified'),
         ];

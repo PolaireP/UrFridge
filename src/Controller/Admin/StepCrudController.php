@@ -20,7 +20,7 @@ class StepCrudController extends AbstractCrudController
     public function configureFields(string $pageName): iterable
     {
         return [
-            IdField::new('id'),
+            IdField::new('id')->hideOnForm(),
             AssociationField::new('recipe', 'idRecipe')
                 ->setFormTypeOptions([
                     'class' => 'App\Entity\Recipe',
@@ -28,7 +28,7 @@ class StepCrudController extends AbstractCrudController
                 ])
                 ->setCrudController(RecipeCrudController::class),
             TextField::new('stepTitle'),
-            TextEditorField::new('stepDescription'),
+            TextField::new('stepDescription'),
         ];
     }
 
