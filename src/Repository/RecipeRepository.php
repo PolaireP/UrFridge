@@ -43,6 +43,8 @@ class RecipeRepository extends ServiceEntityRepository
         $qb->where($qb->expr()->eq('r.verified', 1))
             ->addSelect('rp.recipePhoto')
             ->leftJoin('App\Entity\RecipePhoto', 'rp', 'WITH', 'r.recipePhoto = rp.id')
+            ->addSelect($qb->expr()->countDistinct('s.id').' AS stepNumbers')
+            ->leftJoin('App\Entity\Step', 's', 'WITH', 's MEMBER OF r.steps')
             ->andWhere('r.recipeName LIKE :text')
             ->setParameter('text', '%'.$text.'%');
 

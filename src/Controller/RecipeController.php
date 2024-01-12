@@ -3,7 +3,6 @@
 namespace App\Controller;
 
 use App\Entity\Allergen;
-use App\Repository\AllergenRepository;
 use App\Repository\CategoryRepository;
 use App\Repository\RecipeRepository;
 use Doctrine\ORM\EntityManagerInterface;
@@ -39,11 +38,12 @@ class RecipeController extends AbstractController
     #[Route('/recipe/recipes', name: 'app_recipe_all')]
     public function getAllRecipe(RecipeRepository $repository, Request $request): JsonResponse
     {
-        $search = $request->get('search');
-        $ingredientsId = $request->get('ingredientsId');
-        $allergensId = $request->get('allergensId');
-        $categoriesId = $request->get('categoriesId');
-        $filters = $request->get('filters');
+        $jsonData = json_decode($request->getContent(), true);
+        $search = $jsonData['search'] ?? '';
+        $ingredientsId = $jsonData['ingredientsId'] ?? null;
+        $allergensId = $jsonData['allergensId'] ?? null;
+        $categoriesId = $jsonData['categoriesId'] ?? null;
+        $filters = $jsonData['filters'] ?? null;
 
         $recipes = $repository->getRecipeFromCriterias($search, $ingredientsId, $allergensId, $categoriesId, $filters);
 
@@ -56,6 +56,7 @@ class RecipeController extends AbstractController
                 'recipePubDate' => $recipe[0]->getRecipePubDate(),
                 'recipePhoto' => base64_encode(stream_get_contents($recipe['recipePhoto'])),
                 'author' => $recipe[0]->getAuthor(),
+                'stepNumbers' => $recipe['stepNumbers'],
             ];
         }
 
