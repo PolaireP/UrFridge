@@ -1,0 +1,20 @@
+.terms-of-use {
+    font-family: "Roboto", sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    max-width: 1000px;
+    width: 100%;
+}
+
+h1, h2 {
+    color: #FF7F50;
+}
+
+h3 {
+    color: #4CB9A5;
+}
+
+p {
+    font-weight: 500;
+}

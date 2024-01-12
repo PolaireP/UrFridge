@@ -35,7 +35,7 @@ class RecipeController extends AbstractController
         // Listage de tous les allergènes
         $allergens = $manager->getRepository(Allergen::class)->findAll();
 
-        return $this->render('pages/recipe/index.html.twig', [
+        return $this->render('pages/recipe/cgu.html.twig', [
             'recipes' => $recipes,
             'images' => $images,
             'searchString' => $searchString,
