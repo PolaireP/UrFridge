@@ -19,7 +19,7 @@ class RecipePhoto
     #[ORM\Column(type: Types::BLOB)]
     private $recipePhoto;
 
-    #[ORM\OneToMany(mappedBy: 'recipePhoto', targetEntity: recipe::class)]
+    #[ORM\OneToMany(mappedBy: 'recipePhoto', targetEntity: Recipe::class)]
     private Collection $recipes;
 
     public function __construct()

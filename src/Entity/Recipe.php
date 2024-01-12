@@ -75,18 +75,6 @@ class Recipe
         return $this->id;
     }
 
-    public function getRecipeId(): ?int
-    {
-        return $this->id;
-    }
-
-    public function setRecipeId(int $recipeId): static
-    {
-        $this->recipeId = $recipeId;
-
-        return $this;
-    }
-
     public function getRecipeName(): ?string
     {
         return $this->recipeName;

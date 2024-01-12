@@ -1,0 +1,35 @@
+{% extends 'base.html.twig' %}
+
+{% block stylesheets %}
+    <link rel="preload" href="js/main.js" as="script">
+    <link rel="stylesheet" href="{{ asset('css/style-fav-recipes.css') }}">
+    <link rel="icon" href="img/logo/favicon-fridge.svg" type="image/x-icon">
+    <link rel="preload" href="{{ asset('js/recipe-boxes.js') }}" as="script">
+    <link rel="preload" href="{{ asset('js/search-favorite-recipe.js') }}" as="script">
+
+
+{%  endblock %}
+
+{% block body %}
+    <main class="content">
+        <div class="banner">
+            <h1 class="banner-title">Mes recettes favorites</h1>
+        </div>
+        <div class="fridge-recipes-area">
+            <form class="search-area" method="post">
+                <div class="search-bar">
+                    <input type="text" name="search-recipes"
+                           id="search-recipes" placeholder="Recette">
+                    <img src="{{ asset('img/loop.png') }}" alt="loupe">
+                </div>
+            </form>
+            <div id="fridge-recipes-list" class="fridge-recipes-list">
+            </div>
+        </div>
+        <div id="fill" class="fill"></div>
+    </main>
+    {% block javascripts %}
+        <script type="module" src="{{ asset('js/search-favorite-recipe.js') }}"></script>
+    {% endblock %}
+
+{% endblock %}
