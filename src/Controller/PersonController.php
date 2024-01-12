@@ -4,6 +4,8 @@ namespace App\Controller;
 
 use App\Entity\Person;
 use App\Entity\PersonPhoto;
+use App\Entity\Recipe;
+use App\Entity\RecipePhoto;
 use App\Form\PersonPhotoType;
 use App\Form\PersonType;
 use App\Repository\CommentaryRepository;
@@ -19,6 +21,7 @@ use Symfony\Component\Form\Extension\Core\Type\PasswordType;
 use Symfony\Component\Form\Extension\Core\Type\RepeatedType;
 use Symfony\Component\Form\Extension\Core\Type\SubmitType;
 use Symfony\Component\HttpFoundation\BinaryFileResponse;
+use Symfony\Component\HttpFoundation\JsonResponse;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\HttpFoundation\Session\Session;
@@ -80,7 +83,7 @@ class PersonController extends AbstractController
         $this->denyAccessUnlessGranted('IS_AUTHENTICATED_FULLY');
 
 
-        if ($this->getUser()->getId() != $person->getId()) {
+        if ($person === null || $this->getUser()->getId() != $person->getId()) {
             return $this->redirectToRoute('app_person_update', ['id' => $this->getUser()->getId()]);
         }
 
@@ -179,7 +182,7 @@ class PersonController extends AbstractController
         $this->denyAccessUnlessGranted('IS_AUTHENTICATED_FULLY');
 
 
-        if ($this->getUser()->getId() != $person->getId()) {
+        if ($person === null || $this->getUser()->getId() != $person->getId()) {
             return $this->redirectToRoute('app_person_delete', ['id' => $this->getUser()->getId()]);
         }
 
@@ -222,4 +225,32 @@ class PersonController extends AbstractController
             'deleteForm' => $deleteForm,
         ]);
     }
+
+    #[Route('/profil/favorites')]
+    public function favorites() {
+        return $this->render('pages/person/favorites.html.twig');
+    }
+
+    #[Route('/profil/getfavorites')]
+    public function getfavorites(RecipeRepository $repository, Request $request) : JsonResponse {
+        $jsonData = json_decode($request->getContent(), true);
+        $searchString = $jsonData['search'] ?? '';
+        $recipes = $repository->findPersonFavoriteRecipes($this->getUser()->getId(), $searchString);
+
+        $recipeCollection = [];
+
+        foreach ($recipes as $recipe) {
+            $recipeCollection[] = [
+                'id' => $recipe[0]->getId(),
+                'recipeName' => $recipe[0]->getRecipeName(),
+                'recipePhoto' => base64_encode(stream_get_contents($recipe['recipePhoto'])),
+                'author' => $recipe[0]->getAuthor()->getFirstname().' '.$recipe[0]->getAuthor()->getLastname(),
+                'steps' => $recipe[0]->getSteps()->count(),
+                'recipeLink' => $this->generateUrl('app_recipe_show', ['id' => $recipe[0]->getId()])
+            ];
+        }
+
+        return new JsonResponse($recipeCollection, Response::HTTP_OK);
+    }
+
 }
