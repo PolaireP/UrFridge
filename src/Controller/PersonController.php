@@ -67,7 +67,7 @@ class PersonController extends AbstractController
 
 
         //dump(base64_encode(stream_get_contents($userInfos[0]['person']->getAvatar()->getPersonPhoto())));
-        return $this->render('pages/person/index.html.twig', [
+        return $this->render('pages/person/cgu.html.twig', [
             'controller_name' => 'PersonController',
             'user' => $repository[0]['person'],
             'avatar' => $avatar,

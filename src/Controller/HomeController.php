@@ -19,7 +19,7 @@ class HomeController extends AbstractController
         // searchString juste pour faire marcher le template (à retirer)
         $searchString = '';
 
-        return $this->render('pages/home/index.html.twig', [
+        return $this->render('pages/home/cgu.html.twig', [
             'allergens' => $allergens,
             'searchString' => $searchString,
         ]);
